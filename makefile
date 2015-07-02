@@ -20,8 +20,8 @@ check:
 clean:
 	rm -f  .coverage
 	rm -f  *.pyc
-	rm -f  Collatz.html
-	rm -f  Collatz.log
+	rm -f  models.html
+	rm -f  IDB.log
 	rm -rf __pycache__
 
 config:
