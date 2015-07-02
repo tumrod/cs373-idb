@@ -1,0 +1,6 @@
+# This file is named "gitignore.sample".
+# Rename it ".gitignore".
+# http://git-scm.com/docs/gitignore/
+
+__pycache__
+*.pyc
