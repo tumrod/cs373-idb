@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from IntergalacticDB.models import *
+from Models import *
 
 app = Flask(__name__)
 
@@ -14,8 +14,8 @@ def about():
 
 @app.route('/characters')
 def characters():
-    all_chartacters = Character.get_all_characters()
-    return render_template('characters.html', all_chartacters=all_chartacters)
+    all_characters = Character.get_all_characters()
+    return render_template('characters.html', all_characters=all_characters)
 
 if __name__ == '__main__':
     app.run()
