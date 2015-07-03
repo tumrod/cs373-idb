@@ -64,13 +64,13 @@ A single Character with all its details
         [{
             "id": 1,
             "name": "Human"
-            "character_list":
+            "character_list": [1, 2]  <!-- list include id's of characters -->
             "description": "Humans, taxonomically referred to as Homo sapiens, were the galaxy's most numerous and politically dominant sentient species with millions of major and minor colonies galaxywide."
             "image":
         }, {
             "id": 2,
             "name": "Wookie"
-            "character_list":
+            "character_list": []
             "description": "The Wookiees, whose name for themselves translated to the People of the Trees, were a species of tall, hairy humanoids that were inhabitants of the planet Kashyyyk."
             "image":
         }]
@@ -88,7 +88,7 @@ A single Species with all its details in it
             {
                 "id": 2,
                 "name": "Wookie"
-                "character_list":
+                "character_list": []
                 "description": "The Wookiees, whose name for themselves translated to the People of the Trees, were a species of tall, hairy humanoids that were inhabitants of the planet Kashyyyk."
                 "image":
             }
@@ -110,15 +110,15 @@ A single Species with all its details in it
         [{
             "id": 1,
             "name": "Tatooine"
-            "species_list":
-            "character_list":
+            "species_list": [1, 2]  <!-- list includes id's of species --> 
+            "character_list": [1, 2]  <!-- list includes id's of characers -->
             "description": "Tatooine (pronounced /tætu'in/; Jawaese: Tah doo Een e[8]) was a desert world and the first planet in the binary Tatoo star system."
             "image":
         }, {
             "id": 2,
             "name": "Dagobah"
-            "species_list":
-            "character_list":
+            "species_list": [1, 2] 
+            "character_list": [1, 2]
             "description": "Dagobah was an Outer Rim planet in the Dagobah system. A remote world of swamps and forests, it served as a refuge for Jedi Grand Master Yoda during his exile, but otherwise had no notable intelligent life."
             "image":
         }]
@@ -139,8 +139,8 @@ A single planet with all its details in it
             {
                 "id": 1,
                 "name": "Tatooine"
-                "species_list":
-                "character_list":
+                "species_list": [1, 2]
+                "character_list": [1, 2]
                 "description": "Tatooine (pronounced /tætu'in/; Jawaese: Tah doo Een e[8]) was a desert world and the first planet in the binary Tatoo star system."
                 "image":
             }
