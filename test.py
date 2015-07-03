@@ -19,12 +19,12 @@ class TestModels (TestCase) :
     # ---------
 
     def test_character_1 (self) :
-        c = character(name="Boba Fett", species="Human", planet="Kamino", description="some description", image="some url")
-        name = c.__get_name__()
-        planet = c.__get_planet__()
-        species = c.__get_species__()
-        des = c.__get_description__()
-        image = c.__get_image__()
+        c = Character(name="Boba Fett", species="Human", planet="Kamino", description="some description", image="some url")
+        name = c.get_name()
+        planet = c.get_planet()
+        species = c.get_species()
+        des = c.get_description()
+        image = c.get_image()
         self.assertEqual(name, "Boba Fett")
         self.assertEqual(planet, "Kamino")
         self.assertEqual(species, "Human")
@@ -32,12 +32,12 @@ class TestModels (TestCase) :
         self.assertEqual(image, "some url")
 
     def test_character_2 (self) :
-        c = character(name="Chewbacca", species="Wookiee", planet="Kashyyyk", description="some description", image="some url")
-        name = c.__get_name__()
-        planet = c.__get_planet__()
-        species = c.__get_species__()
-        des = c.__get_description__()
-        image = c.__get_image__()
+        c = Character(name="Chewbacca", species="Wookiee", planet="Kashyyyk", description="some description", image="some url")
+        name = c.get_name()
+        planet = c.get_planet()
+        species = c.get_species()
+        des = c.get_description()
+        image = c.get_image()
         
         self.assertEqual(name, "Chewbacca")
         self.assertEqual(planet, "Kashyyyk")
@@ -46,12 +46,12 @@ class TestModels (TestCase) :
         self.assertEqual(image, "some url")
 
     def test_character_3 (self) :
-        c = character(name="Darth Vader", species="Human", planet="Tatooine", description="some description", image="some url")
-        name = c.__get_name__()
-        planet = c.__get_planet__()
-        species = c.__get_species__()
-        des = c.__get_description__()
-        image = c.__get_image__()
+        c = Character(name="Darth Vader", species="Human", planet="Tatooine", description="some description", image="some url")
+        name = c.get_name()
+        planet = c.get_planet()
+        species = c.get_species()
+        des = c.get_description()
+        image = c.get_image()
         
         self.assertEqual(name, "Darth Vader")
         self.assertEqual(planet, "Tatooine")
@@ -64,12 +64,12 @@ class TestModels (TestCase) :
     # ------
 
     def test_planet_1 (self) :
-        p = planet(name="Tatooine", species_list=["Human"], character_list=["Darth Vader"], description="some description", image="some url")
-        name = p.__get_name__()
-        characters = p.__get_characters__()
-        species = p.__get_species__()
-        des = p.__get_description__()
-        image = p.__get_image__()
+        p = Planet(name="Tatooine", species_list=["Human"], character_list=["Darth Vader"], description="some description", image="some url")
+        name = p.get_name()
+        characters = p.get_characters()
+        species = p.get_species()
+        des = p.get_description()
+        image = p.get_image()
         self.assertEqual(name, "Tatooine")
         self.assertEqual(characters, ["Darth Vader",])
         self.assertEqual(species, ["Human",])
@@ -77,12 +77,12 @@ class TestModels (TestCase) :
         self.assertEqual(image, "some url")
 
     def test_planet_2 (self) :
-        p = planet(name="Kamino", species_list=["Human"], character_list=["Boba Fett"], description="some description", image="some url")
-        name = p.__get_name__()
-        characters = p.__get_characters__()
-        species = p.__get_species__()
-        des = p.__get_description__()
-        image = p.__get_image__()
+        p = Planet(name="Kamino", species_list=["Human"], character_list=["Boba Fett"], description="some description", image="some url")
+        name = p.get_name()
+        characters = p.get_characters()
+        species = p.get_species()
+        des = p.get_description()
+        image = p.get_image()
         self.assertEqual(name, "Kamino")
         self.assertEqual(characters, ["Boba Fett",])
         self.assertEqual(species, ["Human",])
@@ -90,12 +90,12 @@ class TestModels (TestCase) :
         self.assertEqual(image, "some url")
 
     def test_planet_3 (self) :
-        p = planet(name="Kashyyyk", species_list=["Wookiee"], character_list=["Chewbacca"], description="some description", image="some url")
-        name = p.__get_name__()
-        characters = p.__get_characters__()
-        species = p.__get_species__()
-        des = p.__get_description__()
-        image = p.__get_image__()
+        p = Planet(name="Kashyyyk", species_list=["Wookiee"], character_list=["Chewbacca"], description="some description", image="some url")
+        name = p.get_name()
+        characters = p.get_characters()
+        species = p.get_species()
+        des = p.get_description()
+        image = p.get_image()
         self.assertEqual(name, "Kashyyyk")
         self.assertEqual(characters, ["Chewbacca",])
         self.assertEqual(species, ["Wookiee",])
@@ -107,12 +107,12 @@ class TestModels (TestCase) :
     # --------
 
     def test_species_1 (self) :
-        s = species(name="Wookiee", planet_list=["Kashyyyk"], character_list=["Chewbacca"], description="some description", image="some url")
-        name = s.__get_name__()
-        characters = s.__get_characters__()
-        planets = s.__get_planets__()
-        des = s.__get_description__()
-        image = s.__get_image__()
+        s = Species(name="Wookiee", planet_list=["Kashyyyk"], character_list=["Chewbacca"], description="some description", image="some url")
+        name = s.get_name()
+        characters = s.get_characters()
+        planets = s.get_planets()
+        des = s.get_description()
+        image = s.get_image()
         self.assertEqual(name, "Wookiee")
         self.assertEqual(characters, ["Chewbacca",])
         self.assertEqual(planets, ["Kashyyyk",])
@@ -120,12 +120,12 @@ class TestModels (TestCase) :
         self.assertEqual(image, "some url")
 
     def test_species_2 (self) :
-        s = species(name="Human", planet_list=["Tatooine", "Kamino"], character_list=["Darth Vader", "Boba Fett"], description="some description", image="some url")
-        name = s.__get_name__()
-        characters = s.__get_characters__()
-        planets = s.__get_planets__()
-        des = s.__get_description__()
-        image = s.__get_image__()
+        s = Species(name="Human", planet_list=["Tatooine", "Kamino"], character_list=["Darth Vader", "Boba Fett"], description="some description", image="some url")
+        name = s.get_name()
+        characters = s.get_characters()
+        planets = s.get_planets()
+        des = s.get_description()
+        image = s.get_image()
         self.assertEqual(name, "Human")
         self.assertEqual(characters, ["Darth Vader", "Boba Fett",])
         self.assertEqual(planets, ["Tatooine", "Kamino",])
@@ -135,7 +135,7 @@ class TestModels (TestCase) :
 # ----
 # main
 # ----
-if __name__ == "__main__" :
+if name == "main" :
     main()
 
 

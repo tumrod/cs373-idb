@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import json
 
 class Character:
@@ -102,3 +104,5 @@ class Species:
         with open("species.json") as data_file:
             info_dict = json.load(data_file)
         return info_dict
+
+
