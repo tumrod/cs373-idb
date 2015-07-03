@@ -1,0 +1,157 @@
+FORMAT: 1A
+HOST: http://polls.apiblueprint.org/
+
+# Starhub API
+*****change Host to be actual host.*****
+Starhub API is a database of a collection of characters, locations, battles, etc of StarWars Universe.  
+
+
+## Character Collection [/characters.json]
+
+### List all StarWars Characters [GET]
++ Response 200 (application/json)
+
+        [{
+            "id": 1,
+            "name": "Luke Skywalker"
+            "planet": "Tatooine"
+            "species": "Human"
+            "description": "Luke Skywalker was a Force-sensitive Human male who helped defeat the Galactic Empire in the Galactic Civil War and helped found the New Republic, as well as the New Jedi Order. "
+            "image":
+        }, {
+            "id": 2,
+            "name": "Anakin Skywalker"
+            "planet": "Tatooine"
+            "species": "Human"
+            "description": "Anakin Skywalker was a Force-sensitive Human male who served the Galactic Republic as a Jedi Knight and later served the Galactic Empire as the Sith Lord Darth Vader. "
+            "image":
+        }]
+
+## Character [/characters/{id}.json]
+A single Character with all its details
+
++ Parameters
+    + id (number) - ID of a character
+
+### Retrieve a Character [GET]
++ Response 200 (application/json)
+
+    + Body
+    
+            {
+                "id": 1,
+                "name": "Luke Skywalker"
+                "planet": "Tatooine"
+                "species": "Human"
+                "description": "Luke Skywalker was a Force-sensitive Human male who helped defeat the Galactic Empire in the Galactic Civil War and helped found the New Republic, as well as the New Jedi Order. "
+                "image": 
+            }
+
++ Response 404
+    + Header
+    
+            Content-type: application/json
+
+    + Body
+    
+            {"error": Sorry. That character does not exist."}
+
+## Species Collection [/species.json]
+
+### List all StarWars Species [GET]
++ Response 200 (application/json)
+
+        [{
+            "id": 1,
+            "name": "Human"
+            "character_list":
+            "description": "Humans, taxonomically referred to as Homo sapiens, were the galaxy's most numerous and politically dominant sentient species with millions of major and minor colonies galaxywide."
+            "image":
+        }, {
+            "id": 2,
+            "name": "Wookie"
+            "character_list":
+            "description": "The Wookiees, whose name for themselves translated to the People of the Trees, were a species of tall, hairy humanoids that were inhabitants of the planet Kashyyyk."
+            "image":
+        }]
+
+    
+## Species [/species/{id}.json]
+A single Species with all its details in it
+
+    + id (number) - ID of a species
+
+### Retrieve a species [GET]
++ Response 200 (application/json)
+    + Body
+    
+            {
+                "id": 2,
+                "name": "Wookie"
+                "character_list":
+                "description": "The Wookiees, whose name for themselves translated to the People of the Trees, were a species of tall, hairy humanoids that were inhabitants of the planet Kashyyyk."
+                "image":
+            }
+    
++ Response 404
+    + Header
+    
+            Content-type: application/json
+    
+    + Body
+    
+            {"error": "Sorry. That species does not exist."}
+
+## Planet Collection [/planets.json]
+
+### List all planet locations [GET]
++ Response 200 (application/json)
+
+        [{
+            "id": 1,
+            "name": "Tatooine"
+            "species_list":
+            "character_list":
+            "description": "Tatooine (pronounced /tætu'in/; Jawaese: Tah doo Een e[8]) was a desert world and the first planet in the binary Tatoo star system."
+            "image":
+        }, {
+            "id": 2,
+            "name": "Dagobah"
+            "species_list":
+            "character_list":
+            "description": "Dagobah was an Outer Rim planet in the Dagobah system. A remote world of swamps and forests, it served as a refuge for Jedi Grand Master Yoda during his exile, but otherwise had no notable intelligent life."
+            "image":
+        }]
+        
+
+## Planet [/planets/{id}.json]
+A single planet with all its details in it
+
++ Parameters
+    + id (number) - ID of a planet
+
+
+### Retrieve a planet [GET]
++ Response 200 (application/json)
+
+    + Body
+    
+            {
+                "id": 1,
+                "name": "Tatooine"
+                "species_list":
+                "character_list":
+                "description": "Tatooine (pronounced /tætu'in/; Jawaese: Tah doo Een e[8]) was a desert world and the first planet in the binary Tatoo star system."
+                "image":
+            }
+            
++ Response 404
+    + Header
+    
+            Content-type: application/json
+    
+    + Body
+    
+            {"error": "Sorry. That planet does not exist."}
+
+
