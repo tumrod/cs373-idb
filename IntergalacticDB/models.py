@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-import json
-import os
+import json, os
+from collections import OrderedDict
 
 relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
 
@@ -44,7 +44,17 @@ class Character:
     @staticmethod
     def get_all_characters():
         with open(relative_path + "characters.json") as data_file:
-            info_dict = json.load(data_file)
+            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
+        return info_dict
+
+    @staticmethod
+    def get_all_sorted_characters(sort_by):
+        with open(relative_path + "characters.json") as data_file:
+            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
+
+        if sort_by == 'name':
+            info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1]['name']))
+
         return info_dict
 
 
@@ -87,7 +97,7 @@ class Planet:
     @staticmethod
     def get_all_planets():
         with open(relative_path + "planets.json") as data_file:
-            info_dict = json.load(data_file)
+            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
         return info_dict
 
 class Species:
@@ -129,5 +139,5 @@ class Species:
     @staticmethod
     def get_all_species():
         with open(relative_path + "species.json") as data_file:
-            info_dict = json.load(data_file)
+            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
         return info_dict
