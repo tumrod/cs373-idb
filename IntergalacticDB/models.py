@@ -16,7 +16,6 @@ class Character:
         self.character["image"] = image
         self.character["birth"] = birth
         self.character["gender"] = gender
-        
 
     def get_info(self):
         return self.character
