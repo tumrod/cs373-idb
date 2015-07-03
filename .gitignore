@@ -1,4 +1,5 @@
 __pycache__
 *.pyc
-IntergalacticDB/.idea/workspace.xml
+IntergalacticDB/.idea/*
 .idea/*
+.DS_Store
