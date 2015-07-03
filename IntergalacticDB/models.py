@@ -11,6 +11,26 @@ class character():
     def __get_info__(self):
         return self.character
 
+    def __get_name__(self):
+        return self.character["name"]
+
+    def __get_planet__(self):
+        return self.character["planet"]
+
+    def __get_species__(self):
+        return self.character["species"]
+
+    def __get_description__(self):
+        return self.character["description"]
+
+    def __get_image__(self):
+        return self.character["image"]
+
+    def __get_all_characters__():
+        with open("characters.json") as data_file:
+            info_dict = json.load(data_file)
+        return info_dict
+
 
 class planet():
 
@@ -25,6 +45,25 @@ class planet():
     def __get_info__(self):
         return self.planet
 
+    def __get_name__(self):
+        return self.planet["name"]
+
+    def __get_characters__(self):
+        return self.planet["characters"]
+
+    def __get_species__(self):
+        return self.planet["species"]
+
+    def __get_description__(self):
+        return self.planet["description"]
+
+    def __get_image__(self):
+        return self.planet["image"]
+
+    def __get_all_planets__():
+        with open("planets.json") as data_file:
+            info_dict = json.load(data_file)
+        return info_dict
 
 class species():
 
@@ -38,3 +77,25 @@ class species():
 
     def __get_info__(self):
         return self.species
+
+    def __get_name__(self):
+        return self.species["name"]
+
+    def __get_characters__(self):
+        return self.species["characters"]
+
+    def __get_species__(self):
+        return self.species["species"]
+
+    def __get_description__(self):
+        return self.species["description"]
+
+    def __get_image__(self):
+        return self.species["image"]
+
+    def __get_all_species__():
+        with open("species.json") as data_file:
+            info_dict = json.load(data_file)
+        return info_dict
+
+
