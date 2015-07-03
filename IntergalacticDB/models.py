@@ -84,8 +84,8 @@ class species():
     def __get_characters__(self):
         return self.species["characters"]
 
-    def __get_species__(self):
-        return self.species["species"]
+    def __get_planets__(self):
+        return self.species["planets"]
 
     def __get_description__(self):
         return self.species["description"]
