@@ -2,16 +2,28 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>All Characters</title>
     <!-- CSS -->
     <link href="{{ url_for('static', filename='styles/characters.css')}}" rel="stylesheet" type="text/css" />
 </head>
+  <h1 class="h1">Star Wars Characters</h1>
+
+  <h4>Sort By:</h4>
+      <select id="sort-order">
+        <option value="none">---Select---</option>
+        <option value="name">Name</option>
+        <option value="gender">Gender</option>
+        <option value="birth">Birth</option>
+        <option value="planet">Planet</option>
+        <option value="species">Species</option>
+      </select>
+
   <div id="pricing-table" class="clear">
     {% for character_name, character_info in all_characters.items() %}
       <div class="plan">
-          <h3>{{ character_name }}<span><img alt="Darth Vader" id="image-placeholder" src={{ character_info['image'] }}></span></h3>
+          <h3>{{ character_info['name'] }}<span><img id="image-placeholder" src={{ character_info['image'] }}></span></h3>
           <ul>
-            <li><b>Gender:</b> {{ character_info['gender'] }}</li>
+            <li><b>Gender:</b>{{ character_info['gender'] }}</li>
             <li><b>Birth:</b> {{ character_info['birth'] }}</li>
             <li><b>Planet:</b> {{ character_info['planet'] }}</li>
             <li><b>Species:</b> {{ character_info['species'] }}</li>
@@ -20,4 +32,9 @@
         </div>
     {% endfor %}
   </div>
+
+  <!-- JS -->
+  <script src="{{ url_for('static', filename='javascripts/jquery-1.11.2.min.js')}}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='javascripts/sorting.js')}}" type="text/javascript"></script>
+
 </html>
