@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
 import json
+import os
+
+relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
 
 class Character:
 
@@ -13,7 +16,6 @@ class Character:
         self.character["image"] = image
         self.character["birth"] = birth
         self.character["gender"] = gender
-        
 
     def get_info(self):
         return self.character
@@ -41,7 +43,7 @@ class Character:
 
     @staticmethod
     def get_all_characters():
-        with open("characters.json") as data_file:
+        with open(relative_path + "characters.json") as data_file:
             info_dict = json.load(data_file)
         return info_dict
 
@@ -84,7 +86,7 @@ class Planet:
 
     @staticmethod
     def get_all_planets():
-        with open("planets.json") as data_file:
+        with open(relative_path + "planets.json") as data_file:
             info_dict = json.load(data_file)
         return info_dict
 
@@ -119,13 +121,13 @@ class Species:
         return self.species["image"]
         
     def get_language(self):
-        return self.species["resignation"]
+        return self.species["language"]
         
     def get_classification(self):
         return self.species["classification"]
 
     @staticmethod
     def get_all_species():
-        with open("species.json") as data_file:
+        with open(relative_path + "species.json") as data_file:
             info_dict = json.load(data_file)
         return info_dict

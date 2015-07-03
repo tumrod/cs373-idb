@@ -121,7 +121,7 @@ class Species:
         return self.species["image"]
         
     def get_language(self):
-        return self.species["resignation"]
+        return self.species["language"]
         
     def get_classification(self):
         return self.species["classification"]
