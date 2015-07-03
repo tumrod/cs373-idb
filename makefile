@@ -27,8 +27,8 @@ clean:
 config:
 	git config -l
 
-test: 
-	python3 test.py
+tests: 
+	python3 tests.py
 
 models.html: models.py
 	pydoc3 -w models

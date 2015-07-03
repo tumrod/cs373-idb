@@ -1,0 +1,902 @@
+{
+    "4-LOM": {
+        "birth": "",
+        "description": "",
+        "gender": "Masculine programming",
+        "image": "",
+        "name": "4-LOM",
+        "planet": "",
+        "species": ""
+    },
+    "Admiral_Ackbar": {
+        "birth": "",
+        "description": "",
+        "gender": "",
+        "image": "",
+        "name": "Admiral Ackbar",
+        "planet": "",
+        "species": ""
+    },
+    "Admiral_Daala": {
+        "birth": "",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Admiral Daala",
+        "planet": "Irmenu",
+        "species": "Human"
+    },
+    "Anakin_Solo": {
+        "birth": "10.5 ABY (45), Nespis VIII",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Anakin Solo",
+        "planet": "Coruscant",
+        "species": "Human"
+    },
+    "Barada": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Barada",
+        "planet": "Klatooine",
+        "species": "Klatooinian"
+    },
+    "Bib_Fortuna": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Bib Fortuna",
+        "planet": "Ryloth",
+        "species": "Twi'lek"
+    },
+    "Biggs_Darklighter": {
+        "birth": "c. 24 BBY, Tatooine",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Biggs Darklighter",
+        "planet": "Tatooine",
+        "species": "Human"
+    },
+    "Boba_Fett": {
+        "birth": "31.5 BBY (3),[1] Kamino",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Boba Fett",
+        "planet": "Kam",
+        "species": "Human[2] (clo"
+    },
+    "Bodo_Baas": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Bodo Baas",
+        "planet": "",
+        "species": "Krevaaki"
+    },
+    "Bollux": {
+        "birth": "",
+        "description": "",
+        "gender": "Masculine programming",
+        "image": "",
+        "name": "Bollux",
+        "planet": "Originally Fondor",
+        "species": ""
+    },
+    "Borsk_Fey'lya": {
+        "birth": "31 BBY or earlier, Kothlis",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Borsk Fey'lya",
+        "planet": "Kothlis",
+        "species": "Bothan"
+    },
+    "Bossk": {
+        "birth": "53 BBY, Trandosha",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Bossk",
+        "planet": "Trandosha",
+        "species": "Trandoshan"
+    },
+    "Brea_Tonnika": {
+        "birth": "",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Brea Tonnika",
+        "planet": "Kiffex",
+        "species": "Kiffar"
+    },
+    "C-3PO": {
+        "birth": "",
+        "description": "",
+        "gender": "Masculine programming",
+        "image": "",
+        "name": "C-3PO",
+        "planet": "Tatooine",
+        "species": ""
+    },
+    "Callista": {
+        "birth": "",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Callista",
+        "planet": "Chad",
+        "species": "Human"
+    },
+    "Captain_Gilad_Pellaeon": {
+        "birth": "51 BBY (16 BrS), Corellia[2]",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Captain Gilad Pellaeon",
+        "planet": "Corellia, raised on Coruscant",
+        "species": "Human"
+    },
+    "Chewbacca": {
+        "birth": "200 BBY,[2][3][4][5] Kashy",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Chewbacca",
+        "planet": "Kashyyyk",
+        "species": "Wookiee (Rwook)"
+    },
+    "Cindel_Towani": {
+        "birth": "2 BBY (33)",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Cindel Towani",
+        "planet": "",
+        "species": "Human"
+    },
+    "Dannik_Jerriko": {
+        "birth": "1006 BBY",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Dannik Jerriko",
+        "planet": "Anzat",
+        "species": "Anzati"
+    },
+    "Darth_Vader": {
+        "birth": "41.9 BBY (7:4 BrS)",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Darth Vader",
+        "planet": "Tatooine",
+        "species": "Human"
+    },
+    "Davin_Felth": {
+        "birth": "c. 19 BBY",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Davin Felth",
+        "planet": "",
+        "species": "Human"
+    },
+    "Dengar": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Dengar",
+        "planet": "Corellia",
+        "species": "Human"
+    },
+    "Dev_Sibwarra": {
+        "birth": "11 BBY, Chandrilla",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Dev Sibwarra",
+        "planet": "Chandrila",
+        "species": "Human"
+    },
+    "Dorsk_81": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Dorsk 81",
+        "planet": "Khomm",
+        "species": "Khommite (clone) "
+    },
+    "Elder_Sh'tk'ith": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Elder Sh'tk'ith",
+        "planet": "Lwhekk",
+        "species": "Ssi-ruuk"
+    },
+    "Emperor's_Royal_Guards": {
+        "birth": "",
+        "description": "",
+        "gender": "",
+        "image": "",
+        "name": "Emperor's Royal Guards",
+        "planet": "",
+        "species": ""
+    },
+    "Emperor_Palpatine": {
+        "birth": "82 BBY (47:8:11 BrS)[2] Naboo",
+        "description": "",
+        "gender": "M",
+        "image": "",
+        "name": "Emperor Palpatine",
+        "planet": "Naboo",
+        "species": "Human"
+    },
+    "Ephant_Mon": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Ephant Mon",
+        "planet": "Vinsoth",
+        "species": "Chevin[1]"
+    },
+    "Exar_Kun": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Exar Kun",
+        "planet": "",
+        "species": "Human"
+    },
+    "Figrin_D'an": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Figrin D'an",
+        "planet": "Clak'dor VII",
+        "species": "Bith"
+    },
+    "Gaeriel_Captison": {
+        "birth": "19 BBY (16), Bakura",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Gaeriel Captison",
+        "planet": "Bakura",
+        "species": "Human"
+    },
+    "Gallandro": {
+        "birth": "c. 50\u201340 BBY, Ylix",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Gallandro",
+        "planet": "Ylix",
+        "species": "Human"
+    },
+    "Garindan": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Garindan",
+        "planet": "Kubindi",
+        "species": "Kubaz"
+    },
+    "Garm_Bel_Iblis": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Garm Bel Iblis",
+        "planet": "Corellia",
+        "species": "Human"
+    },
+    "Gartogg": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Gartogg",
+        "planet": "Gamorr",
+        "species": "Gamorrean"
+    },
+    "General_Crix_Madine": {
+        "birth": "31 BBY or earlier, Corellia",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "General Crix Madine",
+        "planet": "Corellia",
+        "species": "Human"
+    },
+    "General_Jan_Dodonna": {
+        "birth": "65 BBY[sourc",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "General Jan Dodonna",
+        "planet": "Commenor",
+        "species": "Human"
+    },
+    "Gethzerion": {
+        "birth": "",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Gethzerion",
+        "planet": "Dathomir",
+        "species": "Dathomirian"
+    },
+    "Grand_Admiral_Thrawn": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Grand Admiral Thrawn",
+        "planet": "Csilla",
+        "species": "Chiss"
+    },
+    "Grand_Moff_Tarkin": {
+        "birth": "64\u201359 BBY (29\u201324BrS), Eriadu[2]",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Grand Moff Tarkin",
+        "planet": "Eriadu",
+        "species": "Human"
+    },
+    "Greedo": {
+        "birth": "c. 44 BBY,[2] Ro",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Greedo",
+        "planet": "Rodia",
+        "species": "Rodian"
+    },
+    "Han_Solo": {
+        "birth": "29 BBY (6), Corel",
+        "description": "",
+        "gender": "M",
+        "image": "",
+        "name": "Han Solo",
+        "planet": "Corel",
+        "species": "Hu"
+    },
+    "Het_Nkik": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Het Nkik",
+        "planet": "Tatooine",
+        "species": "Jawa"
+    },
+    "Hethrir": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Hethrir",
+        "planet": "Firrerre",
+        "species": "Firrerreo"
+    },
+    "IG-88": {
+        "birth": "",
+        "description": "",
+        "gender": "Masculine programming",
+        "image": "",
+        "name": "IG-88",
+        "planet": "",
+        "species": ""
+    },
+    "Jabba_the_Hutt": {
+        "birth": "600 BBY,[2] Nal Hu",
+        "description": "",
+        "gender": "Hermaphrodite (masculine personality)",
+        "image": "",
+        "name": "Jabba the Hutt",
+        "planet": "Nal Hutta",
+        "species": "Hutt"
+    },
+    "Jacen_Solo": {
+        "birth": "9 ABY (44:8), Coruscant",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Jacen Solo",
+        "planet": "Coruscant[1] (also raised on New Alderaan[2] and Anoth[",
+        "species": "Human"
+    },
+    "Joruus_C'baoth": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Joruus C'baoth",
+        "planet": "Wayland",
+        "species": "Human (clone)"
+    },
+    "Kabe": {
+        "birth": "",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Kabe",
+        "planet": "Chad",
+        "species": "Chadra-Fan"
+    },
+    "Ken": {
+        "birth": "7 BBY (28), Kessel",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Ken",
+        "planet": "Yavin 4",
+        "species": "Human"
+    },
+    "Khabarakh": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Khabarakh",
+        "planet": "Honoghr",
+        "species": "Noghri"
+    },
+    "Kyp_Durron": {
+        "birth": "7 BBY (28), Deyer",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Kyp Durron",
+        "planet": "Deyer",
+        "species": "Human"
+    },
+    "Labria": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Labria",
+        "planet": "Devaron",
+        "species": "Devaronian"
+    },
+    "Lady_Valarian": {
+        "birth": "",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Lady Valarian",
+        "planet": "Toola",
+        "species": "Whiphid"
+    },
+    "Lak_Sivrak": {
+        "birth": "Before 8 BBY",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Lak Sivrak",
+        "planet": "One planet[1] in the Uvena system",
+        "species": "Shistavanen"
+    },
+    "Lando_Calrissian": {
+        "birth": "31 BBY,[3] Socorro",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Lando Calrissian",
+        "planet": "Socorro[1]",
+        "species": "Human"
+    },
+    "Leia_Organa_Solo": {
+        "birth": "19 BBY (16:5:24)[2], Polis Massa",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Leia Organa Solo",
+        "planet": "Alderaan",
+        "species": "Human"
+    },
+    "Lobot": {
+        "birth": "c. 37 BBY",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Lobot",
+        "planet": "Bespin",
+        "species": "Human[1] (Cyborg)"
+    },
+    "Lowbacca": {
+        "birth": "4 ABY, Kashyyyk",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Lowbacca",
+        "planet": "Kashyyyk",
+        "species": "Wookiee"
+    },
+    "Luke_Skywalker": {
+        "birth": "19 BBY (16:5:24)[2], Polis Massa",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Luke Skywalker",
+        "planet": "Tatooine",
+        "species": "Human"
+    },
+    "Mako_Spince": {
+        "birth": "39 BBY (4BrS),[2] Corel",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Mako Spince",
+        "planet": "Nar Shaddaa",
+        "species": "Human"
+    },
+    "Mara_Jade": {
+        "birth": "17 BBY (18)",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Mara Jade",
+        "planet": "",
+        "species": "Human"
+    },
+    "Momaw_Nadon": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Momaw Nadon",
+        "planet": "Ithor",
+        "species": "Ithorian"
+    },
+    "Mon_Mothma": {
+        "birth": "48 BBY,[2] Chandr",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Mon Mothma",
+        "planet": "Chandrila",
+        "species": "Human"
+    },
+    "Moruth_Doole": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Moruth Doole",
+        "planet": "",
+        "species": "Rybet"
+    },
+    "Muftak": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Muftak",
+        "planet": "Alzoc III, born on Tatooine",
+        "species": "Talz"
+    },
+    "Nichos_Marr": {
+        "birth": "Prior to 19 BBY",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Nichos Marr",
+        "planet": "",
+        "species": "Human"
+    },
+    "Nien_Nunb": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Nien Nunb",
+        "planet": "Sullust",
+        "species": "Sullustan"
+    },
+    "Nomi_Sunrider": {
+        "birth": "",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Nomi Sunrider",
+        "planet": "",
+        "species": "Human"
+    },
+    "Obi-Wan_Kenobi": {
+        "birth": "57 BBY (22 BrS),[2] Stewjon",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Obi-Wan Kenobi",
+        "planet": "Stewjon",
+        "species": "Human"
+    },
+    "Oola": {
+        "birth": "",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Oola",
+        "planet": "Ryloth",
+        "species": "Twi'lek"
+    },
+    "Owen_Lars": {
+        "birth": "52 BBY,[3] Ator",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Owen Lars",
+        "planet": "Ator,[1] Tatooine[1]",
+        "species": "Human"
+    },
+    "Ponda_Baba": {
+        "birth": "29 BBY",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Ponda Baba",
+        "planet": "Ando",
+        "species": "Aqualish (Quara)"
+    },
+    "Prince_Isolder": {
+        "birth": "17 BBY (18), Hapes",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Prince Isolder",
+        "planet": "Hapes",
+        "species": "Human"
+    },
+    "Princess_Kneesaa": {
+        "birth": "",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Princess Kneesaa",
+        "planet": "Endor",
+        "species": "Ewok"
+    },
+    "Pter_Thanas": {
+        "birth": "49 BBY, Coruscant",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Pter Thanas",
+        "planet": "Coruscant",
+        "species": "Human"
+    },
+    "Qwi_Xux": {
+        "birth": "",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Qwi Xux",
+        "planet": "Omwat",
+        "species": "Omwati"
+    },
+    "Ree-Yees": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Ree-Yees",
+        "planet": "Kinyen",
+        "species": "Gran"
+    },
+    "Rillao": {
+        "birth": "",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Rillao",
+        "planet": "Firrerre",
+        "species": "Firrerreo"
+    },
+    "Roganda_Ismaren": {
+        "birth": "c. 22 BBY",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Roganda Ismaren",
+        "planet": "Alderaan",
+        "species": "Human"
+    },
+    "Salacious_Crumb": {
+        "birth": "",
+        "description": "",
+        "gender": "",
+        "image": "",
+        "name": "Salacious Crumb",
+        "planet": "Kowak",
+        "species": "Kowakian monkey-lizard"
+    },
+    "Salla_Zend": {
+        "birth": "",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Salla Zend",
+        "planet": "Nar Shaddaa",
+        "species": "Human"
+    },
+    "Shug_Ninx": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Shug Ninx",
+        "planet": "Nar Shaddaa",
+        "species": "Human/Theelin hybrid"
+    },
+    "Talon_Karrde": {
+        "birth": "Prior to 31 BBY",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Talon Karrde",
+        "planet": "",
+        "species": "Human"
+    },
+    "Tenel_Ka": {
+        "birth": "",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Tenel Ka",
+        "planet": "Dathomir",
+        "species": "Hu"
+    },
+    "Teneniel_Djo": {
+        "birth": "c. 12 BBY,[2] Datho",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Teneniel Djo",
+        "planet": "Dathomir",
+        "species": "Human"
+    },
+    "Tessek": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Tessek",
+        "planet": "Dac",
+        "species": "Quarren"
+    },
+    "Tigris": {
+        "birth": "c. 1 ABY[sourc",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Tigris",
+        "planet": "Firrerre",
+        "species": "Firrerreo"
+    },
+    "Tionne": {
+        "birth": "",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Tionne",
+        "planet": "Rindao",
+        "species": "Human"
+    },
+    "Triclops": {
+        "birth": "After 18 BBY",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Triclops",
+        "planet": "",
+        "species": "Human (mutant)"
+    },
+    "Tusken_Raiders": {
+        "birth": "",
+        "description": "",
+        "gender": "",
+        "image": "",
+        "name": "Tusken Raiders",
+        "planet": "Tatoo",
+        "species": ""
+    },
+    "Ulic_Qel-Droma": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Ulic Qel-Droma",
+        "planet": "Alderaan",
+        "species": "Human"
+    },
+    "Vima-Da-Boda": {
+        "birth": "190 BBY",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Vima-Da-Boda",
+        "planet": "",
+        "species": "Human"
+    },
+    "Wedge_Antilles": {
+        "birth": "21 BBY (14)",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Wedge Antilles",
+        "planet": "Corellia (Gus Treta Inner-System Market Station)",
+        "species": "Human"
+    },
+    "Weequay": {
+        "birth": "",
+        "description": "",
+        "gender": "",
+        "image": "",
+        "name": "Weequay",
+        "planet": "Sriluur",
+        "species": ""
+    },
+    "Wicket_Wystri_Warrick": {
+        "birth": "Circa 8 BBY, Endor",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Wicket Wystri Warrick",
+        "planet": "Endor",
+        "species": "Ewok"
+    },
+    "Winter": {
+        "birth": "19 BBY (16), Alderaan",
+        "description": "",
+        "gender": "Female",
+        "image": "",
+        "name": "Winter",
+        "planet": "Alderaan",
+        "species": "Human"
+    },
+    "Yarna_D'al'_Gargan": {
+        "birth": "",
+        "description": "",
+        "gender": "",
+        "image": "",
+        "name": "Yarna D'al' Gargan",
+        "planet": "",
+        "species": ""
+    },
+    "Yoda": {
+        "birth": "896 BBY (861BrS)",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Yoda",
+        "planet": "",
+        "species": "Yoda's spec"
+    },
+    "Zuckuss": {
+        "birth": "",
+        "description": "",
+        "gender": "Male",
+        "image": "",
+        "name": "Zuckuss",
+        "planet": "Gand",
+        "species": "Gand[1] (Breather)"
+    }
+}

@@ -1,9 +1,15 @@
 #!/usr/bin/env python3
 
 import json
+import os
+
+relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
 
 class Character:
-
+    """
+    Initialize the character to have a dictionary of its information
+    input strings of the character's name, planet, species, description, image, birth, and gender
+    """
     def __init__(self, name, planet, species, description, image, birth, gender):
         self.character = {}
         self.character["name"] = name
@@ -13,35 +19,62 @@ class Character:
         self.character["image"] = image
         self.character["birth"] = birth
         self.character["gender"] = gender
-        
 
+    """
+    return the dictionary of information on this character
+    """
     def get_info(self):
         return self.character
 
+    """
+    return a string, the name of this character
+    """
     def get_name(self):
         return self.character["name"]
 
+    """
+    return a string, the planet homeworld of this character
+    """
     def get_planet(self):
         return self.character["planet"]
-
+    
+    """
+    return a string, the species of this character
+    """
     def get_species(self):
         return self.character["species"]
 
+    """
+    return a string, the summary of this character's description
+    """
     def get_description(self):
         return self.character["description"]
 
+    """
+    return a string, the url for an image of this character
+    """
     def get_image(self):
         return self.character["image"]
         
+    """
+    return a string, the birth date of this character
+    """
     def get_birth(self):
         return self.character["birth"]
         
+    """
+    return a string, the gender of this character
+    """
     def get_gender(self):
         return self.character["gender"]
 
+    """
+    return a dictionary of all characters, with their names as keys
+           and their dicts of information as values
+    """
     @staticmethod
     def get_all_characters():
-        with open("characters.json") as data_file:
+        with open(relative_path + "characters.json") as data_file:
             info_dict = json.load(data_file)
         return info_dict
 
@@ -84,7 +117,7 @@ class Planet:
 
     @staticmethod
     def get_all_planets():
-        with open("planets.json") as data_file:
+        with open(relative_path + "planets.json") as data_file:
             info_dict = json.load(data_file)
         return info_dict
 
@@ -119,13 +152,13 @@ class Species:
         return self.species["image"]
         
     def get_language(self):
-        return self.species["resignation"]
+        return self.species["language"]
         
     def get_classification(self):
         return self.species["classification"]
 
     @staticmethod
     def get_all_species():
-        with open("species.json") as data_file:
+        with open(relative_path + "species.json") as data_file:
             info_dict = json.load(data_file)
         return info_dict
