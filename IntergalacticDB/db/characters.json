@@ -21,4 +21,12 @@
 	"description": "Anakin Skywalker was a Force-sensitive Human male who served the Galactic Republic as a Jedi Knight and later served the Galactic Empire as the Sith Lord Darth Vader. Born to the slave Shmi Skywalker in 41.9 BBY, Anakin was conceived by midi-chlorians, the symbiotic organisms that allowed individuals to touch the Force, and he and his mother were brought to the desert planet of Tatooine to be the slaves of Gardulla the Hutt. They soon ended up as the property of the Toydarian Watto, and Skywalker exhibited exceptional piloting skills and a reputation for being able to build and repair anything even at a young age. In 32 BBY, Skywalker encountered the Jedi Qui-Gon Jinn and Padmé Amidala, and he helped them secure the parts they needed for their starship by winning the Boonta Eve Classic podracing event—only to learn that he had also won his freedom in doing so.", 
 	"planet": "Tatooine",
 	"gender": "Male",
-	"birth": "41.9 BBY"}}
+	"birth": "41.9 BBY"},
+"Ahsoka Tano":
+	{"name": "Ahsoka Tano",
+	"species": "Togruta",
+	"image": "http://img1.wikia.nocookie.net/__cb20121211040147/starwars/images/0/03/AhsokaHS-AFiN.png",
+	"description": "Ahsoka Tano, nicknamed Snips by her master, was a Togruta female from the planet Shili who trained as a Jedi apprentice during the Clone Wars, the conflict between the Galactic Republic and the Confederacy of Independent Systems. Tano was assigned to Jedi Knight Anakin Skywalker by Jedi Grand Master Yoda, and she demonstrated an eagerness to prove herself worthy to be his apprentice. Tano was involved in the defeat of the Separatist army on the planet Christophsis and was important to Republic efforts during the Battle of Teth. Along with Skywalker, Tano was instrumental in acquiring the Republic's safe passage through Hutt Space, due to her part in rescuing the son of Jabba the Hutt, which ensured an alliance between the Republic and the Hutt clans.",
+	"planet": "Shili",
+	"gender": "Female",
+	"birth": "36 BBY"}}
