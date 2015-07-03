@@ -7,18 +7,17 @@
     <link href="{{ url_for('static', filename='styles/characters.css')}}" rel="stylesheet" type="text/css" />
 </head>
   <div id="pricing-table" class="clear">
-
-    {% for character in all_chartacters %}
+    {% for character_name, character_info in all_characters.items() %}
       <div class="plan">
-        <h3>Darth Vader<span><img src="http:\/\/img2.wikia.nocookie.net\/__cb20130621175844\/starwars\/images\/thumb\/6\/6f\/Anakin_Skywalker_RotS.png\/400px-Anakin_Skywalker_RotS.webp" alt="Darth Vader" id="image-placeholder"></span></h3>
-        <ul>
-            <li><b>Planet:</b> Tatooine</li>
-            <li><b>Species:</b> Human</li>
-        </ul>
-      <a class="signup" href="">About</a>
-    </div>
-
+          <h3>{{ character_name }}<span><img alt="Darth Vader" id="image-placeholder" src={{ character_info['image'] }}></span></h3>
+          <ul>
+            <li><b>Gender:</b> {{ character_info['gender'] }}</li>
+            <li><b>Birth:</b> {{ character_info['birth'] }}</li>
+            <li><b>Planet:</b> {{ character_info['planet'] }}</li>
+            <li><b>Species:</b> {{ character_info['species'] }}</li>
+          </ul>
+          <a class="signup" href="">More</a>
+        </div>
     {% endfor %}
-
   </div>
 </html>
