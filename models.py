@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
-class character():
+import json
+
+class Character:
 
     def __init__(self, name, planet, species, description, image):
         self.character = {}
@@ -10,31 +12,32 @@ class character():
         self.character["description"] = description
         self.character["image"] = image
 
-    def __get_info__(self):
+    def get_info(self):
         return self.character
 
-    def __get_name__(self):
+    def get_name(self):
         return self.character["name"]
 
-    def __get_planet__(self):
+    def get_planet(self):
         return self.character["planet"]
 
-    def __get_species__(self):
+    def get_species(self):
         return self.character["species"]
 
-    def __get_description__(self):
+    def get_description(self):
         return self.character["description"]
 
-    def __get_image__(self):
+    def get_image(self):
         return self.character["image"]
 
+    @staticmethod
     def get_all_characters():
         with open("characters.json") as data_file:
             info_dict = json.load(data_file)
         return info_dict
 
 
-class planet():
+class Planet:
 
     def __init__(self, name, character_list, species_list, description, image):
         self.planet = {}
@@ -44,30 +47,31 @@ class planet():
         self.planet["description"] = description
         self.planet["image"] = image
 
-    def __get_info__(self):
+    def get_info(self):
         return self.planet
 
-    def __get_name__(self):
+    def get_name(self):
         return self.planet["name"]
 
-    def __get_characters__(self):
+    def get_characters(self):
         return self.planet["characters"]
 
-    def __get_species__(self):
+    def get_species(self):
         return self.planet["species"]
 
-    def __get_description__(self):
+    def get_description(self):
         return self.planet["description"]
 
-    def __get_image__(self):
+    def get_image(self):
         return self.planet["image"]
 
+    @staticmethod
     def get_all_planets():
         with open("planets.json") as data_file:
             info_dict = json.load(data_file)
         return info_dict
 
-class species():
+class Species:
 
     def __init__(self, name, character_list, planet_list, description, image):
         self.species = {}
@@ -77,27 +81,26 @@ class species():
         self.species["description"] = description
         self.species["image"] = image
 
-    def __get_info__(self):
+    def get_info(self):
         return self.species
 
-    def __get_name__(self):
+    def get_name(self):
         return self.species["name"]
 
-    def __get_characters__(self):
+    def get_characters(self):
         return self.species["characters"]
 
-    def __get_planets__(self):
+    def get_planets(self):
         return self.species["planets"]
 
-    def __get_description__(self):
+    def get_description(self):
         return self.species["description"]
 
-    def __get_image__(self):
+    def get_image(self):
         return self.species["image"]
 
+    @staticmethod
     def get_all_species():
         with open("species.json") as data_file:
             info_dict = json.load(data_file)
         return info_dict
-
-
