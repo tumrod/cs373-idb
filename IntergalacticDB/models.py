@@ -7,13 +7,16 @@ relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
 
 class Character:
 
-    def __init__(self, name, planet, species, description, image):
+    def __init__(self, name, planet, species, description, image, birth, gender):
         self.character = {}
         self.character["name"] = name
         self.character["planet"] = planet
         self.character["species"] = species
         self.character["description"] = description
         self.character["image"] = image
+        self.character["birth"] = birth
+        self.character["gender"] = gender
+        
 
     def get_info(self):
         return self.character
@@ -32,6 +35,12 @@ class Character:
 
     def get_image(self):
         return self.character["image"]
+        
+    def get_birth(self):
+        return self.character["birth"]
+        
+    def get_gender(self):
+        return self.character["gender"]
 
     @staticmethod
     def get_all_characters():
@@ -42,13 +51,15 @@ class Character:
 
 class Planet:
 
-    def __init__(self, name, character_list, species_list, description, image):
+    def __init__(self, name, character_list, species_list, description, image, region, system):
         self.planet = {}
         self.planet["name"] = name
         self.planet["characters"] = character_list
         self.planet["species"] = species_list
         self.planet["description"] = description
         self.planet["image"] = image
+        self.planet["region"] = region
+        self.planet["system"] = system
 
     def get_info(self):
         return self.planet
@@ -67,6 +78,12 @@ class Planet:
 
     def get_image(self):
         return self.planet["image"]
+        
+    def get_region(self):
+        return self.planet["region"]
+        
+    def get_system(self):
+        return self.planet["system"]
 
     @staticmethod
     def get_all_planets():
@@ -76,13 +93,15 @@ class Planet:
 
 class Species:
 
-    def __init__(self, name, character_list, planet_list, description, image):
+    def __init__(self, name, character_list, planet_list, description, image, language, classification):
         self.species = {}
         self.species["name"] = name
         self.species["characters"] = character_list
         self.species["planets"] = planet_list
         self.species["description"] = description
         self.species["image"] = image
+        self.species["language"] = language
+        self.species["classification"] = classification
 
     def get_info(self):
         return self.species
@@ -101,6 +120,12 @@ class Species:
 
     def get_image(self):
         return self.species["image"]
+        
+    def get_language(self):
+        return self.species["resignation"]
+        
+    def get_classification(self):
+        return self.species["classification"]
 
     @staticmethod
     def get_all_species():
