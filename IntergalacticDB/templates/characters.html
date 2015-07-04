@@ -4,37 +4,71 @@
     <meta charset="UTF-8">
     <title>All Characters</title>
     <!-- CSS -->
-    <link href="{{ url_for('static', filename='styles/characters.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static', filename='styles/characters.css')}}" rel="stylesheet" type="text/css"/>
 </head>
-  <h1 class="h1">Star Wars Characters</h1>
+<body class="full-intro background--dark">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
 
-  <h4>Sort By:</h4>
-      <select id="sort-order">
+            <!-- Navigation Menu -->
+            <nav class='navigation'>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="/characters">Characters</a>
+                    </li>
+                    <li>
+                        <a href="/species">Species</a>
+                    </li>
+                    <li>
+                        <a href="/planets">Planets</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--End Navigation Menu -->
+
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <h1 class="h1">Star Wars Characters</h1>
+
+    <h4>Sort By:</h4>
+    <select id="sort-order">
         <option value="none">-Select-</option>
         <option value="name">Name</option>
         <option value="gender">Gender</option>
         <option value="height">Height</option>
         <option value="planet">Planet</option>
         <option value="species">Species</option>
-      </select>
+    </select>
 
-  <div id="pricing-table" class="clear">
-    {% for character_name, character_info in all_characters.items() %}
-      <div class="plan">
-          <h3>{{ character_info['name'] }}<span><img id="image-placeholder" src={{ character_info['image'] }}></span></h3>
-          <ul>
-            <li><b>Gender:</b>{{ character_info['gender'] }}</li>
-            <li><b>Height:</b> {{ character_info['height'] }}</li>
-            <li><b>Planet:</b> {{ character_info['planet'] }}</li>
-            <li><b>Species:</b> {{ character_info['species'] }}</li>
-          </ul>
-          <a class="signup" href="">More</a>
+    <div id="pricing-table" class="clear">
+        {% for character_name, character_info in all_characters.items() %}
+        <div class="plan">
+            <h3>{{ character_info['name'] }}<span><img id="image-placeholder" src={{ character_info['image'] }}></span></h3>
+            <ul>
+                <li><b>Gender:</b>{{ character_info['gender'] }}</li>
+                <li><b>Height:</b> {{ character_info['height'] }}</li>
+                <li><b>Planet:</b> {{ character_info['planet'] }}</li>
+                <li><b>Species:</b> {{ character_info['species'] }}</li>
+            </ul>
+            <a class="signup" href="">More</a>
         </div>
-    {% endfor %}
-  </div>
+        {% endfor %}
+    </div>
 
-  <!-- JS -->
-  <script src="{{ url_for('static', filename='javascripts/jquery-1.11.2.min.js')}}" type="text/javascript"></script>
-  <script src="{{ url_for('static', filename='javascripts/sorting.js')}}" type="text/javascript"></script>
-
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='javascripts/jquery-1.11.2.min.js')}}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='javascripts/sorting.js')}}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='javascripts/navigation.js')}}" type="text/javascript"></script>
+</body>
 </html>

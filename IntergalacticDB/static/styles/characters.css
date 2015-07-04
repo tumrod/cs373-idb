@@ -50,7 +50,7 @@ body{
 /* --------------- */	
 
 #pricing-table h3 {
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: normal;
 	padding: 20px;
 	margin: -20px -20px 50px -20px;
@@ -207,9 +207,10 @@ li {
 h1 {
 	color: white;
 	position: relative;
-  	left: 25%;
-  	top: 50px;
+    text-align: center;
+  	top: 100px;
     font-size: 43px;
+    font-size: 2.5vw;
     letter-spacing: 2px;
     line-height: 40px;
 }
@@ -217,14 +218,16 @@ h1 {
 h4 {
   color: white;
   position: relative;
-  left: 40%;
-  top: 75px;
+  text-align: center;
+  top: 125px;
+  transform: translate(-5%)
 }
 
 #sort-order {
   position: relative;
-  left: 47%;
-  top: 45px;
+  left: 50%;
+  top: 80px;
+  transform: translate(10%)
 }
 
 /*----- Menu Outline -----*/
