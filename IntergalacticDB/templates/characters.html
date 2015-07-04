@@ -10,10 +10,10 @@
 
   <h4>Sort By:</h4>
       <select id="sort-order">
-        <option value="none">---Select---</option>
+        <option value="none">-Select-</option>
         <option value="name">Name</option>
         <option value="gender">Gender</option>
-        <option value="birth">Birth</option>
+        <option value="height">Height</option>
         <option value="planet">Planet</option>
         <option value="species">Species</option>
       </select>
@@ -24,7 +24,7 @@
           <h3>{{ character_info['name'] }}<span><img id="image-placeholder" src={{ character_info['image'] }}></span></h3>
           <ul>
             <li><b>Gender:</b>{{ character_info['gender'] }}</li>
-            <li><b>Birth:</b> {{ character_info['birth'] }}</li>
+            <li><b>Height:</b> {{ character_info['height'] }}</li>
             <li><b>Planet:</b> {{ character_info['planet'] }}</li>
             <li><b>Species:</b> {{ character_info['species'] }}</li>
           </ul>
