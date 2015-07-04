@@ -83,8 +83,7 @@ class Character:
         with open(relative_path + "characters.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
-        if sort_by == 'name':
-            info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1]['name']))
+        info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1][sort_by]))
 
         return info_dict
 
