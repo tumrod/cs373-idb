@@ -75,7 +75,7 @@ class Character:
 
     def get_height(self):
         """
-        Return a string, the gender of this character
+        Return a string, the height of this character
         """
         return self.character["height"]
 
