@@ -19,7 +19,7 @@ class TestModels (TestCase) :
     # ---------
 
     def test_character_1 (self) :
-        c = Character(name="Boba Fett", species="Human", planet="Kamino", description="some description", image="some url", gender="Male", birth="31.5 BBY")
+        c = Character(name="Boba Fett", species="Human", planet="Kamino", description="some description", image="some url", gender="Male", birth="31.5 BBY", height="1.83 meters")
         name = c.get_name()
         planet = c.get_planet()
         species = c.get_species()
@@ -27,6 +27,7 @@ class TestModels (TestCase) :
         image = c.get_image()
         gender = c.get_gender()
         birth = c.get_birth()
+        height = c.get_height()
         
         self.assertEqual(name, "Boba Fett")
         self.assertEqual(planet, "Kamino")
@@ -35,9 +36,10 @@ class TestModels (TestCase) :
         self.assertEqual(image, "some url")
         self.assertEqual(gender, "Male")
         self.assertEqual(birth, "31.5 BBY")
+        self.assertEqual(height, "1.83 meters")
 
     def test_character_2 (self) :
-        c = Character(name="Chewbacca", species="Wookiee", planet="Kashyyyk", description="some description", image="some url", gender="Male", birth="200 BBY")
+        c = Character(name="Chewbacca", species="Wookiee", planet="Kashyyyk", description="some description", image="some url", gender="Male", birth="200 BBY", height="2.28 meters")
         name = c.get_name()
         planet = c.get_planet()
         species = c.get_species()
@@ -45,6 +47,7 @@ class TestModels (TestCase) :
         image = c.get_image()
         gender = c.get_gender()
         birth = c.get_birth()
+        height = c.get_height()
         
         self.assertEqual(name, "Chewbacca")
         self.assertEqual(planet, "Kashyyyk")
@@ -53,9 +56,10 @@ class TestModels (TestCase) :
         self.assertEqual(image, "some url")
         self.assertEqual(gender, "Male")
         self.assertEqual(birth, "200 BBY")
+        self.assertEqual(height, "2.28 meters")
 
     def test_character_3 (self) :
-        c = Character(name="Darth Vader", species="Human", planet="Tatooine", description="some description", image="some url", gender="Male", birth="41.9 BBY")
+        c = Character(name="Darth Vader", species="Human", planet="Tatooine", description="some description", image="some url", gender="Male", birth="41.9 BBY", height="2.02 meters")
         name = c.get_name()
         planet = c.get_planet()
         species = c.get_species()
@@ -63,6 +67,7 @@ class TestModels (TestCase) :
         image = c.get_image()
         gender = c.get_gender()
         birth = c.get_birth()
+        height = c.get_height()
         
         self.assertEqual(name, "Darth Vader")
         self.assertEqual(planet, "Tatooine")
@@ -71,6 +76,7 @@ class TestModels (TestCase) :
         self.assertEqual(image, "some url")
         self.assertEqual(gender, "Male")
         self.assertEqual(birth, "41.9 BBY")
+        self.assertEqual(height, "2.02 meters")
 
     # ------
     # planet

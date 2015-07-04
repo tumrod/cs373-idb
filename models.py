@@ -10,10 +10,10 @@ class Character:
     Character encapsulates a character dictionary containing its information
     """
 
-    def __init__(self, name, planet, species, description, image, birth, gender):
+    def __init__(self, name, planet, species, description, image, birth, gender, height):
         """
         Initialize the character to have a dictionary of its information
-        Input strings of the character's name, planet, species, description, image, birth, and gender
+        Input strings of the character's name, planet, species, description, image, birth, gender, and height
         """
         self.character = {}
         self.character["name"] = name
@@ -23,6 +23,7 @@ class Character:
         self.character["image"] = image
         self.character["birth"] = birth
         self.character["gender"] = gender
+        self.character["height"] = height
 
     def get_info(self):
         """
@@ -72,6 +73,12 @@ class Character:
         """
         return self.character["gender"]
 
+    def get_height(self):
+        """
+        Return a string, the height of this character
+        """
+        return self.character["height"]
+
     @staticmethod
     def get_all_characters():
         """
@@ -93,8 +100,7 @@ class Character:
         with open(relative_path + "characters.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
-        if sort_by == 'name':
-            info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1]['name']))
+        info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1][sort_by]))
 
         return info_dict
 
@@ -173,6 +179,21 @@ class Planet:
         """
         with open(relative_path + "planets.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
+        return info_dict
+
+    @staticmethod
+    def get_all_sorted_planets(sort_by):
+        """
+        Input the attribute by which to sort the planets
+        Return an OrderedDict of all planets, with their names as keys
+               and their dicts of information as values, sorted by the given
+               attribute
+        """
+        with open(relative_path + "planets.json") as data_file:
+            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
+
+        info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1][sort_by]))
+
         return info_dict
 
 class Species:
