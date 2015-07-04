@@ -10,10 +10,10 @@ class Character:
     Character encapsulates a character dictionary containing its information
     """
 
-    def __init__(self, name, planet, species, description, image, birth, gender):
+    def __init__(self, name, planet, species, description, image, birth, gender, height):
         """
         Initialize the character to have a dictionary of its information
-        Input strings of the character's name, planet, species, description, image, birth, and gender
+        Input strings of the character's name, planet, species, description, image, birth, gender, and height
         """
         self.character = {}
         self.character["name"] = name
@@ -23,6 +23,7 @@ class Character:
         self.character["image"] = image
         self.character["birth"] = birth
         self.character["gender"] = gender
+        self.character["height"] = height
 
     def get_info(self):
         """
@@ -71,6 +72,12 @@ class Character:
         Return a string, the gender of this character
         """
         return self.character["gender"]
+
+    def get_height(self):
+        """
+        Return a string, the gender of this character
+        """
+        return self.character["height"]
 
     @staticmethod
     def get_all_characters():
