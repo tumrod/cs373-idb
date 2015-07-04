@@ -13,7 +13,21 @@ $("#sort-order").change(function() {
 function sortTable(sort_attr) {
     sort_attr = sort_attr.toLowerCase()
     if(sort_attr != '-select-') {
-        window.location.href = "http://127.0.0.1:5000/characters/sort_by=" + sort_attr
+
+        if(aContainsB(window.location.href, 'characters')) {
+            model = 'characters'
+        }
+        else if(aContainsB(window.location.href, 'planets')) {
+            model = 'planets'
+        }
+        else if(aContainsB(window.location.href, 'species')) {
+            model = 'species'
+        }
+        window.location.href = "http://127.0.0.1:5000/" + model + "/sort_by=" + sort_attr
     }
+}
+
+function aContainsB (a, b) {
+    return a.indexOf(b) >= 0;
 }
 
