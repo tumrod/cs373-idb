@@ -5,7 +5,7 @@
 	"description": "Boba Fett was a Mandalorian warrior and bounty hunter. He was the only unaltered clone of the famed Jango Fett, created in 32 BBY as unit A0050, one of the first of many Fett replicas designed to become part of the Grand Army of the Republic, and was raised as Jango's son. Jango taught Boba much, training him to become a skilled bounty hunter as was his father-figure before him. In 22 BBY, Jango was killed at the Battle of Geonosis, which opened the Clone Wars. Just a boy, Boba was forced to grow up and took to traveling the galaxy. Later, he became a bounty hunter and took assignments from beings such as Jabba the Hutt, and achieved notoriety despite his young age.", 
 	"planet": "Kamino",
 	"gender": "Male",
-	"birth": "31.5 BBY"}, 
+	"height": "1.83 meters"},
 "Chewbacca": 
 	{"name": "Chewbacca", 
 	"species": "Wookiee", 
@@ -13,7 +13,7 @@
 	"description": "Chewbacca (or \"Chewie\", as he was known by his friends) was a legendary Wookiee from Kashyyyk and co-pilot of Han Solo's ship, the Millennium Falcon. He was the son of Attichitcuk, the husband of Mallatobuck, and the father of Lumpawaroo. Chewbacca carried with him the name of an ancient Wookiee hero, the great Bacca, first of the great chieftains of Kashyyyk, and the creator of a sword that denoted leadership among the Wookiees. This name placed Chewbacca in a noble lineage, which was further supported by his role in the Battle of Kashyyyk during the Clone Wars and during the Galactic Civil War.", 
 	"planet": "Kashyyyk",
 	"gender": "Male",
-	"birth": "200 BBY"}, 
+	"height": "2.28 meters"},
 "Darth Vader": 
 	{"name": "Darth Vader", 
 	"species": "Human", 
@@ -21,7 +21,7 @@
 	"description": "Anakin Skywalker was a Force-sensitive Human male who served the Galactic Republic as a Jedi Knight and later served the Galactic Empire as the Sith Lord Darth Vader. Born to the slave Shmi Skywalker in 41.9 BBY, Anakin was conceived by midi-chlorians, the symbiotic organisms that allowed individuals to touch the Force, and he and his mother were brought to the desert planet of Tatooine to be the slaves of Gardulla the Hutt. They soon ended up as the property of the Toydarian Watto, and Skywalker exhibited exceptional piloting skills and a reputation for being able to build and repair anything even at a young age. In 32 BBY, Skywalker encountered the Jedi Qui-Gon Jinn and Padmé Amidala, and he helped them secure the parts they needed for their starship by winning the Boonta Eve Classic podracing event—only to learn that he had also won his freedom in doing so.", 
 	"planet": "Tatooine",
 	"gender": "Male",
-	"birth": "41.9 BBY"},
+	"height": "2.02 meters"},
 "Ahsoka Tano":
 	{"name": "Ahsoka Tano",
 	"species": "Togruta",
@@ -29,4 +29,4 @@
 	"description": "Ahsoka Tano, nicknamed Snips by her master, was a Togruta female from the planet Shili who trained as a Jedi apprentice during the Clone Wars, the conflict between the Galactic Republic and the Confederacy of Independent Systems. Tano was assigned to Jedi Knight Anakin Skywalker by Jedi Grand Master Yoda, and she demonstrated an eagerness to prove herself worthy to be his apprentice. Tano was involved in the defeat of the Separatist army on the planet Christophsis and was important to Republic efforts during the Battle of Teth. Along with Skywalker, Tano was instrumental in acquiring the Republic's safe passage through Hutt Space, due to her part in rescuing the son of Jabba the Hutt, which ensured an alliance between the Republic and the Hutt clans.",
 	"planet": "Shili",
 	"gender": "Female",
-	"birth": "36 BBY"}}
+	"height": "1.61 meters"}}
