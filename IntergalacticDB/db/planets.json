@@ -21,4 +21,12 @@
 	"name": "Kashyyyk", 
 	"description": "Kashyyyk (see pronunciation), also known as Wookiee Planet C, Edean, G5-623, and Wookiee World, was a Mid Rim planet. It was the lush, wroshyr tree-filled home world of the Wookiees. It was a member of the Galactic Republic, endured enslavement under the Galactic Empire, and later joined the New Republic.",
 	"region": "Mid Rim",
-	"system": "Kashyyyk system"}}
+	"system": "Kashyyyk system"},
+"Coruscant":
+	{"image": "http://img4.wikia.nocookie.net/__cb20100115192302/starwars/images/1/17/Coruscant-AoTCW.jpg",
+	"characters": [],
+	"species": ["Humans"],
+	"name": "Coruscant",
+	"description": "Coruscant (pronounced /'kɔɹəsɑnt/), originally called Notron, also known as Imperial Center or the Queen of the Core, was a planet located in the Galactic Core. It was generally agreed that Coruscant was, during most of galactic history, the most politically important world in the galaxy. At various times, it was the capital of the Galactic Republic, the Galactic Empire, the New Republic, the Yuuzhan Vong empire, the Galactic Alliance, very briefly the Fel Empire, Darth Krayt's Galactic Empire, and the Galactic Federation Triumvirate. In controlling Coruscant, these governments controlled most of the galaxy in the process.",
+	"region": "Core Worlds",
+	"system": "Coruscant system"}}

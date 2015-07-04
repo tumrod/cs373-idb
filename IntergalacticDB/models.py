@@ -174,6 +174,21 @@ class Planet:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
         return info_dict
 
+    @staticmethod
+    def get_all_sorted_planets(sort_by):
+        """
+        Input the attribute by which to sort the planets
+        Return an OrderedDict of all planets, with their names as keys
+               and their dicts of information as values, sorted by the given
+               attribute
+        """
+        with open(relative_path + "planets.json") as data_file:
+            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
+
+        info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1][sort_by]))
+
+        return info_dict
+
 class Species:
     """
     Species encapsulates a species dictionary containing its information

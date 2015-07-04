@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from Models import *
+from models import *
 
 app = Flask(__name__)
 
@@ -22,6 +22,17 @@ def characters(sort_by=None):
         all_characters = Character.get_all_characters()
 
     return render_template('characters.html', all_characters=all_characters)
+
+@app.route('/planets')
+@app.route('/planets/sort_by=<sort_by>')
+def planets(sort_by=None):
+
+    if sort_by is not None:
+        all_planets = Planet.get_all_sorted_planets(sort_by)
+    else:
+        all_planets = Planet.get_all_planets()
+
+    return render_template('planets.html', all_planets=all_planets)
 
 if __name__ == '__main__':
     app.run()
