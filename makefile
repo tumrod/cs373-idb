@@ -27,13 +27,16 @@ clean:
 config:
 	git config -l
 
-tests: 
-	python3 tests.py
+test: tests.py
+	coverage3 run    --branch tests.py >  tests.out 2>&1
+	coverage3 report -m                      >> tests.out
+	cat tests.out
 
 models.html: models.py
 	pydoc3 -w models
 
 IDB.log:
 	git log > IDB.log
+
 
 
