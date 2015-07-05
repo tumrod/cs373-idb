@@ -234,6 +234,7 @@ h4 {
   top: 5px;
   width: 115px;
   text-align: center;
+  padding: 5px 5px 5px 5px;
 }
 
 #sort-order-species {
@@ -242,6 +243,7 @@ h4 {
   top: 5px;
   width: 115px;
   text-align: center;
+  padding: 5px 5px 5px 5px;
 }
 
 body {

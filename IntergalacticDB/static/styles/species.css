@@ -234,13 +234,7 @@ h4 {
   left: 1%;
   top: 5px;
   width: 115px;
-}
-
-#sort-order-planets {
-  position: relative;
-  right: 1%;
-  top: 5px;
-  width: 115px;
+  padding: 5px 5px 5px 5px;
 }
 
 body {
