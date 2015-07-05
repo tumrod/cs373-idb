@@ -7,7 +7,7 @@
 from io       import StringIO
 from unittest import main, TestCase
 
-from models import Character, Planet, Species
+from IntergalacticDB import models as m
 
 # -----------
 # 
@@ -19,7 +19,7 @@ class TestModels (TestCase) :
     # ---------
 
     def test_character_1 (self) :
-        c = Character(name="Boba Fett", species="Human", planet="Kamino", description="some description", image="some url", gender="Male", birth="31.5 BBY", height="1.83 meters")
+        c = m.Character(name="Boba Fett", species="Human", planet="Kamino", description="some description", image="some url", gender="Male", birth="31.5 BBY", height="1.83 meters")
         name = c.get_name()
         planet = c.get_planet()
         species = c.get_species()
@@ -39,7 +39,7 @@ class TestModels (TestCase) :
         self.assertEqual(height, "1.83 meters")
 
     def test_character_2 (self) :
-        c = Character(name="Chewbacca", species="Wookiee", planet="Kashyyyk", description="some description", image="some url", gender="Male", birth="200 BBY", height="2.28 meters")
+        c = m.Character(name="Chewbacca", species="Wookiee", planet="Kashyyyk", description="some description", image="some url", gender="Male", birth="200 BBY", height="2.28 meters")
         name = c.get_name()
         planet = c.get_planet()
         species = c.get_species()
@@ -59,7 +59,7 @@ class TestModels (TestCase) :
         self.assertEqual(height, "2.28 meters")
 
     def test_character_3 (self) :
-        c = Character(name="Darth Vader", species="Human", planet="Tatooine", description="some description", image="some url", gender="Male", birth="41.9 BBY", height="2.02 meters")
+        c = m.Character(name="Darth Vader", species="Human", planet="Tatooine", description="some description", image="some url", gender="Male", birth="41.9 BBY", height="2.02 meters")
         name = c.get_name()
         planet = c.get_planet()
         species = c.get_species()
@@ -79,7 +79,7 @@ class TestModels (TestCase) :
         self.assertEqual(height, "2.02 meters")
 
     def test_get_all_characters_1(self) :
-        characters = Character.get_all_characters()
+        characters = m.Character.get_all_characters()
         c = characters[1]
 
         self.assertEqual(c["name"], "Boba Fett")
@@ -93,7 +93,7 @@ class TestModels (TestCase) :
 
 
     def test_get_all_characters_2(self) :
-        characters = Character.get_all_characters()
+        characters = m.Character.get_all_characters()
         c = characters[0]
 
         self.assertEqual(c["name"], "Ahsoka Tano")
@@ -106,7 +106,7 @@ class TestModels (TestCase) :
         self.assertEqual(c["height"], "1.61 meters")
 
     def test_get_all_characters_3(self) :
-        characters = Character.get_all_characters()
+        characters = m.Character.get_all_characters()
         c = characters[2]
 
         self.assertEqual(c["name"], "Chewbacca")
@@ -119,13 +119,13 @@ class TestModels (TestCase) :
         self.assertEqual(c["height"], "2.28 meters")
 
     def test_get_all_characters_4(self) :
-        characters = Character.get_all_characters()
+        characters = m.Character.get_all_characters()
         c = characters[3]
 
         self.assertEqual(c["name"], "Darth Vader")
         self.assertEqual(c["planet"], "Tatooine")
         self.assertEqual(c["species"], "Human")
-        self.assertEqual(c["description"], "Anakin Skywalker was a Force-sensitive Human male who served the Galactic Republic as a Jedi Knight and later served the Galactic Empire as the Sith Lord Darth Vader. Born to the slave Shmi Skywalker in 41.9 BBY, Anakin was conceived by midi-chlorians, the symbiotic organisms that allowed individuals to touch the Force, and he and his mother were brought to the desert planet of Tatooine to be the slaves of Gardulla the Hutt. They soon ended up as the property of the Toydarian Watto, and Skywalker exhibited exceptional piloting skills and a reputation for being able to build and repair anything even at a young age. In 32 BBY, Skywalker encountered the Jedi Qui-Gon Jinn and Padmé Amidala, and he helped them secure the parts they needed for their starship by winning the Boonta Eve Classic podracing event—only to learn that he had also won his freedom in doing so.")
+        self.assertEqual(c["description"], "Anakin Skywalker was a Force-sensitive Human male who served the Galactic Republic as a Jedi Knight and later served the Galactic Empire as the Sith Lord Darth Vader. Born to the slave Shmi Skywalker in 41.9 BBY, Anakin was conceived by midi-chlorians, the symbiotic organisms that allowed individuals to touch the Force, and he and his mother were brought to the desert planet of Tatooine to be the slaves of Gardulla the Hutt. They soon ended up as the property of the Toydarian Watto, and Skywalker exhibited exceptional piloting skills and a reputation for being able to build and repair anything even at a young age. In 32 BBY, Skywalker encountered the Jedi Qui-Gon Jinn and Padmï¿½ Amidala, and he helped them secure the parts they needed for their starship by winning the Boonta Eve Classic podracing eventï¿½only to learn that he had also won his freedom in doing so.")
         self.assertEqual(c["image"], "http:\/\/img2.wikia.nocookie.net\/__cb20130621175844\/starwars\/images\/thumb\/6\/6f\/Anakin_Skywalker_RotS.png\/400px-Anakin_Skywalker_RotS.webp")
         self.assertEqual(c["gender"], "Male")
         self.assertEqual(c["birth"], "41.9 BBY ")
@@ -136,7 +136,7 @@ class TestModels (TestCase) :
     # ------
 
     def test_planet_1 (self) :
-        p = Planet(name="Tatooine", species="Human", characters=["Darth Vader"], description="some description", image="some url", region="Outer Rim Territories", system="Tatoo system")
+        p = m.Planet(name="Tatooine", species="Human", characters=["Darth Vader"], description="some description", image="some url", region="Outer Rim Territories", system="Tatoo system")
         name = p.get_name()
         characters = p.get_characters()
         species = p.get_species()
@@ -154,7 +154,7 @@ class TestModels (TestCase) :
         self.assertEqual(system, "Tatoo system")
 
     def test_planet_2 (self) :
-        p = Planet(name="Kamino", species="Human", characters=["Boba Fett"], description="some description", image="some url", region="Wild Space", system="Kamino system")
+        p = m.Planet(name="Kamino", species="Human", characters=["Boba Fett"], description="some description", image="some url", region="Wild Space", system="Kamino system")
         name = p.get_name()
         characters = p.get_characters()
         species = p.get_species()
@@ -172,7 +172,7 @@ class TestModels (TestCase) :
         self.assertEqual(system, "Kamino system")
 
     def test_planet_3 (self) :
-        p = Planet(name="Kashyyyk", species="Wookiee", characters=["Chewbacca"], description="some description", image="some url", region="Mid Rim", system="Kashyyyk system")
+        p = m.Planet(name="Kashyyyk", species="Wookiee", characters=["Chewbacca"], description="some description", image="some url", region="Mid Rim", system="Kashyyyk system")
         name = p.get_name()
         characters = p.get_characters()
         species = p.get_species()
@@ -194,7 +194,7 @@ class TestModels (TestCase) :
     # --------
 
     def test_species_1 (self) :
-        s = Species(name="Wookiee", planet="Kashyyyk", characters="Chewbacca", description="some description", image="some url", language="Shyriiwook", classification="Mammal")
+        s = m.Species(name="Wookiee", planet="Kashyyyk", characters="Chewbacca", description="some description", image="some url", language="Shyriiwook", classification="Mammal")
         name = s.get_name()
         characters = s.get_characters()
         planet = s.get_planet()
@@ -212,7 +212,7 @@ class TestModels (TestCase) :
         self.assertEqual(classification, "Mammal")
 
     def test_species_2 (self) :
-        s = Species(name="Human", planet="Coruscant", characters=["Darth Vader", "Boba Fett"], description="some description", image="some url", language="Galactic Basic Standard", classification="Mammal")
+        s = m.Species(name="Human", planet="Coruscant", characters=["Darth Vader", "Boba Fett"], description="some description", image="some url", language="Galactic Basic Standard", classification="Mammal")
         name = s.get_name()
         characters = s.get_characters()
         planet = s.get_planet()
