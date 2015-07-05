@@ -113,7 +113,7 @@ class Character:
 
             info_dict = temp
 
-        characters = [Character(info_dict[key]) for key in info_dict]
+        characters = [Character(**info_dict[key]) for key in info_dict]
 
         return characters
 
@@ -249,7 +249,7 @@ class Species:
     Species encapsulates a species dictionary containing its information
     """
 
-    def __init__(self, name, characters, planets, description, image, language, classification):
+    def __init__(self, name, characters, planet, description, image, language, classification):
         """
         Initialize the species to have a dictionary of its information
         Input strings of the species's name, characters list, planet list, description, image, language, and classification
@@ -257,7 +257,7 @@ class Species:
         self.species = {}
         self.species["name"] = name
         self.species["characters"] = characters
-        self.species["planets"] = planets
+        self.species["planet"] = planet
         self.species["description"] = description
         self.species["image"] = image
         self.species["language"] = language
@@ -281,11 +281,11 @@ class Species:
         """
         return self.species["characters"]
 
-    def get_planets(self):
+    def get_planet(self):
         """
-        Return a string, the list of planets of this species
+        Return a string, the home planet of this species
         """
-        return self.species["planets"]
+        return self.species["planet"]
 
     def get_description(self):
         """
