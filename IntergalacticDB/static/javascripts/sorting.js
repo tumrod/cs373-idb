@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-    // When document is ready, check the url and set the select value to the current sorting option if any
+    // When document is ready, check the url and set the select value and button to the current sorting option if any
     if((window.location.href).indexOf('sort_by') != -1) {
        select_value = (decodeURI(window.location.href).split("=")[1]);
        $('#sort-order').val(select_value.split('_')[0]);

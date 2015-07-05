@@ -230,6 +230,12 @@ h4 {
   transform: translate(10%)
 }
 
+#order {
+  position: relative;
+  left: 51%;
+  top: 80px;
+}
+
 /*----- Menu Outline -----*/
 .menu-wrap {
 	width:100%;
