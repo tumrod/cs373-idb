@@ -27,11 +27,12 @@
             <li><b>classification</b><br>{{ species.get_classification() }}</li>
 
             <li><b id="characters">Characters</b>
-                <select id="sort-order-characters">
+                <select style="position: relative;left: 1%;top: 5px;" id="sort-order-character-{{ species.get_name() }}">
                     {% for character_name in species.get_characters() %}
-                        <option value="characters">{{ character_name }}</option>
+                        <option value="{{ character_name }}">{{ character_name }}</option>
                     {% endfor %}
                 </select>
+                <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select' id="redirect-to-selected-character-in-{{ species.get_name() }}">Go</button>
             </li>
           </ul>
           <a class="signup" href="/species/{{ species.get_name() }}">More</a>

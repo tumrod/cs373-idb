@@ -48,7 +48,7 @@ function sortTable(sort_attr) {
         else if(aContainsB(window.location.href, 'species')) {
             model = 'species'
         }
-        window.location.href = "http://127.0.0.1:5000/" + model + "/sort_by=" + sort_attr + '_' + $('#order').text()
+        window.location.href = "/" + model + "/sort_by=" + sort_attr + '_' + $('#order').text()
     }
     else {
         $('#order').prop("disabled",true);
@@ -58,4 +58,16 @@ function sortTable(sort_attr) {
 function aContainsB (a, b) {
     return a.indexOf(b) >= 0;
 }
+
+// Manage select value redirects
+$(".generic-select").click(function(){
+    button = $('#'+this.id)
+    var model = button.siblings()[0].id;
+    var select_id = button.siblings()[1].id;
+
+    selectedValue = $('#' + select_id + ' option:selected').text();
+
+    window.location.href = '/' + model + '/' + selectedValue
+
+});
 
