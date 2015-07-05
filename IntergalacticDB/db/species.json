@@ -1,7 +1,7 @@
 {"Wookiee": 
 	{"image": "http:\/\/img2.wikia.nocookie.net\/__cb20061128184734\/starwars\/images\/thumb\/5\/57\/ThreeWookieeAmigos-ROTSVD.jpg\/400px-ThreeWookieeAmigos-ROTSVD.jpg", 
 	"description": "The Wookiees, whose name for themselves translated to the People of the Trees, were a species of tall, hairy humanoids that were inhabitants of the planet Kashyyyk. One of the most noteworthy members of the species was Chewbacca, Han Solo's best friend and co-pilot, who played a vital role in the Galactic Civil War and afterwards. A race of arboreal mammals, the Wookiees lived in treehouses nestled in the canopy of the towering wroshyr trees. Despite their fearsome appearance, they were usually gentle, although they were prone to devastating fits of rage when provoked.", 
-	"planets": ["Kashyyyk"], 
+	"planet": "Kashyyyk",
 	"characters": ["Chewbacca"], 
 	"name": "Wookiee",
 	"language": "Shyriiwook",
@@ -9,7 +9,7 @@
 "Human": 
 	{"image": "http:\/\/img2.wikia.nocookie.net\/__cb20100628191857\/starwars\/images\/thumb\/5\/5d\/Humans-TESB30.jpg\/400px-Humans-TESB30.jpg", 
 	"description": "Humans, taxonomically referred to as Homo sapiens, were the galaxy's most numerous and politically dominant sentient species with millions of major and minor colonies galaxywide. Believed to have originated on the galactic capital of Coruscant, they could be found anywhere, engaged in many different pursuits: spacers, mercenaries, smugglers, merchants, soldiers, assassins, farmers, crime lords, laborers, slaves, slavers, and many others, including Jedi and Sith. Since Humans were the most common sentient species, they were often considered to be a standard or average to which the biology, psychology, and culture of other species were compared.", 
-	"planets": ["Tatooine", "Kamino"], 
+	"planet": "Coruscant",
 	"characters": ["Darth Vader", "Boba Fett"], 
 	"name": "Human",
 	"language": "Galactic Basic Standard",
@@ -26,7 +26,7 @@
         "image": "http://img4.wikia.nocookie.net/__cb20060903181845/starwars/images/7/74/Bith_%28Doikk_Nats%29.jpg",
         "language": "Bith",
         "name": "Bith",
-        "planets": ["Clak'dor VII"]},
+        "planet": "Clak'dor VII"},
 "Omwati": {
         "characters": [
             "Aleema Finn",
@@ -39,6 +39,6 @@
         "image": "http://img1.wikia.nocookie.net/__cb20070528041553/starwars/images/thumb/2/2f/Omwati.JPG/360px-Omwati.JPG",
         "language": "Omwatese",
         "name": "Omwati",
-        "planets": ["Omwat"]
+        "planet": "Omwat"
     }
 }

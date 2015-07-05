@@ -22,21 +22,14 @@
       <div class="plan">
           <h3>{{ species.get_name() }}<span><img id="image-placeholder" src={{ species.get_image() }}></span></h3>
           <ul>
-            <li><b id="language">language</b><br>{{ species.get_language() }}</li>
-            <li><b id="classification">classification</b><br>{{ species.get_classification() }}</li>
+            <li><b>language</b><br>{{ species.get_language() }}</li>
+            <li><b>home planet</b><br>{{ species.get_planet() }}</li>
+            <li><b>classification</b><br>{{ species.get_classification() }}</li>
 
             <li><b id="characters">Characters</b>
                 <select id="sort-order-characters">
                     {% for character_name in species.get_characters() %}
                         <option value="characters">{{ character_name }}</option>
-                    {% endfor %}
-                </select>
-            </li>
-
-            <li><b id="planets">planets</b>
-                <select id="sort-order-planets">
-                    {% for planet_name in species.get_planets() %}
-                        <option value="planets">{{ planet_name }}</option>
                     {% endfor %}
                 </select>
             </li>
