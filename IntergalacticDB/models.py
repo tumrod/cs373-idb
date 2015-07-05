@@ -272,3 +272,18 @@ class Species:
         with open(relative_path + "species.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
         return info_dict
+
+    @staticmethod
+    def get_all_sorted_species(sort_by):
+        """
+        Input the attribute by which to sort the species
+        Return an OrderedDict of all species, with their names as keys
+               and their dicts of information as values, sorted by the given
+               attribute
+        """
+        with open(relative_path + "species.json") as data_file:
+            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
+
+        info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1][sort_by]))
+
+        return info_dict
