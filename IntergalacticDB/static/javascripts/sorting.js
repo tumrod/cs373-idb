@@ -15,7 +15,7 @@ $( document ).ready(function() {
 
 // Detect when a new value has been passed selected on sort
 $("#sort-order").change(function() {
-    sort_attr = $('#sort-order option:selected').text();
+    sort_attr = document.getElementById("sort-order").value;
     sortTable(sort_attr);
 });
 
@@ -35,14 +35,6 @@ $('#order').click(function() {
 // Given a sort_attr, make redirect to a url that supports sorting
 function sortTable(sort_attr) {
     sort_attr = sort_attr.toLowerCase();
-
-    // handle special list cases
-    if(sort_attr == 'characters') {
-        sort_attr = 'numberofcharacters';
-    }
-    else if(sort_attr == 'species') {
-        sort_attr = 'numberofspecies';
-    }
 
     if(sort_attr != '-select-') {
 

@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 
-import json, os
+import json
 from collections import OrderedDict
-
-relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
 
 class Character:
     """
@@ -84,7 +82,7 @@ class Character:
         """
         Return an list of all character models
         """
-        with open(relative_path + "characters.json") as data_file:
+        with open("db/characters.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         characters = [Character(**info_dict[key]) for key in info_dict]
@@ -98,7 +96,7 @@ class Character:
         Return an list of all character models, sorted by the given
                attribute
         """
-        with open(relative_path + "characters.json") as data_file:
+        with open("db/characters.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         sorting_options = sort_by.split('_')
@@ -122,7 +120,7 @@ class Character:
         Input the character name to retrieve
         Return an instance of this character
         """
-        with open(relative_path + "characters.json") as data_file:
+        with open("db/characters.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         return Character(info_dict[character])
@@ -199,7 +197,7 @@ class Planet:
         """
         Return an list of all planets models
         """
-        with open(relative_path + "planets.json") as data_file:
+        with open("db/planets.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         planets = [Planet(**info_dict[key]) for key in info_dict]
@@ -213,7 +211,7 @@ class Planet:
         Return an list of all planet models, sorted by the given
                attribute
         """
-        with open(relative_path + "planets.json") as data_file:
+        with open("db/planets.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         sorting_options = sort_by.split('_')
@@ -237,7 +235,7 @@ class Planet:
         Input the planet name to retrieve
         Return an instance of this planet
         """
-        with open(relative_path + "planets.json") as data_file:
+        with open("db/planets.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         return Planet(info_dict[planet])
@@ -316,7 +314,7 @@ class Species:
         Return an OrderedDict of all species, with their names as keys
                and their dicts of information as values
         """
-        with open(relative_path + "species.json") as data_file:
+        with open("db/species.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         species = [Species(**info_dict[key]) for key in info_dict]
@@ -331,7 +329,7 @@ class Species:
                and their dicts of information as values, sorted by the given
                attribute
         """
-        with open(relative_path + "species.json") as data_file:
+        with open("db/species.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         sorting_options = sort_by.split('_')
@@ -355,7 +353,7 @@ class Species:
         Input the species name to retrieve
         Return an instance of this species
         """
-        with open(relative_path + "planets.json") as data_file:
+        with open("db/planets.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         return Species(info_dict[species])
