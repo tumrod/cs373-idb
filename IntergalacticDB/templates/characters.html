@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>All Characters</title>
+    <!-- CSS -->
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static', filename='styles/characters.css')}}" rel="stylesheet" type="text/css"/>
+</head>
+<body class="full-intro background--dark">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+
+            <!-- Navigation Menu -->
+            <nav class='navigation'>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="/characters">Characters</a>
+                    </li>
+                    <li>
+                        <a href="/species">Species</a>
+                    </li>
+                    <li>
+                        <a href="/planets">Planets</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--End Navigation Menu -->
+
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <h1 class="h1">Star Wars Characters</h1>
+
+    <h4>Sort By:</h4>
+    <select id="sort-order">
+        <option value="none">-Select-</option>
+        <option value="name">Name</option>
+        <option value="gender">Gender</option>
+        <option value="height">Height</option>
+        <option value="planet">Planet</option>
+        <option value="species">Species</option>
+    </select>
+    <button type="button" id="order">^</button>
+
+    <div id="pricing-table" class="clear">
+        {% for character in all_characters %}
+        <div class="plan">
+            <h3>{{ character.get_name() }}<span><img id="image-placeholder" src={{ character.get_image() }}></span></h3>
+            <ul>
+                <li><b>Gender</b><br>{{ character.get_gender() }}</li>
+                <li><b>Height</b><br>{{ character.get_height() }}</li>
+                <li><b>Home Planet</b><br><a href="/planets/{{ character.get_planet() }}" class="link">{{ character.get_planet() }}</a></li>
+                <li><b>Species</b><br><a href="/species/{{ character.get_species() }}" class="link">{{ character.get_species() }}</a></li>
+            </ul>
+            <a class="signup" href="/characters/{{ character.get_name() }}">More</a>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- JS -->
+    <script src="{{ url_for('static', filename='javascripts/jquery-1.11.2.min.js')}}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='javascripts/sorting.js')}}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='javascripts/navigation.js')}}" type="text/javascript"></script>
+</body>
+</html>
