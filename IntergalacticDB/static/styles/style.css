@@ -1618,6 +1618,18 @@ header.sticky .navigation a.current-ele {
         margin-bottom: 0px;
     }
 
+.individual-stat {
+    text-align: left;
+}
+
+.individual-bio {
+    top:25px;
+    bottom: 40px;
+}
+.team-link {
+    padding-right: 25px;
+}
+
 /*-------------------------------------------------------------------------------------------*/
 /*  Skills Bar      ||---------------------------- */
 /*-------------------------------------------------------------------------------------------*/
