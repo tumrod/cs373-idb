@@ -13,4 +13,32 @@
 	"characters": ["Darth Vader", "Boba Fett"], 
 	"name": "Human",
 	"language": "Galactic Basic Standard",
-	"classification": "Mammal"}}
+	"classification": "Mammal"},
+"Bith": {
+        "characters": [
+            "Unaw Aharo",
+            "Darth Tenebrous",
+            "Thalleus Tharn",
+            "Darth Venamis"
+        ],
+        "classification": "Craniopod",
+        "description": "Large cranium\nAcute senses of smell and hearing",
+        "image": "http://img4.wikia.nocookie.net/__cb20060903181845/starwars/images/7/74/Bith_%28Doikk_Nats%29.jpg",
+        "language": "Bith",
+        "name": "Bith",
+        "planets": ["Clak'dor VII"]},
+"Omwati": {
+        "characters": [
+            "Aleema Finn",
+            "Pillik",
+            "Tannis",
+            "Tiu Zax"
+        ],
+        "classification": "Near-Human",
+        "description": "Bird-like anthropoids",
+        "image": "http://img1.wikia.nocookie.net/__cb20070528041553/starwars/images/thumb/2/2f/Omwati.JPG/360px-Omwati.JPG",
+        "language": "Omwatese",
+        "name": "Omwati",
+        "planets": ["Omwat"]
+    }
+}
