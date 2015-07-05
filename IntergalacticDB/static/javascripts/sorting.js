@@ -21,7 +21,7 @@ $("#sort-order").change(function() {
 
 // Detect when order button has been toggled
 $('#order').click(function() {
-   sort_attr = $('#sort-order option:selected').text();
+   sort_attr = document.getElementById("sort-order").value;
    if ($(this).text() == "v") {
       $(this).text("^");
       sortTable(sort_attr);
@@ -39,6 +39,9 @@ function sortTable(sort_attr) {
     // handle special list cases
     if(sort_attr == 'characters') {
         sort_attr = 'numberofcharacters';
+    }
+    else if(sort_attr == 'species') {
+        sort_attr = 'numberofspecies';
     }
 
     if(sort_attr != '-select-') {

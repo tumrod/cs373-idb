@@ -132,7 +132,7 @@ class Planet:
     Planet encapsulates a planet dictionary containing its information
     """
 
-    def __init__(self, name, characters, species, description, image, region, system):
+    def __init__(self, name, characters, species, description, image, region, system, numberofcharacters, numberofspecies):
         """
         Initialize the planet to have a dictionary of its information
         Input strings of the planet's name, characters list, species list, description, image, region, and system
