@@ -126,7 +126,7 @@ class Character:
         with open(relative_path + "characters.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
-        return Character(info_dict[character])
+        return Character(**info_dict[character])
 
 class Planet:
     """
