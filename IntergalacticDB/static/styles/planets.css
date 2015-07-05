@@ -194,9 +194,10 @@ li {
 h1 {
 	color: white;
 	position: relative;
-  	left: 30%;
-  	top: 50px;
+    text-align: center;
+  	top: 100px;
     font-size: 43px;
+    font-size: 2.5vw;
     letter-spacing: 2px;
     line-height: 40px;
 }
@@ -204,14 +205,22 @@ h1 {
 h4 {
   color: white;
   position: relative;
-  left: 43%;
-  top: 75px;
+  text-align: center;
+  top: 125px;
+  transform: translate(-5%)
 }
 
-#sort-order, #order {
+#sort-order{
   position: relative;
   left: 50%;
-  top: 45px;
+  top: 80px;
+  transform: translate(10%)
+}
+
+#order {
+  position: relative;
+  left: 51%;
+  top: 80px;
 }
 
 #sort-order-characters {
@@ -219,13 +228,15 @@ h4 {
   left: 1%;
   top: 5px;
   width: 115px;
+  text-align: center;
 }
 
-#sort-order-planets {
+#sort-order-species {
   position: relative;
-  right: 17%;
-  top: 17px;
+  left: 1%;
+  top: 5px;
   width: 115px;
+  text-align: center;
 }
 
 /*----- Menu Outline -----*/
@@ -319,5 +330,5 @@ h4 {
 
 .plan ul li b#species {
   position: relative;
-  left: 32%;
+  left: 1%;
 }
