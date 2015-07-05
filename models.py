@@ -106,9 +106,8 @@ class Character:
 
         if sorting_options[1] != '^':
             temp = OrderedDict()
-            reversed_items = list(reversed(sorted(info_dict.keys())))
 
-            for item in reversed_items:
+            for item in reversed(info_dict):
                 temp[item] = info_dict[item]
 
             info_dict = temp
@@ -133,7 +132,7 @@ class Planet:
     Planet encapsulates a planet dictionary containing its information
     """
 
-    def __init__(self, name, characters, species, description, image, region, system):
+    def __init__(self, name, characters, species, description, image, region, system, numberofcharacters, numberofspecies):
         """
         Initialize the planet to have a dictionary of its information
         Input strings of the planet's name, characters list, species list, description, image, region, and system
@@ -222,16 +221,15 @@ class Planet:
 
         if sorting_options[1] != '^':
             temp = OrderedDict()
-            reversed_items = list(reversed(sorted(info_dict.keys())))
 
-            for item in reversed_items:
+            for item in reversed(info_dict):
                 temp[item] = info_dict[item]
 
             info_dict = temp
 
-        planets = [Planet(**info_dict[key]) for key in info_dict]
+        planet = [Planet(**info_dict[key]) for key in info_dict]
 
-        return planets
+        return planet
 
     @staticmethod
     def get_planet(planet):
@@ -249,7 +247,7 @@ class Species:
     Species encapsulates a species dictionary containing its information
     """
 
-    def __init__(self, name, characters, planet, description, image, language, classification):
+    def __init__(self, name, characters, planet, description, image, language, classification, numberofcharacters):
         """
         Initialize the species to have a dictionary of its information
         Input strings of the species's name, characters list, planet list, description, image, language, and classification
@@ -262,6 +260,7 @@ class Species:
         self.species["image"] = image
         self.species["language"] = language
         self.species["classification"] = classification
+        self.species["numberofcharacters"] = numberofcharacters
 
     def get_info(self):
         """
@@ -340,9 +339,8 @@ class Species:
 
         if sorting_options[1] != '^':
             temp = OrderedDict()
-            reversed_items = list(reversed(sorted(info_dict.keys())))
 
-            for item in reversed_items:
+            for item in reversed(info_dict):
                 temp[item] = info_dict[item]
 
             info_dict = temp
