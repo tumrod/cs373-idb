@@ -3,9 +3,41 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>All Species</title>
-    <!-- CSS -->   
+    <!-- CSS -->
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" type="text/css"/>
     <link href="{{ url_for('static', filename='styles/species.css')}}" rel="stylesheet" type="text/css" />
 </head>
+<body class="full-intro background--dark">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+
+            <!-- Navigation Menu -->
+            <nav class='navigation'>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="/characters">Characters</a>
+                    </li>
+                    <li>
+                        <a href="/species">Species</a>
+                    </li>
+                    <li>
+                        <a href="/planets">Planets</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--End Navigation Menu -->
+
+        </div>
+    </header>
+    <!-- END HEADER -->
   <h1 class="h1">Star Wars Species</h1>
 
   <h4>Sort By:</h4>
@@ -49,5 +81,6 @@
   <!-- JS -->
   <script src="{{ url_for('static', filename='javascripts/jquery-1.11.2.min.js')}}" type="text/javascript"></script>
   <script src="{{ url_for('static', filename='javascripts/sorting.js')}}" type="text/javascript"></script>
-
+  <script src="{{ url_for('static', filename='javascripts/navigation.js')}}" type="text/javascript"></script>
+</body>
 </html>
