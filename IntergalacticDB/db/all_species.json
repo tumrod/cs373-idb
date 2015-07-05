@@ -1,0 +1,1139 @@
+{
+    "Anzati": {
+        "characters": [
+            "Dannik Jerriko",
+            "Volfe Karkko",
+            "Akku Seii",
+            "Nikkos Tyris",
+            "Salj\u00e9 Tasha",
+            "Rath Kelkko",
+            "Nakia Yoru",
+            "Sint Yoru",
+            "Kell Douro"
+        ],
+        "classification": "Humanoid",
+        "description": "Hidden proboscises\nExceptional longevity\nHigh regenerative capabilities",
+        "image": "http://img2.wikia.nocookie.net/__cb20061204210934/starwars/images/6/66/AnzatNEGAS.jpg",
+        "language": "Anzat language\nGalactic Basic Standard",
+        "name": "Anzati",
+        "planets": "Anzat",
+        "z_extra": {
+            "Average height": "1.5-1.7 meters",
+            "Average lifespan": "Child: 1-12 years\nYoung adult: 13-99 years\nAdult: 100-649 years\nMiddle age: 650-799 years\nOld: 800-950 years\nVenerable: 951+ years",
+            "Designation": "Sentient",
+            "Hair color": "Black\nBrown\nWhite",
+            "Skin color": "Grayish-hued",
+            "text": "The Anzati (singular: Anzat) were a dangerous and mysterious Force-sensitive near-Human species with two tentacle-like proboscises that curled out and extended from their cheeks, with which the Anzati were able to feed upon the brains of their prey. With the tentacles retracted into seams along each side of their nose, Anzati were indistinguishable from any other humanoid species in the galaxy. They were an extremely long-lived species, also possessing regenerative capabilities beyond those..."
+        }
+    },
+    "Aqualish": {
+        "characters": [
+            "Ponda Baba",
+            "Windo Nend",
+            "Po Nudo",
+            "Gorothin Vagger",
+            "Pune Zignat"
+        ],
+        "classification": "Amphibian",
+        "description": "Tusks\nBelligerent personalities\n\nUalaq:\n\nTwo sets of eyes: one for night vision, one for daylight",
+        "image": "http://img3.wikia.nocookie.net/__cb20130120075519/starwars/images/thumb/4/4b/Aqualish-NEGAS.png/500px-Aqualish-NEGAS.png",
+        "language": "Aqualish\nGalactic Basic Standard",
+        "name": "Aqualish",
+        "planets": "Ando",
+        "z_extra": {
+            "Average height": "1.7 - 2.0 meters",
+            "Average lifespan": "Child: 1-11 years\nYoung adult: 12-16 years\nAdult: 17-50 years\nMiddle age: 51-69 years\nOld: 70-79 years\nVenerable: 80+ years",
+            "Designation": "Sentient",
+            "Diet": "Fish\nShellfish",
+            "Eye color": "Black\nDark blue\nRed\nDark brown",
+            "Skin color": "Black\nDark blue\nDeep russet\nGreen",
+            "Subspecies": "Aquala\nQuara\nUalaq",
+            "text": "The Aqualish were tusked bipeds from the planet Ando whose appearance combined aspects of arachnids and pinniped aquatic mammals. Aqualish had a reputation for being nasty, crude and aggressive, and generally pursued off-world careers as mercenaries, bounty hunters, and pirates. One of the most infamous such Aqualish was the smuggler Ponda Baba. An amphibious species native to the planet Ando, the Aqualish people were made up of three distinct races which included the Aquala, the Ualaq and..."
+        }
+    },
+    "Bith": {
+        "characters": [
+            "Unaw Aharo",
+            "Figrin D'an",
+            "Dooce Everton",
+            "Fabizan",
+            "Herian I'ngre",
+            "Jinkins",
+            "Thal K'sar",
+            "Ulaha Kore",
+            "Ph'ton",
+            "Rappapor",
+            "Darth Tenebrous",
+            "Thalleus Tharn",
+            "Darth Venamis"
+        ],
+        "classification": "Craniopod",
+        "description": "Large cranium\nAcute senses of smell and hearing",
+        "image": "http://img4.wikia.nocookie.net/__cb20060903181845/starwars/images/7/74/Bith_%28Doikk_Nats%29.jpg",
+        "language": "Bith",
+        "name": "Bith",
+        "planets": "Clak'dor VII",
+        "z_extra": {
+            "Average height": "1.5 - 1.75 meters",
+            "Average lifespan": "Child: 1-11\nYoung adult: 12-15\nAdult: 16-50\nMiddle age: 51-70\nOld: 71-84\nVenerable: 85+",
+            "Designation": "Sentient",
+            "Eye color": "Black",
+            "Hair color": "None",
+            "Skin color": "Pale pink\nYellow\nGreen",
+            "Subspecies": "Mainstream Bith\nAalagar\nY'bith",
+            "text": "Bith were a peaceful, highly-evolved craniopod species native to the planet Clak'dor VII. Fully adapted to a civilized, high-technology lifestyle, Bith were found galaxy-wide at all levels of society, most notably as engineers, scientists, intellectuals, consultants, and musicians. Bith were craniopods with pale pink, yellow, or (rarely) green skin, large heads, large lidless eyes, toeless feet, and long fingers. Their thumb and small finger were both fully opposable. The Bith's internal..."
+        }
+    },
+    "Bothan": {
+        "characters": [
+            "Eramuth Bwua'tu",
+            "Nek Bwua'tu",
+            "Yantahar Bwua'tu",
+            "Borsk Fey'lya",
+            "Glynn-Beti",
+            "Kolir Hu'lya",
+            "Asyr Sei'lar",
+            "Utric Sandov",
+            "Hosk Trey'lis",
+            "Kai Hudorra",
+            "Traest Kre'fey",
+            "Knol Ven'nari",
+            "Oryon",
+            "Narsk Ka'hane",
+            "Yaqeel Saav'etu",
+            "Koth Melan"
+        ],
+        "classification": "Mammal",
+        "description": "Mood-sensitive fur",
+        "image": "http://img1.wikia.nocookie.net/__cb20061130130400/starwars/images/thumb/0/03/BothanNEGAS.jpg/500px-BothanNEGAS.jpg",
+        "language": "Bothese \nBotha \nGalactic Basic Standard",
+        "name": "Bothan",
+        "planets": "Bothawui",
+        "z_extra": {
+            "Average height": "1.4 - 1.5 meters",
+            "Average lifespan": "Child: 1-11\nYoung adult: 12-16\nAdult: 17-45\nMiddle Age: 46-65\nOld: 66-84\nVenerable: 85+",
+            "Designation": "Sentient",
+            "Eye color": "Brown\nGreen",
+            "Hair color": "Brown",
+            "text": "Bothans (pronounced/'b\u0251\u03b8\u026an/) were furry mammalian anthropoids, about 1.5 meters tall. Hailing from Bothawui and several colonies, Bothans differed in facial appearance and body structure with canine, feline, and equine features. They were known for being master politicians and spies, craving intrigue and subterfuge. The Bothans were members of the Galactic Republic from at least 4000 BBY, but likely from a significantly earlier point. Through numerous conflicts, most notably the Galactic..."
+        }
+    },
+    "Chadra-Fan": {
+        "characters": [
+            "\"The Champ\"",
+            "Fandar",
+            "Kabe",
+            "Tili Qua",
+            "Tutti Snibit",
+            "T'achak T'andar",
+            "Tekli",
+            "T'Teknulp",
+            "Tookarti",
+            "Yarbolk Yemm"
+        ],
+        "classification": "",
+        "description": "Bat-like faces\nRodent-like appearance\nAcute senses\nUpturned circular nose with four nostrils\nTwo hearts\nClear blood\nFour toes",
+        "image": "http://img4.wikia.nocookie.net/__cb20061204211640/starwars/images/9/9f/Chadra-Fan_NEGAS.jpg",
+        "language": "Chadra-Fan",
+        "name": "Chadra-Fan",
+        "planets": "Chad",
+        "z_extra": {
+            "Average height": "1 meter",
+            "Average lifespan": "40 standard years",
+            "Designation": "Sentient",
+            "Eye color": "Dark",
+            "Hair color": "Brown",
+            "text": "Chadra-Fan were short, rodent-like humanoids, usually no more than one meter tall, with bat-like faces. They hailed from the watery planet Chad. Chadra-Fan had seven different senses\u2014sight, touch, taste, sound, smell, infrared sight, and chemoreceptive smell\u2014all of which were much more acute than Human senses.. They were usually no more than a meter tall, some depicted with plantigrade two-toed feet, while others seemed to have four-toed feet. The metabolism of Chadra-Fan was amazingly fast..."
+        }
+    },
+    "Chevin": {
+        "characters": [
+            "Perre Needmo, Reseros Meh, Ephant Mon, Phylus Mon, Buula Nen, Phrusaani"
+        ],
+        "classification": "",
+        "description": "Stocky build, large heads, long snouts, long arms, three fingered hands, Four toed feet",
+        "image": "http://img3.wikia.nocookie.net/__cb20090709061755/starwars/images/6/60/ChevinNEGAS.jpg",
+        "language": "Chevin",
+        "name": "Chevin",
+        "planets": "Vinsoth",
+        "z_extra": {
+            "Average height": "1.7 \u2013 3 meters",
+            "Eye color": "Black",
+            "Races": "Approximately two dozen nations",
+            "Skin color": "Gray",
+            "text": "Chevin were bipedal pachydermoid sentients native to the planet Vinsoth. They had a poor reputation in much of the galaxy, partly due to their involvement in unsavory activities such as smuggling, and partly because they had enslaved the Chevs, a humanoid species who shared Vinsoth with them. The Chevin evolved from smaller relatives of the giant mammals who were wiped out when an asteroid collided with Vinsoth millions of years before the time of the Galactic Republic. Chevin had long..."
+        }
+    },
+    "Chiss": {
+        "characters": [
+            "Mitth'raw'nuruodo",
+            "Baldarek",
+            "Sev'rance Tann",
+            "Spiker",
+            "Kung'urama'nuruodo",
+            "Chaf'orm'bintrano",
+            "Prard'ras'kleoni",
+            "Fehlaaur'aitel'loro",
+            "Jer'Jo Cam'Co",
+            "Sev'eere'nuruodo",
+            "Kthira'shi'ktarloo"
+        ],
+        "classification": "",
+        "description": "Glowing red eyes\nAbove-average night vision",
+        "image": "http://img2.wikia.nocookie.net/__cb20100615162303/starwars/images/thumb/1/15/ChissNEGAS.jpg/500px-ChissNEGAS.jpg",
+        "language": "Cheunh\nSy Bisti\nMinnisiat\nOther trade languages",
+        "name": "Chiss",
+        "planets": "Csilla",
+        "z_extra": {
+            "Average height": "1.8 meters",
+            "Average lifespan": "Up to 80 standard years",
+            "Eye color": "Red",
+            "Hair color": "Varies, usually gleaming black or shades of blue",
+            "Skin color": "Blue to silver",
+            "text": "The Chiss were a tall, blue-skinned Near-Human civilization from the planet Csilla in the Unknown Regions, best known to most Humans as the people to which Grand Admiral Thrawn belonged. Due to the remote position of their home territory in the Chiss Ascendancy they remained largely an enigma to the rest of the galaxy, and contact with outsiders was limited even in the days of the Galactic Alliance. The Chiss were a near-Human species distinguished by their blue skin and glowing red eyes..."
+        }
+    },
+    "Dathomirian": {
+        "characters": [
+            "Zalem",
+            "Talzin",
+            "Asajj Ventress",
+            "Karis",
+            "Silri",
+            "Naa'leth",
+            "Saato",
+            "Luce",
+            "Daka",
+            "Talia",
+            "Savage Opress",
+            "Darth Maul",
+            "Feral",
+            "Viscus",
+            "Asajj Ventress' mother",
+            "Sai Sircu",
+            "Yansu Grjak",
+            "Magash Drashi",
+            "Gethzerion",
+            "Kaminne Sihn"
+        ],
+        "classification": "",
+        "description": "Females:\n\nPale skin and hair \nNo cranial horns \n\nMales:\n\nZabrak-like cranial horns\nSkin patterns",
+        "image": "http://img1.wikia.nocookie.net/__cb20110108064352/starwars/images/6/69/Nightsisters-TCW.jpg",
+        "language": "Galactic Basic Standard",
+        "name": "Dathomirian",
+        "planets": "Dathomir",
+        "z_extra": {
+            "Average height": "Varies",
+            "Designation": "Sentient",
+            "Eye color": "Varies",
+            "Hair color": "Silver to black",
+            "Skin color": "Pale-White , Red/Orange/Yellow with Brown/Black markings ",
+            "text": "Dathomirians, or Dathomiri, were a sentient near-Human species native to the Outer Rim world of Dathomir. The creation of the Dathomirian species was the result of hybridization between Human females and male Zabrak of Iridonia. They constituted a small percentage of the Nightsister society\u2014a sect of witches using dark magicks\u2014but rose to preeminence under the leadership of Clan Mother Talzin, a Dathomirian herself. At some point during the Clone Wars, the Kaleesh General Grievous, leader of..."
+        }
+    },
+    "Devaronian": {
+        "characters": [
+            "Aven'sai'Ulrahk",
+            "Gat",
+            "Gault Rennow",
+            "Vilmarh Grahrk",
+            "Hivrekh'wao'Cheklev",
+            "Sian Jeisel",
+            "Kardue'sai'Malloc",
+            "Kee",
+            "Darth Maladi",
+            "Manos",
+            "San Maxus",
+            "Brinaloy N'Vaari",
+            "Darth Reave",
+            "Renegin",
+            "Elassar Targon",
+            "Madhi Vaandt",
+            "Sires Vant",
+            "Ulicx Vinaq",
+            "Renegin",
+            "Chamma"
+        ],
+        "classification": "",
+        "description": "Horns , thick fur ",
+        "image": "http://img4.wikia.nocookie.net/__cb20100616044458/starwars/images/thumb/5/55/DevaronianNEGAS.jpg/500px-DevaronianNEGAS.jpg",
+        "language": "Devaronese",
+        "name": "Devaronian",
+        "planets": "Devaron",
+        "z_extra": {
+            "Average height": "1.9 meters",
+            "Hair color": "None , brown to white ",
+            "Skin color": "Red\nPink\nBrown\nWhite",
+            "text": "Devaronians were a horned humanoid species from the world of Devaron in the Colonies, a planet of low mountains and deep valleys linked by thousands of rivers. It was believed that they were descended from a race of primates that lived in the mountains of Devaron, and that their horns were a genetic mutation that proved useful in fending off predatory birds. The Devaronians were one of the more unusual races in the galaxy, with a dramatic gender dimorphism in appearance and temperament. The..."
+        }
+    },
+    "Ewok": {
+        "characters": [
+            "Chirpa",
+            "Kneesaa",
+            "Logray",
+            "Paploo",
+            "Simon ",
+            "Tarfang",
+            "Teebo",
+            "Wicket W. Warrick",
+            "Treek"
+        ],
+        "classification": "",
+        "description": "Furry, short stature, acute sense of smell",
+        "image": "http://img1.wikia.nocookie.net/__cb20051207122858/starwars/images/e/e5/Ewokscrossthehills.JPG",
+        "language": "Ewokese",
+        "name": "Ewok",
+        "planets": "Endor",
+        "z_extra": {
+            "Average height": "1 meter",
+            "Average mass": "50 kilograms",
+            "Designation": "Sentient",
+            "Hair color": "Shades of white, brown, and black",
+            "Skin color": "Brown",
+            "text": "Ewoks were sentient, diminutive, furry bipeds native to the forest moon of Endor. They were most notable for helping the Rebel Alliance defeat the forces of the Galactic Empire at the Battle of Endor, allowing the shield generator there to be destroyed, and in turn, the second Death Star. Ewoks were curious individuals that stood about one meter tall; they were omnivorous and used spears, slings, and knives as weapons; they also used hang gliders, battle wagons, and bordoks as vehicles..."
+        }
+    },
+    "Firrerreo": {
+        "characters": [
+            "Hethrir, Rillao, Koi Quire"
+        ],
+        "classification": "",
+        "description": "Near-Humans, two-tone hair, nictitating eyelids, gold-colored skin, rapid healing factor",
+        "image": "http://img3.wikia.nocookie.net/__cb20070724012727/starwars/images/thumb/d/dc/Firrerreos.jpg/500px-Firrerreos.jpg",
+        "language": "",
+        "name": "Firrerreo",
+        "planets": "Firrerre",
+        "z_extra": {
+            "text": "The Firrerreo, also referred to as Firrerreons, were natives of the planet Firrerre. Resembling Humans, Firrerreo had highly developed canine teeth, two-tone hair, and nictitating membranes protecting eyes that were able to see into the ultraviolet range of the spectrum. These membranes also protected the eyes from intense flashes of light, as well as flying debris."
+        }
+    },
+    "Gamorrean": {
+        "characters": [
+            "Basher",
+            "Burg",
+            "Tront",
+            "Xob",
+            "Ortugg",
+            "Gartogg",
+            "Ghana Gleemort",
+            "Grissom",
+            "Jubnuk",
+            "Torrug",
+            "Rogua",
+            "Voort saBinring",
+            "Thok",
+            "Thug",
+            "Warlug",
+            "Slaff",
+            "List of Gamorreans"
+        ],
+        "classification": "",
+        "description": "Porcine humanoids \nTusks \nHorns",
+        "image": "http://img2.wikia.nocookie.net/__cb20060813142536/starwars/images/thumb/2/23/Gamorrean_Guard_with_Axe.jpg/500px-Gamorrean_Guard_with_Axe.jpg",
+        "language": "Gamorrese",
+        "name": "Gamorrean",
+        "planets": "Gamorr",
+        "z_extra": {
+            "Average height": "1.7 to 1.8 meters",
+            "Average mass": "100 kilograms",
+            "Designation": "Sentient",
+            "Hair color": "None",
+            "Skin color": "Green ",
+            "text": "Gamorreans, derogatorily known as pig-lizards, were porcine humanoids from the lush jungle Outer Rim planet of Gamorr where their technological level was equivalent to lower technology periods that Human civilizations experienced more than 25,000 years before the battle of Yavin. They also colonized the planet Pzob in the K749 system and were the majority sentient species on Lanthrym in the Elrood sector. Their vessels provided only essential amenities as well as shields and weapons..."
+        }
+    },
+    "Gand": {
+        "characters": [
+            "Lu'daal-ud",
+            "Ossluk Noslee",
+            "Venlyss Pnorr",
+            "Ooryl Qrygg",
+            "R'Kayza",
+            "Vytor Shrike",
+            "Tyffix",
+            "Vaabesh",
+            "Yuun ",
+            "Zuckuss"
+        ],
+        "classification": "Insectoid",
+        "description": "Exoskeletons, three-fingered hands",
+        "image": "http://img1.wikia.nocookie.net/__cb20061205190815/starwars/images/thumb/9/9a/GandAlienNEGAS.jpg/500px-GandAlienNEGAS.jpg",
+        "language": "Gand",
+        "name": "Gand",
+        "planets": "Gand",
+        "z_extra": {
+            "Average height": "1.4 meters , 1.6 meters ",
+            "Average lifespan": "61 standard years old, with some individuals living to over 95",
+            "Average mass": "70 kilograms , 80 kilograms ",
+            "Designation": "Sentient",
+            "Skin color": "Varying shades of brown, green and purple ",
+            "Subspecies": "Breathers\nlungless",
+            "text": "The Gands, or Gand (pronounced/G\u0103nd/), were a sentient species of humanoids that xenobiologists believed to have evolved from an insect genus that inhabited the ammonia-gas planet of Gand. Several physical varieties of the species existed, differing from one another in the structure of the head and the texture and color of the exoskeleton, but the species was usually divided into two main subspecies: those with lungs and those without. Gands with such organs were adapted to their homeworld's..."
+        }
+    },
+    "Gran": {
+        "characters": [
+            "Aks Moe",
+            "Ask Aak",
+            "Maks Leem",
+            "Mawhonic",
+            "Ree-Yees",
+            "Kharrus",
+            "Philo",
+            "Pax Teem",
+            "Imogh"
+        ],
+        "classification": "",
+        "description": "Three eyes and goat-like snout",
+        "image": "http://img4.wikia.nocookie.net/__cb20061201134756/starwars/images/thumb/2/2e/GranNEGAS.jpg/500px-GranNEGAS.jpg",
+        "language": "Gran",
+        "name": "Gran",
+        "planets": "Kinyen",
+        "z_extra": {
+            "Average height": "1.5 - 1.8 meters",
+            "Average lifespan": "Up to 79 standard years",
+            "Average mass": "80 kilograms",
+            "Designation": "Sentient",
+            "Eye color": "Black, purple",
+            "Hair color": "None",
+            "Skin color": "Tan",
+            "text": "The Gran were sentient mammalian humanoids native to the planet Kinyen, though they had colonies across the galaxy, including settlements on the planets Hok and Malastare. Gran could easily be identified by their three eyes and their goat-like snout. Female Gran also had three breasts. Gran were also able to sense one another's emotions and disposition by noting subtle changes in body heat and skin color. The Gran had excellent vision, able to resolve more colors than most species, and even..."
+        }
+    },
+    "Human": {
+        "characters": [],
+        "classification": "Mammal ",
+        "description": "",
+        "image": "http://img3.wikia.nocookie.net/__cb20100628191857/starwars/images/5/5d/Humans-TESB30.jpg",
+        "language": "Galactic Basic Standard\nOthers",
+        "name": "Human",
+        "planets": "Unknown, possibly Coruscant ",
+        "z_extra": {
+            "Average height": "1.8 meters",
+            "Average lifespan": "typically up to 100 or 120 standard years; ages up to approximately 200 have been reached among Force-sensitive individuals",
+            "Designation": "Sentient",
+            "Eye color": "Brown\nBlue\nGreen\nHazel\nGrey\nAmber",
+            "Hair color": "Blonde\nBrown \nBlack \nRed",
+            "Races": "Alderaanians\nCorellians\nHapans\nChalactans\nKuati\nLorrdians\nNaboo\nTionese\nKorunnai\nMany others ",
+            "Skin color": "Pale to dark brown",
+            "text": "Humans, taxonomically referred to as Homo sapiens, were the galaxy's most numerous and politically dominant sentient species with millions of major and minor colonies galaxywide. Believed to have originated on the galactic capital of Coruscant, they could be found anywhere, engaged in many different pursuits: spacers, mercenaries, smugglers, merchants, soldiers, assassins, farmers, crime lords, laborers, slaves, slavers, and many others, including Jedi and Sith. Since Humans were the most..."
+        }
+    },
+    "Hutt": {
+        "characters": [
+            "Arok",
+            "Aruk Besadii Aora",
+            "Beldorion",
+            "Borvo",
+            "Bareesh Fenn'ak Torill",
+            "Durga Besadii Tai",
+            "Drooga",
+            "Gardulla Besadii the Elder",
+            "Gorga Desilijic Aarrpo",
+            "Jabba Desilijic Tiure",
+            "Juvard Illip Oggurobb",
+            "Karagga",
+            "Kossak Inijic Ar'durv",
+            "Mama",
+            "Marlo",
+            "Oruba",
+            "Qiltakka",
+            "Rotta",
+            "Suudaa Nem'ro",
+            "Tanda ",
+            "Voontara Fa'athra",
+            "Ybann",
+            "Zax",
+            "Ziro Desilijic Tiure",
+            "Zorba Desilijic Tiure"
+        ],
+        "classification": "",
+        "description": "Gastropods\nHermaphrodites",
+        "image": "http://img2.wikia.nocookie.net/__cb20130115030417/starwars/images/a/a7/HuttNEGAS.png",
+        "language": "Huttese",
+        "name": "Hutt",
+        "planets": "Varl ",
+        "z_extra": {
+            "Average height": "3 - 3.9 meters",
+            "Average lifespan": "1,000 standard years",
+            "Designation": "Sentient",
+            "Eye color": "Yellow\nRed",
+            "Skin color": "Orange \nGreen \nBlue \nBrown \nPurple \nTurquoise \nPink",
+            "text": "The Hutts were a sentient species of large gastropods with short arms, wide cavernous mouths and huge eyes, who controlled a large space empire in Hutt Space. The species was said to originally hail from the planet Varl, but no planet by that name appeared on any Imperial star charts. Their adopted homeworld was Nal Hutta. Members of this species were often stereotyped as crime lords. In appearance, a Hutt was an immense slug-like creature that had a thick body with a long muscular tail with..."
+        }
+    },
+    "Ithorian": {
+        "characters": [
+            "Pato Ado",
+            "Tendau Bendon",
+            "Deneb Both",
+            "Roron Corobb",
+            "Worror Dowmat",
+            "Gozubb",
+            "Chodo Habat",
+            "Jakker-Sun",
+            "Moza",
+            "Ysho",
+            "Momaw Nadon",
+            "Noga-ta",
+            "Thulls",
+            "Nu Toreena",
+            "Janos Wertka",
+            "Onca",
+            "Bulduga",
+            "Byph",
+            "Del Moomo",
+            "Dob Moomo"
+        ],
+        "classification": "",
+        "description": "Curved neck\nTwo mouths\nAural flaps\nLocomotion tubes\nThroat sack",
+        "image": "http://img2.wikia.nocookie.net/__cb20080816183256/starwars/images/thumb/7/74/Tendau_Bendon_%28Ithorian%29.jpg/500px-Tendau_Bendon_%28Ithorian%29.jpg",
+        "language": "Ithorese",
+        "name": "Ithorian",
+        "planets": "Ithor",
+        "z_extra": {
+            "Average height": "1.8\u20132.3 meters",
+            "Average lifespan": "85 standard years",
+            "Designation": "Sentient",
+            "Diet": "Ant-fly",
+            "Eye color": "Black or Blue",
+            "Hair color": "Brown, Gray, or White",
+            "Races": "None",
+            "Skin color": "Brown, Dark-Red or Green",
+            "text": "Ithorians were a mammalian herbivorous sentient species from the planet Ithor. They were commonly called \"Hammerheads\" by less sensitive beings because of their long, curving neck and T-shaped head. They found this nickname offensive. Ithorians had two mouths and four throats, allowing them to speak in stereo. Female Ithorians had two humps on the back of their head, while males had only one. They had glossy, usually brown flesh. They stood roughly between 1.8 to 2.3 meters from eyestalk to..."
+        }
+    },
+    "Jawa": {
+        "characters": [
+            "Akkik",
+            "Klepti B'ay",
+            "Tteel Kkak",
+            "Ttekket",
+            "Het Nkik",
+            "Wittin",
+            "Dathcha",
+            "R'kik D'nec",
+            "Herat",
+            "Iasa",
+            "Jik'Tal",
+            "Kalit",
+            "Kiottja",
+            "Aved Luun",
+            "Nebit",
+            "Jek Nkik",
+            "Khea Nkuul",
+            "Thedit",
+            "Wimateeka",
+            "Iziz",
+            "Fred Jawa",
+            "Stan",
+            "Blizz",
+            "Akial, the only Jawa known to have served in the Jedi Order."
+        ],
+        "classification": "",
+        "description": "",
+        "image": "http://img4.wikia.nocookie.net/__cb20080226180703/starwars/images/5/5a/Jawa_fortress.jpg",
+        "language": "Jawaese",
+        "name": "Jawa",
+        "planets": "Tatooine",
+        "z_extra": {
+            "Average height": "1 meter",
+            "Average lifespan": "Up to 80 standard years old",
+            "Average mass": "30 kilograms",
+            "Eye color": "Yellow",
+            "text": "Jawas were typically short rodent-like natives of Tatooine. They were passionate scavengers, seeking out technology for sale or trade in the deep deserts in their huge sandcrawler transports. A band of Jawas was responsible for locating C-3PO and R2-D2 and selling them to Luke Skywalker's uncle, Owen Lars. Another tribe of Jawas, led by Tteel Kkak, found Jabba the Hutt's rancor. They had a reputation for swindling, as they had a penchant for selling old equipment such as outdated faulty..."
+        }
+    },
+    "Khommite": {
+        "characters": [
+            "Dorsk, Dorsk 80, Dorsk 81, Dorsk 82, Dorsk 83, Kaell, Kaell 115, Kaell 116"
+        ],
+        "classification": "",
+        "description": "",
+        "image": "http://img4.wikia.nocookie.net/__cb20061024192303/starwars/images/thumb/5/53/Khommite2.jpg/500px-Khommite2.jpg",
+        "language": "Galactic Basic Standard",
+        "name": "Khommite",
+        "planets": "Khomm",
+        "z_extra": {
+            "Average height": "1.2 - 2.0 meters",
+            "Hair color": "None",
+            "text": "The Khommites were a Near-Human species hailing from the planet of Khomm. Circa 1000 BBY the Khommite people achieved a level of cloning technology far surpassing that of the rest of the galaxy. Believing that their society had achieved perfection, the people of Khomm began the cloning of \"perfect\" individuals, allowing their society to remain unchanged for the next millennium. Khommites' digestive systems were so specified that they could only eat processed food wafers. Viewing..."
+        }
+    },
+    "Kiffar": {
+        "characters": [
+            "Quinlan Vos",
+            "Sintas Vel",
+            "Mirta Gev ",
+            "Parla Tentase",
+            "Tonnika sisters",
+            "Droo Rawk",
+            "Quian Vos",
+            "Pethros Vos",
+            "Shigar Konshi",
+            "Larin Moxla"
+        ],
+        "classification": "",
+        "description": "Qukuuf facial tattoos\nPsychometric abilities",
+        "image": "",
+        "language": "",
+        "name": "Kiffar",
+        "planets": "Kiffu",
+        "z_extra": {
+            "Average height": "1.7 meters ",
+            "Designation": "Sentient",
+            "text": "The Kiffar were a species of Near-Humans from the planet Kiffu. As such, they were sometimes mistakenly called \"Kiffu\". About one in a hundred Kiffar had the ability to read the memories of inanimate objects\u2014including formerly animate objects like corpses\u2014by touch, an ability known as psychometry. It was not, however, normal for a Kiffar to be able to read the living. Quinlan Vos was a rare exception to this rule because of his training under Count Dooku."
+        }
+    },
+    "Klatooinian": {
+        "characters": [
+            "Barada M'Beg",
+            "Barada",
+            "Umpass-stay",
+            "Ronto",
+            "Rolanda Gron",
+            "Castas",
+            "Padnel Ovin",
+            "Kithaba"
+        ],
+        "classification": "",
+        "description": "Heavy brows \nShort canine muzzles",
+        "image": "http://img2.wikia.nocookie.net/__cb20061205191555/starwars/images/e/e4/Klatooinian_NEGAS.jpg",
+        "language": "Huttese\nKlatooinian",
+        "name": "Klatooinian",
+        "planets": "Klatooine",
+        "z_extra": {
+            "Average height": "1.8 meters",
+            "Average lifespan": "Up to 90 standard years",
+            "Designation": "Sentient",
+            "Skin color": "Olive green to dark brown",
+            "text": "Klatooinians were a humanoid species from the planet Klatooine, located in the Si'Klaata Cluster. For most of their history, they were closely associated with the Hutts, as criminal henchmen, soldiers, and slaves. By the time of the Galactic Civil War, however, some Klatooinians began to break away from their servitude. When the Hutts were waging a war against Xim the Despot circa 25,100 BBY, they looked for help on some of the planets in the Si'Klaata Cluster. Hutt envoys asked Klatooinians..."
+        }
+    },
+    "Kowakian_monkey-lizard": {
+        "characters": [
+            "Picaroon C. Boodle",
+            "Gibberous Crumb",
+            "Salacious B. Crumb",
+            "Eeetch",
+            "Pilf Mukmuk",
+            "Skreech"
+        ],
+        "classification": "Reptilian",
+        "description": "",
+        "image": "http://img4.wikia.nocookie.net/__cb20061129193617/starwars/images/thumb/8/86/Kowakian_NEGAS.jpg/500px-Kowakian_NEGAS.jpg",
+        "language": "",
+        "name": "Kowakian monkey-lizard",
+        "planets": "Kowak",
+        "z_extra": {
+            "Average height": "0.7 meters",
+            "Designation": "Semi-sentient or sentient ",
+            "Diet": "Insects, worms and small rodents",
+            "Eye color": "Yellow",
+            "Habitat": "Rain forests",
+            "Hair color": "Black, dark brown, light brown, orange, green, purple, light blue",
+            "Skin color": "Yellow, brownish yellow, red, green, light blue",
+            "text": "Kowakian monkey-lizards were a bipedal reptilian species native to a jungle-like Outer Rim planet called Kowak. Although they had no established culture, Kowakian monkey-lizards were quite intelligent, and despite their silly, cruel nature, they were considered sentient by many sentientologists in the galaxy, although there was much debate over that designation. Standing roughly seventy centimeters tall, Kowakian monkey-lizards had small, spindly bodies, two large, floppy ears and a..."
+        }
+    },
+    "Krevaaki": {
+        "characters": [
+            "Vodo-Siosk Baas",
+            "Saaj Calician",
+            "Bodo Baas"
+        ],
+        "classification": "",
+        "description": "Cephalaopidal tentacles",
+        "image": "http://img1.wikia.nocookie.net/__cb20100810182118/starwars/images/thumb/b/b3/Vodo_baas.jpg/500px-Vodo_baas.jpg",
+        "language": "",
+        "name": "Krevaaki",
+        "planets": "Krevas",
+        "z_extra": {
+            "Skin color": "Red or Black",
+            "text": "The Krevaaki were a race of sentients native to Krevas. The Krevaaki people possessed an exoskeleton. The face of a Krevaaki was composed of a series of shifting, chitinous plates with a limited range of expression. During face-to-face communication, it was difficult for anyone who was not a Krevaaki to read their facial expressions. Krevaaki used their tentacles instead of arms and legs like bipeds. They often concealed the true number from humanoids."
+        }
+    },
+    "Kubaz": {
+        "characters": [
+            "Dorheek",
+            "Garindan",
+            "Lorindan",
+            "Shuzz",
+            "Thwim",
+            "Totalaya",
+            "Tawar Va'ran",
+            "Rbann",
+            "Udin"
+        ],
+        "classification": "Mammalian",
+        "description": "Prehensile snouts",
+        "image": "http://img3.wikia.nocookie.net/__cb20061130131415/starwars/images/thumb/c/cf/Kubaz_NEGAS.jpg/500px-Kubaz_NEGAS.jpg",
+        "language": "Kubazian",
+        "name": "Kubaz",
+        "planets": "Kubindi",
+        "z_extra": {
+            "Average height": "1.7-2 meters",
+            "Average lifespan": "81 years\n\nChild: 1-9 years\nYoung adult: 10-13 years\nAdult: 14-50 years\nMiddle age: 51-80 years\nOld: 81-99 years\nVenerable: 100+ years",
+            "Designation": "Sentient",
+            "Diet": "Insects",
+            "Hair color": "Black",
+            "Skin color": "Greenish-Black",
+            "text": "The Kubaz or Kubazian were an insectivorous species native to the planet Kubindi in the Outer Rim Territories. Although relatively new to the Galactic community at the time of the institution of the Galactic Empire, the species was already ubiquitous throughout the Republic during the Great Galactic War and the Clone Wars. A bipedal humanoid species of mammalian sentients, the Kubaz were distinctive for their short, prehensile facial snouts which were used for reaching insects within their..."
+        }
+    },
+    "Noghri": {
+        "characters": [
+            "Khabarakh",
+            "Rukh",
+            "Ir'khaim",
+            "Vor'corkh",
+            "Kahr'corvh",
+            "Cakhmaim",
+            "Meewalh"
+        ],
+        "classification": "",
+        "description": "Advanced olfactory abilities, claws, incredible killing prowess",
+        "image": "http://img1.wikia.nocookie.net/__cb20090709063145/starwars/images/9/90/NoghriNEGAS.jpg",
+        "language": "Honoghran",
+        "name": "Noghri",
+        "planets": "Honoghr",
+        "z_extra": {
+            "Average height": "1.4 - 1.7 meters",
+            "Eye color": "Black",
+            "Hair color": "None",
+            "Races": "Gengh-Noghri",
+            "Skin color": "Bluish-gray",
+            "text": "Noghri (pronounced/'no.g\u0279i/) were a primitive humanoid species. They had steely gray or blue skin, and were extremely skilled assassins due to their abilities in stealth and hand-to-hand combat. Despite their small size, they were efficient killing machines, with claws, fangs, and a sense of smell so acute, they could smell one's bloodline (as exemplified by Khabarakh's identification of Leia Organa Solo as Darth Vader's daughter, which made her the Mal'ary'ush). They were much like the..."
+        }
+    },
+    "Omwati": {
+        "characters": [
+            "Bleth Fahr",
+            "Aleema Finn",
+            "Kodo Finn",
+            "Pillik",
+            "Tannis",
+            "Qwi Xux",
+            "Tiu Zax"
+        ],
+        "classification": "Near-Human",
+        "description": "Bird-like anthropoids",
+        "image": "http://img3.wikia.nocookie.net/__cb20130402140821/starwars/images/8/89/Wiki-wordmark.png",
+        "language": "Omwatese",
+        "name": "Omwati",
+        "planets": "Omwat",
+        "z_extra": {
+            "Average height": "1.6 - 2.1 meters",
+            "Average lifespan": "85 standard years",
+            "Designation": "Sentient",
+            "Eye color": "Deep blue or indigo",
+            "Feather color": "White or red; on the head only",
+            "Skin color": "Blue",
+            "text": "The Omwati were lithe near-Humans with blue skin and a bird-like appearance. They were native to the planet Omwat and were known for their intellect and natural talent for science, engineering, and music. Omwati children had incredibly pliant minds that, with the proper training, could retain data and be educated beyond the threshold of most other sentient species. A number of Omwati joined the Galactic Republic, but contact between their planet and the galactic community was lost at a later..."
+        }
+    },
+    "Quarren": {
+        "characters": [
+            "Amit Noloff",
+            "Qid Proko",
+            "Borun Call",
+            "Clawfish",
+            "Darth Azard",
+            "Darth Maleval",
+            "Dhidal Nyz",
+            "Loppak Slusk",
+            "Nossor Ri",
+            "Nrin Vakil",
+            "Pwoe",
+            "Qid Proko",
+            "Tessek",
+            "Tikkes",
+            "Tracton"
+        ],
+        "classification": "",
+        "description": "Mouth tentacles",
+        "image": "http://img1.wikia.nocookie.net/__cb20090709063609/starwars/images/4/48/QuarrenNEGAS.jpg",
+        "language": "Quarrenese",
+        "name": "Quarren",
+        "planets": "Dac",
+        "z_extra": {
+            "Average height": "1.7\u20131.8 meters",
+            "Average lifespan": "79 years",
+            "Designation": "Sentient",
+            "Skin color": "Varies during mating",
+            "text": "The Quarren or Qarren, were one of several aquatic sentient species from the planet Dac, called by off-worlders Mon Calamari. The Quarren shared their homeworld with the Mon Calamari, another sentient species hailing from Dac. The Quarren had many conflicts and a tense relationship with the Mon Calamari. However, in order to make their planet prosperous, they were forced to provide resources from the ocean depths so that the Mon Calamari could build star ships for off-worlders. Quarren were..."
+        }
+    },
+    "Rodian": {
+        "characters": [
+            "Doda Bodonawieedo",
+            "Wee Dunn",
+            "Mahtee Dunn",
+            "Onaconda Farr",
+            "Lolo Purs",
+            "Feeven",
+            "Jannik",
+            "Menndo",
+            "Hako Armado",
+            "Jakoli",
+            "Greedo",
+            "Greedo the Elder",
+            "Ganodi",
+            "Andoorni Hui",
+            "Hulas",
+            "Greeata Jendowanian",
+            "Navik the Red",
+            "Neesh",
+            "Drexl Roosh",
+            "Bolla Ropal",
+            "Suvam Tan",
+            "Rei Reeven",
+            "Reelo Baruk",
+            "Unidentified Tibrin operative",
+            "Dar Wac",
+            "W. Wald",
+            "Silood",
+            "Zooki"
+        ],
+        "classification": "",
+        "description": "Multifaceted eyes, reptilian skin, proboscis-like mouths",
+        "image": "http://img2.wikia.nocookie.net/__cb20061127015745/starwars/images/2/23/Rodian_NEGAS.jpg",
+        "language": "Rodese, Basic, Huttese",
+        "name": "Rodian",
+        "planets": "Rodia",
+        "z_extra": {
+            "Average height": "1.5 to 1.7 meters",
+            "Designation": "Sentient",
+            "Eye color": "Black, with variations in hue.",
+            "Skin color": "Most commonly green, with variations in pigment including purple and blue.",
+            "text": "Rodians were a reptilian humanoid species native to Rodia in the Tyrius system. Highly recognizable due to characteristics in facial structure and skin pigment, Rodians were infamous for their violent culture, which sprang from the difficulties of life in the jungles of their homeworld. Though they were often relegated to the fringes of galactic society as bounty hunters or criminal henchmen, Rodians were not merely simple-minded thugs. The Rodian people managed to produce artists..."
+        }
+    },
+    "Rybet": {
+        "characters": [
+            "Briff, Moruth Doole, Gribbet, Nibber Swoo"
+        ],
+        "classification": "",
+        "description": "Sentient amphibians",
+        "image": "http://img3.wikia.nocookie.net/__cb20060620165114/starwars/images/thumb/1/1b/Rybet_AA.jpg/500px-Rybet_AA.jpg",
+        "language": "Rybese",
+        "name": "Rybet",
+        "planets": "Varl ",
+        "z_extra": {
+            "Average height": "1.2 to 1.9 meters",
+            "Hair color": "None",
+            "Skin color": "Bright green, Deep olive",
+            "text": "The Rybets were a species of sentient amphibians. Rybet females were typically larger than the males, with an average height between 1.5 and 1.9 meters for the females and 1.2 and 1.5 meters for the males. They were an opportunistic species, well-suited for a nomadic lifestyle in space. Typically, they had a rather questionable grasp of morals and ethics, if any."
+        }
+    },
+    "Shistavanen": {
+        "characters": [
+            "Mal Biron",
+            "Blik",
+            "Yurdak Fav",
+            "Hovrak",
+            "Bin Kohal",
+            "Kal Lup",
+            "Tar Lup",
+            "Voolvif Monn",
+            "Dunstal Noft",
+            "Phlik",
+            "Volven Roxe",
+            "Korta Sac",
+            "Severian",
+            "Riv Shiel",
+            "Caet Shrovl",
+            "Lak Sivrak",
+            "Tagg Sivrak",
+            "T'mott Zoat"
+        ],
+        "classification": "",
+        "description": "Lupine appearance\nEnhanced senses\nIncreased speed\nIncreased strength\nHealing ability",
+        "image": "http://img1.wikia.nocookie.net/__cb20131219191453/starwars/images/thumb/b/bc/Shistavanen_Wolfman-BotF_by_Joel_Hustak.jpg/500px-Shistavanen_Wolfman-BotF_by_Joel_Hustak.jpg",
+        "language": "Shistavanen \nBasic",
+        "name": "Shistavanen",
+        "planets": "Uvena Prime",
+        "z_extra": {
+            "Average height": "1.8 meters",
+            "text": "The Shistavanens, colloquially nicknamed wolfmen for their lupine appearance, were a sentient species from the planet Uvena Prime. The Shistavanens originated on the planet Uvena Prime in the Uvena system. In addition to natural evolution, the Shistavanen species was shaped by unknown genetic engineers. Like many lupine species, Shistavanens had pronounced muzzles, sharp claws, long pointed teeth, and pointed ears set on top of their heads. Shistavanens also possessed large glowing eyes, and..."
+        }
+    },
+    "Ssi-ruuk": {
+        "characters": [
+            "Yifaii",
+            "Ivpikkis",
+            "Keeramak",
+            "Firwirrung",
+            "Sh'tk'ith"
+        ],
+        "classification": "",
+        "description": "Tails, scent-tongues",
+        "image": "http://img4.wikia.nocookie.net/__cb20061206184105/starwars/images/thumb/8/8d/SsiruuNEGAS.jpg/500px-SsiruuNEGAS.jpg",
+        "language": "Ssi-ruuvi",
+        "name": "Ssi-ruuk",
+        "planets": "Lwhekk",
+        "z_extra": {
+            "Average height": "2 meters",
+            "Average lifespan": "100-120 years",
+            "Skin color": "Blue, red, gold, yellow, green, brown, black",
+            "Subspecies": "Blue-scaled\nRusset-scaled",
+            "text": "The Ssi-ruuk (pronounced/'si ruk/), Ssi-ruu in singular form, were a saurian species that invaded from the Unknown Regions of the galaxy and initiated the Invasion of Bakura in 4 ABY, shortly after the Battle of Endor. This race relied on a technology called entechment that involved extracting the life-energies of sentient beings and using them as power sources for their mechanical technology. They had a sizable war fleet and ruled an empire called the Ssi-ruuvi Imperium in the Ssi-ruuk Star..."
+        }
+    },
+    "Sullustan": {
+        "characters": [
+            "Darrin Arkanian",
+            "Borkus",
+            "Den Dhur",
+            "Garron",
+            "Grom Goluum",
+            "Bolabo Hujaan",
+            "Jubieck",
+            "Jae Juun",
+            "Eyar Marath",
+            "Mayjeln",
+            "Neb Munb",
+            "Miel Muwn",
+            "Jalus Nebl",
+            "Dllr Nep",
+            "Dua Ningo",
+            "Niuk Niuv",
+            "Ten Numb",
+            "Aril Nunb",
+            "Nien Nunb",
+            "Sien Sovv",
+            "Elora Sund",
+            "Sian Tevv",
+            "Jaius Yorub"
+        ],
+        "classification": "",
+        "description": "Large ears\nScarns\nUltra-sensitive hearing\nJet-black eyes\nNaturally tucked in cheeks",
+        "image": "http://img1.wikia.nocookie.net/__cb20100810063353/starwars/images/thumb/f/f5/Sullustan_NEGAS.jpg/500px-Sullustan_NEGAS.jpg",
+        "language": "Sullustese",
+        "name": "Sullustan",
+        "planets": "Sullust",
+        "z_extra": {
+            "Average height": "1 - 1.8 meters",
+            "Skin color": "Gray, pink, or light green",
+            "text": "Sullustans were a species of Near-Humans from Sullust. As skilled pilots and navigators, Sullustans, also known as Bomewrights, were common sights for spacers and at busy spaceports. The Sullustans played an important role in the Galactic Civil War and were charter members of the New Republic. Notable members of the species include Nien Nunb and Ten Numb. A diminutive species of near-Humans, Sullustans ranged from 1 to 1.8 meters in height and bore round, tapered skulls. Sullustans were..."
+        }
+    },
+    "Talz": {
+        "characters": [
+            "Gar",
+            "Aj Koenes",
+            "Muftak",
+            "Foul Moudama",
+            "Caldera Righim",
+            "Thi-Sen",
+            "Bama Vook",
+            "Medcha Wanto",
+            "Broonmark"
+        ],
+        "classification": "",
+        "description": "Two pairs of eyes, thick light-colored hair",
+        "image": "http://img1.wikia.nocookie.net/__cb20090709064059/starwars/images/thumb/0/03/Talz_NEGAS.jpg/500px-Talz_NEGAS.jpg",
+        "language": "Talzzi",
+        "name": "Talz",
+        "planets": "Alzoc III",
+        "z_extra": {
+            "Average height": "2 - 2.5 meters",
+            "Average lifespan": "Up to 52 standard years",
+            "Average mass": "90 kilograms",
+            "Designation": "Sentient",
+            "Eye color": "Black, dark red, dark blue",
+            "Hair color": "White to gray, pink",
+            "text": "The Talz (pronounced/t\u00e6lz/) were a large furry species with two distinct sets of eyes: one for day vision, and one for night vision. Their homeworld was Alzoc III, a frozen world with much mineral wealth. They also established a colony on the world of Orto Plutonia. Talz were rarely seen in the galaxy away from their homeworld. Talz were large, bipedal creatures, averaging 2 to 2.5 meters tall. Bulky creatures, they were covered head to toe in thick white fur, which provided exceptional..."
+        }
+    },
+    "Trandoshan": {
+        "characters": [
+            "Bossk,",
+            "Cradossk,",
+            "Pekt,",
+            "Karniss",
+            "Krussk",
+            "Skeesk",
+            "Skarsk",
+            "Gha Nachkt",
+            "Kras'dohk",
+            "Garnac",
+            "Dar",
+            "Lo-Taren",
+            "Krix",
+            "Goron",
+            "Smug",
+            "Clutch",
+            "Slyssk",
+            "Nack Movers",
+            "Kephess",
+            "Qyzen Fess"
+        ],
+        "classification": "",
+        "description": "Reptilian, regenerative properties",
+        "image": "http://img4.wikia.nocookie.net/__cb20130115031110/starwars/images/4/45/Trandoshan_NEGAS.png",
+        "language": "Dosh",
+        "name": "Trandoshan",
+        "planets": "Trandosha, also referred to as Dosha or Hsskor by Trandoshans",
+        "z_extra": {
+            "Average height": "2 meters",
+            "Designation": "Sentient",
+            "Hair color": "None",
+            "Skin color": "Sandy brown to glossy green",
+            "Subspecies": "Saurin",
+            "text": "Trandoshans, or T'doshok in Dosh, were large, bipedal reptilian humanoids from the planet of Trandosha (or Dosha). They had sensitive eyes that could see into the infrared range and the ability to regenerate lost limbs\u2014albeit slowly\u2014and were anatomically built heavier and stronger than most humanoids, including Humans. They would also periodically shed their skin. Unlike some other reptilian humanoids, such as the Barabels and the Ssi-ruuk, Trandoshans had no tails. The Trandoshans were a..."
+        }
+    },
+    "Twi'lek": {
+        "characters": [
+            "Aayla Secura",
+            "Alema Rar",
+            "Astraal Vao",
+            "B'inka Fibuna",
+            "B'ink Utrila",
+            "Bib Fortuna",
+            "Cham Syndulla",
+            "Daeshara'cor",
+            "Darth Ruyn",
+            "Darth Talon",
+            "Eleena Daru",
+            "Guun Han Saresh",
+            "Komad Fortuna",
+            "Lyn Me",
+            "Mission Vao",
+            "Nawara Ven",
+            "Numa Rar",
+            "Oola",
+            "Orn Free Taa",
+            "Sienn'rha",
+            "Shado Vao",
+            "Teff'ith",
+            "Vette",
+            "Vyn Asara",
+            "Xiaan Amersu",
+            "Yuthura Ban",
+            "Zenith",
+            "Zhar Lestin",
+            "Tre Sana"
+        ],
+        "classification": "",
+        "description": "Lekku\nSharp claw-like nails \nSmooth skin",
+        "image": "http://img1.wikia.nocookie.net/__cb20130115025258/starwars/images/thumb/9/95/TwilekNEGAS.png/500px-TwilekNEGAS.png",
+        "language": "Twi'leki, Basic, Lekku",
+        "name": "Twi'lek",
+        "planets": "Ryloth",
+        "z_extra": {
+            "Average height": "1.6 - 2.4 meters",
+            "Designation": "Sentient",
+            "Races": "Lethan\nRutian",
+            "Skin color": "Red \nOrange \nYellow \nGreen \nBlue \nPurple \nBrown \nTan \nPink \nWhite \nStriped and dark gray",
+            "text": "Twi'leks (pronounced/'twil\u025bk/ or/'twa\u026al\u025bk/), sometimes referred to disparagingly as \"Tail-heads\", were an omnivorous humanoid species originating from the planet Ryloth. They tended to eat cultivated molds, fungi, and rycrit meat. Their distinctive features included colorful skin, which varied in pigment from individual to individual, and a pair of shapely prehensile tentacles that grew from the base of their skulls. The tentacles, called \"brain-tails\", \"lekku\", \"tchun-tchin\", or..."
+        }
+    },
+    "Whiphid": {
+        "characters": [
+            "Betsi",
+            "Black Tongue",
+            "Ch'unkk",
+            "Curdik",
+            "D'Wopp",
+            "Aiaks Fwa",
+            "Galrowk",
+            "Norun Gep",
+            "J'Quille",
+            "Jempa",
+            "K'Kruhk",
+            "Marakoloon",
+            "Mubbin",
+            "Jun Seros",
+            "Fillin Ta",
+            "Tak-tak",
+            "Uggo",
+            "Valarian",
+            "Vowluss",
+            "Tulkh"
+        ],
+        "classification": "",
+        "description": "Large, tusked, cold-adapted",
+        "image": "http://img4.wikia.nocookie.net/__cb20101123210609/starwars/images/2/28/Whiphid_NEGAS2.jpg",
+        "language": "Whiphid",
+        "name": "Whiphid",
+        "planets": "Toola",
+        "z_extra": {
+            "Average height": "2.0 - 2.6 meters",
+            "Average lifespan": "Up to 249 standard years",
+            "Hair color": "Brown",
+            "text": "Whiphids were tall, muscled, furred sentient beings from the planet Toola. They were notable for their great tusks. On Toola, Whiphids lived a primitive lifestyle, hunting caraboose and other large animals, such as the motmot, their favored prey. Their language consisted of approximately six thousand words. As Whiphids came into contact with more technically advanced races that came to Toola to buy ice, they began to show great curiosity about the rest of the galaxy. Many Whiphids left..."
+        }
+    },
+    "Wookiee": {
+        "characters": [
+            "Attichitcuk",
+            "Bacca",
+            "Bowdaar",
+            "Chewbacca",
+            "Chuundar",
+            "Dewlannamapia",
+            "Fahraark",
+            "Freyyr",
+            "Grakchawwaa",
+            "Groznik",
+            "Gungi",
+            "Hanharr",
+            "Lowbacca",
+            "Lumpawaroo",
+            "Quagga",
+            "Rorworr",
+            "Salporin",
+            "Tarfful",
+            "Tojjevvuk",
+            "Tyvokka",
+            "Vryyr",
+            "Yarua",
+            "Yubookoo",
+            "Zaalbar"
+        ],
+        "classification": "Mammal",
+        "description": "Tall, hair covered, retractable climbing claws, long life spans",
+        "image": "http://img2.wikia.nocookie.net/__cb20061128184734/starwars/images/5/57/ThreeWookieeAmigos-ROTSVD.jpg",
+        "language": "Shyriiwook\nXaczik\nThykarann",
+        "name": "Wookiee",
+        "planets": "Nominally Kashyyyk; may have originated on an unknown planet",
+        "z_extra": {
+            "Average height": "Male: 2.1 meters",
+            "Average lifespan": "More than 400 standard years",
+            "Average mass": "Male: 125 kilograms\nFemale: 100 kilograms",
+            "Designation": "Sentient",
+            "Eye color": "Blue, green, yellow, golden, brown, red",
+            "Habitat": "Forest",
+            "Hair color": "Different shades of black, brown, and white in varying combinations",
+            "Skin color": "Gray",
+            "Subspecies": "Rwooks",
+            "text": "The Wookiees, whose name for themselves translated to the People of the Trees, were a species of tall, hairy humanoids that were inhabitants of the planet Kashyyyk. One of the most noteworthy members of the species was Chewbacca, Han Solo's best friend and co-pilot, who played a vital role in the Galactic Civil War and afterwards. A race of arboreal mammals, the Wookiees lived in treehouses nestled in the canopy of the towering wroshyr trees. Despite their fearsome appearance, they were..."
+        }
+    },
+    "Yoda's_species": {
+        "characters": [
+            "Minch",
+            "Oteg",
+            "Vandar Tokare",
+            "Yaddle",
+            "Yoda",
+            "Unidentified Jedi"
+        ],
+        "classification": "",
+        "description": "Long, pointed ears\nTridactyl hands\nAnisodactyl feet",
+        "image": "http://img4.wikia.nocookie.net/__cb20061129202540/starwars/images/5/5a/YodaNEGAS.jpg",
+        "language": "",
+        "name": "Yoda's species",
+        "planets": [],
+        "z_extra": {
+            "Average height": "0.7 meters",
+            "Average lifespan": "Unknown ",
+            "Designation": "Sentient",
+            "Skin color": "Greenish-brown",
+            "text": "The Jedi Master Yoda was the best-known member of a Force-sensitive species whose true name is not recorded. Known in some sources simply as Yoda's species, this species of small carnivorous humanoids produced several well-known members of the Jedi Order during the time of the Galactic Republic. The name and homeworld of this species remains unknown. Members of the species were very small, most standing below 70 centimeters, but had extremely long lifespans lasting many hundreds of years..."
+        }
+    }
+}
