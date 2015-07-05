@@ -113,7 +113,7 @@ class Character:
 
             info_dict = temp
 
-        characters = [Character(info_dict[key]) for key in info_dict]
+        characters = [Character(**info_dict[key]) for key in info_dict]
 
         return characters
 
