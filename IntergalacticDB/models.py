@@ -192,7 +192,17 @@ class Planet:
         with open(relative_path + "planets.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
-        info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1][sort_by]))
+        sorting_options = sort_by.split('_')
+        info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1][sorting_options[0]]))
+
+        if sorting_options[1] != '^':
+            temp = OrderedDict()
+            reversed_items = list(reversed(sorted(info_dict.keys())))
+
+            for item in reversed_items:
+                temp[item] = info_dict[item]
+
+            info_dict = temp
 
         return info_dict
 

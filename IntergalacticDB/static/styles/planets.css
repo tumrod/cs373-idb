@@ -208,7 +208,7 @@ h4 {
   top: 75px;
 }
 
-#sort-order {
+#sort-order, #order {
   position: relative;
   left: 50%;
   top: 45px;
