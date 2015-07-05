@@ -18,16 +18,16 @@
       <button type="button" id="order">^</button>
 
   <div id="pricing-table" class="clear">
-    {% for species_name, species_info in all_species.items() %}
+    {% for species in all_species %}
       <div class="plan">
-          <h3>{{ species_info['name'] }}<span><img id="image-placeholder" src={{ species_info['image'] }}></span></h3>
+          <h3>{{ species.get_name() }}<span><img id="image-placeholder" src={{ species.get_image() }}></span></h3>
           <ul>
-            <li><b id="language">language</b><br>{{ species_info['language'] }}</li>
-            <li><b id="classification">classification</b><br>{{ species_info['classification'] }}</li>
+            <li><b id="language">language</b><br>{{ species.get_language() }}</li>
+            <li><b id="classification">classification</b><br>{{ species.get_classification() }}</li>
 
             <li><b id="characters">Characters</b>
                 <select id="sort-order-characters">
-                    {% for character_name in species_info['characters'] %}
+                    {% for character_name in species.get_characters() %}
                         <option value="characters">{{ character_name }}</option>
                     {% endfor %}
                 </select>
@@ -35,7 +35,7 @@
 
             <li><b id="planets">planets</b>
                 <select id="sort-order-planets">
-                    {% for planet_name in species_info['planets'] %}
+                    {% for planet_name in species.get_planets() %}
                         <option value="planets">{{ planet_name }}</option>
                     {% endfor %}
                 </select>
