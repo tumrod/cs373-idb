@@ -23,7 +23,7 @@
           <h3>{{ species.get_name() }}<span><img id="image-placeholder" src={{ species.get_image() }}></span></h3>
           <ul>
             <li><b>language</b><br>{{ species.get_language() }}</li>
-            <li><b>home planet</b><br>{{ species.get_planet() }}</li>
+            <li><b>home planet</b><br><a href="/planets/{{ species.get_planet() }}" class="link">{{ species.get_planet() }}</a></li>
             <li><b>classification</b><br>{{ species.get_classification() }}</li>
 
             <li><b id="characters">Characters</b>

@@ -57,10 +57,10 @@
         <div class="plan">
             <h3>{{ character.get_name() }}<span><img id="image-placeholder" src={{ character.get_image() }}></span></h3>
             <ul>
-                <li><b>Gender:</b>{{ character.get_gender() }}</li>
-                <li><b>Height:</b> {{ character.get_height() }}</li>
-                <li><b>Planet:</b> <a href="/planets/{{ character.get_planet() }}" class="link">{{ character.get_planet() }}</a></li>
-                <li><b>Species:</b> <a href="/species/{{ character.get_species() }}" class="link">{{ character.get_species() }}</a></li>
+                <li><b>Gender</b><br>{{ character.get_gender() }}</li>
+                <li><b>Height</b><br>{{ character.get_height() }}</li>
+                <li><b>Home Planet</b><br><a href="/planets/{{ character.get_planet() }}" class="link">{{ character.get_planet() }}</a></li>
+                <li><b>Species</b><br><a href="/species/{{ character.get_species() }}" class="link">{{ character.get_species() }}</a></li>
             </ul>
             <a class="signup" href="/characters/{{ character.get_name() }}">More</a>
         </div>
