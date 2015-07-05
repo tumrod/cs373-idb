@@ -35,20 +35,16 @@ $('#order').click(function() {
 // Given a sort_attr, make redirect to a url that supports sorting
 function sortTable(sort_attr) {
     sort_attr = sort_attr.toLowerCase();
+
+    // handle special list cases
+    if(sort_attr == 'characters') {
+        sort_attr = 'numberofcharacters';
+    }
+
     if(sort_attr != '-select-') {
 
         $('#order').prop("disabled",false);
-
-        if(aContainsB(window.location.href, 'characters')) {
-            model = 'characters'
-        }
-        else if(aContainsB(window.location.href, 'planets')) {
-            model = 'planets'
-        }
-        else if(aContainsB(window.location.href, 'species')) {
-            model = 'species'
-        }
-        window.location.href = "/" + model + "/sort_by=" + sort_attr + '_' + $('#order').text()
+        window.location.href = "/" + (window.location.href).split('/')[3] + "/sort_by=" + sort_attr + '_' + $('#order').text()
     }
     else {
         $('#order').prop("disabled",true);
