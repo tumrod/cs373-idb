@@ -59,19 +59,21 @@
             <li><b id="system">System</b><br>{{ planet.get_system() }}</li>
 
             <li><b id="characters">Characters</b>
-                <select id="sort-order-characters">
+                <select style="position: relative;left: 1%;top: 5px;" id="sort-order-character-{{ planet.get_name() }}">
                     {% for character_name in planet.get_characters() %}
-                        <option value="characters">{{ character_name }}</option>
+                        <option value="{{ character_name }}">{{ character_name }}</option>
                     {% endfor %}
                 </select>
+                <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select' id="redirect-to-selected-character-in-{{ planet.get_name() }}">Go</button>
             </li>
 
             <li><b id="species">Species</b>
-                <select id="sort-order-species">
+                <select style="position: relative;left: 1%;top: 5px;" id="sort-order-species-{{ planet.get_name() }}">
                     {% for species_name in planet.get_species() %}
-                        <option value="species">{{ species_name }}</option>
+                        <option value="{{ species_name }}">{{ species_name }}</option>
                     {% endfor %}
                 </select>
+                <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select' id="sort-order-species-in-{{ planet.get_name() }}">Go</button>
             </li>
           </ul>
           <a class="signup" href="/planets/{{ planet.get_name() }}">More</a>
