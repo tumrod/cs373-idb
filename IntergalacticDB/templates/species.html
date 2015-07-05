@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>All Species</title>
+    <!-- CSS -->   
+    <link href="{{ url_for('static', filename='styles/species.css')}}" rel="stylesheet" type="text/css" />
+</head>
+  <h1 class="h1">Star Wars Species</h1>
+
+  <h4>Sort By:</h4>
+      <select id="sort-order">
+        <option value="none">-Select-</option>
+        <option value="name">Name</option>
+        <option value="language">Language</option>
+        <option value="classification">Classification</option>
+      </select>
+
+  <div id="pricing-table" class="clear">
+    {% for species_name, species_info in all_species.items() %}
+      <div class="plan">
+          <h3>{{ species_info['name'] }}<span><img id="image-placeholder" src={{ species_info['image'] }}></span></h3>
+          <ul>
+            <li><b id="language">language</b><br>{{ species_info['language'] }}</li>
+            <li><b id="classification">classification</b><br>{{ species_info['classification'] }}</li>
+
+            <li><b id="characters">Characters</b>
+                <select id="sort-order-characters">
+                    {% for character_name in species_info['characters'] %}
+                        <option value="characters">{{ character_name }}</option>
+                    {% endfor %}
+                </select>
+            </li>
+
+            <li><b id="planets">planets</b>
+                <select id="sort-order-characters">
+                    {% for planet_name in species_info['planets'] %}
+                        <option value="planets">{{ planet_name }}</option>
+                    {% endfor %}
+                </select>
+            </li>
+          </ul>
+          <a class="signup" href="">More</a>
+        </div>
+    {% endfor %}
+  </div>
+
+  <!-- JS -->
+  <script src="{{ url_for('static', filename='javascripts/jquery-1.11.2.min.js')}}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='javascripts/sorting.js')}}" type="text/javascript"></script>
+
+</html>

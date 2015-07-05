@@ -34,5 +34,16 @@ def planets(sort_by=None):
 
     return render_template('planets.html', all_planets=all_planets)
 
+@app.route('/species')
+@app.route('/species/sort_by=<sort_by>')
+def species(sort_by=None):
+
+    if sort_by is not None:
+        all_species = Species.get_all_sorted_species(sort_by)
+    else:
+        all_species = Species.get_all_species()
+
+    return render_template('species.html', all_species=all_species)
+
 if __name__ == '__main__':
     app.run()
