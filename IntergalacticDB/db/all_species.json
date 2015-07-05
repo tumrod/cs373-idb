@@ -16,6 +16,7 @@
         "image": "http://img2.wikia.nocookie.net/__cb20061204210934/starwars/images/6/66/AnzatNEGAS.jpg",
         "language": "Anzat language\nGalactic Basic Standard",
         "name": "Anzati",
+        "numberofcharacters": 9,
         "planets": "Anzat",
         "z_extra": {
             "Average height": "1.5-1.7 meters",
@@ -39,6 +40,7 @@
         "image": "http://img3.wikia.nocookie.net/__cb20130120075519/starwars/images/thumb/4/4b/Aqualish-NEGAS.png/500px-Aqualish-NEGAS.png",
         "language": "Aqualish\nGalactic Basic Standard",
         "name": "Aqualish",
+        "numberofcharacters": 5,
         "planets": "Ando",
         "z_extra": {
             "Average height": "1.7 - 2.0 meters",
@@ -72,6 +74,7 @@
         "image": "http://img4.wikia.nocookie.net/__cb20060903181845/starwars/images/7/74/Bith_%28Doikk_Nats%29.jpg",
         "language": "Bith",
         "name": "Bith",
+        "numberofcharacters": 13,
         "planets": "Clak'dor VII",
         "z_extra": {
             "Average height": "1.5 - 1.75 meters",
@@ -108,6 +111,7 @@
         "image": "http://img1.wikia.nocookie.net/__cb20061130130400/starwars/images/thumb/0/03/BothanNEGAS.jpg/500px-BothanNEGAS.jpg",
         "language": "Bothese \nBotha \nGalactic Basic Standard",
         "name": "Bothan",
+        "numberofcharacters": 16,
         "planets": "Bothawui",
         "z_extra": {
             "Average height": "1.4 - 1.5 meters",
@@ -136,6 +140,7 @@
         "image": "http://img4.wikia.nocookie.net/__cb20061204211640/starwars/images/9/9f/Chadra-Fan_NEGAS.jpg",
         "language": "Chadra-Fan",
         "name": "Chadra-Fan",
+        "numberofcharacters": 10,
         "planets": "Chad",
         "z_extra": {
             "Average height": "1 meter",
@@ -155,6 +160,7 @@
         "image": "http://img3.wikia.nocookie.net/__cb20090709061755/starwars/images/6/60/ChevinNEGAS.jpg",
         "language": "Chevin",
         "name": "Chevin",
+        "numberofcharacters": 1,
         "planets": "Vinsoth",
         "z_extra": {
             "Average height": "1.7 \u2013 3 meters",
@@ -183,6 +189,7 @@
         "image": "http://img2.wikia.nocookie.net/__cb20100615162303/starwars/images/thumb/1/15/ChissNEGAS.jpg/500px-ChissNEGAS.jpg",
         "language": "Cheunh\nSy Bisti\nMinnisiat\nOther trade languages",
         "name": "Chiss",
+        "numberofcharacters": 11,
         "planets": "Csilla",
         "z_extra": {
             "Average height": "1.8 meters",
@@ -221,6 +228,7 @@
         "image": "http://img1.wikia.nocookie.net/__cb20110108064352/starwars/images/6/69/Nightsisters-TCW.jpg",
         "language": "Galactic Basic Standard",
         "name": "Dathomirian",
+        "numberofcharacters": 20,
         "planets": "Dathomir",
         "z_extra": {
             "Average height": "Varies",
@@ -259,6 +267,7 @@
         "image": "http://img4.wikia.nocookie.net/__cb20100616044458/starwars/images/thumb/5/55/DevaronianNEGAS.jpg/500px-DevaronianNEGAS.jpg",
         "language": "Devaronese",
         "name": "Devaronian",
+        "numberofcharacters": 20,
         "planets": "Devaron",
         "z_extra": {
             "Average height": "1.9 meters",
@@ -284,6 +293,7 @@
         "image": "http://img1.wikia.nocookie.net/__cb20051207122858/starwars/images/e/e5/Ewokscrossthehills.JPG",
         "language": "Ewokese",
         "name": "Ewok",
+        "numberofcharacters": 9,
         "planets": "Endor",
         "z_extra": {
             "Average height": "1 meter",
@@ -303,6 +313,7 @@
         "image": "http://img3.wikia.nocookie.net/__cb20070724012727/starwars/images/thumb/d/dc/Firrerreos.jpg/500px-Firrerreos.jpg",
         "language": "",
         "name": "Firrerreo",
+        "numberofcharacters": 1,
         "planets": "Firrerre",
         "z_extra": {
             "text": "The Firrerreo, also referred to as Firrerreons, were natives of the planet Firrerre. Resembling Humans, Firrerreo had highly developed canine teeth, two-tone hair, and nictitating membranes protecting eyes that were able to see into the ultraviolet range of the spectrum. These membranes also protected the eyes from intense flashes of light, as well as flying debris."
@@ -333,6 +344,7 @@
         "image": "http://img2.wikia.nocookie.net/__cb20060813142536/starwars/images/thumb/2/23/Gamorrean_Guard_with_Axe.jpg/500px-Gamorrean_Guard_with_Axe.jpg",
         "language": "Gamorrese",
         "name": "Gamorrean",
+        "numberofcharacters": 17,
         "planets": "Gamorr",
         "z_extra": {
             "Average height": "1.7 to 1.8 meters",
@@ -361,6 +373,7 @@
         "image": "http://img1.wikia.nocookie.net/__cb20061205190815/starwars/images/thumb/9/9a/GandAlienNEGAS.jpg/500px-GandAlienNEGAS.jpg",
         "language": "Gand",
         "name": "Gand",
+        "numberofcharacters": 10,
         "planets": "Gand",
         "z_extra": {
             "Average height": "1.4 meters , 1.6 meters ",
@@ -389,6 +402,7 @@
         "image": "http://img4.wikia.nocookie.net/__cb20061201134756/starwars/images/thumb/2/2e/GranNEGAS.jpg/500px-GranNEGAS.jpg",
         "language": "Gran",
         "name": "Gran",
+        "numberofcharacters": 9,
         "planets": "Kinyen",
         "z_extra": {
             "Average height": "1.5 - 1.8 meters",
@@ -408,6 +422,7 @@
         "image": "http://img3.wikia.nocookie.net/__cb20100628191857/starwars/images/5/5d/Humans-TESB30.jpg",
         "language": "Galactic Basic Standard\nOthers",
         "name": "Human",
+        "numberofcharacters": 0,
         "planets": "Unknown, possibly Coruscant ",
         "z_extra": {
             "Average height": "1.8 meters",
@@ -453,6 +468,7 @@
         "image": "http://img2.wikia.nocookie.net/__cb20130115030417/starwars/images/a/a7/HuttNEGAS.png",
         "language": "Huttese",
         "name": "Hutt",
+        "numberofcharacters": 25,
         "planets": "Varl ",
         "z_extra": {
             "Average height": "3 - 3.9 meters",
@@ -491,6 +507,7 @@
         "image": "http://img2.wikia.nocookie.net/__cb20080816183256/starwars/images/thumb/7/74/Tendau_Bendon_%28Ithorian%29.jpg/500px-Tendau_Bendon_%28Ithorian%29.jpg",
         "language": "Ithorese",
         "name": "Ithorian",
+        "numberofcharacters": 20,
         "planets": "Ithor",
         "z_extra": {
             "Average height": "1.8\u20132.3 meters",
@@ -536,6 +553,7 @@
         "image": "http://img4.wikia.nocookie.net/__cb20080226180703/starwars/images/5/5a/Jawa_fortress.jpg",
         "language": "Jawaese",
         "name": "Jawa",
+        "numberofcharacters": 24,
         "planets": "Tatooine",
         "z_extra": {
             "Average height": "1 meter",
@@ -554,6 +572,7 @@
         "image": "http://img4.wikia.nocookie.net/__cb20061024192303/starwars/images/thumb/5/53/Khommite2.jpg/500px-Khommite2.jpg",
         "language": "Galactic Basic Standard",
         "name": "Khommite",
+        "numberofcharacters": 1,
         "planets": "Khomm",
         "z_extra": {
             "Average height": "1.2 - 2.0 meters",
@@ -579,6 +598,7 @@
         "image": "",
         "language": "",
         "name": "Kiffar",
+        "numberofcharacters": 10,
         "planets": "Kiffu",
         "z_extra": {
             "Average height": "1.7 meters ",
@@ -602,6 +622,7 @@
         "image": "http://img2.wikia.nocookie.net/__cb20061205191555/starwars/images/e/e4/Klatooinian_NEGAS.jpg",
         "language": "Huttese\nKlatooinian",
         "name": "Klatooinian",
+        "numberofcharacters": 8,
         "planets": "Klatooine",
         "z_extra": {
             "Average height": "1.8 meters",
@@ -625,6 +646,7 @@
         "image": "http://img4.wikia.nocookie.net/__cb20061129193617/starwars/images/thumb/8/86/Kowakian_NEGAS.jpg/500px-Kowakian_NEGAS.jpg",
         "language": "",
         "name": "Kowakian monkey-lizard",
+        "numberofcharacters": 6,
         "planets": "Kowak",
         "z_extra": {
             "Average height": "0.7 meters",
@@ -648,6 +670,7 @@
         "image": "http://img1.wikia.nocookie.net/__cb20100810182118/starwars/images/thumb/b/b3/Vodo_baas.jpg/500px-Vodo_baas.jpg",
         "language": "",
         "name": "Krevaaki",
+        "numberofcharacters": 3,
         "planets": "Krevas",
         "z_extra": {
             "Skin color": "Red or Black",
@@ -671,6 +694,7 @@
         "image": "http://img3.wikia.nocookie.net/__cb20061130131415/starwars/images/thumb/c/cf/Kubaz_NEGAS.jpg/500px-Kubaz_NEGAS.jpg",
         "language": "Kubazian",
         "name": "Kubaz",
+        "numberofcharacters": 9,
         "planets": "Kubindi",
         "z_extra": {
             "Average height": "1.7-2 meters",
@@ -697,6 +721,7 @@
         "image": "http://img1.wikia.nocookie.net/__cb20090709063145/starwars/images/9/90/NoghriNEGAS.jpg",
         "language": "Honoghran",
         "name": "Noghri",
+        "numberofcharacters": 7,
         "planets": "Honoghr",
         "z_extra": {
             "Average height": "1.4 - 1.7 meters",
@@ -722,6 +747,7 @@
         "image": "http://img3.wikia.nocookie.net/__cb20130402140821/starwars/images/8/89/Wiki-wordmark.png",
         "language": "Omwatese",
         "name": "Omwati",
+        "numberofcharacters": 7,
         "planets": "Omwat",
         "z_extra": {
             "Average height": "1.6 - 2.1 meters",
@@ -756,6 +782,7 @@
         "image": "http://img1.wikia.nocookie.net/__cb20090709063609/starwars/images/4/48/QuarrenNEGAS.jpg",
         "language": "Quarrenese",
         "name": "Quarren",
+        "numberofcharacters": 15,
         "planets": "Dac",
         "z_extra": {
             "Average height": "1.7\u20131.8 meters",
@@ -801,6 +828,7 @@
         "image": "http://img2.wikia.nocookie.net/__cb20061127015745/starwars/images/2/23/Rodian_NEGAS.jpg",
         "language": "Rodese, Basic, Huttese",
         "name": "Rodian",
+        "numberofcharacters": 28,
         "planets": "Rodia",
         "z_extra": {
             "Average height": "1.5 to 1.7 meters",
@@ -819,6 +847,7 @@
         "image": "http://img3.wikia.nocookie.net/__cb20060620165114/starwars/images/thumb/1/1b/Rybet_AA.jpg/500px-Rybet_AA.jpg",
         "language": "Rybese",
         "name": "Rybet",
+        "numberofcharacters": 1,
         "planets": "Varl ",
         "z_extra": {
             "Average height": "1.2 to 1.9 meters",
@@ -853,6 +882,7 @@
         "image": "http://img1.wikia.nocookie.net/__cb20131219191453/starwars/images/thumb/b/bc/Shistavanen_Wolfman-BotF_by_Joel_Hustak.jpg/500px-Shistavanen_Wolfman-BotF_by_Joel_Hustak.jpg",
         "language": "Shistavanen \nBasic",
         "name": "Shistavanen",
+        "numberofcharacters": 18,
         "planets": "Uvena Prime",
         "z_extra": {
             "Average height": "1.8 meters",
@@ -872,6 +902,7 @@
         "image": "http://img4.wikia.nocookie.net/__cb20061206184105/starwars/images/thumb/8/8d/SsiruuNEGAS.jpg/500px-SsiruuNEGAS.jpg",
         "language": "Ssi-ruuvi",
         "name": "Ssi-ruuk",
+        "numberofcharacters": 5,
         "planets": "Lwhekk",
         "z_extra": {
             "Average height": "2 meters",
@@ -912,6 +943,7 @@
         "image": "http://img1.wikia.nocookie.net/__cb20100810063353/starwars/images/thumb/f/f5/Sullustan_NEGAS.jpg/500px-Sullustan_NEGAS.jpg",
         "language": "Sullustese",
         "name": "Sullustan",
+        "numberofcharacters": 23,
         "planets": "Sullust",
         "z_extra": {
             "Average height": "1 - 1.8 meters",
@@ -936,6 +968,7 @@
         "image": "http://img1.wikia.nocookie.net/__cb20090709064059/starwars/images/thumb/0/03/Talz_NEGAS.jpg/500px-Talz_NEGAS.jpg",
         "language": "Talzzi",
         "name": "Talz",
+        "numberofcharacters": 9,
         "planets": "Alzoc III",
         "z_extra": {
             "Average height": "2 - 2.5 meters",
@@ -975,6 +1008,7 @@
         "image": "http://img4.wikia.nocookie.net/__cb20130115031110/starwars/images/4/45/Trandoshan_NEGAS.png",
         "language": "Dosh",
         "name": "Trandoshan",
+        "numberofcharacters": 20,
         "planets": "Trandosha, also referred to as Dosha or Hsskor by Trandoshans",
         "z_extra": {
             "Average height": "2 meters",
@@ -1022,6 +1056,7 @@
         "image": "http://img1.wikia.nocookie.net/__cb20130115025258/starwars/images/thumb/9/95/TwilekNEGAS.png/500px-TwilekNEGAS.png",
         "language": "Twi'leki, Basic, Lekku",
         "name": "Twi'lek",
+        "numberofcharacters": 29,
         "planets": "Ryloth",
         "z_extra": {
             "Average height": "1.6 - 2.4 meters",
@@ -1059,6 +1094,7 @@
         "image": "http://img4.wikia.nocookie.net/__cb20101123210609/starwars/images/2/28/Whiphid_NEGAS2.jpg",
         "language": "Whiphid",
         "name": "Whiphid",
+        "numberofcharacters": 20,
         "planets": "Toola",
         "z_extra": {
             "Average height": "2.0 - 2.6 meters",
@@ -1099,6 +1135,7 @@
         "image": "http://img2.wikia.nocookie.net/__cb20061128184734/starwars/images/5/57/ThreeWookieeAmigos-ROTSVD.jpg",
         "language": "Shyriiwook\nXaczik\nThykarann",
         "name": "Wookiee",
+        "numberofcharacters": 24,
         "planets": "Nominally Kashyyyk; may have originated on an unknown planet",
         "z_extra": {
             "Average height": "Male: 2.1 meters",
@@ -1127,7 +1164,8 @@
         "image": "http://img4.wikia.nocookie.net/__cb20061129202540/starwars/images/5/5a/YodaNEGAS.jpg",
         "language": "",
         "name": "Yoda's species",
-        "planets": [],
+        "numberofcharacters": 6,
+        "planets": "",
         "z_extra": {
             "Average height": "0.7 meters",
             "Average lifespan": "Unknown ",

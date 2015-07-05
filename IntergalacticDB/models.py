@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 
-import json, os
+import json
 from collections import OrderedDict
-
-relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
 
 class Character:
     """
@@ -84,7 +82,7 @@ class Character:
         """
         Return an list of all character models
         """
-        with open(relative_path + "characters.json") as data_file:
+        with open("db/characters.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         characters = [Character(**info_dict[key]) for key in info_dict]
@@ -98,7 +96,7 @@ class Character:
         Return an list of all character models, sorted by the given
                attribute
         """
-        with open(relative_path + "characters.json") as data_file:
+        with open("db/characters.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         sorting_options = sort_by.split('_')
@@ -106,9 +104,8 @@ class Character:
 
         if sorting_options[1] != '^':
             temp = OrderedDict()
-            reversed_items = list(reversed(sorted(info_dict.keys())))
 
-            for item in reversed_items:
+            for item in reversed(info_dict):
                 temp[item] = info_dict[item]
 
             info_dict = temp
@@ -123,7 +120,7 @@ class Character:
         Input the character name to retrieve
         Return an instance of this character
         """
-        with open(relative_path + "characters.json") as data_file:
+        with open("db/characters.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         return Character(**info_dict[character])
@@ -133,7 +130,7 @@ class Planet:
     Planet encapsulates a planet dictionary containing its information
     """
 
-    def __init__(self, name, characters, species, description, image, region, system):
+    def __init__(self, name, characters, species, description, image, region, system, numberofcharacters, numberofspecies):
         """
         Initialize the planet to have a dictionary of its information
         Input strings of the planet's name, characters list, species list, description, image, region, and system
@@ -200,7 +197,7 @@ class Planet:
         """
         Return an list of all planets models
         """
-        with open(relative_path + "planets.json") as data_file:
+        with open("db/planets.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         planets = [Planet(**info_dict[key]) for key in info_dict]
@@ -214,7 +211,7 @@ class Planet:
         Return an list of all planet models, sorted by the given
                attribute
         """
-        with open(relative_path + "planets.json") as data_file:
+        with open("db/planets.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         sorting_options = sort_by.split('_')
@@ -222,16 +219,15 @@ class Planet:
 
         if sorting_options[1] != '^':
             temp = OrderedDict()
-            reversed_items = list(reversed(sorted(info_dict.keys())))
 
-            for item in reversed_items:
+            for item in reversed(info_dict):
                 temp[item] = info_dict[item]
 
             info_dict = temp
 
-        planets = [Planet(**info_dict[key]) for key in info_dict]
+        planet = [Planet(**info_dict[key]) for key in info_dict]
 
-        return planets
+        return planet
 
     @staticmethod
     def get_planet(planet):
@@ -239,7 +235,7 @@ class Planet:
         Input the planet name to retrieve
         Return an instance of this planet
         """
-        with open(relative_path + "planets.json") as data_file:
+        with open("db/planets.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         return Planet(info_dict[planet])
@@ -249,7 +245,7 @@ class Species:
     Species encapsulates a species dictionary containing its information
     """
 
-    def __init__(self, name, characters, planet, description, image, language, classification):
+    def __init__(self, name, characters, planet, description, image, language, classification, numberofcharacters):
         """
         Initialize the species to have a dictionary of its information
         Input strings of the species's name, characters list, planet list, description, image, language, and classification
@@ -262,6 +258,7 @@ class Species:
         self.species["image"] = image
         self.species["language"] = language
         self.species["classification"] = classification
+        self.species["numberofcharacters"] = numberofcharacters
 
     def get_info(self):
         """
@@ -317,7 +314,7 @@ class Species:
         Return an OrderedDict of all species, with their names as keys
                and their dicts of information as values
         """
-        with open(relative_path + "species.json") as data_file:
+        with open("db/species.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         species = [Species(**info_dict[key]) for key in info_dict]
@@ -332,7 +329,7 @@ class Species:
                and their dicts of information as values, sorted by the given
                attribute
         """
-        with open(relative_path + "species.json") as data_file:
+        with open("db/species.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         sorting_options = sort_by.split('_')
@@ -340,9 +337,8 @@ class Species:
 
         if sorting_options[1] != '^':
             temp = OrderedDict()
-            reversed_items = list(reversed(sorted(info_dict.keys())))
 
-            for item in reversed_items:
+            for item in reversed(info_dict):
                 temp[item] = info_dict[item]
 
             info_dict = temp
@@ -357,7 +353,7 @@ class Species:
         Input the species name to retrieve
         Return an instance of this species
         """
-        with open(relative_path + "planets.json") as data_file:
+        with open("db/planets.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         return Species(info_dict[species])
