@@ -59,10 +59,10 @@
             <ul>
                 <li><b>Gender:</b>{{ character_info['gender'] }}</li>
                 <li><b>Height:</b> {{ character_info['height'] }}</li>
-                <li><b>Planet:</b> {{ character_info['planet'] }}</li>
-                <li><b>Species:</b> {{ character_info['species'] }}</li>
+                <li><b>Planet:</b> <a href="/planets/{{ character_info['planet'] }}" class="link">{{ character_info['planet'] }}</a></li>
+                <li><b>Species:</b> <a href="/species/{{ character_info['species'] }}" class="link">{{ character_info['species'] }}</a></li>
             </ul>
-            <a class="signup" href="">More</a>
+            <a class="signup" href="/characters/{{ character_name }}">More</a>
         </div>
         {% endfor %}
     </div>

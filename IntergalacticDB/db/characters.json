@@ -1,4 +1,4 @@
-{"Boba Fett": 
+{"Boba_Fett":
 	{"name": "Boba Fett", 
 	"species": "Human", 
 	"image": "http:\/\/img4.wikia.nocookie.net\/__cb20130920001614\/starwars\/images\/thumb\/5\/58\/BobaFettMain2.jpg\/400px-BobaFettMain2.jpg", 
@@ -14,7 +14,7 @@
 	"planet": "Kashyyyk",
 	"gender": "Male",
 	"height": "2.28 meters"},
-"Darth Vader": 
+"Darth_Vader":
 	{"name": "Darth Vader", 
 	"species": "Human", 
 	"image": "http:\/\/img2.wikia.nocookie.net\/__cb20130621175844\/starwars\/images\/thumb\/6\/6f\/Anakin_Skywalker_RotS.png\/400px-Anakin_Skywalker_RotS.webp", 
@@ -22,7 +22,7 @@
 	"planet": "Tatooine",
 	"gender": "Male",
 	"height": "2.02 meters"},
-"Ahsoka Tano":
+"Ahsoka_Tano":
 	{"name": "Ahsoka Tano",
 	"species": "Togruta",
 	"image": "http://img1.wikia.nocookie.net/__cb20121211040147/starwars/images/0/03/AhsokaHS-AFiN.png",
