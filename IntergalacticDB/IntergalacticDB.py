@@ -33,7 +33,7 @@ def characters(character=None, sort_by=None):
 def planets(planet=None, sort_by=None):
 
     if planet is not None:
-        planet = Character.get_character(planet)
+        planet = Planet.get_planet(planet)
         return render_template('planet.html', planet=planet)
     elif sort_by is not None:
         all_planets = Planet.get_all_sorted_planets(sort_by)

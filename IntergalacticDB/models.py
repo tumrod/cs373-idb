@@ -238,7 +238,7 @@ class Planet:
         with open("db/planets.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
-        return Planet(info_dict[planet])
+        return Planet(**info_dict[planet])
 
 class Species:
     """
