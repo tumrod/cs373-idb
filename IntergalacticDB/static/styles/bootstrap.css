@@ -1277,7 +1277,7 @@ h6,
     .h6 .small {
         font-weight: normal;
         line-height: 1;
-        color: #777;
+        color: #fff;
     }
 
     h1 small,
@@ -1361,7 +1361,7 @@ mark,
 }
 
 .text-muted {
-    color: #777;
+    color: #fff;
 }
 
 .text-primary {
@@ -1449,6 +1449,7 @@ a.bg-danger:hover {
     padding-bottom: 9px;
     margin: 40px 0 20px;
     border-bottom: 1px solid #eee;
+    color: #fff;
 }
 
 ul,
@@ -1518,7 +1519,7 @@ dd {
 abbr[title],
 abbr[data-original-title] {
     cursor: help;
-    border-bottom: 1px dotted #777;
+    border-bottom: 1px dotted #fff;
 }
 
 .initialism {
@@ -1545,7 +1546,7 @@ blockquote {
         display: block;
         font-size: 80%;
         line-height: 1.42857143;
-        color: #777;
+        color: #fff;
     }
 
         blockquote footer:before,
@@ -2544,7 +2545,7 @@ table {
 caption {
     padding-top: 8px;
     padding-bottom: 8px;
-    color: #777;
+    color: #fff;
     text-align: left;
 }
 
@@ -3724,7 +3725,7 @@ select[multiple].form-group-lg .form-control {
             fieldset[disabled] .btn-link:hover,
             .btn-link[disabled]:focus,
             fieldset[disabled] .btn-link:focus {
-                color: #777;
+                color: #fff;
                 text-decoration: none;
             }
 
@@ -3891,7 +3892,7 @@ tbody.collapse.in {
     .dropdown-menu > .disabled > a,
     .dropdown-menu > .disabled > a:hover,
     .dropdown-menu > .disabled > a:focus {
-        color: #777;
+        color: #fff;
     }
 
         .dropdown-menu > .disabled > a:hover,
@@ -3926,7 +3927,7 @@ tbody.collapse.in {
     padding: 3px 20px;
     font-size: 12px;
     line-height: 1.42857143;
-    color: #777;
+    color: #fff;
     white-space: nowrap;
 }
 
@@ -4379,12 +4380,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
             }
 
         .nav > li.disabled > a {
-            color: #777;
+            color: #fff;
         }
 
             .nav > li.disabled > a:hover,
             .nav > li.disabled > a:focus {
-                color: #777;
+                color: #fff;
                 text-decoration: none;
                 cursor: not-allowed;
                 background-color: transparent;
@@ -5010,7 +5011,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
     .navbar-default .navbar-brand {
-        color: #777;
+        color: #fff;
     }
 
         .navbar-default .navbar-brand:hover,
@@ -5020,11 +5021,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
         }
 
     .navbar-default .navbar-text {
-        color: #777;
+        color: #fff;
     }
 
     .navbar-default .navbar-nav > li > a {
-        color: #777;
+        color: #fff;
     }
 
         .navbar-default .navbar-nav > li > a:hover,
@@ -5074,7 +5075,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #777;
+        color: #fff;
     }
 
         .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
@@ -5099,7 +5100,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .navbar-link {
-    color: #777;
+    color: #fff;
 }
 
     .navbar-default .navbar-link:hover {
@@ -5107,7 +5108,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     }
 
 .navbar-default .btn-link {
-    color: #777;
+    color: #fff;
 }
 
     .navbar-default .btn-link:hover,
@@ -5267,7 +5268,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
         }
 
     .breadcrumb > .active {
-        color: #777;
+        color: #fff;
     }
 
 .pagination {
@@ -5335,7 +5336,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     .pagination > .disabled > a,
     .pagination > .disabled > a:hover,
     .pagination > .disabled > a:focus {
-        color: #777;
+        color: #fff;
         cursor: not-allowed;
         background-color: #fff;
         border-color: #ddd;
@@ -5417,7 +5418,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     .pager .disabled > a:hover,
     .pager .disabled > a:focus,
     .pager .disabled > span {
-        color: #777;
+        color: #fff;
         cursor: not-allowed;
         background-color: #fff;
     }
@@ -5452,7 +5453,7 @@ a.label:focus {
 }
 
 .label-default {
-    background-color: #777;
+    background-color: #fff;
 }
 
     .label-default[href]:hover,
@@ -5516,7 +5517,7 @@ a.label:focus {
     text-align: center;
     white-space: nowrap;
     vertical-align: baseline;
-    background-color: #777;
+    background-color: #fff;
     border-radius: 10px;
 }
 
@@ -5932,7 +5933,7 @@ a.list-group-item {
 .list-group-item.disabled,
 .list-group-item.disabled:hover,
 .list-group-item.disabled:focus {
-    color: #777;
+    color: #fff;
     cursor: not-allowed;
     background-color: #eee;
 }
@@ -5946,7 +5947,7 @@ a.list-group-item {
     .list-group-item.disabled .list-group-item-text,
     .list-group-item.disabled:hover .list-group-item-text,
     .list-group-item.disabled:focus .list-group-item-text {
-        color: #777;
+        color: #fff;
     }
 
 .list-group-item.active,
@@ -7579,3 +7580,15 @@ button.close {
     }
 }
 /*# sourceMappingURL=bootstrap.styles.map */
+
+.navigation ul li a {
+    color: #fff;
+}
+
+.col-md-4 h3 {
+    color: #fff;
+}
+
+.col-md-4 p {
+    color: #fff;
+}

@@ -16,7 +16,7 @@
     <link href="{{ url_for('static', filename='styles/bootstrap.css')}}" rel="stylesheet" type="text/css" />
 
 </head>
-<body class="full-intro background--dark">
+<body>
 
     <!-- HEADER -->
     <header class="header">
@@ -82,11 +82,9 @@
     </div>
     <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='javascripts/jquery-1.11.2.min.js')}}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='javascripts/bootstrap.min.js')}}" type="text/javascript"></script>
 
 </body>
 
