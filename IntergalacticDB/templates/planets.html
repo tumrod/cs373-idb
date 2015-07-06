@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>All Planets</title>
+    <!-- CSS -->
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static', filename='styles/planets.css')}}" rel="stylesheet" type="text/css" />
+</head>
+<body class="full-intro background--dark">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+
+            <!-- Navigation Menu -->
+            <nav class='navigation'>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="/characters">Characters</a>
+                    </li>
+                    <li>
+                        <a href="/species">Species</a>
+                    </li>
+                    <li>
+                        <a href="/planets">Planets</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--End Navigation Menu -->
+
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+  <h1 class="h1">Star Wars Planets</h1>
+
+  <h4>Sort By:</h4>
+      <select id="sort-order">
+        <option value="none">-Select-</option>
+        <option value="name">Name</option>
+        <option value="region">Region</option>
+        <option value="system">System</option>
+        <option value="numberofcharacters">Characters</option>
+        <option value="numberofspecies">Species</option>
+      </select>
+      <button type="button" id="order">^</button>
+
+  <div id="pricing-table" class="clear">
+    {% for planet in all_planets %}
+      <div class="plan">
+          <h3>{{ planet.get_name() }}<span><img id="image-placeholder" src={{ planet.get_image() }}></span></h3>
+          <ul>
+            <li><b id="region">Region</b><br>{{ planet.get_region() }}</li>
+            <li><b id="system">System</b><br>{{ planet.get_system() }}</li>
+
+            <li><b id="characters">Characters</b>
+                <select style="position: relative;left: 1%;top: 5px;" id="sort-order-character-{{ planet.get_name() }}">
+                    {% for character_name in planet.get_characters() %}
+                        <option value="{{ character_name }}">{{ character_name }}</option>
+                    {% endfor %}
+                </select>
+                <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select' id="redirect-to-selected-character-in-{{ planet.get_name() }}">Go</button>
+            </li>
+
+            <li><b id="species">Species</b>
+                <select style="position: relative;left: 1%;top: 5px;" id="sort-order-species-{{ planet.get_name() }}">
+                    {% for species_name in planet.get_species() %}
+                        <option value="{{ species_name }}">{{ species_name }}</option>
+                    {% endfor %}
+                </select>
+                <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select' id="sort-order-species-in-{{ planet.get_name() }}">Go</button>
+            </li>
+          </ul>
+          <a class="signup" href="/planets/{{ planet.get_name() }}">More</a>
+        </div>
+    {% endfor %}
+  </div>
+
+  <!-- JS -->
+  <script src="{{ url_for('static', filename='javascripts/jquery-1.11.2.min.js')}}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='javascripts/sorting.js')}}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='javascripts/navigation.js')}}" type="text/javascript"></script>
+</body>
+</html>

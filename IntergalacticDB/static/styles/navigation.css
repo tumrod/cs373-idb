@@ -34,7 +34,7 @@
 .navigation {
     position: static;
     float: right;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Audiowide';
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
@@ -80,7 +80,7 @@
     .navigation > ul > li > a {
         padding: 41px 16px;
         font-size: 12px;
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Audiowide';
         font-weight:600;
         letter-spacing: 2px;
         text-decoration: none;

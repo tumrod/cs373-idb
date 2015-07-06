@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Planet - {{ planet.get_name() }}</title>
+
+    <!-- CSS -->
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='styles/bootstrap.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='styles/pages.css')}}" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+
+            <!-- Navigation Menu -->
+            <nav class='navigation'>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="/characters">Characters</a>
+                    </li>
+                    <li>
+                        <a href="/species">Species</a>
+                    </li>
+                    <li>
+                        <a href="/planets">Planets</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--End Navigation Menu -->
+
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">{{ planet.get_name() }}</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-responsive" src={{ planet.get_image() }} alt="">
+            </div>
+
+            <div class="col-md-4">
+                <h3>About</h3>
+                <p>Region: {{ planet.get_region() }}</p>
+                <p>System: {{ planet.get_system() }}</p>
+                <p>Characters:
+                {% for character_name in planet.get_characters() %}
+                    <a href="/characters/{{ character_name }}" class="link">{{ character_name }}</a>
+                {% endfor %}
+                </p>
+                <p> Species:
+                {% for species_name in planet.get_species() %}
+                    <a href="/species/{{ species_name }}" class="link">{{ species_name }}</a>
+                {% endfor %}
+                </p>
+                <p>{{ planet.get_description() }}</p>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ url_for('static', filename='javascripts/jquery-1.11.2.min.js')}}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='javascripts/bootstrap.min.js')}}" type="text/javascript"></script>
+
+</body>
+
+</html>
