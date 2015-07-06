@@ -4,7 +4,6 @@
 @import url("plugin/mediaelementplayer.css");
 @import url("plugin/colorbox.css");
 @import url("plugin/jquery.fs.tipper.css");
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900);
 @import url(http://fonts.googleapis.com/css?family=Audiowide);
 
 /* 
@@ -1095,7 +1094,7 @@ form label.error {
 }
 
 .header {
-    background-color: #fff;
+    background-color: #303030;
     /*border-bottom: 1px solid #eee;*/
     color: #323232;
     /*padding:25px 0px;*/
@@ -1617,6 +1616,18 @@ header.sticky .navigation a.current-ele {
     .team-item-info h5 {
         margin-bottom: 0px;
     }
+
+.individual-stat {
+    text-align: left;
+}
+
+.individual-bio {
+    top:25px;
+    bottom: 40px;
+}
+.team-link {
+    padding-right: 25px;
+}
 
 /*-------------------------------------------------------------------------------------------*/
 /*  Skills Bar      ||---------------------------- */

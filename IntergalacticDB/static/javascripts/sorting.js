@@ -15,13 +15,13 @@ $( document ).ready(function() {
 
 // Detect when a new value has been passed selected on sort
 $("#sort-order").change(function() {
-    sort_attr = $('#sort-order option:selected').text();
+    sort_attr = document.getElementById("sort-order").value;
     sortTable(sort_attr);
 });
 
 // Detect when order button has been toggled
 $('#order').click(function() {
-   sort_attr = $('#sort-order option:selected').text();
+   sort_attr = document.getElementById("sort-order").value;
    if ($(this).text() == "v") {
       $(this).text("^");
       sortTable(sort_attr);
@@ -35,20 +35,11 @@ $('#order').click(function() {
 // Given a sort_attr, make redirect to a url that supports sorting
 function sortTable(sort_attr) {
     sort_attr = sort_attr.toLowerCase();
+
     if(sort_attr != '-select-') {
 
         $('#order').prop("disabled",false);
-
-        if(aContainsB(window.location.href, 'characters')) {
-            model = 'characters'
-        }
-        else if(aContainsB(window.location.href, 'planets')) {
-            model = 'planets'
-        }
-        else if(aContainsB(window.location.href, 'species')) {
-            model = 'species'
-        }
-        window.location.href = "/" + model + "/sort_by=" + sort_attr + '_' + $('#order').text()
+        window.location.href = "/" + (window.location.href).split('/')[3] + "/sort_by=" + sort_attr + '_' + $('#order').text()
     }
     else {
         $('#order').prop("disabled",true);

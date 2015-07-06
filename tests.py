@@ -7,7 +7,7 @@
 from io       import StringIO
 from unittest import main, TestCase
 
-from models import Character, Planet, Species
+from IntergalacticDB import models as m
 
 # -----------
 # 
@@ -19,7 +19,7 @@ class TestModels (TestCase) :
     # ---------
 
     def test_character_1 (self) :
-        c = Character(name="Boba Fett", species="Human", planet="Kamino", description="some description", image="some url", gender="Male", birth="31.5 BBY", height="1.83 meters")
+        c = m.Character(name="Boba Fett", species="Human", planet="Kamino", description="some description", image="some url", gender="Male", birth="31.5 BBY", height="1.83 meters")
         name = c.get_name()
         planet = c.get_planet()
         species = c.get_species()
@@ -39,7 +39,7 @@ class TestModels (TestCase) :
         self.assertEqual(height, "1.83 meters")
 
     def test_character_2 (self) :
-        c = Character(name="Chewbacca", species="Wookiee", planet="Kashyyyk", description="some description", image="some url", gender="Male", birth="200 BBY", height="2.28 meters")
+        c = m.Character(name="Chewbacca", species="Wookiee", planet="Kashyyyk", description="some description", image="some url", gender="Male", birth="200 BBY", height="2.28 meters")
         name = c.get_name()
         planet = c.get_planet()
         species = c.get_species()
@@ -59,7 +59,7 @@ class TestModels (TestCase) :
         self.assertEqual(height, "2.28 meters")
 
     def test_character_3 (self) :
-        c = Character(name="Darth Vader", species="Human", planet="Tatooine", description="some description", image="some url", gender="Male", birth="41.9 BBY", height="2.02 meters")
+        c = m.Character(name="Darth Vader", species="Human", planet="Tatooine", description="some description", image="some url", gender="Male", birth="41.9 BBY", height="2.02 meters")
         name = c.get_name()
         planet = c.get_planet()
         species = c.get_species()
@@ -79,7 +79,7 @@ class TestModels (TestCase) :
         self.assertEqual(height, "2.02 meters")
 
     def test_get_all_characters_1(self) :
-        characters = Character.get_all_characters()
+        characters = m.Character.get_all_characters()
         c = characters[1]
         name = c.get_name()
         planet = c.get_planet()
@@ -101,7 +101,7 @@ class TestModels (TestCase) :
 
 
     def test_get_all_characters_2(self) :
-        characters = Character.get_all_characters()
+        characters = m.Character.get_all_characters()
         c = characters[0]
         name = c.get_name()
         planet = c.get_planet()
@@ -122,7 +122,7 @@ class TestModels (TestCase) :
         self.assertEqual(height, "1.61 meters")
 
     def test_get_all_characters_3(self) :
-        characters = Character.get_all_characters()
+        characters = m.Character.get_all_characters()
         c = characters[2]
         name = c.get_name()
         planet = c.get_planet()
@@ -143,7 +143,7 @@ class TestModels (TestCase) :
         self.assertEqual(height, "2.28 meters")
 
     def test_get_all_characters_4(self) :
-        characters = Character.get_all_characters()
+        characters = m.Character.get_all_characters()
         c = characters[3]
         name = c.get_name()
         planet = c.get_planet()
@@ -164,7 +164,7 @@ class TestModels (TestCase) :
         self.assertEqual(height, "2.02 meters")
 
     def test_get_all_sorted_characters_1(self) :
-        characters = Character.get_all_sorted_characters("name_^")
+        characters = m.Character.get_all_sorted_characters("name_^")
         c = characters[3]
         name = c.get_name()
         planet = c.get_planet()
@@ -185,7 +185,7 @@ class TestModels (TestCase) :
         self.assertEqual(height, "2.02 meters")
 
     def test_get_all_sorted_characters_2(self) :
-        characters = Character.get_all_sorted_characters("planet")
+        characters = m.Character.get_all_sorted_characters("planet")
         c = characters[3]
         name = c.get_name()
         planet = c.get_planet()
@@ -206,7 +206,7 @@ class TestModels (TestCase) :
         self.assertEqual(height, "2.02 meters")
 
     def test_get_all_sorted_characters_3(self) :
-        characters = Character.get_all_sorted_characters("species")
+        characters = m.Character.get_all_sorted_characters("species")
         c = characters[1]
         name = c.get_name()
         planet = c.get_planet()
@@ -227,7 +227,7 @@ class TestModels (TestCase) :
         self.assertEqual(height, "2.02 meters")
 
     def test_get_all_sorted_characters_4(self) :
-        characters = Character.get_all_sorted_characters("height")
+        characters = m.Character.get_all_sorted_characters("height")
         c = characters[2]
         name = c.get_name()
         planet = c.get_planet()
@@ -248,7 +248,7 @@ class TestModels (TestCase) :
         self.assertEqual(height, "2.02 meters")
 
     def test_get_character_1(self) :
-        c = Character.get_character("Darth Vader")
+        c = m.Character.get_character("Darth Vader")
 
         self.assertEqual(c.get_name(), "Darth Vader")
         self.assertEqual(c.get_planet(), "Tatooine")
@@ -260,7 +260,7 @@ class TestModels (TestCase) :
         self.assertEqual(c.get_height(), "2.02 meters")
 
     def test_get_character_2(self) :
-        c = Character.get_character("Boba Fett")
+        c = m.Character.get_character("Boba Fett")
 
         self.assertEqual(c.get_name(), "Boba Fett")
         self.assertEqual(c.get_planet(), "Kamino")
@@ -272,7 +272,7 @@ class TestModels (TestCase) :
         self.assertEqual(c.get_height(), "1.83 meters")
 
     def test_get_character_3(self) :
-        c = Character.get_character("Chewbacca")
+        c = m.Character.get_character("Chewbacca")
 
         self.assertEqual(c.get_name(), "Chewbacca")
         self.assertEqual(c.get_planet(), "Kashyyyk")
@@ -288,7 +288,7 @@ class TestModels (TestCase) :
     # ------
 
     def test_planet_1 (self) :
-        p = Planet(name="Tatooine", species="Human", characters=["Darth Vader"], description="some description", image="some url", region="Outer Rim Territories", system="Tatoo system")
+        p = m.Planet(name="Tatooine", species="Human", characters=["Darth Vader"], description="some description", image="some url", region="Outer Rim Territories", system="Tatoo system", numberofcharacters=1, numberofspecies=1)
         name = p.get_name()
         characters = p.get_characters()
         species = p.get_species()
@@ -306,7 +306,7 @@ class TestModels (TestCase) :
         self.assertEqual(system, "Tatoo system")
 
     def test_planet_2 (self) :
-        p = Planet(name="Kamino", species="Human", characters=["Boba Fett"], description="some description", image="some url", region="Wild Space", system="Kamino system")
+        p = m.Planet(name="Kamino", species="Human", characters=["Boba Fett"], description="some description", image="some url", region="Wild Space", system="Kamino system", numberofcharacters=1, numberofspecies=1)
         name = p.get_name()
         characters = p.get_characters()
         species = p.get_species()
@@ -324,7 +324,7 @@ class TestModels (TestCase) :
         self.assertEqual(system, "Kamino system")
 
     def test_planet_3 (self) :
-        p = Planet(name="Kashyyyk", species="Wookiee", characters=["Chewbacca"], description="some description", image="some url", region="Mid Rim", system="Kashyyyk system")
+        p = m.Planet(name="Kashyyyk", species="Wookiee", characters=["Chewbacca"], description="some description", image="some url", region="Mid Rim", system="Kashyyyk system", numberofcharacters=1, numberofspecies=1)
         name = p.get_name()
         characters = p.get_characters()
         species = p.get_species()
@@ -342,7 +342,7 @@ class TestModels (TestCase) :
         self.assertEqual(system, "Kashyyyk system")
         
     def test_get_all_planets_1(self) :
-        planets = Planet.get_all_planets()
+        planets = m.Planet.get_all_planets()
         p = planets[1]
         name = p.get_name()
         characters = p.get_characters()
@@ -355,14 +355,14 @@ class TestModels (TestCase) :
         self.assertEqual(name, "Kamino")
         self.assertEqual(characters, ["Boba Fett"])
         self.assertEqual(species, "Human")
-        self.assertEqual(des, "Kamino, also known as the Planet of Storms,[10] was the watery world where the Clone Army of the Galactic Republic was created, as well as the Kamino Home Fleet. It was inhabited by a race of tall, elegant beings called the Kaminoans, who kept to themselves and were known for their cloning technology. Kamino was located just south of the Rishi Maze, and was governed by the Ruling Council, headed by the Prime Minister.")
+        self.assertEqual(des, "Kamino, also known as the m.Planet of Storms,[10] was the watery world where the Clone Army of the Galactic Republic was created, as well as the Kamino Home Fleet. It was inhabited by a race of tall, elegant beings called the Kaminoans, who kept to themselves and were known for their cloning technology. Kamino was located just south of the Rishi Maze, and was governed by the Ruling Council, headed by the Prime Minister.")
         self.assertEqual(image, "http:\/\/img2.wikia.nocookie.net\/__cb20090527045541\/starwars\/images\/thumb\/a\/a9\/Eaw_Kamino.jpg\/400px-Eaw_Kamino.jpg")
         self.assertEqual(region, "Wild Space")
         self.assertEqual(system, "Kamino system")
 
 
     def test_get_all_planets_2(self) :
-        planets = Planet.get_all_planets()
+        planets = m.Planet.get_all_planets()
         p = planets[2]
         name = p.get_name()
         characters = p.get_characters()
@@ -375,13 +375,13 @@ class TestModels (TestCase) :
         self.assertEqual(name, "Kashyyyk")
         self.assertEqual(characters, ["Chewbacca"])
         self.assertEqual(species, "Wookiee")
-        self.assertEqual(des, "Kashyyyk (see pronunciation), also known as Wookiee Planet C, Edean, G5-623, and Wookiee World, was a Mid Rim planet. It was the lush, wroshyr tree-filled home world of the Wookiees. It was a member of the Galactic Republic, endured enslavement under the Galactic Empire, and later joined the New Republic.")
+        self.assertEqual(des, "Kashyyyk (see pronunciation), also known as Wookiee m.Planet C, Edean, G5-623, and Wookiee World, was a Mid Rim planet. It was the lush, wroshyr tree-filled home world of the Wookiees. It was a member of the Galactic Republic, endured enslavement under the Galactic Empire, and later joined the New Republic.")
         self.assertEqual(image, "http:\/\/img1.wikia.nocookie.net\/__cb20090327122712\/starwars\/images\/6\/69\/Kasyyykunleashed.jpg")
         self.assertEqual(region, "Mid Rim")
         self.assertEqual(system, "Kashyyyk system")
 
     def test_get_all_planets_3(self) :
-        planets = Planet.get_all_planets()
+        planets = m.Planet.get_all_planets()
         p = planets[0]
         name = p.get_name()
         characters = p.get_characters()
@@ -400,7 +400,7 @@ class TestModels (TestCase) :
         self.assertEqual(system, "Coruscant system")
 
     def test_get_all_planets_4(self) :
-        planets = Planet.get_all_planets()
+        planets = m.Planet.get_all_planets()
         p = planets[3]
         name = p.get_name()
         characters = p.get_characters()
@@ -419,7 +419,7 @@ class TestModels (TestCase) :
         self.assertEqual(system, "Tatoo system")
 
     def test_get_all_sorted_planets_1(self) :
-        planets = Planet.get_all_sorted_planets("name")
+        planets = m.Planet.get_all_sorted_planets("name")
         p = planets[3]
         name = p.get_name()
         characters = p.get_characters()
@@ -438,7 +438,7 @@ class TestModels (TestCase) :
         self.assertEqual(system, "Tatoo system")
 
     def test_get_all_sorted_planets_2(self) :
-        planets = Planet.get_all_sorted_planets("region")
+        planets = m.Planet.get_all_sorted_planets("region")
         p = planets[2]
         name = p.get_name()
         characters = p.get_characters()
@@ -457,7 +457,7 @@ class TestModels (TestCase) :
         self.assertEqual(system, "Tatoo system")
 
     def test_get_all_sorted_planets_3(self) :
-        planets = Planet.get_all_sorted_planets("system")
+        planets = m.Planet.get_all_sorted_planets("system")
         p = planets[3]
         name = p.get_name()
         characters = p.get_characters()
@@ -476,7 +476,7 @@ class TestModels (TestCase) :
         self.assertEqual(system, "Tatoo system")
 
     def test_get_planet_1(self) :
-        p = Planet.get_planet("Kamino")
+        p = m.Planet.get_planet("Kamino")
         name = p.get_name()
         characters = p.get_characters()
         species = p.get_species()
@@ -488,14 +488,14 @@ class TestModels (TestCase) :
         self.assertEqual(name, "Kamino")
         self.assertEqual(characters, ["Boba Fett"])
         self.assertEqual(species, "Human")
-        self.assertEqual(des, "Kamino, also known as the Planet of Storms,[10] was the watery world where the Clone Army of the Galactic Republic was created, as well as the Kamino Home Fleet. It was inhabited by a race of tall, elegant beings called the Kaminoans, who kept to themselves and were known for their cloning technology. Kamino was located just south of the Rishi Maze, and was governed by the Ruling Council, headed by the Prime Minister.")
+        self.assertEqual(des, "Kamino, also known as the m.Planet of Storms,[10] was the watery world where the Clone Army of the Galactic Republic was created, as well as the Kamino Home Fleet. It was inhabited by a race of tall, elegant beings called the Kaminoans, who kept to themselves and were known for their cloning technology. Kamino was located just south of the Rishi Maze, and was governed by the Ruling Council, headed by the Prime Minister.")
         self.assertEqual(image, "http:\/\/img2.wikia.nocookie.net\/__cb20090527045541\/starwars\/images\/thumb\/a\/a9\/Eaw_Kamino.jpg\/400px-Eaw_Kamino.jpg")
         self.assertEqual(region, "Wild Space")
         self.assertEqual(system, "Kamino system")
 
 
     def test_get_planet_2(self) :
-        p = Planet.get_planet("Kashyyyk")
+        p = m.Planet.get_planet("Kashyyyk")
         name = p.get_name()
         characters = p.get_characters()
         species = p.get_species()
@@ -507,13 +507,13 @@ class TestModels (TestCase) :
         self.assertEqual(name, "Kashyyyk")
         self.assertEqual(characters, ["Chewbacca"])
         self.assertEqual(species, "Wookiee")
-        self.assertEqual(des, "Kashyyyk (see pronunciation), also known as Wookiee Planet C, Edean, G5-623, and Wookiee World, was a Mid Rim planet. It was the lush, wroshyr tree-filled home world of the Wookiees. It was a member of the Galactic Republic, endured enslavement under the Galactic Empire, and later joined the New Republic.")
+        self.assertEqual(des, "Kashyyyk (see pronunciation), also known as Wookiee m.Planet C, Edean, G5-623, and Wookiee World, was a Mid Rim planet. It was the lush, wroshyr tree-filled home world of the Wookiees. It was a member of the Galactic Republic, endured enslavement under the Galactic Empire, and later joined the New Republic.")
         self.assertEqual(image, "http:\/\/img1.wikia.nocookie.net\/__cb20090327122712\/starwars\/images\/6\/69\/Kasyyykunleashed.jpg")
         self.assertEqual(region, "Mid Rim")
         self.assertEqual(system, "Kashyyyk system")
 
     def test_get_planet_3(self) :
-        p = Planet.get_planet("Coruscant")
+        p = m.Planet.get_planet("Coruscant")
         name = p.get_name()
         characters = p.get_characters()
         species = p.get_species()
@@ -531,7 +531,7 @@ class TestModels (TestCase) :
         self.assertEqual(system, "Coruscant system")
 
     def test_get_planet_4(self) :
-        p = Planet.get_planet("Tatooine")
+        p = m.Planet.get_planet("Tatooine")
         name = p.get_name()
         characters = p.get_characters()
         species = p.get_species()
@@ -553,7 +553,7 @@ class TestModels (TestCase) :
     # --------
 
     def test_species_1 (self) :
-        s = Species(name="Wookiee", planet="Kashyyyk", characters="Chewbacca", description="some description", image="some url", language="Shyriiwook", classification="Mammal")
+        s = m.Species(name="Wookiee", planet="Kashyyyk", characters="Chewbacca", description="some description", image="some url", language="Shyriiwook", classification="Mammal", numberofcharacters=1)
         name = s.get_name()
         characters = s.get_characters()
         planet = s.get_planet()
@@ -571,7 +571,7 @@ class TestModels (TestCase) :
         self.assertEqual(classification, "Mammal")
 
     def test_species_2 (self) :
-        s = Species(name="Human", planet="Coruscant", characters=["Darth Vader", "Boba Fett"], description="some description", image="some url", language="Galactic Basic Standard", classification="Mammal")
+        s = m.Species(name="Human", planet="Coruscant", characters=["Darth Vader", "Boba Fett"], description="some description", image="some url", language="Galactic Basic Standard", classification="Mammal", numberofcharacters=1)
         name = s.get_name()
         characters = s.get_characters()
         planet = s.get_planet()
@@ -589,7 +589,7 @@ class TestModels (TestCase) :
         self.assertEqual(classification, "Mammal")
 
     def test_get_all_species_1 (self) :
-        species = Species.get_all_species()
+        species = m.Species.get_all_species()
         s = species[0]
         name = s.get_name()
         characters = s.get_characters()
@@ -613,7 +613,7 @@ class TestModels (TestCase) :
         self.assertEqual(classification, "Craniopod")
 
     def test_get_all_species_2 (self) :
-        species = Species.get_all_species()
+        species = m.Species.get_all_species()
         s = species[1]
         name = s.get_name()
         characters = s.get_characters()
@@ -632,7 +632,7 @@ class TestModels (TestCase) :
         self.assertEqual(classification, "Mammal")
 
     def test_get_all_species_3 (self) :
-        species = Species.get_all_species()
+        species = m.Species.get_all_species()
         s = species[2]
         name = s.get_name()
         characters = s.get_characters()
@@ -656,7 +656,7 @@ class TestModels (TestCase) :
         self.assertEqual(classification, "Near-Human")
 
     def test_get_all_sorted_species_1 (self) :
-        species = Species.get_all_sorted_species("name")
+        species = m.Species.get_all_sorted_species("name")
         s = species[0]
         name = s.get_name()
         characters = s.get_characters()
@@ -680,7 +680,7 @@ class TestModels (TestCase) :
         self.assertEqual(classification, "Craniopod")
 
     def test_get_all_sorted_species_2 (self) :
-        species = Species.get_all_sorted_species("language")
+        species = m.Species.get_all_sorted_species("language")
         s = species[0]
         name = s.get_name()
         characters = s.get_characters()
@@ -704,7 +704,7 @@ class TestModels (TestCase) :
         self.assertEqual(classification, "Craniopod")
 
     def test_get_all_sorted_species_3 (self) :
-        species = Species.get_all_sorted_species("classification")
+        species = m.Species.get_all_sorted_species("classification")
         s = species[0]
         name = s.get_name()
         characters = s.get_characters()
@@ -728,7 +728,7 @@ class TestModels (TestCase) :
         self.assertEqual(classification, "Craniopod")
 
     def test_get_species_1 (self) :
-        s = Species.get_species("Bith")
+        s = m.Species.get_species("Bith")
         name = s.get_name()
         characters = s.get_characters()
         planet = s.get_planet()
@@ -751,7 +751,7 @@ class TestModels (TestCase) :
         self.assertEqual(classification, "Craniopod")
 
     def test_get_species_2 (self) :
-        s = Species.get_species("Human")
+        s = m.Species.get_species("Human")
         name = s.get_name()
         characters = s.get_characters()
         planet = s.get_planet()
@@ -768,8 +768,8 @@ class TestModels (TestCase) :
         self.assertEqual(language, "Galactic Basic Standard")
         self.assertEqual(classification, "Mammal")
 
-    def test_species_3 (self) :
-        s = Species.get_species("Omwati")
+    def test_get_species_3 (self) :
+        s = m.Species.get_species("Omwati")
         name = s.get_name()
         characters = s.get_characters()
         planet = s.get_planet()

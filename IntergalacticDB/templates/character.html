@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Character - {{ character.get_name() }}</title>
+
+    <!-- CSS -->
+    <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='styles/bootstrap.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='styles/pages.css')}}" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+
+            <!-- Navigation Menu -->
+            <nav class='navigation'>
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="/characters">Characters</a>
+                    </li>
+                    <li>
+                        <a href="/species">Species</a>
+                    </li>
+                    <li>
+                        <a href="/planets">Planets</a>
+                    </li>
+                    <li>
+                        <a href="/about">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--End Navigation Menu -->
+
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">{{ character.get_name() }}</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-responsive" src={{ character.get_image() }} alt="">
+            </div>
+
+            <div class="col-md-4">
+                <h3>About</h3>
+                <p>Gender: {{ character.get_gender() }}</p>
+                <p>Height: {{ character.get_height() }}</p>
+                <p>Home Planet: {{ character.get_planet() }}</p>
+                <p>Species: {{ character.get_species() }}</p>
+                <p>{{ character.get_description() }}</p>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{{ url_for('static', filename='javascripts/jquery-1.11.2.min.js')}}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='javascripts/bootstrap.min.js')}}" type="text/javascript"></script>
+
+</body>
+
+</html>

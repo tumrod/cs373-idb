@@ -334,3 +334,8 @@ body {
   position: relative;
   left: 32%;
 }
+
+.link {
+  text-decoration: underline;
+  color: blue;
+}
