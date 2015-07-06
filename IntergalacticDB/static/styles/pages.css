@@ -10,6 +10,10 @@ body{
     color: #fff;
 }
 
+.col-md-4 p a {
+    color: #fff;
+}
+
 .navigation ul li a {
     color: #fff;
 }

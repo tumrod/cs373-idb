@@ -72,8 +72,8 @@
                 <h3>About</h3>
                 <p>Gender: {{ character.get_gender() }}</p>
                 <p>Height: {{ character.get_height() }}</p>
-                <p>Home Planet: {{ character.get_planet() }}</p>
-                <p>Species: {{ character.get_species() }}</p>
+                <p>Home Planet: <a href="/planets/{{ character.get_planet() }}" class="link">{{ character.get_planet() }}</a></p>
+                <p>Species: <a href="/species/{{ character.get_species() }}" class="link">{{ character.get_species() }}</a></p>
                 <p>{{ character.get_description() }}</p>
             </div>
 
