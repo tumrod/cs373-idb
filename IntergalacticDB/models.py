@@ -102,15 +102,17 @@ class Character:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         sorting_options = sort_by.split('_')
+
         info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1][sorting_options[0]]))
 
-        if sorting_options[1] != '^':
-            temp = OrderedDict()
+        if (len(sorting_options) > 1) :
+            if sorting_options[1] != '^':
+                temp = OrderedDict()
 
-            for item in reversed(info_dict):
-                temp[item] = info_dict[item]
+                for item in reversed(info_dict):
+                    temp[item] = info_dict[item]
 
-            info_dict = temp
+                info_dict = temp
 
         characters = [Character(**info_dict[key]) for key in info_dict]
 
@@ -218,14 +220,14 @@ class Planet:
 
         sorting_options = sort_by.split('_')
         info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1][sorting_options[0]]))
+        if (len(sorting_options) > 1) :
+            if sorting_options[1] != '^':
+                temp = OrderedDict()
 
-        if sorting_options[1] != '^':
-            temp = OrderedDict()
+                for item in reversed(info_dict):
+                    temp[item] = info_dict[item]
 
-            for item in reversed(info_dict):
-                temp[item] = info_dict[item]
-
-            info_dict = temp
+                info_dict = temp
 
         planet = [Planet(**info_dict[key]) for key in info_dict]
 
@@ -337,13 +339,14 @@ class Species:
         sorting_options = sort_by.split('_')
         info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1][sorting_options[0]]))
 
-        if sorting_options[1] != '^':
-            temp = OrderedDict()
+        if (len(sorting_options) > 1) :
+            if sorting_options[1] != '^':
+                temp = OrderedDict()
 
-            for item in reversed(info_dict):
-                temp[item] = info_dict[item]
+                for item in reversed(info_dict):
+                    temp[item] = info_dict[item]
 
-            info_dict = temp
+                info_dict = temp
 
         species = [Species(**info_dict[key]) for key in info_dict]
 
