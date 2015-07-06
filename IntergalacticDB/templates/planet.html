@@ -72,14 +72,16 @@
                 <h3>About</h3>
                 <p>Region: {{ planet.get_region() }}</p>
                 <p>System: {{ planet.get_system() }}</p>
-                <p>Characters: </p>
+                <p>Characters:
                 {% for character_name in planet.get_characters() %}
-                    <p> {{ character_name }} </p>
+                    <a href="/characters/{{ character_name }}" class="link">{{ character_name }}</a>
                 {% endfor %}
-                <p> Species: </p>
+                </p>
+                <p> Species:
                 {% for species_name in planet.get_species() %}
-                    <p> {{ species_name }} </p>
+                    <a href="/species/{{ species_name }}" class="link">{{ species_name }}</a>
                 {% endfor %}
+                </p>
                 <p>{{ planet.get_description() }}</p>
             </div>
 
