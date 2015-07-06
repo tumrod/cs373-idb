@@ -71,12 +71,13 @@
             <div class="col-md-4">
                 <h3>About</h3>
                 <p>Language: {{ species.get_language() }}</p>
-                <p>Home Planet: {{ species.get_planet() }}</p>
+                <p>Home Planet: <a href="/planets/{{ species.get_planet() }}" class="link">{{ species.get_planet() }}</a></p>
                 <p>Classification: {{ species.get_classification() }}</p>
-                <p>Characters: </p>
+                <p>Characters:
                 {% for character_name in species.get_characters() %}
-                    <p> {{ character_name }} </p>
+                    <a href="/characters/{{ character_name }}" class="link">{{ character_name }}</a>
                 {% endfor %}
+                </p>
                 <p> {{ species.get_description() }} </p>
             </div>
 
