@@ -49,7 +49,7 @@ def species(species=None, sort_by=None):
 
     if species is not None:
         species = Species.get_species(species)
-        return render_template('species.html', species=species)
+        return render_template('specie.html', species=species)
     elif sort_by is not None:
         all_species = Species.get_all_sorted_species(sort_by)
     else:

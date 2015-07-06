@@ -353,7 +353,7 @@ class Species:
         Input the species name to retrieve
         Return an instance of this species
         """
-        with open("db/planets.json") as data_file:
+        with open("db/species.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
-        return Species(info_dict[species])
+        return Species(**info_dict[species])
