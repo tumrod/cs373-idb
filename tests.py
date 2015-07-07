@@ -262,18 +262,6 @@ class TestModels (TestCase) :
         self.assertEqual(planet, "Tatooine")
         self.assertEqual(species, "Hutt")
 
-    def test_get_character_1(self) :
-        c = m.Character.get_character("Darth Vader")
-
-        self.assertEqual(c.get_name(), "Darth Vader")
-        self.assertEqual(c.get_planet(), "Tatooine")
-        self.assertEqual(c.get_species(), "Human")
-        self.assertEqual(c.get_description(), "Anakin Skywalker was a Force-sensitive Human male who served the Galactic Republic as a Jedi Knight and later served the Galactic Empire as the Sith Lord Darth Vader. Born to the slave Shmi Skywalker in 41.9 BBY, Anakin was conceived by midi-chlorians, the symbiotic organisms that allowed individuals to touch the Force, and he and his mother were brought to the desert planet of Tatooine to be the slaves of Gardulla the Hutt. They soon ended up as the property of the Toydarian Watto, and Skywalker exhibited exceptional piloting skills and a reputation for being able to build and repair anything even at a young age. In 32 BBY, Skywalker encountered the Jedi Qui-Gon Jinn and Padme Amidala, and he helped them secure the parts they needed for their starship by winning the Boonta Eve Classic podracing event-only to learn that he had also won his freedom in doing so.")
-        self.assertEqual(c.get_image(), "http://img2.wikia.nocookie.net/__cb20130621175844/starwars/images/thumb/6/6f/Anakin_Skywalker_RotS.png/400px-Anakin_Skywalker_RotS.webp")
-        self.assertEqual(c.get_gender(), "Male")
-        self.assertEqual(c.get_birth(), "41.9 BBY ")
-        self.assertEqual(c.get_height(), "2.02 meters")
-
     def test_get_character_2(self) :
         c = m.Character.get_character("Boba Fett")
 
@@ -576,24 +564,6 @@ class TestModels (TestCase) :
         self.assertEqual(region, "Mid Rim")
         self.assertEqual(system, "Kashyyyk system")
 
-    def test_get_planet_3(self) :
-        p = m.Planet.get_planet("Coruscant")
-        name = p.get_name()
-        characters = p.get_characters()
-        species = p.get_species()
-        des = p.get_description()
-        image = p.get_image()
-        region = p.get_region()
-        system = p.get_system()
-
-        self.assertEqual(name, "Coruscant")
-        self.assertEqual(characters, ["unknown"])
-        self.assertEqual(species, ["Human",])
-        self.assertEqual(des, "Coruscant, originally called Notron, also known as Imperial Center or the Queen of the Core, was a planet located in the Galactic Core. It was generally agreed that Coruscant was, during most of galactic history, the most politically important world in the galaxy. At various times, it was the capital of the Galactic Republic, the Galactic Empire, the New Republic, the Yuuzhan Vong empire, the Galactic Alliance, very briefly the Fel Empire, Darth Krayt's Galactic Empire, and the Galactic Federation Triumvirate. In controlling Coruscant, these governments controlled most of the galaxy in the process.")
-        self.assertEqual(image, "http://img4.wikia.nocookie.net/__cb20100115192302/starwars/images/1/17/Coruscant-AoTCW.jpg")
-        self.assertEqual(region, "Core Worlds")
-        self.assertEqual(system, "Coruscant system")
-
     def test_get_planet_4(self) :
         p = m.Planet.get_planet("Tatooine")
         name = p.get_name()
@@ -605,7 +575,7 @@ class TestModels (TestCase) :
         system = p.get_system()
 
         self.assertEqual(name, "Tatooine")
-        self.assertEqual(characters, ["Darth Vader",])
+        self.assertEqual(characters, ["Jabba",])
         self.assertEqual(species, ["Human", "Hutt"])
         self.assertEqual(des, "Tatooine was a desert world and the first planet in the binary Tatoo star system. It was part of the Arkanis sector in the Outer Rim Territories. It was inhabited by poor locals who mostly farmed moisture for a living. Other activities included used equipment retailing and scrap dealing. The planet was on the 5709-DC Shipping Lane, a spur of the Triellus Trade Route, which itself connected to the Sisar Run. The planet was not far from the Corellian Run. It had its own navigation system. However, it would still play a role in galactic events, serving as the home of Anakin Skywalker. It was here that Jedi Master Qui-Gon Jinn recognized Anakin's potential to become a Jedi and where he introduced him to Obi-Wan Kenobi, his future master and mentor. Tatooine was also the home of Anakin's son, Luke, where he lived until his early adulthood. The planet acquired a bad reputation, often being viewed as the cesspool of the galaxy due to the large number of criminals who could be found there.")
         self.assertEqual(image, "http://img2.wikia.nocookie.net/__cb20131019121937/starwars/images/b/b0/Tatooine_TPM.png")
@@ -696,7 +666,7 @@ class TestModels (TestCase) :
     def test_get_all_species_characters (self) :
         species = m.Species.get_all_species()
         species_char = [species[i].get_characters() for i in range(len(species))]
-        expected = [['Chewbacca'], ['Darth Vader', 'Boba Fett'], ['Unaw Aharo', 'Darth Tenebrous', 'Thalleus Tharn', 'Darth Venamis'], ['Aleema Finn', 'Pillik', 'Tannis', 'Tiu Zax']]
+        expected = [['Chewbacca'], ['Boba Fett'], ['Jabba']]
 
         result = sorted(species_char)
 
@@ -796,7 +766,6 @@ class TestModels (TestCase) :
             "Chewbacca"
         ])
         self.assertEqual(planet, "Kashyyyk")
-        self.assertEqual(image, "http:\/\/img2.wikia.nocookie.net\/__cb20061128184734\/starwars\/images\/thumb\/5\/57\/ThreeWookieeAmigos-ROTSVD.jpg\/400px-ThreeWookieeAmigos-ROTSVD.jpg")
         self.assertEqual(language, "Shyriiwook")
         self.assertEqual(classification, "Mammal")
 
