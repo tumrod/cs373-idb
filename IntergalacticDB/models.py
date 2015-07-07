@@ -318,7 +318,9 @@ class Species:
         Return an OrderedDict of all species, with their names as keys
                and their dicts of information as values
         """
-        with open(relative_path + "species.json") as data_file:
+
+        with open(relative_path + "/species.json") as data_file:
+
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         species = [Species(**info_dict[key]) for key in info_dict]
@@ -333,7 +335,9 @@ class Species:
                and their dicts of information as values, sorted by the given
                attribute
         """
-        with open(relative_path + "species.json") as data_file:
+
+        with open(relative_path + "/species.json") as data_file:
+
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         sorting_options = sort_by.split('_')
@@ -358,7 +362,9 @@ class Species:
         Input the species name to retrieve
         Return an instance of this species
         """
-        with open(relative_path + "species.json") as data_file:
+
+        with open(relative_path + "/species.json") as data_file:
+
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         return Species(**info_dict[species])
