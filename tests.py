@@ -606,7 +606,7 @@ class TestModels (TestCase) :
 
         self.assertEqual(name, "Tatooine")
         self.assertEqual(characters, ["Darth Vader",])
-        self.assertEqual(species, ["Human",])
+        self.assertEqual(species, ["Human", "Hutt"])
         self.assertEqual(des, "Tatooine was a desert world and the first planet in the binary Tatoo star system. It was part of the Arkanis sector in the Outer Rim Territories. It was inhabited by poor locals who mostly farmed moisture for a living. Other activities included used equipment retailing and scrap dealing. The planet was on the 5709-DC Shipping Lane, a spur of the Triellus Trade Route, which itself connected to the Sisar Run. The planet was not far from the Corellian Run. It had its own navigation system. However, it would still play a role in galactic events, serving as the home of Anakin Skywalker. It was here that Jedi Master Qui-Gon Jinn recognized Anakin's potential to become a Jedi and where he introduced him to Obi-Wan Kenobi, his future master and mentor. Tatooine was also the home of Anakin's son, Luke, where he lived until his early adulthood. The planet acquired a bad reputation, often being viewed as the cesspool of the galaxy due to the large number of criminals who could be found there.")
         self.assertEqual(image, "http://img2.wikia.nocookie.net/__cb20131019121937/starwars/images/b/b0/Tatooine_TPM.png")
         self.assertEqual(region, "Outer Rim Territories")
@@ -782,7 +782,7 @@ class TestModels (TestCase) :
         self.assertEqual(characters, ["Boba Fett"])
 
     def test_get_species_1 (self) :
-        s = m.Species.get_species("Bith")
+        s = m.Species.get_species("Wookiee")
         name = s.get_name()
         characters = s.get_characters()
         planet = s.get_planet()
@@ -791,18 +791,14 @@ class TestModels (TestCase) :
         language = s.get_language()
         classification = s.get_classification()
 
-        self.assertEqual(name, "Bith")
+        self.assertEqual(name, "Wookiee")
         self.assertEqual(characters, [
-            "Unaw Aharo",
-            "Darth Tenebrous",
-            "Thalleus Tharn",
-            "Darth Venamis"
+            "Chewbacca"
         ])
-        self.assertEqual(planet, "Clak'dor VII")
-        self.assertEqual(des, "Large cranium\nAcute senses of smell and hearing")
-        self.assertEqual(image, "http://img4.wikia.nocookie.net/__cb20060903181845/starwars/images/7/74/Bith_%28Doikk_Nats%29.jpg")
-        self.assertEqual(language, "Bith")
-        self.assertEqual(classification, "Craniopod")
+        self.assertEqual(planet, "Kashyyyk")
+        self.assertEqual(image, "http:\/\/img2.wikia.nocookie.net\/__cb20061128184734\/starwars\/images\/thumb\/5\/57\/ThreeWookieeAmigos-ROTSVD.jpg\/400px-ThreeWookieeAmigos-ROTSVD.jpg")
+        self.assertEqual(language, "Shyriiwook")
+        self.assertEqual(classification, "Mammal")
 
     def test_get_species_2 (self) :
         s = m.Species.get_species("Human")
@@ -815,15 +811,15 @@ class TestModels (TestCase) :
         classification = s.get_classification()
 
         self.assertEqual(name, "Human")
-        self.assertEqual(characters, ["Darth Vader", "Boba Fett"])
-        self.assertEqual(planet, "Coruscant")
+        self.assertEqual(characters, ["Boba Fett"])
+        self.assertEqual(planet, "Kamino")
         self.assertEqual(des, "Humans, taxonomically referred to as Homo sapiens, were the galaxy's most numerous and politically dominant sentient species with millions of major and minor colonies galaxywide. Believed to have originated on the galactic capital of Coruscant, they could be found anywhere, engaged in many different pursuits: spacers, mercenaries, smugglers, merchants, soldiers, assassins, farmers, crime lords, laborers, slaves, slavers, and many others, including Jedi and Sith. Since Humans were the most common sentient species, they were often considered to be a standard or average to which the biology, psychology, and culture of other species were compared.")
         self.assertEqual(image, "http://img2.wikia.nocookie.net/__cb20100628191857/starwars/images/thumb/5/5d/Humans-TESB30.jpg/400px-Humans-TESB30.jpg")
         self.assertEqual(language, "Galactic Basic Standard")
         self.assertEqual(classification, "Mammal")
 
     def test_get_species_3 (self) :
-        s = m.Species.get_species("Omwati")
+        s = m.Species.get_species("Hutt")
         name = s.get_name()
         characters = s.get_characters()
         planet = s.get_planet()
@@ -832,18 +828,14 @@ class TestModels (TestCase) :
         language = s.get_language()
         classification = s.get_classification()
 
-        self.assertEqual(name, "Omwati")
+        self.assertEqual(name, "Hutt")
         self.assertEqual(characters, [
-            "Aleema Finn",
-            "Pillik",
-            "Tannis",
-            "Tiu Zax"
+            "Jabba"
         ])
-        self.assertEqual(planet, "Omwat")
-        self.assertEqual(des, "Bird-like anthropoids")
-        self.assertEqual(image, "http://img1.wikia.nocookie.net/__cb20070528041553/starwars/images/thumb/2/2f/Omwati.JPG/360px-Omwati.JPG")
-        self.assertEqual(language, "Omwatese")
-        self.assertEqual(classification, "Near-Human")
+        self.assertEqual(planet, "Tatooine")
+        self.assertEqual(image, "http://img2.wikia.nocookie.net/__cb20130115030417/starwars/images/a/a7/HuttNEGAS.png")
+        self.assertEqual(language, "Huttese")
+        self.assertEqual(classification, "Sentient")
 
 
 # ----
