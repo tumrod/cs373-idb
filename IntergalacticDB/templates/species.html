@@ -58,7 +58,7 @@
                         <td class="user-photo"><img class="user-tumb" src={{ species.get_image() }}></td>
                         <td><a href="/species/{{ species.get_name() }}">{{ species.get_name() }}</a></td>
                         <td>{{ species.get_language() }}</td>
-                        <td>{{ species.get_planet() }}</td>
+                        <td><a href="/planets/{{ species.get_planet() }}">{{ species.get_planet() }}</a></td>
                         <td>{{ species.get_classification() }}</td>
                         <td>
                             <select style="position: relative;left: 1%;top: 5px;" value="characters" id="sort-order-character-{{ species.get_name() }}">
