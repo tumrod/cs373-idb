@@ -12,21 +12,23 @@ Starhub API is a database of a collection of characters, planets, species, etc o
 + Response 200 (application/json)
 
         [{
-            "name": "Luke Skywalker",
-            "gender": "Male",
-            "height": "1.72 meters",
-            "planet": "Tatooine",
+            "name": "Boba Fett",
             "species": "Human",
-            "description": "Luke Skywalker was a Force-sensitive Human male who helped defeat the Galactic Empire in the Galactic Civil War and helped found the New Republic, as well as the New Jedi Order. ",
-            "image": "http://img1.wikia.nocookie.net/__cb20091118055536/starwars/images/e/e2/SwKOTOR25cropped.jpg",
+            "image": "http:\/\/img4.wikia.nocookie.net\/__cb20130920001614\/starwars\/images\/thumb\/5\/58\/BobaFettMain2.jpg\/400px-BobaFettMain2.jpg",
+            "description": "Boba Fett was a Mandalorian warrior and bounty hunter. He was the only unaltered clone of the famed Jango Fett, created in 32 BBY as unit A0050, one of the first of many Fett replicas designed to become part of the Grand Army of the Republic, and was raised as Jango's son. Jango taught Boba much, training him to become a skilled bounty hunter as was his father-figure before him. In 22 BBY, Jango was killed at the Battle of Geonosis, which opened the Clone Wars. Just a boy, Boba was forced to grow up and took to traveling the galaxy. Later, he became a bounty hunter and took assignments from beings such as Jabba the Hutt, and achieved notoriety despite his young age.",
+            "planet": "Kamino",
+            "gender": "Male",
+            "height": "1.83 meters",
+            "birth": "31.5 BBY , Kamino"
         }, {
-            "name": "Boba Fett"
-            "gender" "Male"
-            "height": "1.83 meters"
-            "planet": "Kamino"
-            "species": "Human"
-            "description": "Boba Fett was a Mandalorian warrior and bounty hunter. He was the only unaltered clone of the famed Jango Fett, created in 32 BBY as unit A0050, one of the first of many Fett replicas designed to become part of the Grand Army of the Republic, and was raised as Jango's son. Jango taught Boba much, training him to become a skilled bounty hunter as was his father-figure before him. In 22 BBY, Jango was killed at the Battle of Geonosis, which opened the Clone Wars. Just a boy, Boba was forced to..."
-            "image": "http://img2.wikia.nocookie.net/__cb20130920001614/starwars/images/5/58/BobaFettMain2.jpg"
+            "name": "Chewbacca",
+            "species": "Wookiee",
+            "image": "http:\/\/img4.wikia.nocookie.net\/__cb20080815045819\/starwars\/images\/thumb\/7\/73\/Chewbaccaheadshot.jpg\/400px-Chewbaccaheadshot.jpg",
+            "description": "Chewbacca (or \"Chewie\", as he was known by his friends) was a legendary Wookiee from Kashyyyk and co-pilot of Han Solo's ship, the Millennium Falcon. He was the son of Attichitcuk, the husband of Mallatobuck, and the father of Lumpawaroo. Chewbacca carried with him the name of an ancient Wookiee hero, the great Bacca, first of the great chieftains of Kashyyyk, and the creator of a sword that denoted leadership among the Wookiees. This name placed Chewbacca in a noble lineage, which was further supported by his role in the Battle of Kashyyyk during the Clone Wars and during the Galactic Civil War.",
+            "planet": "Kashyyyk",
+            "gender": "Male",
+            "height": "2.28 meters",
+            "birth": "200 BBY, Kashyyyk"
         }]
 
 ## Character [/characters/{name}]
@@ -41,24 +43,16 @@ A single Character with all its details
     + Body
     
             {
-                "name": "Luke Skywalker",
+                "name": "Chewbacca",
+                "species": "Wookiee",
+                "image": "http:\/\/img4.wikia.nocookie.net\/__cb20080815045819\/starwars\/images\/thumb\/7\/73\/Chewbaccaheadshot.jpg\/400px-Chewbaccaheadshot.jpg",
+                "description": "Chewbacca (or \"Chewie\", as he was known by his friends) was a legendary Wookiee from Kashyyyk and co-pilot of Han Solo's ship, the Millennium Falcon. He was the son of Attichitcuk, the husband of Mallatobuck, and the father of Lumpawaroo. Chewbacca carried with him the name of an ancient Wookiee hero, the great Bacca, first of the great chieftains of Kashyyyk, and the creator of a sword that denoted leadership among the Wookiees. This name placed Chewbacca in a noble lineage, which was further supported by his role in the Battle of Kashyyyk during the Clone Wars and during the Galactic Civil War.",
+                "planet": "Kashyyyk",
                 "gender": "Male",
-                "height": "1.72 meters",
-                "planet": "Tatooine",
-                "species": "Human",
-                "description": "Luke Skywalker was a Force-sensitive Human male who helped defeat the Galactic Empire in the Galactic Civil War and helped found the New Republic, as well as the New Jedi Order. ",
-                "image": "http://img1.wikia.nocookie.net/__cb20091118055536/starwars/images/e/e2/SwKOTOR25cropped.jpg",
-        
+                "height": "2.28 meters",
+                "birth": "200 BBY, Kashyyyk"
             }
 
-+ Response 404
-    + Header
-    
-            Content-type: application/json
-
-    + Body
-    
-            {"error": Sorry. That character does not exist."}
 
 ## Species Collection [/species.json]
 
