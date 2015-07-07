@@ -1618,6 +1618,7 @@ header.sticky .navigation a.current-ele {
     }
 
 .individual-stat {
+    padding-top: 25px;
     text-align: left;
 }
 
