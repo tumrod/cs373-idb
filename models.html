@@ -69,13 +69,14 @@ Input&nbsp;strings&nbsp;of&nbsp;the&nbsp;character's&nbsp;name,&nbsp;planet,&nbs
 
 <hr>
 Static methods defined here:<br>
-<dl><dt><a name="Character-get_all_characters"><strong>get_all_characters</strong></a>()</dt><dd><tt>Return&nbsp;an&nbsp;OrderedDict&nbsp;of&nbsp;all&nbsp;characters,&nbsp;with&nbsp;their&nbsp;names&nbsp;as&nbsp;keys<br>
-and&nbsp;their&nbsp;dicts&nbsp;of&nbsp;information&nbsp;as&nbsp;values</tt></dd></dl>
+<dl><dt><a name="Character-get_all_characters"><strong>get_all_characters</strong></a>()</dt><dd><tt>Return&nbsp;an&nbsp;list&nbsp;of&nbsp;all&nbsp;character&nbsp;models</tt></dd></dl>
 
 <dl><dt><a name="Character-get_all_sorted_characters"><strong>get_all_sorted_characters</strong></a>(sort_by)</dt><dd><tt>Input&nbsp;the&nbsp;attribute&nbsp;by&nbsp;which&nbsp;to&nbsp;sort&nbsp;the&nbsp;characters<br>
-Return&nbsp;an&nbsp;OrderedDict&nbsp;of&nbsp;all&nbsp;characters,&nbsp;with&nbsp;their&nbsp;names&nbsp;as&nbsp;keys<br>
-and&nbsp;their&nbsp;dicts&nbsp;of&nbsp;information&nbsp;as&nbsp;values,&nbsp;sorted&nbsp;by&nbsp;the&nbsp;given<br>
-attribute</tt></dd></dl>
+Return&nbsp;an&nbsp;list&nbsp;of&nbsp;all&nbsp;character&nbsp;models,&nbsp;sorted&nbsp;by&nbsp;the&nbsp;given<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;attribute</tt></dd></dl>
+
+<dl><dt><a name="Character-get_character"><strong>get_character</strong></a>(character)</dt><dd><tt>Input&nbsp;the&nbsp;character&nbsp;name&nbsp;to&nbsp;retrieve<br>
+Return&nbsp;an&nbsp;instance&nbsp;of&nbsp;this&nbsp;character</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -95,7 +96,7 @@ Data descriptors defined here:<br>
 <td colspan=2><tt><a href="#Planet">Planet</a>&nbsp;encapsulates&nbsp;a&nbsp;planet&nbsp;dictionary&nbsp;containing&nbsp;its&nbsp;information<br>&nbsp;</tt></td></tr>
 <tr><td>&nbsp;</td>
 <td width="100%">Methods defined here:<br>
-<dl><dt><a name="Planet-__init__"><strong>__init__</strong></a>(self, name, character_list, species_list, description, image, region, system)</dt><dd><tt>Initialize&nbsp;the&nbsp;planet&nbsp;to&nbsp;have&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;its&nbsp;information<br>
+<dl><dt><a name="Planet-__init__"><strong>__init__</strong></a>(self, name, characters, species, description, image, region, system, numberofcharacters, numberofspecies)</dt><dd><tt>Initialize&nbsp;the&nbsp;planet&nbsp;to&nbsp;have&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;its&nbsp;information<br>
 Input&nbsp;strings&nbsp;of&nbsp;the&nbsp;planet's&nbsp;name,&nbsp;characters&nbsp;list,&nbsp;species&nbsp;list,&nbsp;description,&nbsp;image,&nbsp;region,&nbsp;and&nbsp;system</tt></dd></dl>
 
 <dl><dt><a name="Planet-get_characters"><strong>get_characters</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;list&nbsp;of&nbsp;characters&nbsp;of&nbsp;this&nbsp;planet</tt></dd></dl>
@@ -116,13 +117,14 @@ Input&nbsp;strings&nbsp;of&nbsp;the&nbsp;planet's&nbsp;name,&nbsp;characters&nbs
 
 <hr>
 Static methods defined here:<br>
-<dl><dt><a name="Planet-get_all_planets"><strong>get_all_planets</strong></a>()</dt><dd><tt>Return&nbsp;an&nbsp;OrderedDict&nbsp;of&nbsp;all&nbsp;planets,&nbsp;with&nbsp;their&nbsp;names&nbsp;as&nbsp;keys<br>
-and&nbsp;their&nbsp;dicts&nbsp;of&nbsp;information&nbsp;as&nbsp;values</tt></dd></dl>
+<dl><dt><a name="Planet-get_all_planets"><strong>get_all_planets</strong></a>()</dt><dd><tt>Return&nbsp;an&nbsp;list&nbsp;of&nbsp;all&nbsp;planets&nbsp;models</tt></dd></dl>
 
-<dl><dt><a name="Planet-get_all_sorted_planets"><strong>get_all_sorted_planets</strong></a>(sort_by)</dt><dd><tt>Input&nbsp;the&nbsp;attribute&nbsp;by&nbsp;which&nbsp;to&nbsp;sort&nbsp;the&nbsp;planets<br>
-Return&nbsp;an&nbsp;OrderedDict&nbsp;of&nbsp;all&nbsp;planets,&nbsp;with&nbsp;their&nbsp;names&nbsp;as&nbsp;keys<br>
-and&nbsp;their&nbsp;dicts&nbsp;of&nbsp;information&nbsp;as&nbsp;values,&nbsp;sorted&nbsp;by&nbsp;the&nbsp;given<br>
-attribute</tt></dd></dl>
+<dl><dt><a name="Planet-get_all_sorted_planets"><strong>get_all_sorted_planets</strong></a>(sort_by)</dt><dd><tt>Input&nbsp;the&nbsp;attribute&nbsp;by&nbsp;which&nbsp;to&nbsp;sort&nbsp;the&nbsp;characters<br>
+Return&nbsp;an&nbsp;list&nbsp;of&nbsp;all&nbsp;planet&nbsp;models,&nbsp;sorted&nbsp;by&nbsp;the&nbsp;given<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;attribute</tt></dd></dl>
+
+<dl><dt><a name="Planet-get_planet"><strong>get_planet</strong></a>(planet)</dt><dd><tt>Input&nbsp;the&nbsp;planet&nbsp;name&nbsp;to&nbsp;retrieve<br>
+Return&nbsp;an&nbsp;instance&nbsp;of&nbsp;this&nbsp;planet</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -142,7 +144,7 @@ Data descriptors defined here:<br>
 <td colspan=2><tt><a href="#Species">Species</a>&nbsp;encapsulates&nbsp;a&nbsp;species&nbsp;dictionary&nbsp;containing&nbsp;its&nbsp;information<br>&nbsp;</tt></td></tr>
 <tr><td>&nbsp;</td>
 <td width="100%">Methods defined here:<br>
-<dl><dt><a name="Species-__init__"><strong>__init__</strong></a>(self, name, character_list, planet_list, description, image, language, classification)</dt><dd><tt>Initialize&nbsp;the&nbsp;species&nbsp;to&nbsp;have&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;its&nbsp;information<br>
+<dl><dt><a name="Species-__init__"><strong>__init__</strong></a>(self, name, characters, planet, description, image, language, classification, numberofcharacters)</dt><dd><tt>Initialize&nbsp;the&nbsp;species&nbsp;to&nbsp;have&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;its&nbsp;information<br>
 Input&nbsp;strings&nbsp;of&nbsp;the&nbsp;species's&nbsp;name,&nbsp;characters&nbsp;list,&nbsp;planet&nbsp;list,&nbsp;description,&nbsp;image,&nbsp;language,&nbsp;and&nbsp;classification</tt></dd></dl>
 
 <dl><dt><a name="Species-get_characters"><strong>get_characters</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;list&nbsp;of&nbsp;characters&nbsp;of&nbsp;this&nbsp;species</tt></dd></dl>
@@ -159,17 +161,20 @@ Input&nbsp;strings&nbsp;of&nbsp;the&nbsp;species's&nbsp;name,&nbsp;characters&nb
 
 <dl><dt><a name="Species-get_name"><strong>get_name</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;name&nbsp;of&nbsp;this&nbsp;species</tt></dd></dl>
 
-<dl><dt><a name="Species-get_planets"><strong>get_planets</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;list&nbsp;of&nbsp;planets&nbsp;of&nbsp;this&nbsp;species</tt></dd></dl>
+<dl><dt><a name="Species-get_planet"><strong>get_planet</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;home&nbsp;planet&nbsp;of&nbsp;this&nbsp;species</tt></dd></dl>
 
 <hr>
 Static methods defined here:<br>
 <dl><dt><a name="Species-get_all_sorted_species"><strong>get_all_sorted_species</strong></a>(sort_by)</dt><dd><tt>Input&nbsp;the&nbsp;attribute&nbsp;by&nbsp;which&nbsp;to&nbsp;sort&nbsp;the&nbsp;species<br>
 Return&nbsp;an&nbsp;OrderedDict&nbsp;of&nbsp;all&nbsp;species,&nbsp;with&nbsp;their&nbsp;names&nbsp;as&nbsp;keys<br>
-and&nbsp;their&nbsp;dicts&nbsp;of&nbsp;information&nbsp;as&nbsp;values,&nbsp;sorted&nbsp;by&nbsp;the&nbsp;given<br>
-attribute</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;their&nbsp;dicts&nbsp;of&nbsp;information&nbsp;as&nbsp;values,&nbsp;sorted&nbsp;by&nbsp;the&nbsp;given<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;attribute</tt></dd></dl>
 
 <dl><dt><a name="Species-get_all_species"><strong>get_all_species</strong></a>()</dt><dd><tt>Return&nbsp;an&nbsp;OrderedDict&nbsp;of&nbsp;all&nbsp;species,&nbsp;with&nbsp;their&nbsp;names&nbsp;as&nbsp;keys<br>
-and&nbsp;their&nbsp;dicts&nbsp;of&nbsp;information&nbsp;as&nbsp;values</tt></dd></dl>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and&nbsp;their&nbsp;dicts&nbsp;of&nbsp;information&nbsp;as&nbsp;values</tt></dd></dl>
+
+<dl><dt><a name="Species-get_species"><strong>get_species</strong></a>(species)</dt><dd><tt>Input&nbsp;the&nbsp;species&nbsp;name&nbsp;to&nbsp;retrieve<br>
+Return&nbsp;an&nbsp;instance&nbsp;of&nbsp;this&nbsp;species</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -186,5 +191,5 @@ Data descriptors defined here:<br>
 <font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
     
 <tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
-<td width="100%"><strong>relative_path</strong> = '/Users/tumrod/Documents/summer2015/SWE/cs373-idb/db/'</td></tr></table>
+<td width="100%"><strong>relative_path</strong> = '/Users/tumrod/Documents/summer2015/SWE/cs373-idb/IntergalacticDB/db/'</td></tr></table>
 </body></html>

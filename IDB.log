@@ -1,0 +1,1075 @@
+commit b0e39bd72d4a990c0f83cbae830ce8a5c4706d69
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Jul 7 16:20:40 2015 -0500
+
+    merge and put stat in about
+
+commit 1924735aa8f4ab5c0d0329b35f9ccaf586fe7f78
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Jul 7 15:46:05 2015 -0500
+
+    change Darth Vader to Jabba
+
+commit 96308c9873066d32b5a12057f290dbafc7e0ca88
+Merge: 14161b0 41e56cd
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Jul 7 15:43:36 2015 -0500
+
+    merge models.py
+
+commit 14161b0bd61e8175a4f47ec58561ca1b4464f17b
+Merge: aabaa5e 2adfdb7
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Jul 7 14:30:08 2015 -0500
+
+    Merge branch 'master' of https://github.com/tumrod/cs373-idb
+
+commit 41e56cd9e9af59a4c126584857baa5683e2f1eb2
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Jul 7 14:22:41 2015 -0500
+
+    put models.py and fixed about link; ready to merge and put it on rackspace
+
+commit aabaa5ea1182f1a9d29fcc4b301382fa21aa06b3
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Jul 7 12:25:53 2015 -0500
+
+    reverted back to the old master, working but not merge
+
+commit 04253bcba3db0841044887d36f91b9ad781bd6d4
+Merge: d1bb32a bf20374
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Jul 7 12:09:58 2015 -0500
+
+    Merge branch 'dev'
+
+commit 2adfdb7f950e2195fc8613f97a210e7cc081b085
+Author: Rachel Wong <rachelcwong168@gmail.com>
+Date:   Tue Jul 7 12:08:13 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit d1bb32ad1cf82589a7223546511220c136db738b
+Author: Rachel Wong <rachelcwong168@gmail.com>
+Date:   Tue Jul 7 11:49:48 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit bf20374ff0457020b93558bd212026e8eb8b6a11
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Tue Jul 7 01:21:29 2015 -0500
+
+    updated UML file, closes #29
+
+commit e6bb62e1079851765c3a63ba028561ded00e5fca
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Tue Jul 7 01:02:23 2015 -0500
+
+    added about image for erin and bio sentence, #28
+
+commit 71a37198de80f2d88cdcb50257518d91543c14da
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Mon Jul 6 23:17:16 2015 -0500
+
+    fixed tests
+
+commit 9e7d8e58afb95e6343f8720d164845160db04409
+Merge: 2f2ad89 27ca2a9
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Mon Jul 6 23:11:46 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 2f2ad890d39eb1990f83f4ba0b64e5d0cc39f084
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Mon Jul 6 23:11:39 2015 -0500
+
+    Fix tests
+
+commit 27ca2a9885e636a39020649629f6d4a0ca09bccc
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Mon Jul 6 23:11:38 2015 -0500
+
+    fixing unit tests
+
+commit 110e7d519b6fcd63fc45f17a98f4aba2cd0b4d89
+Merge: 3a206e0 8797fda
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Mon Jul 6 22:56:08 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 8797fda4a4f14e18e22de642de88a5ed323aaa67
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Mon Jul 6 22:54:53 2015 -0500
+
+    We only have one model file now, updated the references to those
+
+commit 22e8abb3c3e725a0479e2105db663c9fe77fc67e
+Merge: 4ae9b5d 0384289
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Mon Jul 6 22:49:06 2015 -0500
+
+    Merge branch 'master' of https://github.com/tumrod/cs373-idb
+
+commit 3a206e0d02a89ec8ced5af3121a5e5237e7a2d19
+Merge: c6e7103 4ae9b5d
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Mon Jul 6 22:42:35 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 4ae9b5d36ab7900ddf724a93d7f6c44ca5359e04
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Mon Jul 6 22:41:29 2015 -0500
+
+    Coerced data to play nice with unknown links
+
+commit c6e7103adf3f933a0bc0b329de3a5034b77f6e74
+Merge: b6b36a5 d28eb82
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Mon Jul 6 22:00:56 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit d28eb82884c60849020913e4d54dbdbd2d53956c
+Merge: 91c5663 29b01bd
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Mon Jul 6 21:59:59 2015 -0500
+
+    Merge branch 'convert_pages_to_tables' into dev
+
+commit 29b01bd2fd796aefbe6c6f81808cce6947c27a19
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Mon Jul 6 21:58:53 2015 -0500
+
+    Minor bugfix
+
+commit 22fab508602e47847142bec2e76794b259204e27
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Mon Jul 6 21:57:09 2015 -0500
+
+    Minor bugfix
+
+commit 2af5c38e845442936a55206af305a95d25cf1d43
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Mon Jul 6 21:53:23 2015 -0500
+
+    Convert index pages to tables instead of cool layout we had because Downing
+
+commit b6b36a5db9d1392880d380916de31d0e5584a599
+Merge: c0875df 91c5663
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Mon Jul 6 21:47:48 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 91c5663f36564b18b0e2024fe36acfdc954e2c95
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 6 21:33:24 2015 -0500
+
+    fixed the unit test
+
+commit 04eec46cbc3b15a59ca20ae3589951df4b478d62
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 6 21:16:06 2015 -0500
+
+    default unknown parameter
+
+commit c0875df2caad891a6b3733a66a28270dd6d91081
+Merge: 4f668f1 b79521e
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Mon Jul 6 20:55:52 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 038428933fdf22c09112e7b68d651ed8b1f24e7d
+Merge: 0c164c6 6a5458e
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 6 18:42:53 2015 -0500
+
+    Merge branch 'master' of https//github.com/tumrod/cs373-idb
+
+commit 0c164c62699da51904fe874d51dc3a6fd7bc85c4
+Merge: bbdb1a1 b79521e
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 6 18:42:06 2015 -0500
+
+    Merge branch 'dev' to master
+    Travis-CI and unittest should be working
+
+commit b79521e1ca4ca2d917e16b399c5126c7612ce461
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 6 18:30:45 2015 -0500
+
+    added models.py in root
+
+commit df2b7ec5797f6ee37b31066fff3c5242b58e9765
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 6 18:28:03 2015 -0500
+
+    unit tests fixes, some bugs got resolved
+
+commit 39890352d0a653f594d6d76d178f98898f2e4d0f
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 6 14:48:31 2015 -0500
+
+    updated about.html
+
+commit 6a5458e1a9dd1628ea55ad7044110885fca5c5b6
+Author: Rachel Wong <rachelcwong168@gmail.com>
+Date:   Mon Jul 6 14:44:40 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 8edd6b9d206b119f9666c786ce5c583d083b7970
+Author: Rachel Wong <rachelw@cs.utexas.edu>
+Date:   Mon Jul 6 14:41:15 2015 -0500
+
+    adding rachel's picture
+
+commit f2022ecab424031639a21206ecb1e5ab3e70ea55
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 6 12:15:10 2015 -0500
+
+    added info and img for about
+
+commit 345b8ec642d09d239231e4edc91ba2fa40086ebd
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Mon Jul 6 00:53:55 2015 -0500
+
+    Added relative path so tests can know where to look for files
+
+commit 4f668f121c74167c138405efe2e965fad9fb3ab3
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Mon Jul 6 00:32:10 2015 -0500
+
+    added link to species page
+
+commit b60966c87ef0566b49457dab4565801e0da21f4b
+Merge: fd0d5cf 0c46ede
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Mon Jul 6 00:27:58 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit fd0d5cfe3a9edfb12af18b48dde37225708d7b0e
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Mon Jul 6 00:27:55 2015 -0500
+
+    added links to planet page
+
+commit 0c46ede5ab49f04e867215e2ceb69b67dac1faa9
+Merge: 4275e63 16b5a70
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Mon Jul 6 00:23:19 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 16b5a70aba8a809a4a9239a4cdbc540f363abe42
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Mon Jul 6 00:22:18 2015 -0500
+
+    added links to character page
+
+commit 4275e63714e3a130c1dc3af8a66e78dadb77a3ed
+Merge: 1143f8a ad20412
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Mon Jul 6 00:22:13 2015 -0500
+
+    added many unit tests, error filenotfound for db files, sorted call is inaccurate (needs fixing)
+
+commit 8e9bef7f3e4bdc2fc21c71c6b726f42b3dde7457
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Mon Jul 6 00:03:04 2015 -0500
+
+    added image for noelle
+
+commit 1143f8a20f70ed6440f495c65fee15fc4b211dc2
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Sun Jul 5 23:53:29 2015 -0500
+
+    fixed new unit tests which were written incorrectly, changed some characters in jsons to be compatible with unit tests
+
+commit ad20412919ffe2f66541228e358889f9ccc60c41
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Sun Jul 5 22:55:06 2015 -0500
+
+    added species page, fixes #23
+
+commit 9189a908ae51b1ce71c3c457618a3ad96780cbc6
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Sun Jul 5 22:30:12 2015 -0500
+
+    added planet page
+
+commit 557efdc28c842db84492019865716ad106d7a593
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Sun Jul 5 19:08:48 2015 -0500
+
+    made css file for character, species and planet pages
+
+commit 2356830d9b79bfd4dbc8d02b03c367fdf69389cc
+Merge: a4c4bd4 8e4a8b2
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Sun Jul 5 19:01:36 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit a4c4bd4746f1a119087a8589f5986d4a154e3d05
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Sun Jul 5 19:01:33 2015 -0500
+
+    finished character page
+
+commit 8e4a8b209dd80f8ee4d3b4ebb63b829fc810a7df
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sun Jul 5 18:34:30 2015 -0500
+
+    added memo's images and data source information to about
+
+commit acf4abf77ae132f09014871d6a5dc3ba2cf4fc2e
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 18:32:32 2015 -0500
+
+    Fix bug with module path
+
+commit 98560d7a6d80b29563e45f887ad5a56efaed22da
+Merge: 110df44 51d4294
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 18:26:06 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 110df44e9a8c9b1afda12b8efc7682808b462c78
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 18:25:51 2015 -0500
+
+    Memo picture
+
+commit 51d4294327b17596632385cae01c686af528e4c8
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Sun Jul 5 18:19:35 2015 -0500
+
+    added character page, not done
+
+commit 385a9f6ff7d1ac5692851936114803cb7b90de76
+Merge: 669d409 21c2214
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Sun Jul 5 18:18:39 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 669d4090e57aa092325233bd6a65986f57996437
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Sun Jul 5 18:18:35 2015 -0500
+
+    fixed model for character page
+
+commit 21c22140bdc76bfdf1aad1ca0a7f052ce399ffd8
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 18:16:44 2015 -0500
+
+    Changed source locations, now we only have models in IntergalaticDB
+
+commit ff2f6d29988333d814d840c9d673bedb62da15b4
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 17:53:14 2015 -0500
+
+    Fixed sorting bug and changed file IO read path
+
+commit 12174b340ad8950ac2db2cf49d3ce61c6dc7dce5
+Merge: a51918f 31c867f
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 17:39:34 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit a51918fec7421e775858abeb6aa9b10f6cde3ad3
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 17:39:10 2015 -0500
+
+    Added planet sorting to species Closes #19
+
+commit 31c867f00a39e2ade0979132ba7b841efa0e7dee
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sun Jul 5 17:35:28 2015 -0500
+
+    about page is ready for actual information
+
+commit 87cff75146cedb4fb69de6bf9c863b4dfc2f206c
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 17:34:37 2015 -0500
+
+    Synced model files
+
+commit 042cf2fc3e4ebcf700f1b2a6988497f8745a9e65
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 17:32:28 2015 -0500
+
+    Sorting for characters and species in planets page
+
+commit dd9b037be3186dc5c96f89cdac65380b31d5ca4c
+Merge: 1363675 252c89d
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 17:14:38 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 136367525e9cb4c2839a3ff1419f049868c9594b
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 17:14:13 2015 -0500
+
+    Sorting for characters in species page
+
+commit 252c89dccd29bf6a7d3508d55060b9a5aa5b0b9a
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sun Jul 5 16:20:33 2015 -0500
+
+    updated scraped data to have numberof<list>
+
+commit db84f5b6a187f3fd279588003d0f048f3b894d10
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sun Jul 5 16:07:30 2015 -0500
+
+    fixed #27 navigation in about should work now
+
+commit 094f2cc43b3a974cdf2601588aa371b822862802
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sun Jul 5 16:06:42 2015 -0500
+
+    apply link css to  linkable attribute on species
+
+commit 1a8921757810175b7d40e79eb42826ded983d5bd
+Merge: 805eff2 191a6bf
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Sun Jul 5 15:49:41 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 191a6bf8c1ac38b415b736dbf6a790d1a5ac95d1
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Sun Jul 5 14:47:40 2015 -0500
+
+    added (currently non-working) unit tests for get_all_characters
+
+commit b9800ddce6b0b0c6dcaf439942c70135ed57dabb
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sun Jul 5 14:38:21 2015 -0500
+
+    redirection for chracters and species in planets.html
+
+commit cea63858645f6613273202aaa0b030e0ae1c94e0
+Merge: 9949893 673446a
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 14:19:16 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 994989356d143236aec9c5341acad3676a937fa0
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 14:18:53 2015 -0500
+
+    Added redirect to selected values, NOTE: this way a pain in the ASS
+
+commit bbdb1a1614893711223ede93fb918b3ee91b3e04
+Author: Rachel Wong <rachelcwong168@gmail.com>
+Date:   Sun Jul 5 14:10:28 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 673446a13044bc070535b4b870ff8527f2b5df9c
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Sun Jul 5 13:57:54 2015 -0500
+
+    finished adding navigation well to model pages and edited selection boxes
+
+commit 7d25d69d2db5baff31f4f2a25fa39f06f758e8df
+Merge: 3d4845d 18227e1
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Sun Jul 5 13:36:50 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 3d4845d1ad5fcd98b3669259d2bdba535e7330a4
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Sun Jul 5 13:35:46 2015 -0500
+
+    added navigation well to species.html, fixed styles for model pages
+
+commit 18227e151ca55e57f06f979459d8d3f1c8ba5d74
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 13:33:14 2015 -0500
+
+    Splat dictionary arguments for sorted characters
+
+commit abff7896bed6edcd0f82a261a91dab218b9f8204
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 13:32:36 2015 -0500
+
+    Linked species home world to planet page, and formated characters a little better
+
+commit ba9d6b5d7d2c477e23a5e742ad0235ca1957b079
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 13:21:16 2015 -0500
+
+    Species planet is no longer list, is now just one value representing home world
+
+commit df0d4a0b0d4e247352cb923265a7cac4391089f7
+Merge: 2b48b3c 6bfd1da
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Sun Jul 5 13:02:59 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 2b48b3c3f014c43a2a579b80f6b430ebaf3af303
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Sun Jul 5 13:01:55 2015 -0500
+
+    added navigation well and some style changes for planets page
+
+commit 6bfd1da65417d71d1615af2dd738376f92c76493
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 13:00:28 2015 -0500
+
+    Added url redirection to "more" button in planets and species
+
+commit 955b46597d6348bb09f59e84528bf61be8b069f1
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 12:48:57 2015 -0500
+
+    Ordered dictionary to Model conversion
+    
+    Changed templates to work with models
+    Changed model methods to provide models instead of ordered dict
+    Added route and model support for individual url for an instance of model
+
+commit 9bb2adf33dc5c332c2efa1d0de70c622db9e512f
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 11:23:32 2015 -0500
+
+    Added link to specie, planets and itself from character page
+
+commit bfc814ae5deb610e544e4909d5a0f621d2e745c2
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sun Jul 5 09:57:28 2015 -0500
+
+    modified makefile to have coverage over test case
+
+commit c2f617b08e821f978af3866e2c9fdcac8a5c5c75
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sun Jul 5 02:10:25 2015 -0500
+
+    change more button color
+
+commit 6e7ff33579daa4ddfccc0490f16cc4c0c3d96d8e
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sun Jul 5 02:09:34 2015 -0500
+
+    added 2 more species
+
+commit 658ea8e823cdb78dcaf8bc89c2f8b15caceb4f23
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sun Jul 5 01:35:23 2015 -0500
+
+    added data for 100 characters, 38 species, 55 planets
+
+commit fa9101fbce05e46855fb98d1425e8e8744f2f6a9
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sun Jul 5 01:10:59 2015 -0500
+
+    added ASC and DESC to species
+
+commit e06933f834b664aeb56f56ecac5c7fe06fdb85d5
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 00:59:44 2015 -0500
+
+    This should fix species sorting by
+
+commit eb5d466533f70ade6e2e95ce2bb0be21b119c4d9
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 00:49:02 2015 -0500
+
+    Added sorting by asc/desc to characters
+
+commit 4a0b899997f6fe47e63096189b8fecc1f6a7c4c9
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sun Jul 5 00:32:58 2015 -0500
+
+    Added sorting by asc/desc functionality to planets
+
+commit ced9f1d4aa739f634332fea27b39a0912e0bb5a9
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sat Jul 4 23:33:15 2015 -0500
+
+    added get_all_sorted_species() and species model page should be working fixed #22
+
+commit e071fce2c853f5fc7e992307840bdffa8eabd29d
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sat Jul 4 23:09:52 2015 -0500
+
+    added species page, sort not working
+
+commit 4ed473ecd5ed2a30e6cdb90674c39976dd98ef79
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Sat Jul 4 13:20:10 2015 -0500
+
+    put links in navigation well, added navigation well and some changes to characters page
+
+commit c853103d7be648d4c80ccb24d8c2e357f1f44708
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Sat Jul 4 13:18:48 2015 -0500
+
+    changed documentation for get_height
+
+commit 4cba8b498e87e235ffb7128dbca1487fc0470d0d
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Sat Jul 4 13:13:05 2015 -0500
+
+    added tests for character height, changed documentation for get_height
+
+commit ebe9fa21117c1f2898c52e383d0d149473de712d
+Merge: 3bf08d6 a4d23a9
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sat Jul 4 01:41:01 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 3bf08d689a77b404015084b1eafa5fa63d269ed5
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sat Jul 4 01:40:40 2015 -0500
+
+    Sorting js file now supports all model routes
+
+commit 8c5bb620058a299d6bc181daff7e8834f3825a06
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sat Jul 4 01:39:47 2015 -0500
+
+    Added planets template, route, order handler in model and another planet to our static data
+
+commit a4d23a96087671d23a1e2001b1a800b976cc8ca5
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sat Jul 4 00:25:25 2015 -0500
+
+    add height attribute
+
+commit 197794f1fe065dda65ecbedf9d74bdc7d3dcdf90
+Merge: 36dcfd4 0b49a0a
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sat Jul 4 00:18:33 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 36dcfd4b60bbec34fcffca1787d842ad30d63c6f
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sat Jul 4 00:18:11 2015 -0500
+
+    Sorting js file now handles all sorting values
+
+commit 96879c33787992337c681db2cbf1ca0c037b0106
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sat Jul 4 00:16:40 2015 -0500
+
+    Character model now handles all sort values
+
+commit 37f8db3d35c2a9e01aedbe90d16b8682068c6864
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sat Jul 4 00:15:31 2015 -0500
+
+    Changed birth attribute to height attribute
+
+commit 1dc260cf9144faafa6cd00c410b67dd26ee89694
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Sat Jul 4 00:15:01 2015 -0500
+
+    Changed template to support height
+
+commit 0b49a0ab06bbda1a2511d67d5097584ed95f35f9
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Fri Jul 3 23:28:10 2015 -0500
+
+    added pydoc documentation to models.py
+
+commit 06ac21d284564e18aa781c1d03a46eec3adb036f
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Fri Jul 3 21:39:26 2015 -0500
+
+    full characters with descriptions and image url
+
+commit ebf0fe60e4f4f5a5dff35e37ad5c3f7436736772
+Merge: 87769fa cb91658
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 18:52:53 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 87769fa196724e5fb75e55db7ea97a7daa23f992
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 18:52:31 2015 -0500
+
+    Added sorting javascript file handler
+
+commit 5cc143f8645f69743a9ed444edfe627d2fabd908
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 18:50:34 2015 -0500
+
+    Added a static method to our models
+    
+    this method will return a sorted dict based on given sorted attribute
+
+commit c0832c1b6439667dd61a948b68d2ca21a151d020
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 18:48:57 2015 -0500
+
+    Added sort by character route and handle logic
+
+commit b64aa4e7c3282aa4dacd2f48556531915597f86f
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 18:47:14 2015 -0500
+
+    Added sort by UI in character template
+
+commit dee7fc8ab6688a6c0d5090920bebb05cdd5dfec0
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 18:46:17 2015 -0500
+
+    Added order menu css
+
+commit cb91658b182e42c2626c01623507b67e5103cc66
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Fri Jul 3 17:49:04 2015 -0500
+
+    added scraped characters json data
+
+commit f7e1f4ffc595c6bbd274b447d6c89f3f27a4c00b
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Fri Jul 3 15:40:25 2015 -0500
+
+    added documentation for character class methods
+
+commit aa70eac327a37f27010e4deacda1d388580af419
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Fri Jul 3 15:23:07 2015 -0500
+
+    changed name of test file for requirement closes #19
+
+commit c7665a8c82cd10189c2d7676f077be04fd461719
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Fri Jul 3 15:18:57 2015 -0500
+
+    updated unit tests for models to test for new attributes
+
+commit f2178a9a95917b8c9835c252bc1d1a2750b1447b
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 15:14:42 2015 -0500
+
+    Fixed some spelling mistakes
+
+commit 10e2cf9ac59af24862a85914bf7eb584a7437b34
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 15:12:29 2015 -0500
+
+    Updated character template to be dynamic
+
+commit 193bf334a51302138d956a685248fec34840a753
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 15:11:39 2015 -0500
+
+    Aesthetic changes
+
+commit cdad1bb763baa3c3e6f4e4943eab6971c73429a7
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 15:11:12 2015 -0500
+
+    Added Ashoka to character list
+
+commit 514c60a3d30c07016a55ae29d636dd8b058363f1
+Merge: fd5b185 05f9ac5
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 15:09:01 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit fd5b185489c2ce70dc2adba7503a4c22b7faaa8f
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 15:08:27 2015 -0500
+
+    Added a relative path to file input
+
+commit 05f9ac509018b8a2478f67ebb8a3e9c44f1a6a76
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Fri Jul 3 15:05:34 2015 -0500
+
+    added two new attributes to each model
+
+commit 0bac5df14850c48bcbd287f6fd8921105e5d5e2a
+Merge: fcf6633 d4aedca
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Fri Jul 3 14:26:18 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit fcf6633a5963a584bf215ee98163fabd65e8b5b7
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Fri Jul 3 14:25:56 2015 -0500
+
+    added new fields for gender and birth and fixed chewbacca description
+
+commit d4aedcaff44f1c909b8c0d6df1928f6caf361ab2
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 13:56:16 2015 -0500
+
+    Added to gitignore
+
+commit b9e45513abf005855170538b4bac3dbff2ee4035
+Merge: 60957c4 9b48bad
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 13:47:32 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 60957c46a76c3e5fa2ebf736613412d610031d02
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 13:45:35 2015 -0500
+
+    Added all characters template view and css
+
+commit cd44ef5a71fa429362f399c47df802f4712770ee
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 13:44:10 2015 -0500
+
+    Added an identical models.py file to folder structure because it is a req
+
+commit 3bb849856a3def69a01b51b3cf023e40b7ad42ac
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 13:42:27 2015 -0500
+
+    Added the characters route and supplied its template with all character data
+
+commit df9697ab4946305352f0322b6d8f7fd527b3b82b
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 13:41:49 2015 -0500
+
+    Added some ide files to ignore list
+
+commit 9b48bad1a0b2daef1fd1859c997a5493b8307a03
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Fri Jul 3 12:32:16 2015 -0500
+
+    fix unit tests and models
+
+commit 598526e8ce62d7107588042d3fd1e801c46b4d6d
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 3 12:19:48 2015 -0500
+
+    Cleaned up models
+
+commit c140e965b513e13f2fac002e41103c137c2216f8
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Thu Jul 2 23:26:36 2015 -0500
+
+    add unit tests closed #4
+
+commit 805eff257597c1536a71143b2acc48768c013e12
+Merge: a9d191b 91bf660
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Thu Jul 2 22:25:18 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 91bf66095a1ffb88fb8210cc871b1617aaaba8c5
+Author: Erin Pennington <epenning@cs.utexas.edu>
+Date:   Thu Jul 2 22:23:19 2015 -0500
+
+    added hardcoded data for example characters, planets, species
+
+commit a9d191b2f72b44b8e71535a60405fff5639f9525
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Thu Jul 2 22:13:41 2015 -0500
+
+    added about page template
+
+commit 8df9f6246f0326565d9e960f015729a1eaaa7260
+Merge: 46b7e03 5299133
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Thu Jul 2 22:11:42 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 5299133ed10efe570235d31f4c039213386f93be
+Merge: 779a500 140745c
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Thu Jul 2 22:10:21 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 779a500297975bd912110f84c27ebce4ad6ed1fd
+Merge: 46b7e03 51d2af2
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Thu Jul 2 22:09:23 2015 -0500
+
+    Merge branch 'master' into dev
+
+commit 140745c1c774c2dae9d397521a98ab618260f5c6
+Merge: 78dcf80 1935b57
+Author: Erin Pennington <epenning@cs.utexas.edu>
+Date:   Thu Jul 2 21:52:45 2015 -0500
+
+    dev behind master, should be up to date
+
+commit 78dcf80d432c570703a46a6b4c3d02119c1d5ec1
+Merge: 46b7e03 4b64e1d
+Author: Erin Pennington <epenning@cs.utexas.edu>
+Date:   Thu Jul 2 21:50:40 2015 -0500
+
+    Merge remote-tracking branch 'origin' into dev
+    
+    dev is behind master, should switch new development to dev
+
+commit 1935b57d04f98574b39973a803d078bdfc520cb1
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Thu Jul 2 21:49:04 2015 -0500
+
+    add methods to each model
+
+commit 4b64e1d8a4eaa61b77fb2aeac7f81814dea27570
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Thu Jul 2 21:46:21 2015 -0500
+
+    add methods to each model
+
+commit 51d2af2b66b5f262eeaa4a1f5cf7d7166be68e70
+Merge: ad850f1 c4380e6
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Thu Jul 2 21:29:29 2015 -0500
+
+    Merge branch 'master' of https://github.com/tumrod/cs373-idb
+
+commit ad850f14744a2298c626fcc0c6bf6277ca852464
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Thu Jul 2 21:28:25 2015 -0500
+
+    Closes #11
+    
+    Created the models file and added some static data to our "database"
+
+commit c4380e66581cc47bd5cccb4f830d523ffd4249ab
+Author: Erin Pennington <epenning@cs.utexas.edu>
+Date:   Thu Jul 2 21:09:20 2015 -0500
+
+    created UML diagram closes #15
+
+commit 4538de18c339051ec347761dbd1ed45de32a2601
+Merge: 560d6ed 9028274
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Thu Jul 2 21:06:31 2015 -0500
+
+    Merge branch 'master' of https://github.com/tumrod/cs373-idb
+
+commit 560d6ed4ca6dca20fb4ea8cf94bdbe26c06e57f9
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Thu Jul 2 21:06:03 2015 -0500
+
+    added custom font
+
+commit 9028274bcb1fa1a382610f4c77fba5f24a028c2d
+Merge: de2d52f 9226f5a
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Thu Jul 2 20:39:15 2015 -0500
+
+    Merge branch 'master' of https://github.com/tumrod/cs373-idb
+
+commit de2d52fdadde5137065b11b16218ad80d6ee5390
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Thu Jul 2 20:37:01 2015 -0500
+
+    Closes #18
+    
+    Fixed path reference to static files in flask
+
+commit 9226f5a0361cb9b3791ccb4622b8bf62ff85e82f
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Thu Jul 2 20:26:47 2015 -0500
+
+    add model closes #6
+
+commit d0671bfe4a8e32b803eb2c85376c7737e23fe847
+Merge: 1a64fa0 d7deba3
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Thu Jul 2 19:53:08 2015 -0500
+
+    Merge branch 'master' of https://github.com/tumrod/cs373-idb
+
+commit 1a64fa05f97a474200fb1542b5e6de4f7be7148e
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Thu Jul 2 19:53:01 2015 -0500
+
+    changed the name of the splash page
+
+commit ca5868f9c395b8de8c680ffe7659c95eb2ec8918
+Author: Rachel Wong <rachelcwong168@gmail.com>
+Date:   Thu Jul 2 19:52:48 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit d7deba3ef104ea9966c646e3294fa3f9a2218a5d
+Author: Rachel Wong <rachelcwong168@gmail.com>
+Date:   Thu Jul 2 19:44:27 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit 97c57ad5b6290b4a41724dab2d7af1a530bbfa79
+Author: rcwong <rachelcwong168@gmail.com>
+Date:   Thu Jul 2 19:31:20 2015 -0500
+
+    slight change to apiary, closes #14
+
+commit 6553e7851070c5b0da1c68cf90dfc8f9e385840d
+Author: Rachel Wong <rachelcwong168@gmail.com>
+Date:   Thu Jul 2 19:30:03 2015 -0500
+
+    Transferring blueprint from apiary.io
+
+commit bd7094bfdc4607b43f5b5c6895def9ad12fa875c
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Thu Jul 2 19:24:17 2015 -0500
+
+    added splash page
+
+commit 4ee39d5aba745a694175dc8c16f2a8b0a23f54cb
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Thu Jul 2 18:42:58 2015 -0500
+
+    Added Flask #17
+    
+    For now it is just skeleton code
+
+commit 46b7e03ea6f41e3d8e6e798c8fcf648b0ddc6d07
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Thu Jul 2 17:32:40 2015 -0500
+
+    getData.py and examples of scraped data
+
+commit 50a93b86cce1175d8ffae5aed72e93bdb867fe43
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Wed Jul 1 23:06:06 2015 -0500
+
+    add makefile
+
+commit bec1b5ff3e9dbc30f75cd8ac350bee2fc7ea24ee
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Wed Jul 1 23:00:01 2015 -0500
+
+    try connecting with TravisCI closes #1 closes #2
+
+commit 4524f4f2faeb46cf64fc6214986b2c2a3be0ad05
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Wed Jul 1 22:56:10 2015 -0500
+
+    initial files
+
+commit 1dcf8f4087d6b010a85899afacbda963c2b99c24
+Author: Tipparat Umrod <tumrod@users.noreply.github.com>
+Date:   Wed Jul 1 22:11:21 2015 -0500
+
+    Initial commit
