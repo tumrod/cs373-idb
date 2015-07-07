@@ -461,7 +461,7 @@ class TestModels (TestCase) :
     def test_get_all_planets_characters(self) :
         planets = m.Planet.get_all_planets()
         planet_char = [planets[i].get_characters() for i in range(len(planets))]
-        expected = [['Darth Vader'], ['Boba Fett'], ['Chewbacca'], []]
+        expected = [['Darth Vader'], ['Boba Fett'], ['Chewbacca'], ["unknown"]]
 
         result = sorted(planet_char)
 
@@ -641,7 +641,7 @@ class TestModels (TestCase) :
         system = p.get_system()
 
         self.assertEqual(name, "Coruscant")
-        self.assertEqual(characters, [])
+        self.assertEqual(characters, ["unknown"])
         self.assertEqual(species, ["Human",])
         self.assertEqual(des, "Coruscant, originally called Notron, also known as Imperial Center or the Queen of the Core, was a planet located in the Galactic Core. It was generally agreed that Coruscant was, during most of galactic history, the most politically important world in the galaxy. At various times, it was the capital of the Galactic Republic, the Galactic Empire, the New Republic, the Yuuzhan Vong empire, the Galactic Alliance, very briefly the Fel Empire, Darth Krayt's Galactic Empire, and the Galactic Federation Triumvirate. In controlling Coruscant, these governments controlled most of the galaxy in the process.")
         self.assertEqual(image, "http://img4.wikia.nocookie.net/__cb20100115192302/starwars/images/1/17/Coruscant-AoTCW.jpg")
