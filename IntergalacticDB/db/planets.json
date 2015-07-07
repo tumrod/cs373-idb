@@ -1,7 +1,7 @@
 {"Tatooine": 
 	{"image": "http:\/\/img2.wikia.nocookie.net\/__cb20131019121937\/starwars\/images\/b\/b0\/Tatooine_TPM.png", 
 	"characters": ["Darth Vader"], 
-	"species": ["Human"], 
+	"species": ["Human", "Hutt"],
 	"name": "Tatooine", 
 	"description": "Tatooine was a desert world and the first planet in the binary Tatoo star system. It was part of the Arkanis sector in the Outer Rim Territories. It was inhabited by poor locals who mostly farmed moisture for a living. Other activities included used equipment retailing and scrap dealing. The planet was on the 5709-DC Shipping Lane, a spur of the Triellus Trade Route, which itself connected to the Sisar Run. The planet was not far from the Corellian Run. It had its own navigation system. However, it would still play a role in galactic events, serving as the home of Anakin Skywalker. It was here that Jedi Master Qui-Gon Jinn recognized Anakin's potential to become a Jedi and where he introduced him to Obi-Wan Kenobi, his future master and mentor. Tatooine was also the home of Anakin's son, Luke, where he lived until his early adulthood. The planet acquired a bad reputation, often being viewed as the cesspool of the galaxy due to the large number of criminals who could be found there.",
 	"region": "Outer Rim Territories",
@@ -27,14 +27,4 @@
 	"region": "Mid Rim",
 	"system": "Kashyyyk system",
 	"numberofcharacters": 1,
-	"numberofspecies": 1},
-"Coruscant":
-	{"image": "http://img4.wikia.nocookie.net/__cb20100115192302/starwars/images/1/17/Coruscant-AoTCW.jpg",
-	"characters": ["unknown"],
-	"species": ["Human"],
-	"name": "Coruscant",
-	"description": "Coruscant, originally called Notron, also known as Imperial Center or the Queen of the Core, was a planet located in the Galactic Core. It was generally agreed that Coruscant was, during most of galactic history, the most politically important world in the galaxy. At various times, it was the capital of the Galactic Republic, the Galactic Empire, the New Republic, the Yuuzhan Vong empire, the Galactic Alliance, very briefly the Fel Empire, Darth Krayt's Galactic Empire, and the Galactic Federation Triumvirate. In controlling Coruscant, these governments controlled most of the galaxy in the process.",
-	"region": "Core Worlds",
-	"system": "Coruscant system",
-	"numberofcharacters": 0,
 	"numberofspecies": 1}}

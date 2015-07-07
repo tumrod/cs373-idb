@@ -10,39 +10,21 @@
 "Human": 
 	{"image": "http:\/\/img2.wikia.nocookie.net\/__cb20100628191857\/starwars\/images\/thumb\/5\/5d\/Humans-TESB30.jpg\/400px-Humans-TESB30.jpg", 
 	"description": "Humans, taxonomically referred to as Homo sapiens, were the galaxy's most numerous and politically dominant sentient species with millions of major and minor colonies galaxywide. Believed to have originated on the galactic capital of Coruscant, they could be found anywhere, engaged in many different pursuits: spacers, mercenaries, smugglers, merchants, soldiers, assassins, farmers, crime lords, laborers, slaves, slavers, and many others, including Jedi and Sith. Since Humans were the most common sentient species, they were often considered to be a standard or average to which the biology, psychology, and culture of other species were compared.", 
-	"planet": "Coruscant",
-	"characters": ["Darth Vader", "Boba Fett"], 
+	"planet": "Kamino",
+	"characters": ["Boba Fett"],
 	"name": "Human",
 	"language": "Galactic Basic Standard",
 	"classification": "Mammal",
     "numberofcharacters": 2},
-"Bith": {
+"Hutt": {
         "characters": [
-            "Unaw Aharo",
-            "Darth Tenebrous",
-            "Thalleus Tharn",
-            "Darth Venamis"
+            "Jabba"
         ],
-        "classification": "Craniopod",
-        "description": "Large cranium\nAcute senses of smell and hearing",
-        "image": "http://img4.wikia.nocookie.net/__cb20060903181845/starwars/images/7/74/Bith_%28Doikk_Nats%29.jpg",
-        "language": "Bith",
-        "name": "Bith",
-        "planet": "Clak'dor VII",
-        "numberofcharacters": 4},
-"Omwati": {
-        "characters": [
-            "Aleema Finn",
-            "Pillik",
-            "Tannis",
-            "Tiu Zax"
-        ],
-        "classification": "Near-Human",
-        "description": "Bird-like anthropoids",
-        "image": "http://img1.wikia.nocookie.net/__cb20070528041553/starwars/images/thumb/2/2f/Omwati.JPG/360px-Omwati.JPG",
-        "language": "Omwatese",
-        "name": "Omwati",
-        "planet": "Omwat",
-        "numberofcharacters": 4
-    }
+        "classification": "Sentient",
+        "description": "The Hutts were a sentient species of large gastropods with short arms, wide cavernous mouths and huge eyes, who controlled a large space empire in Hutt Space. The species was said to originally hail from the planet Varl, but no planet by that name appeared on any Imperial star charts. Their adopted homeworld was Nal Hutta. Members of this species were often stereotyped as crime lords.",
+         "image": "http://img2.wikia.nocookie.net/__cb20130115030417/starwars/images/a/a7/HuttNEGAS.png",
+        "language": "Huttese",
+        "name": "Hutt",
+        "planet": "Tatooine",
+        "numberofcharacters": 1}
 }
