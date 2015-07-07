@@ -41,30 +41,32 @@
 
     <h1 class="h1">Star Wars Characters</h1>
 
-    <h4>Sort By:</h4>
-    <select id="sort-order">
-        <option value="none">-Select-</option>
-        <option value="name">Name</option>
-        <option value="gender">Gender</option>
-        <option value="height">Height</option>
-        <option value="planet">Planet</option>
-        <option value="species">Species</option>
-    </select>
-    <button type="button" id="order">^</button>
-
-    <div id="pricing-table" class="clear">
-        {% for character in all_characters %}
-        <div class="plan">
-            <h3>{{ character.get_name() }}<span><img id="image-placeholder" src={{ character.get_image() }}></span></h3>
-            <ul>
-                <li><b>Gender</b><br>{{ character.get_gender() }}</li>
-                <li><b>Height</b><br>{{ character.get_height() }}</li>
-                <li><b>Home Planet</b><br><a href="/planets/{{ character.get_planet() }}" class="link">{{ character.get_planet() }}</a></li>
-                <li><b>Species</b><br><a href="/species/{{ character.get_species() }}" class="link">{{ character.get_species() }}</a></li>
-            </ul>
-            <a class="signup" href="/characters/{{ character.get_name() }}">More</a>
-        </div>
-        {% endfor %}
+    <!-- Table -->
+    <div class="box-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Name <button type="button" class="order" value="^" id="name">^</button></th>
+                    <th>Height <button type="button" class="order" value="^" id="height">^</button></th>
+                    <th>Home Planet <button type="button" class="order" value="^" id="planet">^</button></th>
+                    <th>Species <button type="button" class="order" value="^" id="species">^</button></th>
+                    <th>Gender <button type="button" class="order" value="^" id="gender">^</button></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for character in all_characters %}
+                    <tr>
+                        <td class="user-photo"><img class="user-tumb" src={{ character.get_image() }}></td>
+                        <td><a href="/characters/{{ character.get_name() }}">{{ character.get_name() }}</a></td>
+                        <td>{{ character.get_height() }}</td>
+                        <td><a href="/planets/{{ character.get_planet() }}">{{ character.get_planet() }}</a></td>
+                        <td><a href="/species/{{ character.get_species() }}">{{ character.get_species() }}</a></td>
+                        <td> {{ character.get_gender() }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </div>
 
     <!-- JS -->
