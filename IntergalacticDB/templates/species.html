@@ -40,39 +40,39 @@
     <!-- END HEADER -->
   <h1 class="h1">Star Wars Species</h1>
 
-  <h4>Sort By:</h4>
-      <select id="sort-order">
-        <option value="none">-Select-</option>
-        <option value="name">Name</option>
-        <option value="language">Language</option>
-        <option value="planet">Planet</option>
-        <option value="classification">Classification</option>
-        <option value="numberofcharacters">Characters</option>
-      </select>
-      <button type="button" id="order">^</button>
-
-  <div id="pricing-table" class="clear">
-    {% for species in all_species %}
-      <div class="plan">
-          <h3>{{ species.get_name() }}<span><img id="image-placeholder" src={{ species.get_image() }}></span></h3>
-          <ul>
-            <li><b>language</b><br>{{ species.get_language() }}</li>
-            <li><b>home planet</b><br><a href="/planets/{{ species.get_planet() }}" class="link">{{ species.get_planet() }}</a></li>
-            <li><b>classification</b><br>{{ species.get_classification() }}</li>
-
-            <li><b id="characters">Characters</b>
-                <select style="position: relative;left: 1%;top: 5px;" id="sort-order-character-{{ species.get_name() }}">
-                    {% for character_name in species.get_characters() %}
-                        <option value="{{ character_name }}">{{ character_name }}</option>
-                    {% endfor %}
-                </select>
-                <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select' id="redirect-to-selected-character-in-{{ species.get_name() }}">Go</button>
-            </li>
-          </ul>
-          <a class="signup" href="/species/{{ species.get_name() }}">More</a>
-        </div>
-    {% endfor %}
-  </div>
+  <div class="box-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Name <button type="button" class="order" value="^" id="name">^</button></th>
+                    <th>Language <button type="button" class="order" value="^" id="language">^</button></th>
+                    <th>Planet<button type="button" class="order" value="^" id="planet">^</button></th>
+                    <th>Classification<button type="button" class="order" value="^" id="classification">^</button></th>
+                    <th>Characters<button type="button" class="order" value="^" id="characters">^</button></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for species in all_species %}
+                    <tr>
+                        <td class="user-photo"><img class="user-tumb" src={{ species.get_image() }}></td>
+                        <td><a href="/species/{{ species.get_name() }}">{{ species.get_name() }}</a></td>
+                        <td>{{ species.get_language() }}</td>
+                        <td><a href="/planets/{{ species.get_planet() }}">{{ species.get_planet() }}</a></td>
+                        <td>{{ species.get_classification() }}</td>
+                        <td>
+                            <select style="position: relative;left: 1%;top: 5px;" value="characters" id="sort-order-character-{{ species.get_name() }}">
+                                {% for character_name in species.get_characters() %}
+                                    <option value="{{ character_name }}">{{ character_name }}</option>
+                                {% endfor %}
+                            </select>
+                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect-to-selected-character-in-{{ species.get_name() }}">Go</button>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 
   <!-- JS -->
   <script src="{{ url_for('static', filename='javascripts/jquery-1.11.2.min.js')}}" type="text/javascript"></script>

@@ -41,47 +41,46 @@
 
   <h1 class="h1">Star Wars Planets</h1>
 
-  <h4>Sort By:</h4>
-      <select id="sort-order">
-        <option value="none">-Select-</option>
-        <option value="name">Name</option>
-        <option value="region">Region</option>
-        <option value="system">System</option>
-        <option value="numberofcharacters">Characters</option>
-        <option value="numberofspecies">Species</option>
-      </select>
-      <button type="button" id="order">^</button>
-
-  <div id="pricing-table" class="clear">
-    {% for planet in all_planets %}
-      <div class="plan">
-          <h3>{{ planet.get_name() }}<span><img id="image-placeholder" src={{ planet.get_image() }}></span></h3>
-          <ul>
-            <li><b id="region">Region</b><br>{{ planet.get_region() }}</li>
-            <li><b id="system">System</b><br>{{ planet.get_system() }}</li>
-
-            <li><b id="characters">Characters</b>
-                <select style="position: relative;left: 1%;top: 5px;" id="sort-order-character-{{ planet.get_name() }}">
-                    {% for character_name in planet.get_characters() %}
-                        <option value="{{ character_name }}">{{ character_name }}</option>
-                    {% endfor %}
-                </select>
-                <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select' id="redirect-to-selected-character-in-{{ planet.get_name() }}">Go</button>
-            </li>
-
-            <li><b id="species">Species</b>
-                <select style="position: relative;left: 1%;top: 5px;" id="sort-order-species-{{ planet.get_name() }}">
-                    {% for species_name in planet.get_species() %}
-                        <option value="{{ species_name }}">{{ species_name }}</option>
-                    {% endfor %}
-                </select>
-                <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select' id="sort-order-species-in-{{ planet.get_name() }}">Go</button>
-            </li>
-          </ul>
-          <a class="signup" href="/planets/{{ planet.get_name() }}">More</a>
-        </div>
-    {% endfor %}
-  </div>
+  <div class="box-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Photo</th>
+                    <th>Name <button type="button" class="order" value="^" id="name">^</button></th>
+                    <th>Region <button type="button" class="order" value="^" id="region">^</button></th>
+                    <th>System<button type="button" class="order" value="^" id="system">^</button></th>
+                    <th>Characters<button type="button" class="order" value="^" id="characters">^</button></th>
+                    <th>Species<button type="button" class="order" value="^" id="species">^</button></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for planet in all_planets %}
+                    <tr>
+                        <td class="user-photo"><img class="user-tumb" src={{ planet.get_image() }}></td>
+                        <td><a href="/planets/{{ planet.get_name() }}">{{ planet.get_name() }}</a></td>
+                        <td>{{ planet.get_region() }}</td>
+                        <td>{{ planet.get_system() }}</td>
+                        <td>
+                            <select style="position: relative;left: 1%;top: 5px;" value="characters" id="sort-order-character-{{ planet.get_name() }}">
+                                {% for character_name in planet.get_characters() %}
+                                    <option value="{{ character_name }}">{{ character_name }}</option>
+                                {% endfor %}
+                            </select>
+                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect-to-selected-character-in-{{ planet.get_name() }}">Go</button>
+                        </td>
+                        <td>
+                            <select style="position: relative;left: 1%;top: 5px;" value="species" id="sort-order-species-{{ planet.get_name() }}">
+                                {% for species_name in planet.get_species() %}
+                                    <option value="{{ species_name }}">{{ species_name }}</option>
+                                {% endfor %}
+                            </select>
+                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-species' id="redirect-to-selected-character-in-{{ planet.get_name() }}">Go</button>
+                        </td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
 
   <!-- JS -->
   <script src="{{ url_for('static', filename='javascripts/jquery-1.11.2.min.js')}}" type="text/javascript"></script>
