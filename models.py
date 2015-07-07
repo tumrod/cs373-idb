@@ -3,7 +3,7 @@
 import json, os
 from collections import OrderedDict
 
-relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
+relative_path = os.path.dirname(os.path.realpath(__file__)) + '/IntergalacticDB/db/'
 
 class Character:
     """
