@@ -1,9 +1,9 @@
 FORMAT: 1A
-HOST: http://polls.apiblueprint.org/
+HOST: http://intergalacticdb.me/
 
 # Starhub API
-*****change Host to be actual host.*****
-Starhub API is a database of a collection of characters, locations, battles, etc of StarWars Universe.  
+
+Starhub API is a database of a collection of characters, planets, species, etc of StarWars Universe.  
 
 
 ## Character Collection [/characters.json]
@@ -12,26 +12,28 @@ Starhub API is a database of a collection of characters, locations, battles, etc
 + Response 200 (application/json)
 
         [{
-            "id": 1,
-            "name": "Luke Skywalker"
-            "planet": "Tatooine"
-            "species": "Human"
-            "description": "Luke Skywalker was a Force-sensitive Human male who helped defeat the Galactic Empire in the Galactic Civil War and helped found the New Republic, as well as the New Jedi Order. "
-            "image":
+            "name": "Luke Skywalker",
+            "gender": "Male",
+            "height": "1.72 meters",
+            "planet": "Tatooine",
+            "species": "Human",
+            "description": "Luke Skywalker was a Force-sensitive Human male who helped defeat the Galactic Empire in the Galactic Civil War and helped found the New Republic, as well as the New Jedi Order. ",
+            "image": "http://img1.wikia.nocookie.net/__cb20091118055536/starwars/images/e/e2/SwKOTOR25cropped.jpg",
         }, {
-            "id": 2,
-            "name": "Anakin Skywalker"
-            "planet": "Tatooine"
+            "name": "Boba Fett"
+            "gender" "Male"
+            "height": "1.83 meters"
+            "planet": "Kamino"
             "species": "Human"
-            "description": "Anakin Skywalker was a Force-sensitive Human male who served the Galactic Republic as a Jedi Knight and later served the Galactic Empire as the Sith Lord Darth Vader. "
-            "image":
+            "description": "Boba Fett was a Mandalorian warrior and bounty hunter. He was the only unaltered clone of the famed Jango Fett, created in 32 BBY as unit A0050, one of the first of many Fett replicas designed to become part of the Grand Army of the Republic, and was raised as Jango's son. Jango taught Boba much, training him to become a skilled bounty hunter as was his father-figure before him. In 22 BBY, Jango was killed at the Battle of Geonosis, which opened the Clone Wars. Just a boy, Boba was forced to..."
+            "image": "http://img2.wikia.nocookie.net/__cb20130920001614/starwars/images/5/58/BobaFettMain2.jpg"
         }]
 
-## Character [/characters/{id}.json]
+## Character [/characters/{name}]
 A single Character with all its details
 
 + Parameters
-    + id (number) - ID of a character
+    + name (string) - name of a character
 
 ### Retrieve a Character [GET]
 + Response 200 (application/json)
@@ -39,12 +41,14 @@ A single Character with all its details
     + Body
     
             {
-                "id": 1,
-                "name": "Luke Skywalker"
-                "planet": "Tatooine"
-                "species": "Human"
-                "description": "Luke Skywalker was a Force-sensitive Human male who helped defeat the Galactic Empire in the Galactic Civil War and helped found the New Republic, as well as the New Jedi Order. "
-                "image": 
+                "name": "Luke Skywalker",
+                "gender": "Male",
+                "height": "1.72 meters",
+                "planet": "Tatooine",
+                "species": "Human",
+                "description": "Luke Skywalker was a Force-sensitive Human male who helped defeat the Galactic Empire in the Galactic Civil War and helped found the New Republic, as well as the New Jedi Order. ",
+                "image": "http://img1.wikia.nocookie.net/__cb20091118055536/starwars/images/e/e2/SwKOTOR25cropped.jpg",
+        
             }
 
 + Response 404
@@ -62,35 +66,94 @@ A single Character with all its details
 + Response 200 (application/json)
 
         [{
-            "id": 1,
             "name": "Human"
-            "character_list": [1, 2]  <!-- list include id's of characters -->
-            "description": "Humans, taxonomically referred to as Homo sapiens, were the galaxy's most numerous and politically dominant sentient species with millions of major and minor colonies galaxywide."
-            "image":
+            "characters": [],
+            "classification": "Mammal ",
+            "description": "",
+            "image": "http://img3.wikia.nocookie.net/__cb20100628191857/starwars/images/5/5d/Humans-TESB30.jpg",
+            "language": "Galactic Basic Standard\nOthers",
+            "name": "Human",
+            "planets": "Unknown, possibly Coruscant ",
         }, {
-            "id": 2,
-            "name": "Wookie"
-            "character_list": []
-            "description": "The Wookiees, whose name for themselves translated to the People of the Trees, were a species of tall, hairy humanoids that were inhabitants of the planet Kashyyyk."
-            "image":
+            "name": "Wookie",
+            "characters": [
+                "Attichitcuk",
+                "Bacca",
+                "Bowdaar",
+                "Chewbacca",
+                "Chuundar",
+                "Dewlannamapia",
+                "Fahraark",
+                "Freyyr",
+                "Grakchawwaa",
+                "Groznik",
+                "Gungi",
+                "Hanharr",
+                "Lowbacca",
+                "Lumpawaroo",
+                "Quagga",
+                "Rorworr",
+                "Salporin",
+                "Tarfful",
+                "Tojjevvuk",
+                "Tyvokka",
+                "Vryyr",
+                "Yarua",
+                "Yubookoo",
+                "Zaalbar"
+            ],
+            "classification": "Mammal",
+            "description": "Tall, hair covered, retractable climbing claws, long life spans",
+            "image": "http://img2.wikia.nocookie.net/__cb20061128184734/starwars/images/5/57/ThreeWookieeAmigos-ROTSVD.jpg",
+            "language": "Shyriiwook\nXaczik\nThykarann",
+            "name": "Wookiee",
+            "planets": "Nominally Kashyyyk; may have originated on an unknown planet"
         }]
 
     
-## Species [/species/{id}.json]
+## Species [/species/{name}.json]
 A single Species with all its details in it
 
-    + id (number) - ID of a species
+    + name (string) - name of a species
 
 ### Retrieve a species [GET]
 + Response 200 (application/json)
     + Body
     
             {
-                "id": 2,
-                "name": "Wookie"
-                "character_list": []
-                "description": "The Wookiees, whose name for themselves translated to the People of the Trees, were a species of tall, hairy humanoids that were inhabitants of the planet Kashyyyk."
-                "image":
+                "name": "Wookie",
+                "characters": [
+                "Attichitcuk",
+                "Bacca",
+                "Bowdaar",
+                "Chewbacca",
+                "Chuundar",
+                "Dewlannamapia",
+                "Fahraark",
+                "Freyyr",
+                "Grakchawwaa",
+                "Groznik",
+                "Gungi",
+                "Hanharr",
+                "Lowbacca",
+                "Lumpawaroo",
+                "Quagga",
+                "Rorworr",
+                "Salporin",
+                "Tarfful",
+                "Tojjevvuk",
+                "Tyvokka",
+                "Vryyr",
+                "Yarua",
+                "Yubookoo",
+                "Zaalbar"
+            ],
+                "classification": "Mammal",
+                "description": "Tall, hair covered, retractable climbing claws, long life spans",
+                "image": "http://img2.wikia.nocookie.net/__cb20061128184734/starwars/images/5/57/ThreeWookieeAmigos-ROTSVD.jpg",
+                "language": "Shyriiwook\nXaczik\nThykarann",
+                "name": "Wookiee",
+                "planets": "Nominally Kashyyyk; may have originated on an unknown planet"
             }
     
 + Response 404
@@ -108,27 +171,30 @@ A single Species with all its details in it
 + Response 200 (application/json)
 
         [{
-            "id": 1,
-            "name": "Tatooine"
-            "species_list": [1, 2]  <!-- list includes id's of species --> 
-            "character_list": [1, 2]  <!-- list includes id's of characers -->
-            "description": "Tatooine (pronounced /tætu'in/; Jawaese: Tah doo Een e[8]) was a desert world and the first planet in the binary Tatoo star system."
-            "image":
+            "image": "http:\/\/img2.wikia.nocookie.net\/__cb20131019121937\/starwars\/images\/b\/b0\/Tatooine_TPM.png",     
+            "characters": ["Darth Vader"],
+            "species": ["Human"],
+            "name": "Tatooine",
+            "description": "Tatooine (pronounced \/tætu'in\/; Jawaese: Tah doo Een e[8]) was a desert world and the first planet in the binary Tatoo star system. It was part of the Arkanis sector in the Outer Rim Territories. It was inhabited by poor locals who mostly farmed moisture for a living. Other activities included used equipment retailing and scrap dealing. The planet was on the 5709-DC Shipping Lane, a spur of the Triellus Trade Route, which itself connected to the Sisar Run. The planet was not far from the Corellian Run. It had its own navigation system. However, it would still play a role in galactic events, serving as the home of Anakin Skywalker. It was here that Jedi Master Qui-Gon Jinn recognized Anakin's potential to become a Jedi and where he introduced him to Obi-Wan Kenobi, his future master and mentor. Tatooine was also the home of Anakin's son, Luke, where he lived until his early adulthood. The planet acquired a bad reputation, often being viewed as the cesspool of the galaxy due to the large number of criminals who could be found there.",
+            "region": "Outer Rim Territories",
+            "system": "Tatoo system"
+            
         }, {
-            "id": 2,
-            "name": "Dagobah"
-            "species_list": [1, 2] 
-            "character_list": [1, 2]
-            "description": "Dagobah was an Outer Rim planet in the Dagobah system. A remote world of swamps and forests, it served as a refuge for Jedi Grand Master Yoda during his exile, but otherwise had no notable intelligent life."
-            "image":
+            "image": "http:\/\/img2.wikia.nocookie.net\/__cb20090527045541\/starwars\/images\/thumb\/a\/a9\/Eaw_Kamino.jpg\/400px-Eaw_Kamino.jpg", 
+            "characters": ["Boba Fett"],
+            "species": ["Human"],
+            "name": "Kamino",
+            "description": "Kamino (pronounced \/kə'minoʊ\/), also known as the Planet of Storms,[10] was the watery world where the Clone Army of the Galactic Republic was created, as well as the Kamino Home Fleet. It was inhabited by a race of tall, elegant beings called the Kaminoans, who kept to themselves and were known for their cloning technology. Kamino was located just south of the Rishi Maze, and was governed by the Ruling Council, headed by the Prime Minister.",
+            "region": "Wild Space",
+            "system": "Kamino system"
         }]
         
 
-## Planet [/planets/{id}.json]
+## Planet [/planets/{name}]
 A single planet with all its details in it
 
 + Parameters
-    + id (number) - ID of a planet
+    + name (string) - name of a planet
 
 
 ### Retrieve a planet [GET]
@@ -137,12 +203,13 @@ A single planet with all its details in it
     + Body
     
             {
-                "id": 1,
-                "name": "Tatooine"
-                "species_list": [1, 2]
-                "character_list": [1, 2]
-                "description": "Tatooine (pronounced /tætu'in/; Jawaese: Tah doo Een e[8]) was a desert world and the first planet in the binary Tatoo star system."
-                "image":
+                "image": "http:\/\/img2.wikia.nocookie.net\/__cb20090527045541\/starwars\/images\/thumb\/a\/a9\/Eaw_Kamino.jpg\/400px-Eaw_Kamino.jpg", 
+                "characters": ["Boba Fett"],
+                "species": ["Human"],
+                "name": "Kamino",
+                "description": "Kamino (pronounced \/kə'minoʊ\/), also known as the Planet of Storms,[10] was the watery world where the Clone Army of the Galactic Republic was created, as well as the Kamino Home Fleet. It was inhabited by a race of tall, elegant beings called the Kaminoans, who kept to themselves and were known for their cloning technology. Kamino was located just south of the Rishi Maze, and was governed by the Ruling Council, headed by the Prime Minister.",
+                "region": "Wild Space",
+                "system": "Kamino system"
             }
             
 + Response 404
