@@ -7,7 +7,7 @@
 from io       import StringIO
 from unittest import main, TestCase
 
-from IntergalacticDB import models as m
+import models as m
 
 # -----------
 # 
@@ -990,7 +990,6 @@ class TestModels (TestCase) :
         self.assertEqual(image, "http://img1.wikia.nocookie.net/__cb20070528041553/starwars/images/thumb/2/2f/Omwati.JPG/360px-Omwati.JPG")
         self.assertEqual(language, "Omwatese")
         self.assertEqual(classification, "Near-Human")
-
 
 
 # ----
