@@ -1,5 +1,6 @@
-from flask import render_template
+from flask import render_template, jsonify
 from setupDB import app, db
+from models import *
 
 
 @app.route('/')
@@ -17,6 +18,16 @@ def index():
 def about():
     return render_template('about.html')
 
+# ----------
+# characters
+# ----------
+
+@app.route('/api/characters', methods=['GET'])
+def get_characters():
+    with open(relative_path + "/characters.json") as data_file:
+        info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
+    return jsonify({'characters': info_dict})
+    
 @app.route('/characters')
 @app.route('/characters/<character>')
 @app.route('/characters/sort_by=<sort_by>')
