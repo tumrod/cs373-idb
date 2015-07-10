@@ -129,6 +129,13 @@ class Character:
 
         return Character(**info_dict[character])
 
+    @staticmethod
+    def get_api_characters():
+        with open(relative_path + "/characters.json") as data_file:
+            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
+        return jsonify({'characters': info_dict})
+
+
 class Planet:
     """
     Planet encapsulates a planet dictionary containing its information

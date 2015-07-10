@@ -27,7 +27,7 @@ def get_characters():
     with open(relative_path + "/characters.json") as data_file:
         info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
     return jsonify({'characters': info_dict})
-    
+
 @app.route('/characters')
 @app.route('/characters/<character>')
 @app.route('/characters/sort_by=<sort_by>')
