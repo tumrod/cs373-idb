@@ -68,6 +68,16 @@ def planets(planet=None, sort_by=None):
 
     return render_template('planets.html', all_planets=all_planets)
 
+# -------
+# species
+# -------
+
+@app.route('/api/species', methods=['GET'])
+def get_species():
+    with open(relative_path + "/species.json") as data_file:
+        info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
+    return jsonify({'species': info_dict})
+
 @app.route('/species')
 @app.route('/species/<species>')
 @app.route('/species/sort_by=<sort_by>')
