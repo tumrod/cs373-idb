@@ -9,6 +9,11 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <!-- Favicone Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico')}}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.ico')}}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/favicon.ico')}}">
+
     <title>Species - {{ species.get_name() }}</title>
 
     <!-- CSS -->
