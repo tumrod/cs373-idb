@@ -1,5 +1,5 @@
 from flask import render_template
-from setupDB import app, db, User
+from setupDB import app, db
 
 
 @app.route('/')
@@ -8,6 +8,9 @@ def index():
     # db.session.add(admin)
     # db.session.commit()
     # users = User.query.all()
+    #characters = Character.query.all()
+    #for c in characters:
+    #    print(c.name)
     return render_template('splash.html')
 
 @app.route('/about')

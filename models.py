@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
-import json, os
+import json
 from collections import OrderedDict
 
-relative_path = os.path.dirname(os.path.realpath(__file__)) + '/IntergalacticDB/db/'
+#relative_path = os.path.sdirname(os.path.realpath(__file__)) + '/IntergalacticDB/db/'
 
 class Character:
     """
