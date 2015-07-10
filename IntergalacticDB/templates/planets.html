@@ -16,6 +16,7 @@
 
     <!-- CSS -->
     <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static', filename='styles/models.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ url_for('static', filename='styles/planets.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ url_for('static', filename='styles/bootstrap.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ url_for('static', filename='styles/font-awesome.css')}}" rel="stylesheet" type="text/css" />
@@ -75,7 +76,7 @@
                         <td>{{ planet.get_region() }}</td>
                         <td>{{ planet.get_system() }}</td>
                         <td>
-                            <select style="position: relative;left: 1%;top: 5px;" value="characters" id="sort-order-character-{{ planet.get_name() }}">
+                            <select value="characters" id="sort-order-character-{{ planet.get_name() }}">
                                 {% for character_name in planet.get_characters() %}
                                     <option value="{{ character_name }}">{{ character_name }}</option>
                                 {% endfor %}
@@ -83,7 +84,7 @@
                             <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect-to-selected-character-in-{{ planet.get_name() }}">Go</button>
                         </td>
                         <td>
-                            <select style="position: relative;left: 1%;top: 5px;" value="species" id="sort-order-species-{{ planet.get_name() }}">
+                            <select id="sort-order-species-{{ planet.get_name() }}">
                                 {% for species_name in planet.get_species() %}
                                     <option value="{{ species_name }}">{{ species_name }}</option>
                                 {% endfor %}

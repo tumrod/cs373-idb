@@ -282,6 +282,7 @@ h1 {
 @media (max-width: 767px) {
     h1.h1, h2.h2 {
         letter-spacing: 0px;
+        font-size: 200%
     }
 }
 
@@ -549,7 +550,7 @@ button, input, textarea, select {
         font-weight: 400;
         letter-spacing: 1px;
         font-size: 13px;
-        padding: 10px 15px;
+        padding: 1% 1%;
         transition: all 0.2s ease 0s;
         -moz-transition: all 0.2s ease 0s;
         -webkit-transition: all 0.2s ease 0s;
