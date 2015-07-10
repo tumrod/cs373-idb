@@ -80,7 +80,7 @@ class Character:
         return self.character["height"]
 
     @staticmethod
-    def get_all_characters():
+    def get_all():
         """
         Return an list of all character models
         """
@@ -92,7 +92,7 @@ class Character:
         return characters
 
     @staticmethod
-    def get_all_sorted_characters(sort_by):
+    def get_all_sorted(sort_by):
         """
         Input the attribute by which to sort the characters
         Return an list of all character models, sorted by the given
@@ -119,7 +119,7 @@ class Character:
         return characters
 
     @staticmethod
-    def get_character(character):
+    def get(character):
         """
         Input the character name to retrieve
         Return an instance of this character
@@ -197,7 +197,7 @@ class Planet:
         return self.planet["system"]
 
     @staticmethod
-    def get_all_planets():
+    def get_all():
         """
         Return an list of all planets models
         """
@@ -209,7 +209,7 @@ class Planet:
         return planets
 
     @staticmethod
-    def get_all_sorted_planets(sort_by):
+    def get_all_sorted(sort_by):
         """
         Input the attribute by which to sort the characters
         Return an list of all planet models, sorted by the given
@@ -234,7 +234,7 @@ class Planet:
         return planet
 
     @staticmethod
-    def get_planet(planet):
+    def get(planet):
         """
         Input the planet name to retrieve
         Return an instance of this planet
@@ -313,7 +313,7 @@ class Species:
         return self.species["classification"]
 
     @staticmethod
-    def get_all_species():
+    def get_all():
         """
         Return an OrderedDict of all species, with their names as keys
                and their dicts of information as values
@@ -326,7 +326,7 @@ class Species:
         return species
 
     @staticmethod
-    def get_all_sorted_species(sort_by):
+    def get_all_sorted(sort_by):
         """
         Input the attribute by which to sort the species
         Return an OrderedDict of all species, with their names as keys
@@ -353,7 +353,7 @@ class Species:
         return species
 
     @staticmethod
-    def get_species(species):
+    def get(species):
         """
         Input the species name to retrieve
         Return an instance of this species

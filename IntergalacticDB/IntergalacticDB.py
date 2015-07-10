@@ -34,13 +34,13 @@ def get_characters():
 def characters(character=None, sort_by=None):
 
     if character is not None:
-        character = Character.get_character(character)
+        character = Character.get(character)
         return render_template('character.html', character=character)
     elif sort_by is not None:
-        all_characters_sorted = Character.get_all_sorted_characters(sort_by)
+        all_characters_sorted = Character.get_all_sorted(sort_by)
         return render_template('characters.html', all_characters=all_characters_sorted)
     else:
-        all_characters = Character.get_all_characters()
+        all_characters = Character.get_all()
         return render_template('characters.html', all_characters=all_characters)
 
 # -------
@@ -59,12 +59,12 @@ def get_planets():
 def planets(planet=None, sort_by=None):
 
     if planet is not None:
-        planet = Planet.get_planet(planet)
+        planet = Planet.get(planet)
         return render_template('planet.html', planet=planet)
     elif sort_by is not None:
-        all_planets = Planet.get_all_sorted_planets(sort_by)
+        all_planets = Planet.get_all_sorted(sort_by)
     else:
-        all_planets = Planet.get_all_planets()
+        all_planets = Planet.get_all()
 
     return render_template('planets.html', all_planets=all_planets)
 
@@ -84,12 +84,12 @@ def get_species():
 def species(species=None, sort_by=None):
 
     if species is not None:
-        species = Species.get_species(species)
+        species = Species.get(species)
         return render_template('specie.html', species=species)
     elif sort_by is not None:
-        all_species = Species.get_all_sorted_species(sort_by)
+        all_species = Species.get_all_sorted(sort_by)
     else:
-        all_species = Species.get_all_species()
+        all_species = Species.get_all()
 
     return render_template('species.html', all_species=all_species)
 
