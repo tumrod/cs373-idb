@@ -1,152 +1,82 @@
-#!/usr/bin/env python3
+from flask import Flask
+from flask.ext.sqlalchemy import SQLAlchemy
 
-import json
-from collections import OrderedDict
 
-#relative_path = os.path.sdirname(os.path.realpath(__file__)) + '/IntergalacticDB/db/'
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/intergalacticdb'
+db = SQLAlchemy(app)
 
-class Character:
+#relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
+
+class Character(db.Model):
     """
     Character encapsulates a character dictionary containing its information
     """
+    
+    __tablename__ = 'characters'
+    character_id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50), unique=True)
+    #planet = Column(String(50))         # foreign key?
+    #species = Column(String(50))        # foreign key?
+    planet = db.Column('planet_id', db.Integer, db.ForeignKey("planets.planet_id"))
+    species = db.Column('species_id', db.Integer, db.ForeignKey("species"))
+    description = db.Column(db.String(250))
+    image = db.Column(db.String(100))
+    birth = db.Column(db.String(50))
+    gender = db.Column(db.String(50))
+    height = db.Column(db.String(50))
+    
 
     def __init__(self, name, planet, species, description, image, birth, gender, height):
         """
         Initialize the character to have a dictionary of its information
         Input strings of the character's name, planet, species, description, image, birth, gender, and height
         """
-        self.character = {}
-        self.character["name"] = name
-        self.character["planet"] = planet
-        self.character["species"] = species
-        self.character["description"] = description
-        self.character["image"] = image
-        self.character["birth"] = birth
-        self.character["gender"] = gender
-        self.character["height"] = height
+        self.name = name
+        self.planet = planet
+        self.species = species
+        self.description = description
+        self.image = image
+        self.birth = birth
+        self.gender = gender
+        self.height = height
 
-    def get_info(self):
-        """
-        Return the dictionary of information on this character
-        """
-        return self.character
+    def __repr__(self):
+        return '<id {}>'.format(self.id)
 
-    def get_name(self):
-        """
-        Return a string, the name of this character
-        """
-        return self.character["name"]
 
-    def get_planet(self):
-        """
-        Return a string, the planet homeworld of this character
-        """
-        return self.character["planet"]
 
-    def get_species(self):
-        """
-        Return a string, the species of this character
-        """
-        return self.character["species"]
-
-    def get_description(self):
-        """
-        Return a string, the summary of this character's description
-        """
-        return self.character["description"]
-
-    def get_image(self):
-        """
-        Return a string, the url for an image of this character
-        """
-        return self.character["image"]
-
-    def get_birth(self):
-        """
-        Return a string, the birth date of this character
-        """
-        return self.character["birth"]
-
-    def get_gender(self):
-        """
-        Return a string, the gender of this character
-        """
-        return self.character["gender"]
-
-    def get_height(self):
-        """
-        Return a string, the height of this character
-        """
-        return self.character["height"]
-
-    @staticmethod
-    def get_all_characters():
-        """
-        Return an list of all character models
-        """
-        with open(relative_path + "/characters.json") as data_file:
-            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
-
-        characters = [Character(**info_dict[key]) for key in info_dict]
-
-        return characters
-
-    @staticmethod
-    def get_all_sorted_characters(sort_by):
-        """
-        Input the attribute by which to sort the characters
-        Return an list of all character models, sorted by the given
-               attribute
-        """
-        with open(relative_path + "/characters.json") as data_file:
-            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
-
-        sorting_options = sort_by.split('_')
-
-        info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1][sorting_options[0]]))
-
-        if (len(sorting_options) > 1) :
-            if sorting_options[1] != '^':
-                temp = OrderedDict()
-
-                for item in reversed(info_dict):
-                    temp[item] = info_dict[item]
-
-                info_dict = temp
-
-        characters = [Character(**info_dict[key]) for key in info_dict]
-
-        return characters
-
-    @staticmethod
-    def get_character(character):
-        """
-        Input the character name to retrieve
-        Return an instance of this character
-        """
-        with open(relative_path + "/characters.json") as data_file:
-            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
-
-        return Character(**info_dict[character])
-
-class Planet:
+class Planet(db.Model):
     """
     Planet encapsulates a planet dictionary containing its information
     """
-
+    
+    __tablename__ = 'planets'
+    id = Column(Integer, primary_key=True)
+    name = Column(String(50), unique=True)
+    characters = Column(String(50))     # list? foreign key?
+    species = Column(String(50))        # list? foreign key?
+    description = Column(String(50))
+    image = Column(String(50))
+    region = Column(String(50))
+    system = Column(String(50))
+    
     def __init__(self, name, characters, species, description, image, region, system, numberofcharacters, numberofspecies):
         """
         Initialize the planet to have a dictionary of its information
         Input strings of the planet's name, characters list, species list, description, image, region, and system
         """
-        self.planet = {}
-        self.planet["name"] = name
-        self.planet["characters"] = characters
-        self.planet["species"] = species
-        self.planet["description"] = description
-        self.planet["image"] = image
-        self.planet["region"] = region
-        self.planet["system"] = system
+
+        self.name = name
+        self.characters = characters
+        self.species = species
+        self.description = description
+        self.image = image
+        self.region = region
+        self.system = system
+
+    def __repr__(self):
+        return '<id {}>'.format(self.id)
 
     def get_info(self):
         """
@@ -248,7 +178,18 @@ class Species:
     """
     Species encapsulates a species dictionary containing its information
     """
-
+    
+    __tablename__ = 'species'
+    id = Column(Integer, primary_key=True)
+    name = Column(String(50), unique=True)
+    characters = Column(String(50))     # list? #Foreign key?
+    planet = Column(String(50))         # foreign key?
+    description = Column(String(50))
+    image = Column(String(50))
+    language = Column(String(50))
+    classification = Column(String(50))
+    numberofcharacters = Column(Integer)
+    
     def __init__(self, name, characters, planet, description, image, language, classification, numberofcharacters):
         """
         Initialize the species to have a dictionary of its information
@@ -318,7 +259,7 @@ class Species:
         Return an OrderedDict of all species, with their names as keys
                and their dicts of information as values
         """
-        with open(relative_path + "species.json") as data_file:
+        with open(relative_path + "/species.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         species = [Species(**info_dict[key]) for key in info_dict]
@@ -333,7 +274,7 @@ class Species:
                and their dicts of information as values, sorted by the given
                attribute
         """
-        with open(relative_path + "species.json") as data_file:
+        with open(relative_path + "/species.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         sorting_options = sort_by.split('_')
@@ -358,7 +299,10 @@ class Species:
         Input the species name to retrieve
         Return an instance of this species
         """
-        with open(relative_path + "species.json") as data_file:
+        with open(relative_path + "/species.json") as data_file:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         return Species(**info_dict[species])
+
+
+db.create_all()
