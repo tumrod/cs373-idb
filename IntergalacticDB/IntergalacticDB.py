@@ -43,6 +43,16 @@ def characters(character=None, sort_by=None):
         all_characters = Character.get_all_characters()
         return render_template('characters.html', all_characters=all_characters)
 
+# -------
+# planets
+# -------
+
+@app.route('/api/planets', methods=['GET'])
+def get_planets():
+    with open(relative_path + "/planets.json") as data_file:
+        info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
+    return jsonify({'planets': info_dict})
+
 @app.route('/planets')
 @app.route('/planets/<planet>')
 @app.route('/planets/sort_by=<sort_by>')
