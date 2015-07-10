@@ -1,11 +1,13 @@
-from flask import Flask, render_template
-from models import *
-
-app = Flask(__name__)
+from flask import render_template
+from setupDB import app, db, User
 
 
 @app.route('/')
 def index():
+    # admin = User('rachelwong', 'rachelwong@example.com')
+    # db.session.add(admin)
+    # db.session.commit()
+    # users = User.query.all()
     return render_template('splash.html')
 
 @app.route('/about')
