@@ -1,8 +1,9 @@
 from flask import render_template, jsonify
-from setupDB import app, db
+from models import app, db
 from models import *
+import os
 
-
+relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
 @app.route('/')
 def index():
     # admin = User('rachelwong', 'rachelwong@example.com')
@@ -33,14 +34,15 @@ def get_characters():
 @app.route('/characters/sort_by=<sort_by>')
 def characters(character=None, sort_by=None):
 
+
     if character is not None:
-        character = Character.get(character)
-        return render_template('character.html', character=character)
-    elif sort_by is not None:
-        all_characters_sorted = Character.get_all_sorted(sort_by)
-        return render_template('characters.html', all_characters=all_characters_sorted)
+        #character = Character.get(character)
+        c = Character.query.filter_by(name=character)
+        return render_template('character.html', character=c)
+
+
     else:
-        all_characters = Character.get_all()
+        all_characters = Character.query.all()
         return render_template('characters.html', all_characters=all_characters)
 
 # -------

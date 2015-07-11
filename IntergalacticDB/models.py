@@ -1,83 +1,50 @@
-#!/usr/bin/env python3
-
-import json, os
+from flask import Flask, jsonify
+from flask.ext.sqlalchemy import SQLAlchemy
+import os
+import json
 from collections import OrderedDict
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/intergalacticdb'
+db = SQLAlchemy(app)
+
 
 relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
 
-class Character:
+
+class Character(db.Model):
     """
     Character encapsulates a character dictionary containing its information
     """
+    
+    __tablename__ = 'characters'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50))
+    planet = db.Column(db.String(50))
+    species = db.Column(db.String(50))
+    description = db.Column(db.String(4000))
+    image = db.Column(db.String(250))
+    birth = db.Column(db.String(50))
+    gender = db.Column(db.String(50))
+    height = db.Column(db.String(50))
+    
 
     def __init__(self, name, planet, species, description, image, birth, gender, height):
         """
         Initialize the character to have a dictionary of its information
         Input strings of the character's name, planet, species, description, image, birth, gender, and height
         """
-        self.character = {}
-        self.character["name"] = name
-        self.character["planet"] = planet
-        self.character["species"] = species
-        self.character["description"] = description
-        self.character["image"] = image
-        self.character["birth"] = birth
-        self.character["gender"] = gender
-        self.character["height"] = height
+        self.name = name
+        self.planet = planet
+        self.species = species
+        self.description = description
+        self.image = image
+        self.birth = birth
+        self.gender = gender
+        self.height = height
 
-    def get_info(self):
-        """
-        Return the dictionary of information on this character
-        """
-        return self.character
-
-    def get_name(self):
-        """
-        Return a string, the name of this character
-        """
-        return self.character["name"]
-
-    def get_planet(self):
-        """
-        Return a string, the planet homeworld of this character
-        """
-        return self.character["planet"]
-
-    def get_species(self):
-        """
-        Return a string, the species of this character
-        """
-        return self.character["species"]
-
-    def get_description(self):
-        """
-        Return a string, the summary of this character's description
-        """
-        return self.character["description"]
-
-    def get_image(self):
-        """
-        Return a string, the url for an image of this character
-        """
-        return self.character["image"]
-
-    def get_birth(self):
-        """
-        Return a string, the birth date of this character
-        """
-        return self.character["birth"]
-
-    def get_gender(self):
-        """
-        Return a string, the gender of this character
-        """
-        return self.character["gender"]
-
-    def get_height(self):
-        """
-        Return a string, the height of this character
-        """
-        return self.character["height"]
+    def __repr__(self):
+        return '<name {}>'.format(self.name)
 
     @staticmethod
     def get_all():
@@ -136,72 +103,40 @@ class Character:
         return jsonify({'characters': info_dict})
 
 
-class Planet:
+class Planet(db.Model):
     """
     Planet encapsulates a planet dictionary containing its information
     """
+    
+    __tablename__ = 'planets'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50))
+    #characters = db.Column(db.String(4000))     # list? foreign key?
+    #species = db.Column(db.String(4000))        # list? foreign key?
+    description = db.Column(db.String(4000))
+    image = db.Column(db.String(250))
+    region = db.Column(db.String(50))
+    system = db.Column(db.String(50))
+    numberofcharacters = db.Column(db.Integer)
+    numberofspecies = db.Column(db.Integer)
 
-    def __init__(self, name, characters, species, description, image, region, system, numberofcharacters, numberofspecies):
+
+    def __init__(self, name, description, image, region, system, numberofcharacters, numberofspecies):
         """
         Initialize the planet to have a dictionary of its information
         Input strings of the planet's name, characters list, species list, description, image, region, and system
         """
-        self.planet = {}
-        self.planet["name"] = name
-        self.planet["characters"] = characters
-        self.planet["species"] = species
-        self.planet["description"] = description
-        self.planet["image"] = image
-        self.planet["region"] = region
-        self.planet["system"] = system
 
-    def get_info(self):
-        """
-        Return the dictionary of information on this planet
-        """
-        return self.planet
+        self.name = name
+        self.description = description
+        self.image = image
+        self.region = region
+        self.system = system
+        self.numberofcharacters = numberofcharacters
+        self.numberofspecies = numberofspecies
 
-    def get_name(self):
-        """
-        Return a string, the name of this planet
-        """
-        return self.planet["name"]
-
-    def get_characters(self):
-        """
-        Return a string, the list of characters of this planet
-        """
-        return self.planet["characters"]
-
-    def get_species(self):
-        """
-        Return a string, the list of species of this planet
-        """
-        return self.planet["species"]
-
-    def get_description(self):
-        """
-        Return a string, the description of this planet
-        """
-        return self.planet["description"]
-
-    def get_image(self):
-        """
-        Return a string, the url of an image of this planet
-        """
-        return self.planet["image"]
-        
-    def get_region(self):
-        """
-        Return a string, the region of this planet
-        """
-        return self.planet["region"]
-        
-    def get_system(self):
-        """
-        Return a string, the system of this planet
-        """
-        return self.planet["system"]
+    def __repr__(self):
+        return '<name {}>'.format(self.name)
 
     @staticmethod
     def get_all():
@@ -251,73 +186,40 @@ class Planet:
 
         return Planet(**info_dict[planet])
 
-class Species:
+
+class Species(db.Model):
     """
     Species encapsulates a species dictionary containing its information
     """
+    
+    __tablename__ = 'species'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50), unique=True)
+    #characters = db.Column(db.String(4000))     # list? #Foreign key?
+    planet = db.Column(db.String(4000))         # foreign key?
+    description = db.Column(db.String(4000))
+    image = db.Column(db.String(250))
+    language = db.Column(db.String(50))
+    classification = db.Column(db.String(50))
+    numberofcharacters = db.Column(db.Integer)
 
-    def __init__(self, name, characters, planet, description, image, language, classification, numberofcharacters):
+
+    def __init__(self, name, planet, description, image, language, classification, numberofcharacters):
         """
         Initialize the species to have a dictionary of its information
         Input strings of the species's name, characters list, planet list, description, image, language, and classification
         """
-        self.species = {}
-        self.species["name"] = name
-        self.species["characters"] = characters
-        self.species["planet"] = planet
-        self.species["description"] = description
-        self.species["image"] = image
-        self.species["language"] = language
-        self.species["classification"] = classification
-        self.species["numberofcharacters"] = numberofcharacters
-
-    def get_info(self):
-        """
-        Return the dictionary of information on this species
-        """
-        return self.species
-
-    def get_name(self):
-        """
-        Return a string, the name of this species
-        """
-        return self.species["name"]
-
-    def get_characters(self):
-        """
-        Return a string, the list of characters of this species
-        """
-        return self.species["characters"]
-
-    def get_planet(self):
-        """
-        Return a string, the home planet of this species
-        """
-        return self.species["planet"]
-
-    def get_description(self):
-        """
-        Return a string, the description of this species
-        """
-        return self.species["description"]
-
-    def get_image(self):
-        """
-        Return a string, the url of an image of this species
-        """
-        return self.species["image"]
         
-    def get_language(self):
-        """
-        Return a string, the language of this species
-        """
-        return self.species["language"]
-        
-    def get_classification(self):
-        """
-        Return a string, the classification of this species
-        """
-        return self.species["classification"]
+        self.name = name
+        self.planet = planet
+        self.description = description
+        self.image = image
+        self.language = language
+        self.classification = classification
+        self.numberofcharacters = numberofcharacters
+
+    def __repr__(self):
+        return '<name {}>'.format(self.name)
 
     @staticmethod
     def get_all():
@@ -369,3 +271,76 @@ class Species:
             info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         return Species(**info_dict[species])
+
+
+def create_character():
+
+    # loop through json
+    with open(relative_path + "/all_characters.json") as data_file:
+            info_dict = json.load(data_file)
+
+    for k,v in info_dict.items():
+        name = v["name"]
+        planet = v["planet"]
+        species = v["species"]
+        description = v["description"]
+        image = v["image"]
+        birth = v["birth"]
+        gender = v["gender"]
+        height = v["height"]
+
+        character = Character(name, planet, species, description, image, birth, gender, height)
+        db.session.add(character)
+        db.session.commit()
+
+def create_planet():
+
+    # loop through json
+    with open(relative_path + "/all_planets.json") as data_file:
+            info_dict = json.load(data_file)
+
+    for k,v in info_dict.items():
+        name = v["name"]
+        description = v["description"]
+        image = v["image"]
+        region = v["region"]
+        system = v["system"]
+        numberofcharacters = v["numberofcharacters"]
+        numberofspecies = v["numberofspecies"]
+
+        planet = Planet(name, description, image, region, system, numberofcharacters, numberofspecies)
+        db.session.add(planet)
+        db.session.commit()
+
+
+def create_species():
+
+    # loop through json
+    with open(relative_path + "/all_species.json") as data_file:
+            info_dict = json.load(data_file)
+
+    for k,v in info_dict.items():
+        name = v["name"]
+        planet = v["planets"]
+        description = v["description"]
+        image = v["image"]
+        language = v["language"]
+        classification = v["classification"]
+        numberofcharacters = v["numberofcharacters"]
+
+        characters = Character.query.filter_by(species=name)
+        species = Species(name, planet, description, image, language, classification, numberofcharacters)
+        db.session.add(species)
+        db.session.commit()
+
+
+def create_db():
+    db.session.commit()
+    db.drop_all()
+    db.create_all()
+    create_character()
+    create_planet()
+    create_species()
+
+create_db()
+

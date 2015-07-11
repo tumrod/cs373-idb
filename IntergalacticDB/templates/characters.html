@@ -71,12 +71,12 @@
             <tbody>
                 {% for character in all_characters %}
                     <tr>
-                        <td class="user-photo"><img class="user-tumb" src={{ character.get_image() }}></td>
-                        <td><a href="/characters/{{ character.get_name() }}">{{ character.get_name() }}</a></td>
-                        <td>{{ character.get_height() }}</td>
-                        <td><a href="/planets/{{ character.get_planet() }}">{{ character.get_planet() }}</a></td>
-                        <td><a href="/species/{{ character.get_species() }}">{{ character.get_species() }}</a></td>
-                        <td> {{ character.get_gender() }}</td>
+                        <td class="user-photo"><img class="user-tumb" src={{ character.image }}></td>
+                        <td><a href="/characters/{{ character.name }}">{{ character.name }}</a></td>
+                        <td>{{ character.height }}</td>
+                        <td><a href="/planets/{{ character.planet }}">{{ character.planet }}</a></td>
+                        <td><a href="/species/{{ character.species }}">{{ character.species }}</a></td>
+                        <td> {{ character.gender }}</td>
                     </tr>
                 {% endfor %}
             </tbody>
