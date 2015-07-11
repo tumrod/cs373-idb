@@ -71,25 +71,25 @@
             <tbody>
                 {% for planet in all_planets %}
                     <tr>
-                        <td class="user-photo"><img class="user-tumb" src={{ planet.get_image() }}></td>
-                        <td><a href="/planets/{{ planet.get_name() }}">{{ planet.get_name() }}</a></td>
-                        <td>{{ planet.get_region() }}</td>
-                        <td>{{ planet.get_system() }}</td>
+                        <td class="user-photo"><img class="user-tumb" src={{ planet.image }}></td>
+                        <td><a href="/planets/{{ planet.name }}">{{ planet.name }}</a></td>
+                        <td>{{ planet.region }}</td>
+                        <td>{{ planet.system }}</td>
                         <td>
-                            <select value="characters" id="sort-order-character-{{ planet.get_name() }}">
-                                {% for character_name in planet.get_characters() %}
+                            <select value="characters" id="sort-order-character-{{ planet.name }}">
+                                {% for character_name in planet.characters %}
                                     <option value="{{ character_name }}">{{ character_name }}</option>
                                 {% endfor %}
                             </select>
-                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect-to-selected-character-in-{{ planet.get_name() }}">Go</button>
+                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect-to-selected-character-in-{{ planet.name }}">Go</button>
                         </td>
                         <td>
-                            <select id="sort-order-species-{{ planet.get_name() }}">
-                                {% for species_name in planet.get_species() %}
+                            <select id="sort-order-species-{{ planet.name }}">
+                                {% for species_name in planet.species %}
                                     <option value="{{ species_name }}">{{ species_name }}</option>
                                 {% endfor %}
                             </select>
-                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-species' id="redirect-to-selected-character-in-{{ planet.get_name() }}">Go</button>
+                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-species' id="redirect-to-selected-character-in-{{ planet.name }}">Go</button>
                         </td>
                     </tr>
                 {% endfor %}

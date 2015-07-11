@@ -36,14 +36,18 @@ def characters(character=None, sort_by=None):
 
 
     if character is not None:
-        #character = Character.get(character)
-        c = Character.query.filter_by(name=character)
-        return render_template('character.html', character=c)
-
-
+        character = Character.query.filter_by(name=character).first()
+        return render_template('character.html', character=character)
+    elif sort_by is not None:
+        if (sort_by == "name_v"):
+            all_characters = Character.query.order_by(Character.name.desc())
+        elif (sort_by == "height_v"):
+            all_characters = Character.query.order_by(Character.height.desc())
+        elif (sort_by == "name"):
+            all_characters = Character.query.order_by(Character.name)
     else:
         all_characters = Character.query.all()
-        return render_template('characters.html', all_characters=all_characters)
+    return render_template('characters.html', all_characters=all_characters)
 
 # -------
 # planets
@@ -60,13 +64,14 @@ def get_planets():
 @app.route('/planets/sort_by=<sort_by>')
 def planets(planet=None, sort_by=None):
 
+
     if planet is not None:
-        planet = Planet.get(planet)
+        planet = Planet.query.filter_by(name=planet).first()
         return render_template('planet.html', planet=planet)
     elif sort_by is not None:
         all_planets = Planet.get_all_sorted(sort_by)
     else:
-        all_planets = Planet.get_all()
+        all_planets = Planet.query.all()
 
     return render_template('planets.html', all_planets=all_planets)
 
@@ -86,12 +91,12 @@ def get_species():
 def species(species=None, sort_by=None):
 
     if species is not None:
-        species = Species.get(species)
+        species = Species.query.filter_by(name=species).first()
         return render_template('specie.html', species=species)
     elif sort_by is not None:
         all_species = Species.get_all_sorted(sort_by)
     else:
-        all_species = Species.get_all()
+        all_species = Species.query.all()
 
     return render_template('species.html', all_species=all_species)
 

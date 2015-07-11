@@ -9,7 +9,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/intergalacticdb'
 db = SQLAlchemy(app)
 
 
-relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
+relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db'
 
 
 class Character(db.Model):
@@ -43,8 +43,10 @@ class Character(db.Model):
         self.gender = gender
         self.height = height
 
+
     def __repr__(self):
-        return '<name {}>'.format(self.name)
+        return self
+
 
     @staticmethod
     def get_all():
@@ -276,7 +278,7 @@ class Species(db.Model):
 def create_character():
 
     # loop through json
-    with open(relative_path + "/all_characters.json") as data_file:
+    with open(relative_path + "/characters.json") as data_file:
             info_dict = json.load(data_file)
 
     for k,v in info_dict.items():
@@ -296,7 +298,7 @@ def create_character():
 def create_planet():
 
     # loop through json
-    with open(relative_path + "/all_planets.json") as data_file:
+    with open(relative_path + "/planets.json") as data_file:
             info_dict = json.load(data_file)
 
     for k,v in info_dict.items():
@@ -316,12 +318,12 @@ def create_planet():
 def create_species():
 
     # loop through json
-    with open(relative_path + "/all_species.json") as data_file:
+    with open(relative_path + "/species.json") as data_file:
             info_dict = json.load(data_file)
 
     for k,v in info_dict.items():
         name = v["name"]
-        planet = v["planets"]
+        planet = v["planet"]
         description = v["description"]
         image = v["image"]
         language = v["language"]

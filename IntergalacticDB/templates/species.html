@@ -71,18 +71,18 @@
             <tbody>
                 {% for species in all_species %}
                     <tr>
-                        <td class="user-photo"><img class="user-tumb" src={{ species.get_image() }}></td>
-                        <td><a href="/species/{{ species.get_name() }}">{{ species.get_name() }}</a></td>
-                        <td>{{ species.get_language() }}</td>
-                        <td><a href="/planets/{{ species.get_planet() }}">{{ species.get_planet() }}</a></td>
-                        <td>{{ species.get_classification() }}</td>
+                        <td class="user-photo"><img class="user-tumb" src={{ species.image }}></td>
+                        <td><a href="/species/{{ species.name }}">{{ species.name }}</a></td>
+                        <td>{{ species.language }}</td>
+                        <td><a href="/planets/{{ species.planet }}">{{ species.planet }}</a></td>
+                        <td>{{ species.classification }}</td>
                         <td>
-                            <select value="characters" id="sort-order-character-{{ species.get_name() }}">
-                                {% for character_name in species.get_characters() %}
+                            <select value="characters" id="sort-order-character-{{ species.name }}">
+                                {% for character_name in species.characters %}
                                     <option value="{{ character_name }}">{{ character_name }}</option>
                                 {% endfor %}
                             </select >
-                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect-to-selected-character-in-{{ species.get_name() }}">Go</button>
+                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect-to-selected-character-in-{{ species.name }}">Go</button>
                         </td>
                     </tr>
                 {% endfor %}

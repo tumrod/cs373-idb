@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.ico')}}">
     <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/favicon.ico')}}">
 
-    <title>Character - {{ character.get_name() }}</title>
+    <title>Character - {{ character.name }}</title>
 
     <!-- CSS -->
     <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" type="text/css" />
@@ -62,7 +62,7 @@
         <!-- Portfolio Item Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">{{ character.get_name() }}</h1>
+                <h1 class="page-header">{{ character.name }}</h1>
             </div>
         </div>
         <!-- /.row -->
@@ -71,16 +71,16 @@
         <div class="row">
 
             <div class="col-md-8">
-                <img class="img-responsive" src={{ character.get_image() }} alt="">
+                <img class="img-responsive" src={{ character.image }} alt="">
             </div>
 
             <div class="col-md-4">
                 <h3>About</h3>
-                <p>Gender: {{ character.get_gender() }}</p>
-                <p>Height: {{ character.get_height() }}</p>
-                <p>Home Planet: <a href="/planets/{{ character.get_planet() }}" class="link">{{ character.get_planet() }}</a></p>
-                <p>Species: <a href="/species/{{ character.get_species() }}" class="link">{{ character.get_species() }}</a></p>
-                <p>{{ character.get_description() }}</p>
+                <p>Gender: {{ character.gender }}</p>
+                <p>Height: {{ character.height }}</p>
+                <p>Home Planet: <a href="/planets/{{ character.planet }}" class="link">{{ character.planet}}</a></p>
+                <p>Species: <a href="/species/{{ character.species }}" class="link">{{ character.species}}</a></p>
+                <p>{{ character.description }}</p>
             </div>
 
         </div>

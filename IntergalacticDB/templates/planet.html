@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.ico')}}">
     <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/favicon.ico')}}">
 
-    <title>Planet - {{ planet.get_name() }}</title>
+    <title>Planet - {{ planet.name }}</title>
 
     <!-- CSS -->
     <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" type="text/css" />
@@ -60,7 +60,7 @@
         <!-- Portfolio Item Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">{{ planet.get_name() }}</h1>
+                <h1 class="page-header">{{ planet.name }}</h1>
             </div>
         </div>
         <!-- /.row -->
@@ -69,24 +69,24 @@
         <div class="row">
 
             <div class="col-md-8">
-                <img class="img-responsive" src={{ planet.get_image() }} alt="">
+                <img class="img-responsive" src={{ planet.image }} alt="">
             </div>
 
             <div class="col-md-4">
                 <h3>About</h3>
-                <p>Region: {{ planet.get_region() }}</p>
-                <p>System: {{ planet.get_system() }}</p>
+                <p>Region: {{ planet.region }}</p>
+                <p>System: {{ planet.system }}</p>
                 <p>Characters:
-                {% for character_name in planet.get_characters() %}
+                {% for character_name in planet.characters %}
                     <a href="/characters/{{ character_name }}" class="link">{{ character_name }}</a>
                 {% endfor %}
                 </p>
                 <p> Species:
-                {% for species_name in planet.get_species() %}
+                {% for species_name in planet.species %}
                     <a href="/species/{{ species_name }}" class="link">{{ species_name }}</a>
                 {% endfor %}
                 </p>
-                <p>{{ planet.get_description() }}</p>
+                <p>{{ planet.description }}</p>
             </div>
 
         </div>
