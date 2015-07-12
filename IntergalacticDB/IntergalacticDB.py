@@ -1,6 +1,7 @@
+import os
+import setupDB
 from flask import render_template
 from models import *
-import os
 
 relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
 

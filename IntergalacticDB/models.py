@@ -1,15 +1,9 @@
-from flask import Flask, jsonify
+from flask import Flask
 from flask.ext.sqlalchemy import SQLAlchemy
-import os
-import json
-from collections import OrderedDict
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/intergalacticdb'
 db = SQLAlchemy(app)
-
-
-relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db'
 
 
 class Character(db.Model):
@@ -77,12 +71,6 @@ class Character(db.Model):
         """
         return Character.query.filter_by(name=character).first()
 
-    @staticmethod
-    def get_api_characters():
-        with open(relative_path + "/characters.json") as data_file:
-            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
-        return jsonify({'characters': info_dict})
-
 
 class Planet(db.Model):
     """
@@ -92,17 +80,14 @@ class Planet(db.Model):
     __tablename__ = 'planets'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50))
-    #characters = db.Column(db.String(4000))     # list? foreign key?
-    #species = db.Column(db.String(4000))        # list? foreign key?
+    characters = db.Column(db.String(16))
+    species = db.Column(db.String(16))
     description = db.Column(db.String(4000))
     image = db.Column(db.String(250))
     region = db.Column(db.String(50))
     system = db.Column(db.String(50))
-    numberofcharacters = db.Column(db.Integer)
-    numberofspecies = db.Column(db.Integer)
 
-
-    def __init__(self, name, description, image, region, system, numberofcharacters, numberofspecies):
+    def __init__(self, name, description, image, region, system):
         """
         Initialize the planet to have a dictionary of its information
         Input strings of the planet's name, characters list, species list, description, image, region, and system
@@ -113,11 +98,17 @@ class Planet(db.Model):
         self.image = image
         self.region = region
         self.system = system
-        self.numberofcharacters = numberofcharacters
-        self.numberofspecies = numberofspecies
+        self.characters = len(Character.query.filter_by(planet=self.name).all())
+        self.species = len(Species.query.filter_by(planet=self.name).all())
 
     def __repr__(self):
         return '<name {}>'.format(self.name)
+
+    def get_characters(self):
+        return Character.query.filter_by(planet=self.name).all()
+
+    def get_species(self):
+        return Species.query.filter_by(planet=self.name).all()
 
     @staticmethod
     def get_all():
@@ -160,16 +151,14 @@ class Species(db.Model):
     __tablename__ = 'species'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50), unique=True)
-    #characters = db.Column(db.String(4000))     # list? #Foreign key?
-    planet = db.Column(db.String(4000))         # foreign key?
+    planet = db.Column(db.String(4000))
     description = db.Column(db.String(4000))
     image = db.Column(db.String(250))
     language = db.Column(db.String(50))
     classification = db.Column(db.String(50))
-    numberofcharacters = db.Column(db.Integer)
+    characters = db.Column(db.Integer)
 
-
-    def __init__(self, name, planet, description, image, language, classification, numberofcharacters):
+    def __init__(self, name, planet, description, image, language, classification):
         """
         Initialize the species to have a dictionary of its information
         Input strings of the species's name, characters list, planet list, description, image, language, and classification
@@ -181,10 +170,13 @@ class Species(db.Model):
         self.image = image
         self.language = language
         self.classification = classification
-        self.numberofcharacters = numberofcharacters
+        self.characters = len(Character.query.filter_by(species=self.name).all())
 
     def __repr__(self):
         return '<name {}>'.format(self.name)
+
+    def get_characters(self):
+        return Character.query.filter_by(species=self.name).all()
 
     @staticmethod
     def get_all():
@@ -217,76 +209,3 @@ class Species(db.Model):
         Return an instance of this species
         """
         return Species.query.filter_by(name=species).first()
-
-
-def create_character():
-
-    # loop through json
-    with open(relative_path + "/characters.json") as data_file:
-            info_dict = json.load(data_file)
-
-    for k,v in info_dict.items():
-        name = v["name"]
-        planet = v["planet"]
-        species = v["species"]
-        description = v["description"]
-        image = v["image"]
-        birth = v["birth"]
-        gender = v["gender"]
-        height = v["height"]
-
-        character = Character(name, planet, species, description, image, birth, gender, height)
-        db.session.add(character)
-        db.session.commit()
-
-def create_planet():
-
-    # loop through json
-    with open(relative_path + "/planets.json") as data_file:
-            info_dict = json.load(data_file)
-
-    for k,v in info_dict.items():
-        name = v["name"]
-        description = v["description"]
-        image = v["image"]
-        region = v["region"]
-        system = v["system"]
-        numberofcharacters = v["numberofcharacters"]
-        numberofspecies = v["numberofspecies"]
-
-        planet = Planet(name, description, image, region, system, numberofcharacters, numberofspecies)
-        db.session.add(planet)
-        db.session.commit()
-
-
-def create_species():
-
-    # loop through json
-    with open(relative_path + "/species.json") as data_file:
-            info_dict = json.load(data_file)
-
-    for k,v in info_dict.items():
-        name = v["name"]
-        planet = v["planet"]
-        description = v["description"]
-        image = v["image"]
-        language = v["language"]
-        classification = v["classification"]
-        numberofcharacters = v["numberofcharacters"]
-
-        characters = Character.query.filter_by(species=name)
-        species = Species(name, planet, description, image, language, classification, numberofcharacters)
-        db.session.add(species)
-        db.session.commit()
-
-
-def create_db():
-    db.session.commit()
-    db.drop_all()
-    db.create_all()
-    create_character()
-    create_planet()
-    create_species()
-
-create_db()
-
