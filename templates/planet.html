@@ -77,13 +77,13 @@
                 <p>Region: {{ planet.region }}</p>
                 <p>System: {{ planet.system }}</p>
                 <p>Characters:
-                {% for character_name in planet.characters %}
-                    <a href="/characters/{{ character_name }}" class="link">{{ character_name }}</a>
+                {% for character in planet.get_characters() %}
+                    <a href="/characters/{{ character.name }}" class="link">{{ character.name }}</a>
                 {% endfor %}
                 </p>
                 <p> Species:
-                {% for species_name in planet.species %}
-                    <a href="/species/{{ species_name }}" class="link">{{ species_name }}</a>
+                {% for species in planet.get_species() %}
+                    <a href="/species/{{ species.name }}" class="link">{{ species.name }}</a>
                 {% endfor %}
                 </p>
                 <p>{{ planet.description }}</p>
