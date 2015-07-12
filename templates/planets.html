@@ -89,7 +89,7 @@
                                     <option value="{{ species.name }}">{{ species.name }}</option>
                                 {% endfor %}
                             </select>
-                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-species' id="redirect-to-selected-character-in-{{ planet.name }}">Go</button>
+                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-species' id="redirect-to-selected-species-in-{{ planet.name }}">Go</button>
                         </td>
                     </tr>
                 {% endfor %}
@@ -101,5 +101,6 @@
   <script src="{{ url_for('static', filename='javascripts/jquery-1.11.2.min.js')}}" type="text/javascript"></script>
   <script src="{{ url_for('static', filename='javascripts/navigation.js')}}" type="text/javascript"></script>
   <script src="{{ url_for('static', filename='javascripts/sorttable.js')}}" type="text/javascript"></script>
+  <script src="{{ url_for('static', filename='javascripts/go_button.js')}}" type="text/javascript"></script>
 </body>
 </html>
