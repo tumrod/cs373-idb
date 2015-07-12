@@ -25,13 +25,10 @@ def get_characters():
 
 @app.route('/characters')
 @app.route('/characters/<character>')
-@app.route('/characters/sort_by=<sort_by>')
-def characters(character=None, sort_by=None):
+def characters(character=None):
 
     if character is not None:
         return render_template('character.html', character=Character.get(character))
-    elif sort_by is not None:
-        all_characters = Character.get_all_sorted(sort_by)
     else:
         all_characters = Character.get_all()
 
@@ -49,13 +46,10 @@ def get_planets():
 
 @app.route('/planets')
 @app.route('/planets/<planet>')
-@app.route('/planets/sort_by=<sort_by>')
-def planets(planet=None, sort_by=None):
+def planets(planet=None):
 
     if planet is not None:
         return render_template('planet.html', planet=Planet.get(planet))
-    elif sort_by is not None:
-        all_planets = Planet.get_all_sorted(sort_by)
     else:
         all_planets = Planet.get_all()
 
@@ -73,13 +67,10 @@ def get_species():
 
 @app.route('/species')
 @app.route('/species/<species>')
-@app.route('/species/sort_by=<sort_by>')
-def species(species=None, sort_by=None):
+def species(species=None):
 
     if species is not None:
         return render_template('specie.html', species=Species.get(species))
-    elif sort_by is not None:
-        all_species = Species.get_all_sorted(sort_by)
     else:
         all_species = Species.get_all()
 
