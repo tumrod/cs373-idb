@@ -47,23 +47,6 @@ class Character(db.Model):
         return Character.query.all()
 
     @staticmethod
-    def get_all_sorted(sort_by):
-        """
-        Input the attribute by which to sort the characters
-        Return an list of all character models, sorted by the given
-               attribute
-        """
-
-        sorting_options = sort_by.split('_')
-
-        if sorting_options[1] == 'v':
-            sorted_characters = Character.query.order_by(getattr(Character, sorting_options[0]).desc()).all()
-        else:
-            sorted_characters = Character.query.order_by(getattr(Character, sorting_options[0])).all()
-
-        return sorted_characters
-
-    @staticmethod
     def get(character):
         """
         Input the character name to retrieve
@@ -118,23 +101,6 @@ class Planet(db.Model):
         return Planet.query.all()
 
     @staticmethod
-    def get_all_sorted(sort_by):
-        """
-        Input the attribute by which to sort the planets
-        Return an list of all planet models, sorted by the given
-               attribute
-        """
-
-        sorting_options = sort_by.split('_')
-
-        if sorting_options[1] == 'v':
-            sorted_planets = Planet.query.order_by(getattr(Planet, sorting_options[0]).desc()).all()
-        else:
-            sorted_planets = Planet.query.order_by(getattr(Planet, sorting_options[0])).all()
-
-        return sorted_planets
-
-    @staticmethod
     def get(planet):
         """
         Input the character name to retrieve
@@ -184,23 +150,6 @@ class Species(db.Model):
         Return an list of all character species
         """
         return Species.query.all()
-
-    @staticmethod
-    def get_all_sorted(sort_by):
-        """
-        Input the attribute by which to sort the species
-        Return an list of all species models, sorted by the given
-               attribute
-        """
-
-        sorting_options = sort_by.split('_')
-
-        if sorting_options[1] == 'v':
-            sorted_species = Species.query.order_by(getattr(Species, sorting_options[0]).desc()).all()
-        else:
-            sorted_species = Species.query.order_by(getattr(Species, sorting_options[0])).all()
-
-        return sorted_species
 
     @staticmethod
     def get(species):
