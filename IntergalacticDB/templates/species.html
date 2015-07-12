@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <title>All Species</title>
 
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="nileforest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
     <!-- Favicone Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico')}}">
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.ico')}}">
@@ -11,9 +17,13 @@
 
     <!-- CSS -->
     <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static', filename='styles/models.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ url_for('static', filename='styles/species.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='styles/bootstrap.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='styles/font-awesome.css')}}" rel="stylesheet" type="text/css" />
 </head>
 <body class="full-intro background--dark">
+
     <!-- HEADER -->
     <header class="header">
         <div class="container">
@@ -61,18 +71,18 @@
             <tbody>
                 {% for species in all_species %}
                     <tr>
-                        <td class="user-photo"><img class="user-tumb" src={{ species.get_image() }}></td>
-                        <td><a href="/species/{{ species.get_name() }}">{{ species.get_name() }}</a></td>
-                        <td>{{ species.get_language() }}</td>
-                        <td><a href="/planets/{{ species.get_planet() }}">{{ species.get_planet() }}</a></td>
-                        <td>{{ species.get_classification() }}</td>
+                        <td class="user-photo"><img class="user-tumb" src={{ species.image }}></td>
+                        <td><a href="/species/{{ species.name }}">{{ species.name }}</a></td>
+                        <td>{{ species.language }}</td>
+                        <td><a href="/planets/{{ species.planet }}">{{ species.planet }}</a></td>
+                        <td>{{ species.classification }}</td>
                         <td>
-                            <select style="position: relative;left: 1%;top: 5px;" value="characters" id="sort-order-character-{{ species.get_name() }}">
-                                {% for character_name in species.get_characters() %}
+                            <select value="characters" id="sort-order-character-{{ species.name }}">
+                                {% for character_name in species.characters %}
                                     <option value="{{ character_name }}">{{ character_name }}</option>
                                 {% endfor %}
-                            </select>
-                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect-to-selected-character-in-{{ species.get_name() }}">Go</button>
+                            </select >
+                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect-to-selected-character-in-{{ species.name }}">Go</button>
                         </td>
                     </tr>
                 {% endfor %}

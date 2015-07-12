@@ -3,6 +3,11 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>All Characters</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="nileforest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
     <!-- Favicone Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico')}}">
@@ -11,9 +16,12 @@
 
     <!-- CSS -->
     <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{ url_for('static', filename='styles/characters.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static', filename='styles/models.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static', filename='styles/bootstrap.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='styles/font-awesome.css')}}" rel="stylesheet" type="text/css" />
 </head>
 <body class="full-intro background--dark">
+
     <!-- HEADER -->
     <header class="header">
         <div class="container">
@@ -63,12 +71,12 @@
             <tbody>
                 {% for character in all_characters %}
                     <tr>
-                        <td class="user-photo"><img class="user-tumb" src={{ character.get_image() }}></td>
-                        <td><a href="/characters/{{ character.get_name() }}">{{ character.get_name() }}</a></td>
-                        <td>{{ character.get_height() }}</td>
-                        <td><a href="/planets/{{ character.get_planet() }}">{{ character.get_planet() }}</a></td>
-                        <td><a href="/species/{{ character.get_species() }}">{{ character.get_species() }}</a></td>
-                        <td> {{ character.get_gender() }}</td>
+                        <td class="user-photo"><img class="user-tumb" src={{ character.image }}></td>
+                        <td><a href="/characters/{{ character.name }}">{{ character.name }}</a></td>
+                        <td>{{ character.height }}</td>
+                        <td><a href="/planets/{{ character.planet }}">{{ character.planet }}</a></td>
+                        <td><a href="/species/{{ character.species }}">{{ character.species }}</a></td>
+                        <td> {{ character.gender }}</td>
                     </tr>
                 {% endfor %}
             </tbody>

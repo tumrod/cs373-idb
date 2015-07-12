@@ -3,6 +3,11 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>All Planets</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="nileforest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
     <!-- Favicone Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico')}}">
@@ -11,9 +16,13 @@
 
     <!-- CSS -->
     <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static', filename='styles/models.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ url_for('static', filename='styles/planets.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='styles/bootstrap.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ url_for('static', filename='styles/font-awesome.css')}}" rel="stylesheet" type="text/css" />
 </head>
 <body class="full-intro background--dark">
+
     <!-- HEADER -->
     <header class="header">
         <div class="container">
@@ -62,25 +71,25 @@
             <tbody>
                 {% for planet in all_planets %}
                     <tr>
-                        <td class="user-photo"><img class="user-tumb" src={{ planet.get_image() }}></td>
-                        <td><a href="/planets/{{ planet.get_name() }}">{{ planet.get_name() }}</a></td>
-                        <td>{{ planet.get_region() }}</td>
-                        <td>{{ planet.get_system() }}</td>
+                        <td class="user-photo"><img class="user-tumb" src={{ planet.image }}></td>
+                        <td><a href="/planets/{{ planet.name }}">{{ planet.name }}</a></td>
+                        <td>{{ planet.region }}</td>
+                        <td>{{ planet.system }}</td>
                         <td>
-                            <select style="position: relative;left: 1%;top: 5px;" value="characters" id="sort-order-character-{{ planet.get_name() }}">
-                                {% for character_name in planet.get_characters() %}
+                            <select value="characters" id="sort-order-character-{{ planet.name }}">
+                                {% for character_name in planet.characters %}
                                     <option value="{{ character_name }}">{{ character_name }}</option>
                                 {% endfor %}
                             </select>
-                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect-to-selected-character-in-{{ planet.get_name() }}">Go</button>
+                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect-to-selected-character-in-{{ planet.name }}">Go</button>
                         </td>
                         <td>
-                            <select style="position: relative;left: 1%;top: 5px;" value="species" id="sort-order-species-{{ planet.get_name() }}">
-                                {% for species_name in planet.get_species() %}
+                            <select id="sort-order-species-{{ planet.name }}">
+                                {% for species_name in planet.species %}
                                     <option value="{{ species_name }}">{{ species_name }}</option>
                                 {% endfor %}
                             </select>
-                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-species' id="redirect-to-selected-character-in-{{ planet.get_name() }}">Go</button>
+                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-species' id="redirect-to-selected-character-in-{{ planet.name }}">Go</button>
                         </td>
                     </tr>
                 {% endfor %}
