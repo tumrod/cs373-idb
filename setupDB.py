@@ -35,7 +35,7 @@ def create_species():
 
     for k,v in info_dict.items():
         name = v["name"]
-        planet = v["planets"]
+        planet = v["planet"]
         description = v["description"]
         image = v["image"]
         language = v["language"]

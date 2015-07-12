@@ -81,8 +81,8 @@
                 <p>Home Planet: <a href="/planets/{{ species.planet }}" class="link">{{ species.planet }}</a></p>
                 <p>Classification: {{ species.classification }}</p>
                 <p>Characters:
-                {% for character_name in species.characters %}
-                    <a href="/characters/{{ character_name }}" class="link">{{ character_name }}</a>
+                {% for character in species.get_characters() %}
+                    <a href="/characters/{{ character.name }}" class="link">{{ character.name }}</a>
                 {% endfor %}
                 </p>
                 <p> {{ species.description }} </p>
