@@ -1,13 +1,13 @@
 {
     "4-LOM": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "4-LOM was an ambitious protocol droid who overwrote his own programming in order to embark on a life of crime. A LOM-series droid, 4-LOM's first assignment was aboard a luxury liner named the Kuari Princess, where he served as a translator between the vessel's wealthy passengers and its computer. He found this work to be mundane and undemanding, and after the Kuari Princess's computer altered his programming, 4-LOM began to steal from the passengers. Eventually, he left the Kuari Princess...",
         "gender": "Masculine programming",
         "height": "1.6 meters ",
         "image": "http://img1.wikia.nocookie.net/__cb20080307185625/starwars/images/b/b7/4LOM_negtd.jpg",
         "name": "4-LOM",
-        "planet": "",
-        "species": "",
+        "planet": "Unknown",
+        "species": "Unknown",
         "z_extra": {
             "Affiliation": "Bounty Hunters' Guild\nHutt Cartel\nAlliance to Restore the Republic",
             "Armament": "W-90 concussion rifle\nBlaster pistol\nStun gas blower",
@@ -22,14 +22,14 @@
         }
     },
     "Admiral_Ackbar": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Admiral Ackbar was a Victory I-class Star Destroyer that served as the flagship of Admiral Nek Bwua'tu of the Galactic Alliance Defense Force following the Yuuzhan Vong War. Admiral Ackbar, named in memory of the deceased Mon Calamari Admiral, was one of the new generation of Victory-class Star Destroyers commissioned by the Galactic Alliance to aid in the fight against pirate forces. Admiral Ackbar was known as a famous pirate hunter, and its crew was said to feel privileged to serve under...",
-        "gender": "",
-        "height": "",
+        "gender": "Unknown",
+        "height": "Unknown",
         "image": "",
         "name": "Admiral Ackbar",
-        "planet": "",
-        "species": "",
+        "planet": "Unknown",
+        "species": "Unknown",
         "z_extra": {
             "Affiliation": "Galactic Federation of Free Alliances\nThe Colony",
             "Armament": "Turbolaser batteries  \nAsteroid-tug Tractor beam",
@@ -46,7 +46,7 @@
         }
     },
     "Admiral_Daala": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Natasi Daala was a Human female who became the first woman to reach the rank of admiral in the Imperial Navy, and later was named Chief of State of the Galactic Federation of Free Alliances. Daala enlisted in the Imperial Navy on Carida, but was discriminated against due to her sex. However, she achieved success thanks to Moff Wilhuff Tarkin, who discovered her after she defeated many skilled Imperial opponents in simulated battles, using an alias to hide her true identity. Tarkin took her...",
         "gender": "Female",
         "height": "1.73 meters",
@@ -81,7 +81,7 @@
         }
     },
     "Barada": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Barada was a male Klatooinian slave and mechanic who worked as the head of Jabba Desilijic Tiure's pool of repulsor vehicles, as well as guard and captain of his own vehicles on the planet Tatooine. While Barada should have been able to buy his own freedom with the salary Jabba paid him, the Hutt had tricked his slave, charging him for room and food and precluding him from being free again. Despite this, Barada was believed to be a loyal servant, with Jabba giving him responsibilities...",
         "gender": "Male",
         "height": "1.7 meters",
@@ -98,7 +98,7 @@
         }
     },
     "Bib_Fortuna": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Bib Fortuna was a male Twi'lek from Ryloth. Bib served as a majordomo to Jabba Desilijic Tiure for many years. Considering he served Jabba for decades, it is unsurprising that few in the galaxy hated the Hutt as much as he did\u2014the Twi'lek majordomo had tried many times unsuccessfully to have Jabba killed. A member of the Una Clan, Bib Fortuna was friendly with many B'omarr monks in Jabba's Palace\u2014when he died, his brain was forcibly removed from his body by the ancient religious order. At...",
         "gender": "Male",
         "height": "1.8 meters",
@@ -149,13 +149,13 @@
         }
     },
     "Bodo_Baas": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Bodo Baas was a male Krevaaki Jedi Master. Living among a group of Jedi in the Adega system around 600 BBY, he inherited a holocron known as the Tedryn Holocron from his ancestor Vodo-Siosk Baas. Baas added his own experiences and knowledge to the holocron, becoming its holographic gatekeeper and a teacher of future Jedi who would use it. He served as a diplomat in this time, participating in missions to the Force sects of the Zeison Sha and Matukai, each of which he attempted to convince to...",
         "gender": "Male",
-        "height": "",
+        "height": "Unknown",
         "image": "http://img4.wikia.nocookie.net/__cb20130619034343/starwars/images/c/cc/Bodo_Baas_color.jpg",
         "name": "Bodo Baas",
-        "planet": "",
+        "planet": "Unknown",
         "species": "Krevaaki",
         "z_extra": {
             "Affiliation": "Jedi Order\nGalactic Republic",
@@ -166,14 +166,14 @@
         }
     },
     "Bollux": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "BLX-5, called \"Bollux\" by his masters and sometimes known by the alias \"Zollux\", was a BLX labor droid once produced by Serv-O-Droid, Inc. He held many jobs over the decades, serving many masters, but is best known for his association with Han Solo and Chewbacca during their time in the Corporate Sector and Tion Hegemony. Bollux started out as BLX-5, a simple labor droid in the Fondor Shipyards, with only the limited personality and intellect needed for his duties. Like other labor droids...",
         "gender": "Masculine programming",
         "height": "1.5 meters",
         "image": "http://img3.wikia.nocookie.net/__cb20121206054833/starwars/images/thumb/6/6f/Bollux-ERC.jpg/500px-Bollux-ERC.jpg",
         "name": "Bollux",
         "planet": "Originally Fondor",
-        "species": "",
+        "species": "Unknown",
         "z_extra": {
             "Affiliation": "Han Solo",
             "Armament": "None",
@@ -222,7 +222,7 @@
         }
     },
     "Brea_Tonnika": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Brea Tonnika was a Kiffar female and identical twin of Senni Tonnika. The two were known as the Tonnika sisters and became infamous con artists under the New Order. In 0 BBY, they earned additional fame for being in the Mos Eisley Cantina when Luke Skywalker first met Han Solo, but in fact, the \"Tonnika sisters\" in the Cantina were the Mistryl Shadow Guard warriors Shada D'ukal and Karoly D'ulin, masquerading as Brea and Senni in the course of a mission.",
         "gender": "Female",
         "height": "1.6 meters",
@@ -237,14 +237,14 @@
         }
     },
     "C-3PO": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "C-3PO, sometimes spelled See-Threepio and often referred to as Threepio, was a bipedal, humanoid protocol droid designed to interact with organics, programmed primarily for etiquette and protocol. He was fluent in over six million forms of communication, and developed a fussy and worry-prone personality throughout his many decades of operation. After being destroyed and discarded on the planet Tatooine before 32 BBY, C-3PO was rebuilt; his salvaged nature gave him special qualities that...",
         "gender": "Masculine programming",
         "height": "1.67 meters",
         "image": "http://img3.wikia.nocookie.net/__cb20131005124036/starwars/images/5/51/C-3PO_EP3.png",
         "name": "C-3PO",
         "planet": "Tatooine",
-        "species": "",
+        "species": "Unknown",
         "z_extra": {
             "Affiliation": "Skywalker family\nLars family\nConfederacy of Independent Systems \nGalactic Republic\nRoyal House of Naboo\nDelegation of 2000\nHouse of Antilles\nAlliance to Restore the Republic\nNew Republic\nGalactic Federation of Free Alliances\nFive Worlds\nConfederation\nBright Tree Village\nStar Tours",
             "Armament": "None",
@@ -261,7 +261,7 @@
         }
     },
     "Callista": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Callista Ming, originally known as Callista Masana, was a Human Jedi Knight from the planet Chad during the waning years of the Galactic Republic. She was a member of a rogue sect of Jedi, led by Master Djinn Altis, who were accepted back by the Jedi Order during the Clone Wars to take command of clone troopers and fight for the Republic. During the war, she followed Altis into battle on the planet JanFathal alongside a contingent of clones and two orthodox Jedi, Anakin Skywalker and his...",
         "gender": "Female",
         "height": "1.7 meters",
@@ -321,7 +321,7 @@
         "height": "1.3 meters ",
         "image": "http://img2.wikia.nocookie.net/__cb20070708210725/starwars/images/b/b1/Cindel1.jpg",
         "name": "Cindel Towani",
-        "planet": "",
+        "planet": "Unknown",
         "species": "Human",
         "z_extra": {
             "Era(s)": "Rebellion era\nNew Republic era\nLegacy era",
@@ -375,7 +375,7 @@
         "height": "1.8 meters",
         "image": "http://img2.wikia.nocookie.net/__cb20111029215439/starwars/images/thumb/b/bb/Davin.jpg/500px-Davin.jpg",
         "name": "Davin Felth",
-        "planet": "",
+        "planet": "Unknown",
         "species": "Human",
         "z_extra": {
             "Affiliation": "Galactic Empire",
@@ -383,7 +383,7 @@
         }
     },
     "Dengar": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Dengar, also known as \"Payback,\" was a Corellian bounty hunter and the pilot of the Punishing One. Brought up in the culture of swoop bikes and becoming a successful racer himself, Dengar also led a double life as a successful bounty hunter during the Clone Wars, becoming one of the galaxy's most efficient mercenaries; his work teamed him with the likes of bounty hunters such as Boba Fett and Bossk. Dengar would eventually give up the life of bounty hunting to pursue his other passion: swoop...",
         "gender": "Male",
         "height": "1.8 meters",
@@ -403,7 +403,7 @@
         "birth": "11 BBY, Chandrilla",
         "description": "Dev Sibwarra was a Human boy who was born on Chandrila. His mother, Ydra, was a Padawan who had left the Jedi Order before her training was completed; as such, she survived Order 66 and the early stages of the Great Jedi Purge. Prior to 2 BBY, Dev and his family moved to the Outer Rim colony world of G'rho to escape detection from the Galactic Empire. Shortly afterwards, G'rho was attacked by the Ssi-ruuk\u2014a saurian species who ruled a sizeable interstellar empire in the far reaches of the...",
         "gender": "Male",
-        "height": "",
+        "height": "Unknown",
         "image": "http://img2.wikia.nocookie.net/__cb20080722195004/starwars/images/thumb/7/76/Entechment-rig_negwt.jpg/500px-Entechment-rig_negwt.jpg",
         "name": "Dev Sibwarra",
         "planet": "Chandrila",
@@ -417,7 +417,7 @@
         }
     },
     "Dorsk_81": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Dorsk 81 was a Jedi Knight of the New Jedi Order, and one of the 83 clones from the Dorsk lineage. He was also a member of the inaugural class of Luke Skywalker's Jedi Praxeum. Dorsk died in 12 ABY after giving himself completely to the Force in an effort to stop Admiral Daala from destroying the Jedi Praxeum. He came from the planet of Khomm where, circa a thousand years before Dorsk 81 was created, the Khommites had believed that their genetic structure was perfect and had frozen evolution...",
         "gender": "Male",
         "height": "1.5 meters",
@@ -435,7 +435,7 @@
         }
     },
     "Elder_Sh'tk'ith": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Sh'tk'ith was a Ssi-ruu who, along with Firwirrung, was responsible for studying the captured Dev Sibwarra. Sh'tk'ith was a hypnotist who kept Sibwarra submissive to the Ssi-ruuk. As a member of the blue-scaled ruling class, Sh'tk'ith's scales were a vibrant blue; hence, Sibwarra's nickname of him, Bluescale. He was killed by Dev Sibwarra aboard the Shriwirr during the Bakura Incident. Being born into the influential blue-scaled caste which dominated Ssi-ruuvi society, Elder Sh'tk'ith...",
         "gender": "Male",
         "height": "Over 2 meters",
@@ -452,14 +452,14 @@
         }
     },
     "Emperor's_Royal_Guards": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "The Emperor's Royal Guard, sometimes referred to as the Imperial Royal Guard or Imperial Guard, was an elite unit of the Galactic Empire's armed forces (specifically the Stormtrooper Corps) tasked with the protection of the Emperor, Palpatine. Palpatine was almost never seen without a detachment of Royal Guards at his side, so much that they usually accompanied him to his bed chambers and his office within the Death Star. The exact number of Royal Guardsmen serving the Emperor was unknown...",
-        "gender": "",
-        "height": "",
+        "gender": "Unknown",
+        "height": "Unknown",
         "image": "http://img1.wikia.nocookie.net/__cb20120612050356/starwars/images/0/08/Order66-AoD.jpg",
         "name": "Emperor's Royal Guards",
-        "planet": "",
-        "species": "",
+        "planet": "Unknown",
+        "species": "Unknown",
         "z_extra": {
             "Affiliation": "Galactic Empire\nOrder of the Sith Lords\nImperial Remnant\nSecond Imperium",
             "Date dissolved": "23 ABY",
@@ -494,7 +494,7 @@
         }
     },
     "Ephant_Mon": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Ephant Mon was a Chevin male from the planet Vinsoth. Despite his awkward appearance, Mon was a skilled and powerful combatant, and during his youth, he was considered handsome by Chevin standards. He started off as a mercenary in his youth before becoming a gunrunner, supplying arms to all sorts of military factions, from planetary militia groups to the more organized Rebel Alliance. His goods were usually stolen Imperial weapons which, though outdated, were still serviceable. Mon also...",
         "gender": "Male",
         "height": "2.5 meters",
@@ -510,13 +510,13 @@
         }
     },
     "Exar_Kun": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Exar Kun was a Human male Jedi Knight who fell from the light and became an infamous Dark Lord of the Sith at the time of the Old Sith Wars. Kun, during his time as a Jedi Padawan, displayed an unusual curiosity regarding forbidden teachings, so much so, that, upon completion of his training, he abandoned his master and set out in pursuit of the knowledge and power of the ancient Sith. Initially, his quest led him to the planet Onderon and then its jungle moon, Dxun, where he entered the...",
         "gender": "Male",
         "height": "1.9 meters",
         "image": "http://img1.wikia.nocookie.net/__cb20111223230020/starwars/images/5/5c/ExarKun-SWGTCGGH.jpg",
         "name": "Exar Kun",
-        "planet": "",
+        "planet": "Unknown",
         "species": "Human",
         "z_extra": {
             "Affiliation": "Galactic Republic\nJedi Order\nSith Empire\nBrotherhood of the Sith\nCult of Exar Kun",
@@ -530,7 +530,7 @@
         }
     },
     "Figrin_D'an": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "\"Fiery\" Figrin D'an (alias Barbarine) was a male Bith who was the leader of the band the Modal Nodes and the younger brother of Barquin D'an. Specializing in Jizz music, Figrin played a reed instrument known as a Kloo horn, as well as a percussion instrument called a Gasan string drum. Like his band mates, Figrin was registered with the Intergalactic Federation of Musicians (IFM). Regions of Figrin's highly evolved brain allowed him a special acuity when it came to analyzing and relating to...",
         "gender": "Male",
         "height": "1.5 meters / 1.79 meters",
@@ -583,7 +583,7 @@
         }
     },
     "Garindan": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Garindan, also called Long-Snoot, was a Kubaz who was considered to be the \"greatest spy in Mos Eisley spaceport.\" Garindan's eyes were hidden beneath dark goggles, as they were extremely sensitive to the harsh sunlight of Tatooine. His name translated to \"Blessed One\", \"Burnt wood\", \"dust from a windstorm\", \"ugly\", and \"toast\" in five different languages.",
         "gender": "Male",
         "height": "1.85 meters",
@@ -598,7 +598,7 @@
         }
     },
     "Garm_Bel_Iblis": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Garm Bel Iblis was a male Human Senator representing Corellia in the Galactic Senate during the final years of the Galactic Republic. Charismatic and independent, he strongly opposed the power being gradually built by Supreme Chancellor Palpatine, and invoked an ancient Corellian proviso in order to keep his homeworld out of the Clone Wars. When Palpatine reorganized the Republic into a Galactic Empire and declared himself Emperor in 19 BBY, Bel Iblis served in the Imperial Senate, but...",
         "gender": "Male",
         "height": "1.75 meters",
@@ -614,7 +614,7 @@
         }
     },
     "Gartogg": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Gartogg was one of Jabba the Hutt's nine Gamorrean guards. He was unintelligent even for a Gamorrean and had a knack for coming across murdered corpses (Ak-Buz, Phlegmin, Gonar, and a B'omarr Monk). Gartogg took it upon himself to investigate Phlegmin's murder and continued to carry his rotten corpse everywhere he went. He desperately wanted to ride on the Khetanna, and Ortugg and Rogua said they'd let him if he solved the murder. After finding the corpse of Lady Valarian's B'omarr Monk, he...",
         "gender": "Male",
         "height": "1.8 meters",
@@ -665,10 +665,10 @@
         }
     },
     "Gethzerion": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Gethzerion was the founder and leader of the Nightsisters from the planet of Dathomir. She was the daughter of Clan Mother Augwynne Djo and sister of Barukka, Kara'Teel and Allaya Djo. A ruthless and tyranical matriarch, Gethzerion ruled the Nightsisters with an iron fist and terrorized the other Dathomiri for years. Born on the planet of Dathomir many centuries before the start of the Galactic Civil War, Gethzerion belonged to the Daughters of Allya, a society of Force-sensitive females who...",
         "gender": "Female",
-        "height": "",
+        "height": "Unknown",
         "image": "http://img1.wikia.nocookie.net/__cb20070316183759/starwars/images/thumb/f/ff/Gethzerion_Galaxies.JPG/500px-Gethzerion_Galaxies.JPG",
         "name": "Gethzerion",
         "planet": "Dathomir",
@@ -683,7 +683,7 @@
         }
     },
     "Grand_Admiral_Thrawn": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Mitth'raw'nuruodo, better known by his core name Thrawn (pronounced/Thr\u00e5wn/), and misinterpreted as Mitthrawdo by Vicelord Siv Kav, was a male Chiss who served in the Imperial Navy and became the only non-Human Grand Admiral. He was regarded as the best military strategist in the navy, and despite the Empire's strict non-Human policies, rose to a position of power. Thrawn served as an officer in the Chiss Expansionary Defense Force for many years in the Unknown Regions, where he demonstrated...",
         "gender": "Male",
         "height": "1.8 meters",
@@ -755,7 +755,7 @@
         }
     },
     "Het_Nkik": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Het Nkik was a free-thinking Jawa from Tatooine. Unlike most members of his species, he believed that the Jawas were not powerless and needed only to push themselves to be strong and fight back against their enemies\u2014the Tusken Raiders and the Galactic Empire. Nkik had held unorthodox beliefs ever since he and his friend Jek Nkik had managed to repair an E522 assassin droid around 2 BBY and sell it to the crime lord Lady Valarian, despite the objections of other Jawas. This gave him the...",
         "gender": "Male",
         "height": "0.96 meters",
@@ -771,7 +771,7 @@
         }
     },
     "Hethrir": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Hethrir was a male Firrerreo who was at one time, along with his lover Rillao, an apprentice of Darth Vader. His powers in the dark side of the Force would become a threat to not only his son Tigris, but also the children of Han and Leia Organa Solo. Under Emperor Palpatine, Hethrir held the office of Procurator of Justice and with the defeat of the Empire in 4 ABY, became the leader of the Empire Reborn insurgency. Lord Hethrir, a Firrerreo, was presumably born on the Firrerreo homeworld of...",
         "gender": "Male",
         "height": "1.78 meters",
@@ -790,14 +790,14 @@
         }
     },
     "IG-88": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "IG-88 was an IG-series assassin droid-turned-bounty hunter. He and several others were summoned by Darth Vader to the Executor after the Battle of Hoth, and ordered to fulfill the bounty on Han Solo. However, it was Boba Fett who tracked down Solo in the Millennium Falcon. Appearances Star Wars: Galactic Defense, Star Wars: Darth Vader 1: Vader, Star Wars: Episode V The Empire Strikes Back (First appearance)",
         "gender": "Masculine programming",
         "height": "1.96 meters",
         "image": "",
         "name": "IG-88",
-        "planet": "",
-        "species": "",
+        "planet": "Unknown",
+        "species": "Unknown",
         "z_extra": {
             "Armament": "E-11 blaster rifle\nDAS-430 Neural Inhibitor\nHeavy pulse cannon",
             "Class": "Assassin droid",
@@ -848,7 +848,7 @@
         }
     },
     "Joruus_C'baoth": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Joruus C'baoth (pronounced/d\u0292o'\u0279us s\u0259'beo\u03b8/) was an insane Dark Jedi who played a pivotal role in the Thrawn campaign. A clone of the Jedi Master Jorus C'baoth, he was created by Palpatine, and became the Guardian of the Imperial storehouse at Mount Tantiss on Wayland. In 9 ABY, Grand Admiral Thrawn discovered the existence of the storehouse and traveled to Wayland. He succeeded in recruiting the Dark Jedi to join him in his campaign to destroy the New Republic, making good use of his battle...",
         "gender": "Male",
         "height": "1.9 meters",
@@ -864,7 +864,7 @@
         }
     },
     "Kabe": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Kabe, a female Chadra-Fan, was a regular visitor of the Mos Eisley cantina. She loved juri juice. Kabe was the adopted daughter of Muftak, a Talz. Muftak found her on the streets of Mos Eisley, apparently abandoned by slavers who thought she was too small to sell. Muftak took her in and taught her the ways of the street. Kabe lived with him in in a section of abandoned tunnels beneath Docking Bay 83.",
         "gender": "Female",
         "height": "0.96 meters",
@@ -884,7 +884,7 @@
         "birth": "7 BBY , Kessel",
         "description": "Ken was a male Human who was the son of Triclops and a \"Jedi Princess\" named Kendalina, therefore supposedly making Ken the grandson of Emperor Palpatine and a \"Jedi Prince.\" There was some ambiguity regarding Ken's true origins, as accounts of Palpatine fathering offspring were generally discounted and all records of the Emperor's family disappeared shortly after he ascended to the Imperial throne. Born in 7 BBY to the mutant Triclops and the Jedi Princess Kendalina during their tenure at...",
         "gender": "Male",
-        "height": "",
+        "height": "Unknown",
         "image": "http://img3.wikia.nocookie.net/__cb20130402140821/starwars/images/8/89/Wiki-wordmark.png",
         "name": "Ken",
         "planet": "Yavin 4",
@@ -899,7 +899,7 @@
         }
     },
     "Khabarakh": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Khabarakh of clan Khim'bar was a Noghri, and instrumental in the liberation of his people. Sent by Grand Admiral Thrawn on a mission to capture the Princess Leia Organa Solo, he and his teammates in Imperial Noghri Commando Team 22 traveled to Kashyyyk. There his teammates were killed by Wookiees, but when he came close to Leia, his highly acute sense of smell helped him recognize her as Mal'ary'ush: the biological daughter of Darth Vader, whom the Noghri considered their savior. Khabarakh...",
         "gender": "Male",
         "height": "1.3 meters",
@@ -933,7 +933,7 @@
         }
     },
     "Labria": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Kardue'sai'Malloc was a Devaronian army captain and devoted music aficionado with a massive collection of rare recordings. When his unit was deployed against a rebellion on Devaron, Malloc captured seven hundred rebel men, women, and children in the city of Montellian Serat and shelled the city. Interpreting his orders to move on without the prisoners as double-speak ordering their executions, he had all the prisoners rounded up and killed, earning him the nickname \"The Butcher of Montellian...",
         "gender": "Male",
         "height": "1.8 meters",
@@ -951,7 +951,7 @@
         }
     },
     "Lady_Valarian": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Lady Valarian was a female Whiphid from Toola who became a crime boss and Jabba Desilijic Tiure's main competitor on Tatooine. Her parents were both gangsters on Toola, though when they were imprisoned for life she took up a criminal life of her own. She eventually traveled to Mos Eisley on Tatooine and purchased the Lucky Despot, an old cargo hauler that had been refitted as a hotel and cantina. She found stern opposition to her presence from Jabba the Hutt, but the two criminals eventually...",
         "gender": "Female",
         "height": "2.5 meters",
@@ -1100,7 +1100,7 @@
         "height": "1.6 meters",
         "image": "http://img3.wikia.nocookie.net/__cb20100627030108/starwars/images/3/30/Mara_Jade_Dancer.jpg",
         "name": "Mara Jade",
-        "planet": "",
+        "planet": "Unknown",
         "species": "Human",
         "z_extra": {
             "Affiliation": "Galactic Empire\nEmperor's Hand\nSmugglers' Alliance\nNew Republic\nNew Jedi Order\nGalactic Federation of Free Alliances",
@@ -1114,7 +1114,7 @@
         }
     },
     "Momaw_Nadon": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Momaw Nadon was an Ithorian who was exiled from his homeworld, Ithor, after he revealed secrets of Ithorian agricultural technology to the Galactic Empire. He spent much of his exile on Tatooine, and was seen in Chalmun's Cantina when Luke Skywalker and Obi-Wan Kenobi came searching for passage to Alderaan. Momaw Nadon served his people for decades as high priest of the Tafanda Bay. After the rise of the Galactic Empire, Ithor was threatened. The newly-established Empire demanded access to...",
         "gender": "Male",
         "height": "1.95 meters",
@@ -1149,13 +1149,13 @@
         }
     },
     "Moruth_Doole": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Moruth Doole was a male Rybet who was the administrator of the spice mines of Kessel and de facto ruler of the planet after the revolt against Imperial rule. Doole began his career on Kessel as an administrator in the spice mines. He was a corrupt official who brokered deals for various smuggling gangs, particularly by selling the Hutts illegal shipments of glitterstim. Imperial Customs officer Hewat was determined to expose Doole's illegal spice distribution operation. Han Solo was a...",
         "gender": "Male",
-        "height": "",
+        "height": "Unknown",
         "image": "http://img4.wikia.nocookie.net/__cb20080930171203/starwars/images/thumb/b/bf/Doole.JPG/500px-Doole.JPG",
         "name": "Moruth Doole",
-        "planet": "",
+        "planet": "Unknown",
         "species": "Rybet",
         "z_extra": {
             "Affiliation": "None",
@@ -1167,7 +1167,7 @@
         }
     },
     "Muftak": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Muftak was a male Talz seen in Chalmun's Spaceport Cantina. Muftak was orphaned at Docking Bay 12 of the Mos Eisley spaceport on Tatooine. He grew up among the cantina's regular, local customers, performing odd jobs to make a living. He always knew that he was different from almost every other race that passed through Mos Eisley, but he couldn't learn who or what he was. He searched out information from his friend, Momaw Nadon, but Nadon had never seen a Talz before.",
         "gender": "Male",
         "height": "2.1 meters",
@@ -1187,10 +1187,10 @@
         "birth": "Prior to 19 BBY",
         "description": "Nichos Marr, a Human male, was a Jedi trainee at the Jedi Temple on the galactic capital of Coruscant during the last days of the Galactic Republic. With the emergence of the Galactic Empire and the beginning of the Great Jedi Purge in 19 BBY, Marr was among a group of students who went into hiding in the enclave of the Ho'Din Jedi Master Plett, which was located on the planet Belsavis. Galactic Emperor Palpatine, however, discovered the group, and in 18 BBY he commissioned the colossal...",
         "gender": "Male",
-        "height": "",
+        "height": "Unknown",
         "image": "http://img3.wikia.nocookie.net/__cb20130402140821/starwars/images/8/89/Wiki-wordmark.png",
         "name": "Nichos Marr",
-        "planet": "",
+        "planet": "Unknown",
         "species": "Human",
         "z_extra": {
             "Affiliation": "Galactic Republic\nJedi Order\nChildren of the Jedi\nNew Jedi Order\nNew Republic",
@@ -1201,7 +1201,7 @@
         }
     },
     "Nien_Nunb": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Nien Nunb was a Sullustan smuggler. He grew up in the caves of his homeworld, Sullust, with his sister, Aril Nunb. Later, he worked for the SoroSuub Corporation as a smuggler. During one of his smuggling flights, he befriended Lando Calrissian\u2014an individual Nunb would have great deals with in later years. It was with Calrissian that he would copilot the Millennium Falcon during the Battle of Endor. He went on to become the administrator of the Kessel spice mines, and sporadically worked with...",
         "gender": "Male",
         "height": "1.6 meters",
@@ -1218,13 +1218,13 @@
         }
     },
     "Nomi_Sunrider": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Nomi Sunrider was a Human female who served as a Jedi Master and later leader of the Jedi Order in the days of the Galactic Republic. Born Nomi Da-Boda, she married Andur Sunrider, who was training to become a Jedi Knight, and eventually gave birth to a baby girl, whom they named Vima. During a trip to the Stenness system, Andur was ambushed by gang members of Bogga the Hutt, who were after the Adegan crystals carried by Sunrider and her husband. The ensuing fight witnessed the murder of...",
         "gender": "Female",
         "height": "1.6 meters",
         "image": "http://img1.wikia.nocookie.net/__cb20081209034611/starwars/images/a/a3/Nomi_Sunrider.jpg",
         "name": "Nomi Sunrider",
-        "planet": "",
+        "planet": "Unknown",
         "species": "Human",
         "z_extra": {
             "Affiliation": "Galactic Republic\nJedi Order",
@@ -1258,7 +1258,7 @@
         }
     },
     "Oola": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Oola was a Twi'lek dancer in Jabba the Hutt's court. She was the daughter of a clan chieftain on Ryloth and tricked into becoming a dancer by Bib Fortuna and Jerris Rudd as a gift to Jabba. She was also the half sister of Nolaa Tarkona, the leader of the Diversity Alliance. By no later than 3 ABY, Oola's father became the renowned chief of his eight hundred\u2013person clan, granting both himself and his family considerable power and influence. Despite this, he provided Oola with little or no...",
         "gender": "Female",
         "height": "1.6 meters",
@@ -1326,7 +1326,7 @@
         }
     },
     "Princess_Kneesaa": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Kneesaa a Jari Kintaka was a female Ewok who served as Princess of Bright Tree Village, daughter of Chief Chirpa and Ra-Lee, and younger sister to Asha. Later, she became the Chieftainess of Bright Tree Village and wife of Wicket Wystri Warrick. In her youth, she was part of the same circle of friends that included Wicket, Paploo, Teebo, and Latara. The young Ewoks had many adventures on the forest moon of Endor, involving such creatures as Gupins, Yuzzums, Duloks, and Morag the Tulgah...",
         "gender": "Female",
         "height": "0.75 meters",
@@ -1345,7 +1345,7 @@
         "birth": "49 BBY, Coruscant",
         "description": "Pter Thanas was a male Coruscanti Human Imperial Navy commander who defected to the Rebel Alliance after the Bakura Incident during the Galactic Civil War. Thanas was noted as a diplomatic officer of the Imperial Starfleet, known for his ability to rule successfully without using fear as a motivator. Early in his career, he led an Imperial task force against the Crimson Nova pirates on F'Dann IX. During a tour of duty on icy Alzoc III, he became popular among the native Talz laborers for his...",
         "gender": "Male",
-        "height": "",
+        "height": "Unknown",
         "image": "http://img2.wikia.nocookie.net/__cb20110514011408/starwars/images/thumb/3/3c/Pter_Alzoc.png/500px-Pter_Alzoc.png",
         "name": "Pter Thanas",
         "planet": "Coruscant",
@@ -1358,10 +1358,10 @@
         }
     },
     "Qwi_Xux": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Qwi Xux, a female Omwati, was a brilliant Imperial weapons designer who was responsible for the Death Star, the Sun Crusher, and other important superweapons for the Galactic Empire. When she was ten years old, Qwi was taken from her village on Omwat, along with nine other children from nine separate villages, upon orders from Grand Moff Wilhuff Tarkin. Tarkin believed the theory of the massive potential of the Omwati mind and was convinced that, with the proper manipulation, it could wield...",
         "gender": "Female",
-        "height": "",
+        "height": "Unknown",
         "image": "http://images.wikia.nocookie.net/common/__cb1400612267/skins/common/images/Wikia_black_large_rgb.png",
         "name": "Qwi Xux",
         "planet": "Omwat",
@@ -1374,7 +1374,7 @@
         }
     },
     "Ree-Yees": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Ree-Yees was a male Gran criminal from Kinyen who suffered from a recessive genetic mutation, uncommon among Gran, which caused his hands to be deformed. Ree-Yees enjoyed visiting other planets via Star Tours, and often brought his custom three eyed camera to take pictures, despite flash photography not being allowed.",
         "gender": "Male",
         "height": "1.9 meters",
@@ -1391,10 +1391,10 @@
         }
     },
     "Rillao": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Rillao was a Force-sensitive female Firrerreo who was trained by Darth Vader alongside her husband, Hethrir. Her facility with using the Force for healing put her at odds with the dark side ideals of her master; despite Vader's and her mate's best efforts, she simply would not succumb to it. Upon witnessing Hethrir sentencing their homeworld of Firrerre to death and learning about Darth Vader's plans to turn their unborn child to the dark side, Rillao fled to a remote planet. She evaded...",
         "gender": "Female",
-        "height": "",
+        "height": "Unknown",
         "image": "http://img2.wikia.nocookie.net/__cb20140131172603/starwars/images/2/23/Rillao.jpg",
         "name": "Rillao",
         "planet": "Firrerre",
@@ -1426,9 +1426,9 @@
         }
     },
     "Salacious_Crumb": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Salacious B. Crumb was a Kowakian monkey-lizard who worked in the court of the crime lord Jabba the Hutt during the Galactic Civil War. Crumb was present when members of the Rebel Alliance rescued Han Solo, who was held as a prisoner of the Hutt crime lord. Appearances Star Wars: Darth Vader 1: Vader, Star Wars 4: Skywalker Strikes, Part IV, Star Wars: Episode VI Return of the Jedi (First appearance), Return of the Jedi Read-Along Storybook and CD (Appears in illustration only)",
-        "gender": "",
+        "gender": "Unknown",
         "height": "0.7 meters",
         "image": "http://img1.wikia.nocookie.net/__cb20130505230626/starwars/images/a/a9/Crumb_btm.jpg",
         "name": "Salacious Crumb",
@@ -1441,10 +1441,10 @@
         }
     },
     "Salla_Zend": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Salla Zend was a Human female who was the ex-girlfriend of Han Solo. She and cohort Shug Ninx later helped Solo and his wife New Republic Senator Leia Organa Solo save Jedi Knight Luke Skywalker and foil the reborn Emperor Palpatine's plan to control the galaxy from Byss years after the Battle of Yavin with her remarkably fast ship, the Starlight Intruder (which Zend often claimed was faster than the Millennium Falcon, but in a number of races with the Falcon, the Intruder never came out on...",
         "gender": "Female",
-        "height": "",
+        "height": "Unknown",
         "image": "http://img4.wikia.nocookie.net/__cb20080318123519/starwars/images/4/4e/HanChewie-repairs.jpg",
         "name": "Salla Zend",
         "planet": "Nar Shaddaa",
@@ -1457,7 +1457,7 @@
         }
     },
     "Shug_Ninx": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Shug Ninx was a Near-Human male from Corellia. On Nar Shaddaa, Ninx owned and operated his famous Spacebarn, an enormous facility where smugglers could repair and modify their ships. The only access to the Spacebarn was through a cleverly-disguised tunnel called The Chute. Ninx started out working for mechanic Bammy Decree, and it is likely that he learnt the trade from the human. When helping decree rebuild the Stellar Envoy, Ninx sought out the fence Masel, who supplied him with a new...",
         "gender": "Male",
         "height": "1.85 meters",
@@ -1479,7 +1479,7 @@
         "height": "1.7 meters",
         "image": "http://img1.wikia.nocookie.net/__cb20121206235648/starwars/images/e/e9/TalonKarrde-ERC.jpg",
         "name": "Talon Karrde",
-        "planet": "",
+        "planet": "Unknown",
         "species": "Human",
         "z_extra": {
             "Affiliation": "Car'das\nSmugglers' Alliance\nNew Republic\nGalactic Federation of Free Alliances\nJedi Coalition",
@@ -1490,10 +1490,10 @@
         }
     },
     "Tenel_Ka": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Tenel Ka Djo was a female Hapan Jedi Knight and the daughter of Prince Isolder, Chume'da of the Hapes Consortium, and the Dathomiri witch Teneniel Djo. Although she was the heir of the Hapes Consortium, she preferred the traditions and customs of her mother's people over those of her father's, which angered some Hapans, including her grandmother, Ta'a Chume, and preferred not to be addressed by her full name, Tenel Ka Chume Ta' Djo. Tenel Ka joined Luke Skywalker's Jedi academy when she was...",
         "gender": "Female",
-        "height": "",
+        "height": "Unknown",
         "image": "http://img4.wikia.nocookie.net/__cb20090820060850/starwars/images/4/42/TenelKa.png",
         "name": "Tenel Ka",
         "planet": "Dathomir",
@@ -1510,7 +1510,7 @@
         "birth": "c. 12 BBY, Dathomir",
         "description": "Teneniel Djo was a member of the Singing Mountain Clan of the Witches of Dathomir who eventually became the Queen Mother of the Hapes Consortium. Raised by her grandmother Augwynne Djo after her mother Allaya's untimely death, Teneniel was gifted in the use of the Spell of Storm. After living in semi-exile in the desert while searching her dreams and looking for a husband to kidnap, she came across Luke Skywalker and Isolder, the latter of whom she eventually married.",
         "gender": "Female",
-        "height": "",
+        "height": "Unknown",
         "image": "http://img3.wikia.nocookie.net/__cb20130402140821/starwars/images/8/89/Wiki-wordmark.png",
         "name": "Teneniel Djo",
         "planet": "Dathomir",
@@ -1525,7 +1525,7 @@
         }
     },
     "Tessek": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Tessek was a Quarren male from the water planet of Mon Calamari. He once had ties with Republic politics, but when the Galactic Empire invaded his home planet, he fled and became a member of Jabba Desilijic Tiure's court. While serving as the Hutt's accountant, Tessek planned to kill his master by planting a bomb on his sail barge. Tessek managed to survive the Battle of the Great Pit of Carkoon after escaping on a speeder bike\u2014however, when he returned to Jabba's Palace, his brain was...",
         "gender": "Male",
         "height": "1.83 meters",
@@ -1543,7 +1543,7 @@
         "birth": "c. 1 ABY",
         "description": "Tigris was a male Firrerreo who is the son of Hethrir and Rillao. When Tigris was conceived, the Sith Lord Darth Vader had high hopes for turning him to the dark side. Rillao, however, had other ideas, and spirited herself and Tigris (who had no Force powers anyway) away. Hethrir eventually caught up with them and tortured Rillao, keeping Tigris as his servant.",
         "gender": "Male",
-        "height": "",
+        "height": "Unknown",
         "image": "http://img3.wikia.nocookie.net/__cb20130402140821/starwars/images/8/89/Wiki-wordmark.png",
         "name": "Tigris",
         "planet": "Firrerre",
@@ -1556,7 +1556,7 @@
         }
     },
     "Tionne": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Tionne Solusar was a female Human from the planet Rindao and a Jedi Master. A scholar of Jedi history, Tionne was one of the first students of Luke Skywalker's New Jedi Order and was almost entirely responsible for regathering the lost knowledge of the Old Jedi Order. She was involved in many important events to face the order, including the Yuuzhan Vong War, and often acted as a protector for the generation of younger Jedi Knights. Eventually, Tionne found love with another of Luke...",
         "gender": "Female",
         "height": "1.75 meters",
@@ -1578,10 +1578,10 @@
         "birth": "After 18 BBY",
         "description": "Triclops was a Human mutant slave who was the son of Emperor Palpatine. It is possible that this relation may not have been in a strict biological sense, and that Triclops was the implementation of Darth Plagueis's experiments in the influence the midi-chlorians with the goal of creating a zygote solely through the use of the Force in a fertile humanoid female. Triclops was a white-haired mutant with three eyes, one being on the back of his head, and sported scars on his temples from...",
         "gender": "Male",
-        "height": "",
+        "height": "Unknown",
         "image": "http://img1.wikia.nocookie.net/__cb20130913192216/starwars/images/7/78/Triclops_EGTC.jpg",
         "name": "Triclops",
-        "planet": "",
+        "planet": "Unknown",
         "species": "Human ",
         "z_extra": {
             "Affiliation": "Imperial family\nGalactic Empire\nProphets of the Dark Side\n\nNew Republic",
@@ -1592,14 +1592,14 @@
         }
     },
     "Tusken_Raiders": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Tusken Raiders, less formally referred to as Sand People or simply as Tuskens, were a culture of nomadic, primitive sentients indigenous to Tatooine, where they were often hostile to local settlers. The term Sand People was given to them due to their existence in the desert, and was in use from at least around 4000 BBY; but the more formal name of Tusken Raiders was acquired much later, due to a period of concerted attacks on the settlement at Fort Tusken in 98-95 BBY. Although this name is...",
-        "gender": "",
-        "height": "",
+        "gender": "Unknown",
+        "height": "Unknown",
         "image": "http://img4.wikia.nocookie.net/__cb20080321172706/starwars/images/thumb/0/07/Tusken_family_FF42.jpg/500px-Tusken_family_FF42.jpg",
         "name": "Tusken Raiders",
         "planet": "Tatooine",
-        "species": "",
+        "species": "Unknown",
         "z_extra": {
             "Average height": "1.85 meters",
             "Average mass": "89 kilograms",
@@ -1609,7 +1609,7 @@
         }
     },
     "Ulic_Qel-Droma": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Ulic Qel-Droma was, during different parts of his life, a Jedi Knight of the Old Republic, a warlord in the Empress Teta star system, and a Dark Lord of the Sith. A Human male native of the planet Alderaan, Ulic and his brother Cay were born to Jedi Master Lien-Tsai Qel-Droma, but trained alongside the Twi'lek Tott Doneeta under Master Arca Jeth on Arkania. In 4000 BBY, Ulic was sent with Cay and Doneeta to resolve the centuries-long Beast Wars of the planet Onderon. Although they initially...",
         "gender": "Male",
         "height": "1.77 meters",
@@ -1632,10 +1632,10 @@
         "birth": "190 BBY",
         "description": "Vima-Da-Boda was a female Human Jedi Knight during the later years of the Galactic Republic, who survived the Great Jedi Purge and the downfall of the Empire. She spoke in the third person, referring to herself as \"Vima.\" Vima Da-Boda was the great-great-great-granddaughter of Vima Sunrider, daughter of legendary Jedi Master of ancient times Nomi Sunrider, and served the Force for over a century. She was trained by a male Jedi Master who gave her a lightsaber. The Force-sensitivity passed...",
         "gender": "Female",
-        "height": "",
+        "height": "Unknown",
         "image": "http://img3.wikia.nocookie.net/__cb20130619033629/starwars/images/thumb/f/fc/VimaDaBoda.jpg/500px-VimaDaBoda.jpg",
         "name": "Vima-Da-Boda",
-        "planet": "",
+        "planet": "Unknown",
         "species": "Human",
         "z_extra": {
             "Affiliation": "Jedi Order\nGalactic Republic\nNew Jedi Order\nNew Republic",
@@ -1665,14 +1665,14 @@
         }
     },
     "Weequay": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Weequays were a race of humanoids who came from the Outer Rim planet of Sriluur, near Hutt Space. Their home was a harsh desert planet, leading to the species' tanned skin tone and rough, sandy, wrinkled skin. Their eyes were dark and slightly recessed into their skull. Weequays were humanoids with thick, leathery skin that ranged in color from tan to dark brown. Their faces were lipless, with a frill along each of their jowls.",
-        "gender": "",
-        "height": "",
+        "gender": "Unknown",
+        "height": "Unknown",
         "image": "http://img4.wikia.nocookie.net/__cb20061130133637/starwars/images/thumb/4/4d/Weequay_NEGAS.jpg/500px-Weequay_NEGAS.jpg",
         "name": "Weequay",
         "planet": "Sriluur",
-        "species": "",
+        "species": "Unknown",
         "z_extra": {
             "Average height": "1.7 meters",
             "Average lifespan": "Up to 90 standard years",
@@ -1716,14 +1716,14 @@
         }
     },
     "Yarna_D'al'_Gargan": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "",
-        "gender": "",
-        "height": "",
+        "gender": "Unknown",
+        "height": "Unknown",
         "image": "",
         "name": "Yarna D'al' Gargan",
-        "planet": "",
-        "species": "",
+        "planet": "Unknown",
+        "species": "Unknown",
         "z_extra": {}
     },
     "Yoda": {
@@ -1733,7 +1733,7 @@
         "height": "0.66 meters",
         "image": "http://img1.wikia.nocookie.net/__cb20131106213953/starwars/images/d/d6/Yoda_SWSB.png",
         "name": "Yoda",
-        "planet": "",
+        "planet": "Unknown",
         "species": "Yoda's species",
         "z_extra": {
             "Affiliation": "Jedi Order\nJedi High Council\n\nGalactic Republic",
@@ -1748,7 +1748,7 @@
         }
     },
     "Zuckuss": {
-        "birth": "",
+        "birth": "Unknown",
         "description": "Zuckuss (pronounced/Z\u016dk'-\u016ds/) was a successful Gand bounty hunter who was active during the height of the New Order. Referred to as \"The Uncanny One\" by his fellow hunters, Zuckuss was renowned for his ability to discover hidden quarry. His tracking skills derived both from his training as a findsman and from his innate Force-sensitivity, which allowed him to sense individuals at range and decipher the motives of his prey. Due to his famed abilities, Zuckuss was highly sought after, and he...",
         "gender": "Male",
         "height": "1.5 meters  ",
