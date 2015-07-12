@@ -13,6 +13,15 @@ def index():
 def about():
     return render_template('about.html')
 
+@app.route('/characters/null')
+@app.route('/species/null')
+@app.route('/planets/null')
+@app.route('/planets/Unknown')
+@app.route('/characters/Unknown')
+@app.route('/species/Unknown')
+def unknown():
+    return render_template('unknown.html')
+
 # ----------
 # characters
 # ----------
