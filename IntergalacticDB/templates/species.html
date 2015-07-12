@@ -78,8 +78,8 @@
                         <td>{{ species.classification }}</td>
                         <td>
                             <select value="characters" id="sort-order-character-{{ species.name }}">
-                                {% for character_name in species.characters %}
-                                    <option value="{{ character_name }}">{{ character_name }}</option>
+                                {% for character in species.get_characters() %}
+                                    <option value="{{ character.name }}">{{ character.name }}</option>
                                 {% endfor %}
                             </select >
                             <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect-to-selected-character-in-{{ species.name }}">Go</button>

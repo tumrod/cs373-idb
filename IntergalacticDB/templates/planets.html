@@ -77,16 +77,16 @@
                         <td>{{ planet.system }}</td>
                         <td>
                             <select value="characters" id="sort-order-character-{{ planet.name }}">
-                                {% for character_name in planet.characters %}
-                                    <option value="{{ character_name }}">{{ character_name }}</option>
+                                {% for character in planet.get_characters() %}
+                                    <option value="{{ character.name }}">{{ character.name }}</option>
                                 {% endfor %}
                             </select>
                             <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect-to-selected-character-in-{{ planet.name }}">Go</button>
                         </td>
                         <td>
                             <select id="sort-order-species-{{ planet.name }}">
-                                {% for species_name in planet.species %}
-                                    <option value="{{ species_name }}">{{ species_name }}</option>
+                                {% for species in planet.get_species() %}
+                                    <option value="{{ species.name }}">{{ species.name }}</option>
                                 {% endfor %}
                             </select>
                             <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-species' id="redirect-to-selected-character-in-{{ planet.name }}">Go</button>
