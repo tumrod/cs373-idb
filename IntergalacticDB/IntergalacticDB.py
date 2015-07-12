@@ -1,18 +1,11 @@
-from flask import render_template, jsonify
-from models import app, db
+from flask import render_template
 from models import *
 import os
 
 relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
+
 @app.route('/')
 def index():
-    # admin = User('rachelwong', 'rachelwong@example.com')
-    # db.session.add(admin)
-    # db.session.commit()
-    # users = User.query.all()
-    #characters = Character.query.all()
-    #for c in characters:
-    #    print(c.name)
     return render_template('splash.html')
 
 @app.route('/about')
@@ -34,19 +27,13 @@ def get_characters():
 @app.route('/characters/sort_by=<sort_by>')
 def characters(character=None, sort_by=None):
 
-
     if character is not None:
-        character = Character.query.filter_by(name=character).first()
-        return render_template('character.html', character=character)
+        return render_template('character.html', character=Character.get(character))
     elif sort_by is not None:
-        if (sort_by == "name_v"):
-            all_characters = Character.query.order_by(Character.name.desc())
-        elif (sort_by == "height_v"):
-            all_characters = Character.query.order_by(Character.height.desc())
-        elif (sort_by == "name"):
-            all_characters = Character.query.order_by(Character.name)
+        all_characters = Character.get_all_sorted(sort_by)
     else:
-        all_characters = Character.query.all()
+        all_characters = Character.get_all()
+
     return render_template('characters.html', all_characters=all_characters)
 
 # -------
@@ -64,14 +51,12 @@ def get_planets():
 @app.route('/planets/sort_by=<sort_by>')
 def planets(planet=None, sort_by=None):
 
-
     if planet is not None:
-        planet = Planet.query.filter_by(name=planet).first()
-        return render_template('planet.html', planet=planet)
+        return render_template('planet.html', planet=Planet.get(planet))
     elif sort_by is not None:
         all_planets = Planet.get_all_sorted(sort_by)
     else:
-        all_planets = Planet.query.all()
+        all_planets = Planet.get_all()
 
     return render_template('planets.html', all_planets=all_planets)
 
@@ -91,12 +76,11 @@ def get_species():
 def species(species=None, sort_by=None):
 
     if species is not None:
-        species = Species.query.filter_by(name=species).first()
-        return render_template('specie.html', species=species)
+        return render_template('specie.html', species=Species.get(species))
     elif sort_by is not None:
         all_species = Species.get_all_sorted(sort_by)
     else:
-        all_species = Species.query.all()
+        all_species = Species.get_all()
 
     return render_template('species.html', all_species=all_species)
 

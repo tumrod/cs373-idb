@@ -27,7 +27,6 @@ class Character(db.Model):
     birth = db.Column(db.String(50))
     gender = db.Column(db.String(50))
     height = db.Column(db.String(50))
-    
 
     def __init__(self, name, planet, species, description, image, birth, gender, height):
         """
@@ -43,22 +42,15 @@ class Character(db.Model):
         self.gender = gender
         self.height = height
 
-
     def __repr__(self):
-        return self
-
+        return '<name {}>'.format(self.name)
 
     @staticmethod
     def get_all():
         """
         Return an list of all character models
         """
-        with open(relative_path + "/characters.json") as data_file:
-            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
-
-        characters = [Character(**info_dict[key]) for key in info_dict]
-
-        return characters
+        return Character.query.all()
 
     @staticmethod
     def get_all_sorted(sort_by):
@@ -67,25 +59,15 @@ class Character(db.Model):
         Return an list of all character models, sorted by the given
                attribute
         """
-        with open(relative_path + "/characters.json") as data_file:
-            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         sorting_options = sort_by.split('_')
 
-        info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1][sorting_options[0]]))
+        if sorting_options[1] == 'v':
+            sorted_characters = Character.query.order_by(getattr(Character, sorting_options[0]).desc()).all()
+        else:
+            sorted_characters = Character.query.order_by(getattr(Character, sorting_options[0])).all()
 
-        if (len(sorting_options) > 1) :
-            if sorting_options[1] != '^':
-                temp = OrderedDict()
-
-                for item in reversed(info_dict):
-                    temp[item] = info_dict[item]
-
-                info_dict = temp
-
-        characters = [Character(**info_dict[key]) for key in info_dict]
-
-        return characters
+        return sorted_characters
 
     @staticmethod
     def get(character):
@@ -93,10 +75,7 @@ class Character(db.Model):
         Input the character name to retrieve
         Return an instance of this character
         """
-        with open(relative_path + "/characters.json") as data_file:
-            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
-
-        return Character(**info_dict[character])
+        return Character.query.filter_by(name=character).first()
 
     @staticmethod
     def get_api_characters():
@@ -143,50 +122,34 @@ class Planet(db.Model):
     @staticmethod
     def get_all():
         """
-        Return an list of all planets models
+        Return an list of all planet models
         """
-        with open(relative_path + "/planets.json") as data_file:
-            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
-
-        planets = [Planet(**info_dict[key]) for key in info_dict]
-
-        return planets
+        return Planet.query.all()
 
     @staticmethod
     def get_all_sorted(sort_by):
         """
-        Input the attribute by which to sort the characters
+        Input the attribute by which to sort the planets
         Return an list of all planet models, sorted by the given
                attribute
         """
-        with open(relative_path + "/planets.json") as data_file:
-            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         sorting_options = sort_by.split('_')
-        info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1][sorting_options[0]]))
-        if (len(sorting_options) > 1) :
-            if sorting_options[1] != '^':
-                temp = OrderedDict()
 
-                for item in reversed(info_dict):
-                    temp[item] = info_dict[item]
+        if sorting_options[1] == 'v':
+            sorted_planets = Planet.query.order_by(getattr(Planet, sorting_options[0]).desc()).all()
+        else:
+            sorted_planets = Planet.query.order_by(getattr(Planet, sorting_options[0])).all()
 
-                info_dict = temp
-
-        planet = [Planet(**info_dict[key]) for key in info_dict]
-
-        return planet
+        return sorted_planets
 
     @staticmethod
     def get(planet):
         """
-        Input the planet name to retrieve
+        Input the character name to retrieve
         Return an instance of this planet
         """
-        with open(relative_path + "/planets.json") as data_file:
-            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
-
-        return Planet(**info_dict[planet])
+        return Planet.query.filter_by(name=planet).first()
 
 
 class Species(db.Model):
@@ -226,53 +189,34 @@ class Species(db.Model):
     @staticmethod
     def get_all():
         """
-        Return an OrderedDict of all species, with their names as keys
-               and their dicts of information as values
+        Return an list of all character species
         """
-        with open(relative_path + "/species.json") as data_file:
-            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
-
-        species = [Species(**info_dict[key]) for key in info_dict]
-
-        return species
+        return Species.query.all()
 
     @staticmethod
     def get_all_sorted(sort_by):
         """
         Input the attribute by which to sort the species
-        Return an OrderedDict of all species, with their names as keys
-               and their dicts of information as values, sorted by the given
+        Return an list of all species models, sorted by the given
                attribute
         """
-        with open(relative_path + "/species.json") as data_file:
-            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
 
         sorting_options = sort_by.split('_')
-        info_dict = OrderedDict(sorted(info_dict.items(), key=lambda x: x[1][sorting_options[0]]))
 
-        if (len(sorting_options) > 1) :
-            if sorting_options[1] != '^':
-                temp = OrderedDict()
+        if sorting_options[1] == 'v':
+            sorted_species = Species.query.order_by(getattr(Species, sorting_options[0]).desc()).all()
+        else:
+            sorted_species = Species.query.order_by(getattr(Species, sorting_options[0])).all()
 
-                for item in reversed(info_dict):
-                    temp[item] = info_dict[item]
-
-                info_dict = temp
-
-        species = [Species(**info_dict[key]) for key in info_dict]
-
-        return species
+        return sorted_species
 
     @staticmethod
     def get(species):
         """
-        Input the species name to retrieve
+        Input the character name to retrieve
         Return an instance of this species
         """
-        with open(relative_path + "/species.json") as data_file:
-            info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
-
-        return Species(**info_dict[species])
+        return Species.query.filter_by(name=species).first()
 
 
 def create_character():
