@@ -7,12 +7,14 @@
 from io       import StringIO
 from unittest import main, TestCase
 from models import *
+from setupDB import create_db
 
 # -----------
 #
 # -----------
 
 class TestModels (TestCase) :
+
     # ---------
     # character
     # ---------
@@ -26,7 +28,6 @@ class TestModels (TestCase) :
         self.assertEqual(c[0].gender, "Male")
         self.assertEqual(c[0].birth, "31.5 BBY , Kamino")
         self.assertEqual(c[0].height, "1.83 meters")
-
 
 
     def test_character_2 (self) :
@@ -87,6 +88,7 @@ class TestModels (TestCase) :
         self.assertEqual(c.gender, "Male")
         self.assertEqual(c.birth, "41.9 BBY")
         self.assertEqual(c.height, "1.88 meters, later 2.02 in armor")
+
 
     # ------
     # planet
@@ -447,6 +449,7 @@ class TestModels (TestCase) :
 # main
 # ----
 if __name__ == "__main__" :
+    create_db()
     main()
 
 
