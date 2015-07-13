@@ -75,9 +75,11 @@ def planets(planet=None):
 
 @app.route('/api/species', methods=['GET'])
 def get_species():
-    with open(relative_path + "/species.json") as data_file:
-        info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
-    return jsonify({'species': info_dict})
+    return json.dumps([i.serialize for i in Species.get_all()])
+
+@app.route('/api/species/<name>')
+def get_species_detail(name):
+    return json.dumps(Species.get(str(name)).serialize)
 
 @app.route('/species')
 @app.route('/species/<species>')

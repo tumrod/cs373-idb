@@ -166,6 +166,18 @@ class Species(db.Model):
     def __repr__(self):
         return '<name {}>'.format(self.name)
 
+    @property
+    def serialize(self):
+        return {
+            'name' : self.name,
+            'planet' : self.planet,
+            'description' : self.description,
+            'image' : self.image,
+            'language' : self.language,
+            'classification' : self.classification,
+            'characters' : self.characters
+        }
+
     def get_characters(self):
         return Character.query.filter_by(species=self.name).all()
 
