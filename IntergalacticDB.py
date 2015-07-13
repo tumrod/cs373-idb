@@ -1,7 +1,8 @@
 import os
-import json
-from flask import render_template
 import setupDB
+import json
+from flask import *
+from flask import render_template, abort
 from models import *
 
 relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
@@ -33,7 +34,9 @@ def get_characters():
 
 @app.route('/api/characters/<name>')
 def get_character_detail(name):
-    return json.dumps(Character.get(str(name)).serialize, indent=4)
+    if not Character.get(name):
+        abort(404)
+    else: return json.dumps(Character.get(str(name)).serialize, indent=4)
 
 @app.route('/characters')
 @app.route('/characters/<character>')
@@ -56,6 +59,8 @@ def get_planets():
     
 @app.route('/api/planets/<name>')
 def get_planet_detail(name):
+    if not Planet.get(name):
+        abort(404) 
     return json.dumps(Planet.get(str(name)).serialize, indent=4)
 
 @app.route('/planets')
@@ -79,7 +84,9 @@ def get_species():
 
 @app.route('/api/species/<name>')
 def get_species_detail(name):
-    return json.dumps(Species.get(str(name)).serialize, indent=4)
+    if not Species.get(name):
+        abort(404)
+    else: return json.dumps(Species.get(str(name)).serialize, indent=4)
 
 @app.route('/species')
 @app.route('/species/<species>')
@@ -93,5 +100,4 @@ def species(species=None):
     return render_template('species.html', all_species=all_species)
 
 if __name__ == '__main__':
-    setupDB.create_db()
     app.run()
