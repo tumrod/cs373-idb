@@ -1,8 +1,6 @@
 import os
-import setupDB
-import json
+from setupDB import create_db
 from flask import *
-from flask import render_template, abort
 from models import *
 
 relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
@@ -100,4 +98,5 @@ def species(species=None):
     return render_template('species.html', all_species=all_species)
 
 if __name__ == '__main__':
+    create_db()
     app.run()

@@ -15,6 +15,9 @@ install:
     - pip install --upgrade pip
     - pip install coverage
     - sudo apt-get install python-numpy
+    - sudo apt-get install postgresql postgresql-contrib
+    - pip3 install flask
+    - pip3 install Flask-SQLALchemy
 
 before_script:
     - uname -a
@@ -25,6 +28,7 @@ before_script:
     - coverage3 --version
     - python3 -c "import numpy; print(numpy.__version__)"
 
+
 script:
     - date
     - ls -al
@@ -32,5 +36,6 @@ script:
     - make models.html
     - ls -al
     - make test
+    - cat tests.out
     - ls -al
     - make check

@@ -701,6 +701,7 @@ form label.error {
 
 .pb {
     padding-bottom: 110px;
+    background-color: #323232;
 }
 
 .ptb-15 {
@@ -1630,8 +1631,14 @@ header.sticky .navigation a.current-ele {
 }
 .team-link {
     padding-right: 25px;
+    color:yellow;
 }
-
+.team-stat {
+    color:lightgrey;
+}
+.team-random {
+    color:white;
+}
 /*-------------------------------------------------------------------------------------------*/
 /*  Skills Bar      ||---------------------------- */
 /*-------------------------------------------------------------------------------------------*/
@@ -2236,7 +2243,8 @@ header.sticky .navigation a.current-ele {
     }
 
     .overlay-light:before {
-        background-color: rgba(255,255,255,0.4);
+        /*background-color: rgba(255,255,255,0.4);*/
+        background-color: #323232;
     }
 
     .overlay-light80:before {
