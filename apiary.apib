@@ -6,41 +6,43 @@ HOST: http://intergalacticdb.me/
 Starhub API is a database of a collection of characters, planets, species, etc of StarWars Universe.  
 
 
-## Character Collection [/characters.json]
+## Character Collection [/characters]
 
 ### List all StarWars Characters [GET]
 + Response 200 (application/json)
 
-        [{
-            "Boba Fett":
-                {"name": "Boba Fett",
-                "species": "Human",
-                "image": "http:\/\/img4.wikia.nocookie.net\/__cb20130920001614\/starwars\/images\/thumb\/5\/58\/BobaFettMain2.jpg\/400px-BobaFettMain2.jpg",
-                "description": "Boba Fett was a Mandalorian warrior and bounty hunter. He was the only unaltered clone of the famed Jango Fett, created in 32 BBY as unit A0050, one of the first of many Fett replicas designed to become part of the Grand Army of the Republic, and was raised as Jango's son. Jango taught Boba much, training him to become a skilled bounty hunter as was his father-figure before him. In 22 BBY, Jango was killed at the Battle of Geonosis, which opened the Clone Wars. Just a boy, Boba was forced to grow up and took to traveling the galaxy. Later, he became a bounty hunter and took assignments from beings such as Jabba the Hutt, and achieved notoriety despite his young age.",
-                "planet": "Kamino",
+        [
+            {
+                "birth": "31.5 BBY , Kamino",
+                "description": "Boba Fett was a Mandalorian warrior and bounty hunter. He was the only unaltered clone of the famed Jango Fett, created in 32 BBY as unit A0050, one of the first of many Fett replicas designed to become part of the Grand Army of the Republic, and was raised as Jango's son. Jango taught Boba much, training him to become a skilled bounty hunter as was his father-figure before him. In 22 BBY, Jango was killed at the Battle of Geonosis, which opened the Clone Wars.",
                 "gender": "Male",
                 "height": "1.83 meters",
-                "birth": "31.5 BBY , Kamino"},
-
-            "Chewbacca":
-                {"name": "Chewbacca",
-                "species": "Wookiee",
-                "image": "http:\/\/img4.wikia.nocookie.net\/__cb20080815045819\/starwars\/images\/thumb\/7\/73\/Chewbaccaheadshot.jpg\/400px-Chewbaccaheadshot.jpg",
-                "description": "Chewbacca (or \"Chewie\", as he was known by his friends) was a legendary Wookiee from Kashyyyk and co-pilot of Han Solo's ship, the Millennium Falcon. He was the son of Attichitcuk, the husband of Mallatobuck, and the father of Lumpawaroo. Chewbacca carried with him the name of an ancient Wookiee hero, the great Bacca, first of the great chieftains of Kashyyyk, and the creator of a sword that denoted leadership among the Wookiees. This name placed Chewbacca in a noble lineage, which was further supported by his role in the Battle of Kashyyyk during the Clone Wars and during the Galactic Civil War.",
-                "planet": "Kashyyyk",
-                "gender": "Male",
-                "height": "2.28 meters",
-                "birth": "200 BBY, Kashyyyk"},
-            "Jabba":
-                {"name": "Jabba",
-                "species": "Hutt",
-                "image": "http://img1.wikia.nocookie.net/__cb20100915194254/starwars/images/7/7f/Jabba_SWSB.png",
-                "description": "Anakin Skywalker was a Force-sensitive Human male who served the Galactic Republic as a Jedi Knight and later served the Galactic Empire as the Sith Lord Darth Vader. Born to the slave Shmi Skywalker in 41.9 BBY, Anakin was conceived by midi-chlorians, the symbiotic organisms that allowed individuals to touch the Force, and he and his mother were brought to the desert planet of Tatooine to be the slaves of Gardulla the Hutt. They soon ended up as the property of the Toydarian Watto, and Skywalker exhibited exceptional piloting skills and a reputation for being able to build and repair anything even at a young age. In 32 BBY, Skywalker encountered the Jedi Qui-Gon Jinn and Padme Amidala, and he helped them secure the parts they needed for their starship by winning the Boonta Eve Classic podracing event-only to learn that he had also won his freedom in doing so.",
-                "planet": "Tatooine",
-                "gender": "Male",
-                "height": "3.9 meters",
-                "birth": "150 BBY "}}
-        }]
+                "image": "http://img2.wikia.nocookie.net/__cb20130920001614/starwars/images/5/58/BobaFettMain2.jpg",
+                "name": "Boba Fett",
+                "planet": "Kamino",
+                "species": "Human"
+            },
+            {
+                "birth": "200 BBY, Kashyyyk", 
+                "description": "Chewbacca (or \"Chewie\", as he was known by his friends) was a legendary Wookiee from Kashyyyk and co-pilot of Han Solo's ship, the Millennium Falcon. He was the son of Attichitcuk, the husband of Mallatobuck, and the father of Lumpawaroo. Chewbacca carried with him the name of an ancient Wookiee hero, the great Bacca, first of the great chieftains of Kashyyyk, and the creator of a sword that denoted leadership among the Wookiees. This name placed Chewbacca in a noble lineage.", 
+                "gender": "Male", 
+                "height": "2.28 meters", 
+                "image": "http://img4.wikia.nocookie.net/__cb20080815045819/starwars/images/thumb/7/73/Chewbaccaheadshot.jpg/500px-Chewbaccaheadshot.jpg", 
+                "name": "Chewbacca", 
+                "planet": "Kashyyyk", 
+                "species": "Wookiee"
+            },
+            {
+                "birth": "600 BBY, Nal Hutta",
+                "description": "Jabba Desilijic Tiure, better known as Jabba the Hutt and often called the \"Bloated One,\" though never to his face, was one of the most notorious Hutt crime lords in the galaxy, who governed a large criminal empire located in the Outer Rim Territories from his desert palace on Tatooine. At the height of his power, Jabba was one of the most powerful crime lords in the galaxy, even having contact with Prince Xizor, the head of the Black Sun Syndicate.",
+                "gender": "Hermaphrodite",
+                "height": "3.9 meters long\n1.75 meters tall",
+                "image": "http://img1.wikia.nocookie.net/__cb20080409144511/starwars/images/e/e5/Jabba_Boonta_Eve.jpg",
+                "name": "Jabba the Hutt",
+                "planet": "Nal Hutta",
+                "species": "Hutt"
+            }
+        ]
 
 ## Character [/characters/{name}]
 A single Character with all its details
@@ -53,58 +55,59 @@ A single Character with all its details
 
     + Body
     
-            {"Jabba":
-                {"name": "Jabba",
-                "species": "Hutt",
-                "image": "http://img1.wikia.nocookie.net/__cb20100915194254/starwars/images/7/7f/Jabba_SWSB.png",
-                "description": "Anakin Skywalker was a Force-sensitive Human male who served the Galactic Republic as a Jedi Knight and later served the Galactic Empire as the Sith Lord Darth Vader. Born to the slave Shmi Skywalker in 41.9 BBY, Anakin was conceived by midi-chlorians, the symbiotic organisms that allowed individuals to touch the Force, and he and his mother were brought to the desert planet of Tatooine to be the slaves of Gardulla the Hutt. They soon ended up as the property of the Toydarian Watto, and Skywalker exhibited exceptional piloting skills and a reputation for being able to build and repair anything even at a young age. In 32 BBY, Skywalker encountered the Jedi Qui-Gon Jinn and Padme Amidala, and he helped them secure the parts they needed for their starship by winning the Boonta Eve Classic podracing event-only to learn that he had also won his freedom in doing so.",
-                "planet": "Tatooine",
-                "gender": "Male",
-                "height": "3.9 meters",
-                "birth": "150 BBY "}
+            {
+                "birth": "200 BBY, Kashyyyk", 
+                "description": "Chewbacca (or \"Chewie\", as he was known by his friends) was a legendary Wookiee from Kashyyyk and co-pilot of Han Solo's ship, the Millennium Falcon. He was the son of Attichitcuk, the husband of Mallatobuck, and the father of Lumpawaroo. Chewbacca carried with him the name of an ancient Wookiee hero, the great Bacca, first of the great chieftains of Kashyyyk, and the creator of a sword that denoted leadership among the Wookiees. This name placed Chewbacca in a noble lineage.", 
+                "gender": "Male", 
+                "height": "2.28 meters", 
+                "image": "http://img4.wikia.nocookie.net/__cb20080815045819/starwars/images/thumb/7/73/Chewbaccaheadshot.jpg/500px-Chewbaccaheadshot.jpg", 
+                "name": "Chewbacca", 
+                "planet": "Kashyyyk", 
+                "species": "Wookiee"
             }
 
 
-## Species Collection [/species.json]
+## Species Collection [/species]
 
 ### List all StarWars Species [GET]
 + Response 200 (application/json)
 
-        [{
+        [
             
-            "Wookiee":
-                {"image": "http:\/\/img2.wikia.nocookie.net\/__cb20061128184734\/starwars\/images\/thumb\/5\/57\/ThreeWookieeAmigos-ROTSVD.jpg\/400px-ThreeWookieeAmigos-ROTSVD.jpg",
-                "description": "The Wookiees, whose name for themselves translated to the People of the Trees, were a species of tall, hairy humanoids that were inhabitants of the planet Kashyyyk. One of the most noteworthy members of the species was Chewbacca, Han Solo's best friend and co-pilot, who played a vital role in the Galactic Civil War and afterwards. A race of arboreal mammals, the Wookiees lived in treehouses nestled in the canopy of the towering wroshyr trees. Despite their fearsome appearance, they were usually gentle, although they were prone to devastating fits of rage when provoked.",
-                "planet": "Kashyyyk",
-                "characters": ["Chewbacca"],
+            {
+                "characters": 2,
+                "classification": "Mammal",
+                "description": "Tall, hair covered, retractable climbing claws, long life spans",
+                "image": "http://img2.wikia.nocookie.net/__cb20061128184734/starwars/images/5/57/ThreeWookieeAmigos-ROTSVD.jpg",
+                "language": "Shyriiwook\nXaczik\nThykarann",
                 "name": "Wookiee",
-                "language": "Shyriiwook",
-                "classification": "Mammal",
-                "numberofcharacters": 1},
+                "planet": "Kashyyyk"
+            },
                 
-            "Human":
-                {"image": "http:\/\/img2.wikia.nocookie.net\/__cb20100628191857\/starwars\/images\/thumb\/5\/5d\/Humans-TESB30.jpg\/400px-Humans-TESB30.jpg",
-                "description": "Humans, taxonomically referred to as Homo sapiens, were the galaxy's most numerous and politically dominant sentient species with millions of major and minor colonies galaxywide. Believed to have originated on the galactic capital of Coruscant, they could be found anywhere, engaged in many different pursuits: spacers, mercenaries, smugglers, merchants, soldiers, assassins, farmers, crime lords, laborers, slaves, slavers, and many others, including Jedi and Sith. Since Humans were the most common sentient species, they were often considered to be a standard or average to which the biology, psychology, and culture of other species were compared.",
-                "planet": "Kamino",
-                "characters": ["Boba Fett"],
+            {
+                "characters": 48,
+                "classification": "Mammal",
+                "description": "Unknown",
+                "image": "http://img3.wikia.nocookie.net/__cb20100628191857/starwars/images/5/5d/Humans-TESB30.jpg",
+                "language": "Galactic Basic Standard\nOthers",
                 "name": "Human",
-                "language": "Galactic Basic Standard",  
-                "classification": "Mammal",
-                "numberofcharacters": 2},
+                "planet": "Coruscant"
+            },
+
                 
-            "Hutt": 
-                {"characters": ["Jabba"],
-                "classification": "Sentient",
-                "description": "The Hutts were a sentient species of large gastropods with short arms, wide cavernous mouths and huge eyes, who controlled a large space empire in Hutt Space. The species was said to originally hail from the planet Varl, but no planet by that name appeared on any Imperial star charts. Their adopted homeworld was Nal Hutta. Members of this species were often stereotyped as crime lords.",
+            {
+                "characters": 1,
+                "classification": "Unknown",
+                "description": "Gastropods\nHermaphrodites",
                 "image": "http://img2.wikia.nocookie.net/__cb20130115030417/starwars/images/a/a7/HuttNEGAS.png",
                 "language": "Huttese",
                 "name": "Hutt",
-                "planet": "Tatooine",
-                "numberofcharacters": 1}
-        }]
+                "planet": "Varl"
+            }
+        ]
 
     
-## Species [/species/{name}.json]
+## Species [/species/{name}]
 A single Species with all its details in it
 
     + name (string) - name of a species
@@ -113,55 +116,53 @@ A single Species with all its details in it
 + Response 200 (application/json)
     + Body
     
-            {"Hutt": 
-                {"characters": ["Jabba"],
-                "classification": "Sentient",
-                "description": "The Hutts were a sentient species of large gastropods with short arms, wide cavernous mouths and huge eyes, who controlled a large space empire in Hutt Space. The species was said to originally hail from the planet Varl, but no planet by that name appeared on any Imperial star charts. Their adopted homeworld was Nal Hutta. Members of this species were often stereotyped as crime lords.",
+            {
+                "characters": 1,
+                "classification": "Unknown",
+                "description": "Gastropods\nHermaphrodites",
                 "image": "http://img2.wikia.nocookie.net/__cb20130115030417/starwars/images/a/a7/HuttNEGAS.png",
                 "language": "Huttese",
                 "name": "Hutt",
-                "planet": "Tatooine",
-                "numberofcharacters": 1}
+                "planet": "Varl"
             }
     
 
-## Planet Collection [/planets.json]
+## Planet Collection [/planets]
 
 ### List all planet locations [GET]
 + Response 200 (application/json)
 
-        [{
-            "Tatooine":
-                {"image": "http:\/\/img2.wikia.nocookie.net\/__cb20131019121937\/starwars\/images\/b\/b0\/Tatooine_TPM.png",
-                "characters": ["Darth Vader"],
-                "species": ["Human", "Hutt"],
+        [
+            {
+                "characters": "6",
+                "description": "Tatooine (pronounced/t\u00e6tu'in/; Jawaese: Tah doo Een e) was a desert world and the first planet in the binary Tatoo star system. It was part of the Arkanis sector in the Outer Rim Territories. It was inhabited by poor locals who mostly farmed moisture for a living. Other activities included used equipment retailing and scrap dealing. The planet was on the 5709-DC Shipping Lane, a spur of the Triellus Trade Route, which itself connected to the Sisar Run.",
+                "image": "http://img2.wikia.nocookie.net/__cb20130226044533/starwars/images/thumb/1/18/Tatooine3.png/500px-Tatooine3.png",
                 "name": "Tatooine",
-                "description": "Tatooine was a desert world and the first planet in the binary Tatoo star system. It was part of the Arkanis sector in the Outer Rim Territories. It was inhabited by poor locals who mostly farmed moisture for a living. Other activities included used equipment retailing and scrap dealing. The planet was on the 5709-DC Shipping Lane, a spur of the Triellus Trade Route, which itself connected to the Sisar Run. The planet was not far from the Corellian Run. It had its own navigation system. However, it would still play a role in galactic events, serving as the home of Anakin Skywalker. It was here that Jedi Master Qui-Gon Jinn recognized Anakin's potential to become a Jedi and where he introduced him to Obi-Wan Kenobi, his future master and mentor. Tatooine was also the home of Anakin's son, Luke, where he lived until his early adulthood. The planet acquired a bad reputation, often being viewed as the cesspool of the galaxy due to the large number of criminals who could be found there.",
                 "region": "Outer Rim Territories",
-                "system": "Tatoo system",
-                "numberofcharacters": 1,
-                "numberofspecies": 1},
-            "Kamino":
-                {"image": "http:\/\/img2.wikia.nocookie.net\/__cb20090527045541\/starwars\/images\/thumb\/a\/a9\/Eaw_Kamino.jpg\/400px-Eaw_Kamino.jpg",
-                "characters": ["Boba Fett"],
-                "species": ["Human"],
+                "species": "1",
+                "system": "Tatoo system"
+            },
+
+            {
+                "characters": "1",
+                "description": "Kamino (pronounced/k\u0259'mino\u028a/), also known as the Planet of Storms, was the watery world where the Clone Army of the Galactic Republic was created, as well as the Kamino Home Fleet. It was inhabited by a race of tall, elegant beings called the Kaminoans, who kept to themselves and were known for their cloning technology. Kamino was located just south of the Rishi Maze, and was governed by the Ruling Council, headed by the Prime Minister.",
+                "image": "http://img2.wikia.nocookie.net/__cb20090527045541/starwars/images/thumb/a/a9/Eaw_Kamino.jpg/500px-Eaw_Kamino.jpg",
                 "name": "Kamino",
-                "description": "Kamino, also known as the Planet of Storms,[10] was the watery world where the Clone Army of the Galactic Republic was created, as well as the Kamino Home Fleet. It was inhabited by a race of tall, elegant beings called the Kaminoans, who kept to themselves and were known for their cloning technology. Kamino was located just south of the Rishi Maze, and was governed by the Ruling Council, headed by the Prime Minister.",
-                "region": "Wild Space",
-                "system": "Kamino system",
-                "numberofcharacters": 1,
-                "numberofspecies": 1},
-            "Kashyyyk":
-                {"image": "http:\/\/img1.wikia.nocookie.net\/__cb20090327122712\/starwars\/images\/6\/69\/Kasyyykunleashed.jpg",
-                "characters": ["Chewbacca"],
-                "species": ["Wookiee"],
+                "region": "Wild Space\nExtra-galactic",
+                "species": "0",
+                "system": "Kamino system"
+            },
+            
+            {
+                "characters": "2",
+                "description": "Kashyyyk (see pronunciation), also known as Wookiee Planet C, Edean, G5-623, and Wookiee World, was a Mid Rim planet. It was the lush, wroshyr tree-filled home world of the Wookiees. It was a member of the Galactic Republic, endured enslavement under the Galactic Empire, and later joined the New Republic. With no axial tilt and a perfectly circular orbit, Kashyyyk experienced one continuous season. It was composed of a molten metallic core, rocky mantle, and a silicate rock crust.",
+                "image": "http://img3.wikia.nocookie.net/__cb20130202022903/starwars/images/e/e8/Can-cell_kashyyyk.png",
                 "name": "Kashyyyk",
-                "description": "Kashyyyk (see pronunciation), also known as Wookiee Planet C, Edean, G5-623, and Wookiee World, was a Mid Rim planet. It was the lush, wroshyr tree-filled home world of the Wookiees. It was a member of the Galactic Republic, endured enslavement under the Galactic Empire, and later joined the New Republic.",
                 "region": "Mid Rim",
-                "system": "Kashyyyk system",
-                "numberofcharacters": 1,
-                "numberofspecies": 1}
-        }]
+                "species": "1",
+                "system": "Kashyyyk system"
+            }
+        ]
         
 
 ## Planet [/planets/{name}]
@@ -177,15 +178,12 @@ A single planet with all its details in it
     + Body
     
             {
-                "Kashyyyk":
-                    {"image": "http:\/\/img1.wikia.nocookie.net\/__cb20090327122712\/starwars\/images\/6\/69\/Kasyyykunleashed.jpg",
-                    "characters": ["Chewbacca"],
-                    "species": ["Wookiee"],
-                    "name": "Kashyyyk",
-                    "description": "Kashyyyk (see pronunciation), also known as Wookiee Planet C, Edean, G5-623, and Wookiee World, was a Mid Rim planet. It was the lush, wroshyr tree-filled home world of the Wookiees. It was a member of the Galactic Republic, endured enslavement under the Galactic Empire, and later joined the New Republic.",
-                    "region": "Mid Rim",
-                    "system": "Kashyyyk system",
-                    "numberofcharacters": 1,
-                    "numberofspecies": 1}
+                "characters": "2",
+                "description": "Kashyyyk (see pronunciation), also known as Wookiee Planet C, Edean, G5-623, and Wookiee World, was a Mid Rim planet. It was the lush, wroshyr tree-filled home world of the Wookiees. It was a member of the Galactic Republic, endured enslavement under the Galactic Empire, and later joined the New Republic. With no axial tilt and a perfectly circular orbit, Kashyyyk experienced one continuous season. It was composed of a molten metallic core, rocky mantle, and a silicate rock crust.",
+                "image": "http://img3.wikia.nocookie.net/__cb20130202022903/starwars/images/e/e8/Can-cell_kashyyyk.png",
+                "name": "Kashyyyk",
+                "region": "Mid Rim",
+                "species": "1",
+                "system": "Kashyyyk system"
             }
             
