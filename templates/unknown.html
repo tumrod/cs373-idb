@@ -2,22 +2,28 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="nileforest">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <!-- Favicone Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico')}}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/favicon.ico')}}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/favicon.ico')}}">
 
-    <title>Character - {{ character.get_name() }}</title>
+    <title> Unknown Page</title>
 
     <!-- CSS -->
     <link href="{{ url_for('static', filename='styles/style.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ url_for('static', filename='styles/bootstrap.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ url_for('static', filename='styles/pages.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{ url_for('static', filename='styles/font-awesome.css')}}" rel="stylesheet" type="text/css" />
 
 </head>
-<body>
+<body class="background--dark">
 
     <!-- HEADER -->
     <header class="header">
@@ -56,29 +62,15 @@
         <!-- Portfolio Item Heading -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">{{ character.get_name() }}</h1>
+                <h1 class="page-header">Unknown</h1>
             </div>
         </div>
         <!-- /.row -->
 
-        <!-- Portfolio Item Row -->
-        <div class="row">
+        <h2 style="color:white;text-align: center">Sorry, the Intergalactic Database does not have any information on this topic</h2>
 
-            <div class="col-md-8">
-                <img class="img-responsive" src={{ character.get_image() }} alt="">
-            </div>
+        <h3 style="color:white;text-align: center">May the source be with you</h3>
 
-            <div class="col-md-4">
-                <h3>About</h3>
-                <p>Gender: {{ character.get_gender() }}</p>
-                <p>Height: {{ character.get_height() }}</p>
-                <p>Home Planet: <a href="/planets/{{ character.get_planet() }}" class="link">{{ character.get_planet() }}</a></p>
-                <p>Species: <a href="/species/{{ character.get_species() }}" class="link">{{ character.get_species() }}</a></p>
-                <p>{{ character.get_description() }}</p>
-            </div>
-
-        </div>
-        <!-- /.row -->
 
     </div>
     <!-- /.container -->
@@ -86,6 +78,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ url_for('static', filename='javascripts/jquery-1.11.2.min.js')}}" type="text/javascript"></script>
     <script src="{{ url_for('static', filename='javascripts/bootstrap.min.js')}}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='javascripts/navigation.js')}}" type="text/javascript"></script>
 
 </body>
 

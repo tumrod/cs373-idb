@@ -1,16 +1,9 @@
 {
     "Alderaan": {
-        "characters": [],
-        "description": "Alderaan, located in the Core Worlds, was the second planet in the Alderaan system, and the home of many famous heroes, including Leia Organa Solo, Bail Organa, and Ulic Qel-Droma. Renowned galaxy-wide for their planet's unspoiled beauty, refined culture, and commitment to peace, Alderaanians worked with and around the land to preserve as much of the natural surroundings as they could. Originally the home of the Killiks, Alderaan was later conquered by Humans. Despite a battle during the...",
+        "description": "Alderaan, located in the Core Worlds, was the second planet in the Alderaan system, and the home of many famous heroes, including Leia Organa Solo, Bail Organa, and Ulic Qel-Droma. Renowned galaxy-wide for their planet's unspoiled beauty, refined culture, and commitment to peace, Alderaanians worked with and around the land to preserve as much of the natural surroundings as they could. Originally the home of the Killiks, Alderaan was later conquered by Humans.",
         "image": "http://img1.wikia.nocookie.net/__cb20061211013805/starwars/images/thumb/4/4a/Alderaan.jpg/500px-Alderaan.jpg",
         "name": "Alderaan",
-        "numberofcharacters": 0,
-        "numberofspecies": 2,
         "region": "Core Worlds",
-        "species": [
-            "Humans",
-            "Killiks"
-        ],
         "system": "Alderaan system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nGalactic Empire\nAlderaanian Resistance\nAlliance to Restore the Republic",
@@ -40,18 +33,10 @@
         }
     },
     "Alzoc_III": {
-        "characters": [],
-        "description": "Alzoc III was the third world in the Alzoc system of the Outer Rim Territories. It was a frozen world, dominated by arctic tundra and frozen wastes. This limited the amount of wildlife on the surface. The sole sentient species native to the planet was the Talz. Tall bipeds covered in gray-white fur, they were notable for their four eyes, an adaptation to dazzling sunlight reflected off snow. While the planet was sporadically visited during the reign of the Galactic Republic, its major...",
+        "description": "Alzoc III was the third world in the Alzoc system of the Outer Rim Territories. It was a frozen world, dominated by arctic tundra and frozen wastes. This limited the amount of wildlife on the surface. The sole sentient species native to the planet was the Talz. Tall bipeds covered in gray-white fur, they were notable for their four eyes, an adaptation to dazzling sunlight reflected off snow.",
         "image": "http://img3.wikia.nocookie.net/__cb20070706032250/starwars/images/thumb/a/ae/AlzocPlanet.jpg/500px-AlzocPlanet.jpg",
         "name": "Alzoc III",
-        "numberofcharacters": 0,
-        "numberofspecies": 3,
         "region": "Outer Rim Territories",
-        "species": [
-            "Formerly: Rakata",
-            "Humans",
-            "Talz"
-        ],
         "system": "Alzoc system",
         "z_extra": {
             "Affiliation": "Infinite Empire\nGalactic Empire\nNew Republic\nEmpire Reborn",
@@ -71,17 +56,10 @@
         }
     },
     "Ando": {
-        "characters": [],
-        "description": "Ando was an oceanic planet located in the Ando system of the Mid Rim. It was the homeworld of the Aqualish species. Ando developed a single sentient species known as the Aqualish early in galactic history. Originating from the sea which covered 95 percent of the world, they began to establish permanent settlements on what little land remained and supplemented it with sailing ships that doubled as mobile homes. The majority of the world's islands were sustained by a decaying swamp ecosystem...",
+        "description": "Ando was an oceanic planet located in the Ando system of the Mid Rim. It was the homeworld of the Aqualish species. Ando developed a single sentient species known as the Aqualish early in galactic history. Originating from the sea which covered 95 percent of the world, they began to establish permanent settlements on what little land remained and supplemented it with sailing ships that doubled as mobile homes.",
         "image": "http://img2.wikia.nocookie.net/__cb20061114184956/starwars/images/thumb/1/1e/Ando_NEGAS.jpg/500px-Ando_NEGAS.jpg",
         "name": "Ando",
-        "numberofcharacters": 0,
-        "numberofspecies": 2,
         "region": "Mid Rim",
-        "species": [
-            "Humans",
-            "Aqualish"
-        ],
         "system": "Ando system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nSith Empire\nHyper-Communications Cartel\nConfederacy of Independent Systems\nGalactic Empire\nAlliance to Restore the Republic\nAlliance of Free Planets\nNew Republic\nYuuzhan Vong empire\nIndependent\nDarth Krayt's Galactic Empire",
@@ -110,16 +88,10 @@
         }
     },
     "Anzat": {
-        "characters": [],
-        "description": "Anzat was a legendary Mid Rim world located near the Perlemian Trade Route. Discovered during the Great Manifest Period of the Galactic Republic, the world was avoided as its inhabitants fed off the life-forces of other sentients. Early Anzati culture developed around the belief that the omnipresent aurora that flicked across the sky was the combined life forces of their ancestors. Eventually, the idea of the Silent Voices or \"soup\" evolved, as Force-sensitives would perceive a type of...",
-        "image": "http://img2.wikia.nocookie.net/__cb20061204210934/starwars/images/6/66/AnzatNEGAS.jpg",
+        "description": "Anzat was a legendary Mid Rim world located near the Perlemian Trade Route. Discovered during the Great Manifest Period of the Galactic Republic, the world was avoided as its inhabitants fed off the life-forces of other sentients. Early Anzati culture developed around the belief that the omnipresent aurora that flicked across the sky was the combined life forces of their ancestors.",
+        "image": "http://img.swcombine.com/galaxy/planets/custom/large/1263.gif",
         "name": "Anzat",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Mid Rim; The Slice",
-        "species": [
-            "Anzati"
-        ],
         "system": "Anzat system",
         "z_extra": {
             "Affiliation": "Sith Empire\nConfederacy of Independent Systems\nGalactic Empire\nGreater Maldrood\nImperial Remnant\nYuuzhan Vong empire\nDarth Krayt's Galactic Empire",
@@ -134,16 +106,10 @@
         }
     },
     "Ator": {
-        "characters": [],
         "description": "Ator was a Core World and an ecumenopolis. An urbanized Core World, Ator dispatched several colonial expeditions to the Outer Rim in 4200 BBY, although many failed after communication was lost. A number of colonies that survived in the rimward section of the Corellian Run formed the Arkanis Regency, which later became host to the more recent colony of New Ator in 80 BBY.",
-        "image": "http://img3.wikia.nocookie.net/__cb20130402140821/starwars/images/8/89/Wiki-wordmark.png",
+        "image": "http://vignette1.wikia.nocookie.net/swfanon/images/c/c4/Ator.PNG/revision/latest?cb=20081001172802",
         "name": "Ator",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Core Worlds",
-        "species": [
-            "Humans"
-        ],
         "system": "Ator system",
         "z_extra": {
             "Affiliation": "Galactic Republic",
@@ -153,20 +119,10 @@
         }
     },
     "Bakura": {
-        "characters": [],
         "description": "Bakura was a rich, green and blue planet in the Bakura system of the Shiritoku Spur, located on the isolated edge of the Outer Rim, formally a part of Wild Space. It was the site of a historic truce between the Galactic Empire and the Alliance to Restore the Republic immediately following the Battle of Endor, shortly before the Invasion of Bakura. The Ssi-Ruuk called the planet Xwhee.",
         "image": "http://img1.wikia.nocookie.net/__cb20060529131601/starwars/images/thumb/3/3b/Bakura_Symbol.jpg/500px-Bakura_Symbol.jpg",
         "name": "Bakura",
-        "numberofcharacters": 0,
-        "numberofspecies": 5,
         "region": "Wild Space",
-        "species": [
-            "Humans",
-            "P'w'ecks",
-            "Bith",
-            "Utai",
-            "Kurtzen"
-        ],
         "system": "Bakura system",
         "z_extra": {
             "Affiliation": "Bakuran Senate\nConfederacy of Independent Systems\nGalactic Empire\nAlliance of Free Planets",
@@ -193,26 +149,10 @@
         }
     },
     "Bespin": {
-        "characters": [],
-        "description": "Bespin was a gas giant in the Bespin system of the Anoat sector on the Ison Corridor in the Greater Javin region of the Outer Rim Territories. It was also a major source of tibanna gas, which was refined for production and transport in numerous mining operations including Cloud City and Tibannopolis. It was home to several million individuals, including Humans, Ugnaughts, and Lutrillians. The planet Bespin was a gas giant that was about 118,000 kilometers in diameter. Like most gas giants...",
+        "description": "Bespin was a gas giant in the Bespin system of the Anoat sector on the Ison Corridor in the Greater Javin region of the Outer Rim Territories. It was also a major source of tibanna gas, which was refined for production and transport in numerous mining operations including Cloud City and Tibannopolis. It was home to several million individuals, including Humans, Ugnaughts, and Lutrillians. The planet Bespin was a gas giant that was about 118,000 kilometers in diameter.",
         "image": "http://img1.wikia.nocookie.net/__cb20121118205219/starwars/images/f/f1/Cloud_City.png",
         "name": "Bespin",
-        "numberofcharacters": 0,
-        "numberofspecies": 11,
         "region": "Outer Rim Territories; Greater Javin",
-        "species": [
-            "Humans",
-            "Ugnaughts",
-            "Lutrillians",
-            "Sullustans",
-            "Neo-Bespinian",
-            "Tibannucks",
-            "Velkers",
-            "Beldon",
-            "Rawwks",
-            "Airborne algae sacks",
-            "Airsquids"
-        ],
         "system": "Bespin system",
         "z_extra": {
             "Affiliation": "Neo-Bespinians\nGalactic Republic\nBrotherhood of Darkness\nIncom Corporation\nConfederacy of Independent Systems\nGalactic Empire\nAlliance to Restore the Republic\nAlliance of Free Planets\nNew Republic\nEmpire Reborn/Reborn\nImperial Remnant\nGalactic Federation of Free Alliances\nKilliks\nFive Worlds\nConfederation\nDarth Krayt's Galactic Empire",
@@ -242,17 +182,10 @@
         }
     },
     "Chad": {
-        "characters": [],
-        "description": "The planet Chad (also known as Chadra, or Chad III) was the homeworld of of the Chadra-Fan race. It was in the Outer Rim Territories, more specifically in the Slice. Chad was a planet that orbited the blue-white star Chad in the Chad system of the Outer Rim Territories region of the galaxy and was within the area known as the Slice. Chad occupied an unusual elliptical orbit, which caused uncertainty as to whether it was the third or fourth planet from its star. Chad's day lasted twenty...",
+        "description": "The planet Chad (also known as Chadra, or Chad III) was the homeworld of of the Chadra-Fan race. It was in the Outer Rim Territories, more specifically in the Slice. Chad was a planet that orbited the blue-white star Chad in the Chad system of the Outer Rim Territories region of the galaxy and was within the area known as the Slice. Chad occupied an unusual elliptical orbit, which caused uncertainty as to whether it was the third or fourth planet from its star.",
         "image": "http://img3.wikia.nocookie.net/__cb20061111112702/starwars/images/a/aa/Chad_NEGAS.jpg",
         "name": "Chad",
-        "numberofcharacters": 0,
-        "numberofspecies": 2,
         "region": "Outer Rim Territories",
-        "species": [
-            "Humans",
-            "Chadra-Fan"
-        ],
         "system": "Chad system",
         "z_extra": {
             "Affiliation": "Galactic Empire\nNew Republic",
@@ -279,16 +212,10 @@
         }
     },
     "Chandrila": {
-        "characters": [],
-        "description": "Chandrila was the second planet in the Chandrila system of the Bormea sector, located in the Core Worlds, along the Perlemian Trade Route. It was the homeworld of Rebel Alliance leader and later New Republic Chief of State Mon Mothma. ChandrilTech was headquartered on Chandrila. The lush agricultural planet's two main continents were covered with rolling, grassy plains. One species of plant life was balmgrass, a type of grass that was soft to the touch. An idyllic world, Chandrila remained...",
+        "description": "Chandrila was the second planet in the Chandrila system of the Bormea sector, located in the Core Worlds, along the Perlemian Trade Route. It was the homeworld of Rebel Alliance leader and later New Republic Chief of State Mon Mothma. ChandrilTech was headquartered on Chandrila. The lush agricultural planet's two main continents were covered with rolling, grassy plains. One species of plant life was balmgrass, a type of grass that was soft to the touch. An idyllic world,",
         "image": "http://img1.wikia.nocookie.net/__cb20070515071857/starwars/images/0/05/Crystalcanyon.jpg",
         "name": "Chandrila",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Core Worlds",
-        "species": [
-            "Human"
-        ],
         "system": "Chandrila system",
         "z_extra": {
             "Affiliation": "Chandrilan House\nGalactic Republic\nNew Sith Empire\nGalactic Empire\nChandrilan resistance\nAlliance to Restore the Republic\nAlliance of Free Planets\nNew Republic\nImperial Remnant\nGalactic Federation of Free Alliances",
@@ -317,18 +244,10 @@
         }
     },
     "Clak'dor_VII": {
-        "characters": [],
-        "description": "Clak'dor VII, also known simply as Bith, was a small planet orbiting the large white star Colu in the Colu system of the Outer Rim Territories on the Rimma Trade Route. It was a long-time member of the Galactic Republic and was also the homeworld of the Bith species. The Bith evolved over the millennia, and making use of their powerful senses of sight and hearing became a race of artists, scientists and musicians. They built great cities in the mountains and the jungles of Clak'dor VII...",
-        "image": "http://images.wikia.nocookie.net/common/__cb1400536282/skins/common/images/Wikia_black_large_rgb.png",
+        "description": "Clak'dor VII, also known simply as Bith, was a small planet orbiting the large white star Colu in the Colu system of the Outer Rim Territories on the Rimma Trade Route. It was a long-time member of the Galactic Republic and was also the homeworld of the Bith species. The Bith evolved over the millennia, and making use of their powerful senses of sight and hearing became a race of artists, scientists and musicians. They built great cities in the mountains and the jungles of Clak'dor VII",
+        "image": "http://img2.wikia.nocookie.net/__cb20071218163743/starwars/images/7/7f/ClakdorVII.jpg",
         "name": "Clak'dor VII",
-        "numberofcharacters": 0,
-        "numberofspecies": 3,
         "region": "Outer Rim Territories",
-        "species": [
-            "Bith",
-            "Aalagar",
-            "Y'bith"
-        ],
         "system": "Colu system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nConfederacy of Independent Systems\nGalactic Empire\nEriadu Authority\nNew Republic\nGalactic Federation of Free Alliances",
@@ -356,16 +275,10 @@
         }
     },
     "Commenor": {
-        "characters": [],
         "description": "Commenor was a planet in the Commenor system of the Colonies, just outside of the Core Worlds. Commenor began as a colony of Humbarine. Due to slow interstellar travel and communications, it was one of several colony worlds that declared their independence. The planet joined the Galactic Republic early in its history, sometime between 25,000 BBY and 22,000 BBY.",
         "image": "http://img4.wikia.nocookie.net/__cb20070702213320/starwars/images/thumb/0/03/Commenor_FF80.jpg/500px-Commenor_FF80.jpg",
         "name": "Commenor",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Colonies",
-        "species": [
-            "Humans"
-        ],
         "system": "Commenor system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nGalactic Empire\nNew Republic\nYuuzhan Vong empire\nGalactic Federation of Free Alliances\nFive Worlds\nConfederation\nDarth Krayt's Galactic Empire",
@@ -382,29 +295,10 @@
         }
     },
     "Corellia": {
-        "characters": [],
-        "description": "Corellia was the capital planet of the Corellian system, which included Selonia, Drall, Tralus, and Talus. It was also the birthplace of smuggler and New Republic General Han Solo as well as Rogue Squadron pilot and New Republic hero Wedge Antilles, along with many other humans who played important roles in the histories of the Rebel Alliance, New Republic, and Galactic Alliance. Collectively, the planets of the system were known as the Five Brothers. As the largest planet and the closest to...",
+        "description": "Corellia was the capital planet of the Corellian system, which included Selonia, Drall, Tralus, and Talus. It was also the birthplace of smuggler and New Republic General Han Solo as well as Rogue Squadron pilot and New Republic hero Wedge Antilles, along with many other humans who played important roles in the histories of the Rebel Alliance, New Republic, and Galactic Alliance. Collectively, the planets of the system were known as the Five Brothers.",
         "image": "http://img1.wikia.nocookie.net/__cb20120228045531/starwars/images/2/2f/Corelliascape_TFU.jpg",
         "name": "Corellia",
-        "numberofcharacters": 0,
-        "numberofspecies": 14,
         "region": "Core Worlds",
-        "species": [
-            "Selkath",
-            "Nikto",
-            "Gran",
-            "Rodian",
-            "Ithorian",
-            "Gamorrean",
-            "Twi'lek",
-            "Aqualish",
-            "Klatooinian",
-            "Bothan",
-            "Mon Calamari",
-            "Human",
-            "Selonian",
-            "Drall"
-        ],
         "system": "Corellian system",
         "z_extra": {
             "Affiliation": "Infinite Empire\nHerglic Trade Empire\nCorellian Council\nGalactic Republic\nRevan's Sith Empire\nCorellian Empire\nGalactic Empire\nCorellian Resistance\nAlliance to Restore the Republic\nAlliance of Free Planets\nNew Republic\nGalactic Federation of Free Alliances\nFive Worlds\nConfederation\nDarth Krayt's Galactic Empire",
@@ -435,19 +329,10 @@
         }
     },
     "Coruscant": {
-        "characters": [],
-        "description": "Coruscant (pronounced/'k\u0254\u0279\u0259s\u0251nt/), originally called Notron, also known as Imperial Center or the Queen of the Core, was a planet located in the Galactic Core. It was generally agreed that Coruscant was, during most of galactic history, the most politically important world in the galaxy. At various times, it was the capital of the Galactic Republic, the Galactic Empire, the New Republic, the Yuuzhan Vong empire, the Galactic Alliance, very briefly the Fel Empire, Darth Krayt's Galactic...",
+        "description": "Coruscant (pronounced/'k\u0254\u0279\u0259s\u0251nt/), originally called Notron, also known as Imperial Center or the Queen of the Core, was a planet located in the Galactic Core. It was generally agreed that Coruscant was, during most of galactic history, the most politically important world in the galaxy. At various times, it was the capital of the Galactic Republic, the Galactic Empire, the New Republic, the Yuuzhan Vong empire, the Galactic Alliance, very briefly the Fel Empire.",
         "image": "http://img3.wikia.nocookie.net/__cb20100812154016/starwars/images/8/82/Surfaceorbit.jpg",
         "name": "Coruscant",
-        "numberofcharacters": 0,
-        "numberofspecies": 4,
         "region": "Core Worlds",
-        "species": [
-            "Various",
-            "Humans ",
-            "Taung",
-            "Coruscani ogre"
-        ],
         "system": "Coruscant system",
         "z_extra": {
             "Affiliation": "Battalions of Zhell\nInfinite Empire\nGalactic Republic\nJedi Order\nPius Dea\nBlack Sun\nGalactic Empire\nOrder of the Sith Lords\nNew Republic\nYuuzhan Vong Empire\nGalactic Alliance\nFel Empire \nDarth Krayt's Galactic Empire\nOne Sith\nGalactic Federation Triumvirate",
@@ -479,16 +364,10 @@
         }
     },
     "Csilla": {
-        "characters": [],
-        "description": "Csilla, the homeworld of the Chiss, was a cold world of glaciers and snowy wastes located deep within Chiss Space, and served as the capital of the Chiss Ascendancy. Csilla was a terrestrial planet in the Csilla system of the Unknown Regions of the galaxy, occupying the second orbit from the star Csilla and located at the junction of the Path of the Houses and the Vaagari Corridor. With standard gravity, a frigid climate, and a diameter of 11,080 kilometers, Csilla was orbited by three moons...",
+        "description": "Csilla, the homeworld of the Chiss, was a cold world of glaciers and snowy wastes located deep within Chiss Space, and served as the capital of the Chiss Ascendancy. Csilla was a terrestrial planet in the Csilla system of the Unknown Regions of the galaxy, occupying the second orbit from the star Csilla and located at the junction of the Path of the Houses and the Vaagari Corridor. With standard gravity, a frigid climate, and a diameter of 11,080 kilometers, Csilla was orbited by three moons.",
         "image": "http://img2.wikia.nocookie.net/__cb20061114221747/starwars/images/thumb/8/83/Csilla_NEGAS.jpg/500px-Csilla_NEGAS.jpg",
         "name": "Csilla",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Unknown Regions",
-        "species": [
-            "Chiss"
-        ],
         "system": "Csilla system",
         "z_extra": {
             "Affiliation": "Chiss Ascendancy ",
@@ -515,17 +394,10 @@
         }
     },
     "Dac": {
-        "characters": [],
-        "description": "Dac, as it was called in Mon Calamarian, Quarrenese, and Basic, also known as Mon Calamari and sometimes simply called Calamari or Mon Cala, was a planet in the Calamari system of the Calamari sector, located in the Outer Rim. It was home to a wealth of sentient species: the Mon Calamari, the Quarren, the Moappa, the Amphi-Hydrus, and the Whaladons. Mon Calamari was the name given to the planet by Human explorers from the Galactic Republic who first discovered and revealed the world to the...",
+        "description": "Dac, as it was called in Mon Calamarian, Quarrenese, and Basic, also known as Mon Calamari and sometimes simply called Calamari or Mon Cala, was a planet in the Calamari system of the Calamari sector, located in the Outer Rim. It was home to a wealth of sentient species: the Mon Calamari, the Quarren, the Moappa, the Amphi-Hydrus, and the Whaladons. Mon Calamari was the name given to the planet by Human explorers from the Galactic Republic who first discovered and revealed the world.",
         "image": "http://img3.wikia.nocookie.net/__cb20090421074957/starwars/images/5/5b/Mon_Cal_city_TFUCG.jpg",
         "name": "Dac",
-        "numberofcharacters": 0,
-        "numberofspecies": 2,
         "region": "Outer Rim Territories",
-        "species": [
-            "Mon Calamari",
-            "Quarren"
-        ],
         "system": "Calamari system",
         "z_extra": {
             "Affiliation": "Mon Calamari Council\nGalactic Republic\nQuarren Isolation League\nConfederacy of Independent Systems\nGalactic Empire\nMon Calamari Resistance\nAlliance to Restore the Republic\nAlliance of Free Planets\nNew Republic\nGalactic Federation of Free Alliances\nDarth Krayt's Galactic Empire\nGalactic Alliance Remnant",
@@ -555,22 +427,10 @@
         }
     },
     "Dathomir": {
-        "characters": [],
-        "description": "Dathomir was an obscure planet in the Outer Rim Territories, located in the Quelii sector. It was somewhat smaller than Coruscant in size, and had slightly-below-standard gravity, but the planetary day was close to standard, and the planetary year was long, lasting 491 days. Dathomir had four moons. Dathomir was considered a temperate and beautiful planet by Human standards, with a varied terrain that included coastal lakes and tar-pits, thick forests and snow-capped mountain peaks, powerful...",
+        "description": "Dathomir was an obscure planet in the Outer Rim Territories, located in the Quelii sector. It was somewhat smaller than Coruscant in size, and had slightly-below-standard gravity, but the planetary day was close to standard, and the planetary year was long, lasting 491 days. Dathomir had four moons. Dathomir was considered a temperate and beautiful planet by Human standards, with a varied terrain that included coastal lakes and tar-pits, thick forests and snow-capped mountain peaks.",
         "image": "http://img2.wikia.nocookie.net/__cb20090928192920/starwars/images/3/39/Rancor_SWGTCG.jpg",
         "name": "Dathomir",
-        "numberofcharacters": 0,
-        "numberofspecies": 7,
         "region": "Outer Rim Territories",
-        "species": [
-            "Chazrach",
-            "Humans",
-            "Yuuzhan Vong",
-            "Zabraks",
-            "Dathomirian",
-            "Kwa",
-            "Kwi"
-        ],
         "system": "Dathomir system",
         "z_extra": {
             "Affiliation": "Kwa Holdings\nInfinite Empire\nPaecian Empire\nNew Sith Empire\nBrotherhood of Darkness\nWitches of Dathomir\nDrackmarians\nConfederacy of Independent Systems \nGalactic Empire\nZsinj's Empire\nNew Republic\nHapes Consortium \nYuuzhan Vong empire\nGalactic Federation of Free Alliances\nNew Jedi Order",
@@ -599,16 +459,10 @@
         }
     },
     "Devaron": {
-        "characters": [],
         "description": "Devaron was the home world of the Devaronians. It was located in the Colonies, near the Corellian Trade Spine. It was a planet of low mountains and deep valleys linked by thousands of rivers. The planet had strict capital punishment and a matriarchal government. Devaron joined the Galactic Republic early in its history, sometime between 25,000 BBY and 22,000 BBY. The world was located on the border of known space at the time.",
         "image": "http://img2.wikia.nocookie.net/__cb20071019234418/starwars/images/thumb/6/6a/Devaron_NEGAS.jpg/500px-Devaron_NEGAS.jpg",
         "name": "Devaron",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Colonies",
-        "species": [
-            "Devaronians"
-        ],
         "system": "Devaron system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nCorellian Hegemony\n\nConfederacy of Independent Systems\nGalactic Empire\nAlliance to Restore the Republic",
@@ -633,16 +487,10 @@
         }
     },
     "Deyer": {
-        "characters": [],
-        "description": "Deyer was one of three habitable, but inhospitable, planets in the Anoat system of the Anoat sector, located in the Greater Javin of the Outer Rim. It was a colony world consisting primarily of oceans and was composed of floating raft cities, including the city of Feiya, and terraformed lakes. It featured abundant aquatic life. Deyer was the fifth planet from the star Anoat in the Anoat system, situated on the Ison Corridor and located within the Anoat sector, which was part of the Greater...",
-        "image": "http://img3.wikia.nocookie.net/__cb20130402140821/starwars/images/8/89/Wiki-wordmark.png",
+        "description": "Deyer was one of three habitable, but inhospitable, planets in the Anoat system of the Anoat sector, located in the Greater Javin of the Outer Rim. It was a colony world consisting primarily of oceans and was composed of floating raft cities, including the city of Feiya, and terraformed lakes. It featured abundant aquatic life. Deyer was the fifth planet from the star Anoat in the Anoat system, situated on the Ison Corridor and located within the Anoat sector.",
+        "image": "http://img3.wikia.nocookie.net/__cb20090730022910/starwars/images/3/3d/Planet07-SWR.png",
         "name": "Deyer",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Outer Rim Territories",
-        "species": [
-            "Humans"
-        ],
         "system": "Anoat system",
         "z_extra": {
             "Affiliation": "Galactic Empire",
@@ -669,54 +517,10 @@
         }
     },
     "Endor": {
-        "characters": [],
-        "description": "Endor (also known as the Forest Moon of Endor and the Sanctuary Moon) was a small forested moon orbiting the gas giant planet of Endor and was the farthest moon away from it. An enchanted world, Endor was notable for being the native home of the Ewoks, and being the location of the Battle of Endor, which would result in the downfall of the Empire and the first death of the Emperor Palpatine. Due to its proximity to the Unknown Regions, Endor was a relatively quiet planetoid both prior to and...",
+        "description": "Endor (also known as the Forest Moon of Endor and the Sanctuary Moon) was a small forested moon orbiting the gas giant planet of Endor and was the farthest moon away from it. An enchanted world, Endor was notable for being the native home of the Ewoks, and being the location of the Battle of Endor, which would result in the downfall of the Empire and the first death of the Emperor Palpatine. Due to its proximity to the Unknown Regions.",
         "image": "http://img3.wikia.nocookie.net/__cb20070811234822/starwars/images/9/9c/Endor_matte.jpg",
         "name": "Endor",
-        "numberofcharacters": 0,
-        "numberofspecies": 39,
         "region": "Outer Rim Territories; Inner Zuma Region",
-        "species": [
-            "Fleebogs",
-            "Sanyassans",
-            "Tulgahs",
-            "Strutters",
-            "Humans",
-            "Gupins",
-            "Jindas",
-            "Teeks",
-            "Gorax",
-            "Ketes",
-            "Phlogs",
-            "Shrieks",
-            "Zandor Rockers",
-            "Iceheads",
-            "Frost Sprites",
-            "Frost Giants",
-            "Underwater dwellers",
-            "Mimphs",
-            "Mudgubs",
-            "Ice Demons",
-            "Tromes",
-            "Titterbugs",
-            "Lizard Warriors",
-            "Unidentified talking tree species",
-            "Quorks",
-            "Ogres",
-            "Lucksprites",
-            "Eodons",
-            "Skandits",
-            "Kagles",
-            "Pugs",
-            "Tambles",
-            "Jawas",
-            "others",
-            "Ewoks",
-            "Bordoks",
-            "Duloks",
-            "Gorphs",
-            "Yuzzum"
-        ],
         "system": "Endor system",
         "z_extra": {
             "Affiliation": "Death Watch\nConfederacy of Independent Systems\nGalactic Empire\nAlliance to Restore the Republic\nAlliance of Free Planets\nNew Republic\nNew Jedi Order\nJedi Coalition",
@@ -743,16 +547,10 @@
         }
     },
     "Eriadu": {
-        "characters": [],
-        "description": "Eriadu was the primary world in the Seswenna sector, and one of the Outer Rim's most active trade centers. It sat on the intersection of several hyperspace routes, including the Rimma Trade Route, the Hydian Way, the Lipsec Run, and the Yankirk Route. The planet had originally been on the Eriadu Bypass until the Hydian Way was remapped to run through Eriadu (reflecting economic realities) rather than Seswenna. It was an important launch point for ships headed to the Moddell sector, such as...",
-        "image": "http://img3.wikia.nocookie.net/__cb20130402140821/starwars/images/8/89/Wiki-wordmark.png",
+        "description": "Eriadu was the primary world in the Seswenna sector, and one of the Outer Rim's most active trade centers. It sat on the intersection of several hyperspace routes, including the Rimma Trade Route, the Hydian Way, the Lipsec Run, and the Yankirk Route. The planet had originally been on the Eriadu Bypass until the Hydian Way was remapped to run through Eriadu (reflecting economic realities) rather than Seswenna. It was an important launch point for ships headed to the Moddell sector.",
+        "image": "http://img2.wikia.nocookie.net/__cb20071219212015/starwars/images/5/58/Eriadu.jpg",
         "name": "Eriadu",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Outer Rim Territories",
-        "species": [
-            "Human"
-        ],
         "system": "Eriadu system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nSith Empire\nBrotherhood of Darkness\nGalactic Empire\nEriadu Authority\nNew Republic\nGalactic Federation of Free Alliances\nConfederation\nDarth Krayt's Galactic Empire",
@@ -783,17 +581,10 @@
         }
     },
     "Firrerre": {
-        "characters": [],
-        "description": "Firrerre was a planet located in the Firrerre system on the Outer Rim Territories. Its sole sentient indigenous species were the near-extinct Firrerreo. Firrerre's terrain formerly consisted largely of mountains and waterfalls. From space, it appeared that a large area of the planet was covered by oceans. It was also the homeworld of the Mishalopes who once thrived in the mountains and trees near the Grand Falls. The planetary capital was situated beside a waterfall and its buildings...",
+        "description": "Firrerre was a planet located in the Firrerre system on the Outer Rim Territories. Its sole sentient indigenous species were the near-extinct Firrerreo. Firrerre's terrain formerly consisted largely of mountains and waterfalls. From space, it appeared that a large area of the planet was covered by oceans. It was also the homeworld of the Mishalopes who once thrived in the mountains and trees near the Grand Falls.",
         "image": "http://img1.wikia.nocookie.net/__cb20070715104617/starwars/images/thumb/2/24/Firrerre.jpg/500px-Firrerre.jpg",
         "name": "Firrerre",
-        "numberofcharacters": 0,
-        "numberofspecies": 2,
         "region": "Outer Rim Territories",
-        "species": [
-            "Scrap Mouse",
-            "Firrerreo"
-        ],
         "system": "Firrerre system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nGalactic Empire\nEmpire Reborn\nNew Republic\nYuuzhan Vong empire",
@@ -808,17 +599,10 @@
         }
     },
     "Gamorr": {
-        "characters": [],
-        "description": "Gamorr was an agrarian planet located in the Opoku system of the Outer Rim Territories. It was the homeworld of a porcine sentient species, the Gamorreans. Its varied terrain ranged from frozen tundra to deep forests, and was considered quite pleasant by off-worlders. Nevertheless, tourism was highly discouraged to Gamorr because of the vicious lifestyle of ferocious, bloody warfare constantly being waged between rival Gamorrean clans. Prominent mushrooms were also found on Gamorr, as were...",
+        "description": "Gamorr was an agrarian planet located in the Opoku system of the Outer Rim Territories. It was the homeworld of a porcine sentient species, the Gamorreans. Its varied terrain ranged from frozen tundra to deep forests, and was considered quite pleasant by off-worlders. Nevertheless, tourism was highly discouraged to Gamorr because of the vicious lifestyle of ferocious, bloody warfare constantly being waged between rival Gamorrean clans.",
         "image": "http://img2.wikia.nocookie.net/__cb20061111103316/starwars/images/thumb/c/c1/Gamorr_NEGAS.jpg/500px-Gamorr_NEGAS.jpg",
         "name": "Gamorr",
-        "numberofcharacters": 0,
-        "numberofspecies": 2,
         "region": "Outer Rim Territories",
-        "species": [
-            "Hepmaga MiOrd's species",
-            "Gamorreans"
-        ],
         "system": "Opoku system",
         "z_extra": {
             "Affiliation": "Sith Empire\nSith Empire\nHutt Space\nHutt dependencies",
@@ -850,40 +634,20 @@
         }
     },
     "Gand": {
-        "characters": [],
-        "description": "The Gands, or Gand (pronounced/G\u0103nd/), were a sentient species of humanoids that xenobiologists believed to have evolved from an insect genus that inhabited the ammonia-gas planet of Gand. Several physical varieties of the species existed, differing from one another in the structure of the head and the texture and color of the exoskeleton, but the species was usually divided into two main subspecies: those with lungs and those without. Gands with such organs were adapted to their homeworld's...",
-        "image": "http://img1.wikia.nocookie.net/__cb20061205190815/starwars/images/thumb/9/9a/GandAlienNEGAS.jpg/500px-GandAlienNEGAS.jpg",
+        "description": "Gand was a planet in the Outer Rim Territories, located in The Slice, just beyond the Centrality, and on the border of Wild Space. It was the homeworld of the Gand species. Small pocket colonies covered the surface, separated by kilometers of thick mists, all of which were ruled by the Gand's long-standing totalitarian government. Commerce and trade were conducted on any of the five orbiting space stations.",
+        "image": "http://img3.wikia.nocookie.net/__cb20061115194725/starwars/images/4/4b/Gand_NEGAS.jpg",
         "name": "Gand",
-        "numberofcharacters": 0,
-        "numberofspecies": 0,
-        "region": "",
-        "species": [],
-        "system": "",
+        "region": "Outer Rim Territories",
+        "system": "Gand system",
         "z_extra": {
-            "Average height": "1.4 meters , 1.6 meters ",
-            "Average lifespan": "61 standard years old, with some individuals living to over 95",
-            "Average mass": "70 kilograms , 80 kilograms ",
-            "Classification": "Insectoid",
-            "Designation": "Sentient",
-            "Distinctions": "Exoskeletons, three-fingered hands",
-            "Homeworld": "Gand",
-            "Language": "Gand",
-            "Members": "Lu'daal-ud\nOssluk Noslee\nVenlyss Pnorr\nOoryl Qrygg\nR'Kayza\nVytor Shrike\nTyffix\nVaabesh\nYuun \nZuckuss",
-            "Skin color": "Varying shades of brown, green and purple ",
-            "Subspecies": "Breathers\nlungless"
+            "Sector": "Shadola sector"
         }
     },
     "Hapes": {
-        "characters": [],
-        "description": "Hapes was the homeworld of the Hapans, a near-Human race, and the administrative capital of the Hapes Consortium. Surrounded by shimmering nebulae, and with seven moons in the sky after sunset, Hapes never knew the darkness of true night, and the Hapan people had relatively poor night-vision. Only a few small, neat cities were necessary to cater for the needs of the state bureaucracy and the Consortium's commercial and legal institutions, and much of the planet was an unspoilt wilderness of...",
+        "description": "Hapes was the homeworld of the Hapans, a near-Human race, and the administrative capital of the Hapes Consortium. Surrounded by shimmering nebulae, and with seven moons in the sky after sunset, Hapes never knew the darkness of true night, and the Hapan people had relatively poor night-vision. Only a few small, neat cities were necessary to cater for the needs of the state bureaucracy and the Consortium's commercial and legal institutions.",
         "image": "http://img1.wikia.nocookie.net/__cb20070613113312/starwars/images/0/0f/Hapes.jpg",
         "name": "Hapes",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Inner Rim; Transitory Mists",
-        "species": [
-            "Hapans"
-        ],
         "system": "Hapes system",
         "z_extra": {
             "Affiliation": "Lorell Raiders\nHapes Consortium\nNew Republic\nGalactic Federation of Free Alliances\nJedi Coalition",
@@ -911,17 +675,10 @@
         }
     },
     "Honoghr": {
-        "characters": [],
         "description": "Honoghr (pronounced/'h\u0251no\u02ccg\u025a/) was the homeworld of the Noghri, and the only one of the Honoghr system's seven planets with a permanent population. Honoghr was covered by a single globe-spanning continent.",
-        "image": "",
+        "image": "http://img1.wikia.nocookie.net/__cb20061115194652/starwars/images/9/9b/Honoghr_NEGAS.jpg",
         "name": "Honoghr",
-        "numberofcharacters": 0,
-        "numberofspecies": 2,
         "region": "Outer Rim Territories",
-        "species": [
-            "Rakata",
-            "Noghri"
-        ],
         "system": "Honoghr system",
         "z_extra": {
             "Affiliation": "Infinite Empire\nBrotherhood of Darkness\nGalactic Empire\nNew Republic\nYuuzhan Vong empire\nGalactic Federation of Free Alliances",
@@ -948,16 +705,10 @@
         }
     },
     "Irmenu": {
-        "characters": [],
-        "description": "Irmenu was a planet located in the the fringes of the Crombach Nebula, in the Belsmuth sector of the Outer Rim Territories. Irmenu was an ocean-covered planet with a single submerged continental shelf covering half its surface. The continental shelf was mostly covered with shallow seas, with its highest points reaching above the water to form island archipelagos. These islands ranged from sandy spits of land to crags of rock that could reach hundreds of meters into the air, topped by forests...",
-        "image": "http://images.wikia.nocookie.net/common/__cb1400185536/skins/common/images/Wikia_black_large_rgb.png",
+        "description": "Irmenu was a planet located in the the fringes of the Crombach Nebula, in the Belsmuth sector of the Outer Rim Territories. Irmenu was an ocean-covered planet with a single submerged continental shelf covering half its surface. The continental shelf was mostly covered with shallow seas, with its highest points reaching above the water to form island archipelagos. These islands ranged from sandy spits of land to crags of rock that could reach hundreds of meters into the air, topped by forests.",
+        "image": "http://www.queensu.ca/iigr/apps/database/sale/no_image.gif",
         "name": "Irmenu",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Outer Rim Territories",
-        "species": [
-            "Human"
-        ],
         "system": "Irmenu system",
         "z_extra": {
             "Atmosphere": "Type I ",
@@ -972,18 +723,10 @@
         }
     },
     "Ithor": {
-        "characters": [],
-        "description": "Ithor was the fourth planet located in Ottega system of the Mid Rim. One of the oldest members of the Galactic Republic, it was a planet full of lush life, and the planet's surface had not a touch of civilization on it. The Ithorians themselves, otherwise known as \"Hammerheads,\" built great floating cities that did not harm the surface, which they considered to be sacred. Entry upon the surface was forbidden, unless one stayed there permanently. Some Ithorians such as the Oracle were...",
+        "description": "Ithor was the fourth planet located in Ottega system of the Mid Rim. One of the oldest members of the Galactic Republic, it was a planet full of lush life, and the planet's surface had not a touch of civilization on it. The Ithorians themselves, otherwise known as \"Hammerheads,\" built great floating cities that did not harm the surface, which they considered to be sacred. Entry upon the surface was forbidden, unless one stayed there permanently.",
         "image": "http://img2.wikia.nocookie.net/__cb20061118121352/starwars/images/0/05/IthorNEGAS.jpg",
         "name": "Ithor",
-        "numberofcharacters": 0,
-        "numberofspecies": 3,
         "region": "Mid Rim\n\nLesser Plooriod Cluster",
-        "species": [
-            "Few, by invitation; reek",
-            "Ithorians",
-            "Bafforr tree"
-        ],
         "system": "Ottega system",
         "z_extra": {
             "Affiliation": "Ithorian religion\nGalactic Republic\nGalactic Empire\nRebel Alliance\nAlliance of Free Planets\nNew Republic\nYuuzhan Vong empire\nGalactic Alliance\nDarth Krayt's Galactic Empire",
@@ -1010,19 +753,10 @@
         }
     },
     "Kamino": {
-        "characters": [],
-        "description": "Kamino (pronounced/k\u0259'mino\u028a/), also known as the Planet of Storms, was the watery world where the Clone Army of the Galactic Republic was created, as well as the Kamino Home Fleet. It was inhabited by a race of tall, elegant beings called the Kaminoans, who kept to themselves and were known for their cloning technology. Kamino was located just south of the Rishi Maze, and was governed by the Ruling Council, headed by the Prime Minister. Kamino was in a system of 13 planets orbiting an aging...",
+        "description": "Kamino (pronounced/k\u0259'mino\u028a/), also known as the Planet of Storms, was the watery world where the Clone Army of the Galactic Republic was created, as well as the Kamino Home Fleet. It was inhabited by a race of tall, elegant beings called the Kaminoans, who kept to themselves and were known for their cloning technology. Kamino was located just south of the Rishi Maze, and was governed by the Ruling Council, headed by the Prime Minister.",
         "image": "http://img2.wikia.nocookie.net/__cb20090527045541/starwars/images/thumb/a/a9/Eaw_Kamino.jpg/500px-Eaw_Kamino.jpg",
         "name": "Kamino",
-        "numberofcharacters": 0,
-        "numberofspecies": 4,
         "region": "Wild Space\nExtra-galactic",
-        "species": [
-            "Humans",
-            "Sullustan",
-            "Kaminoans",
-            "Aiwha"
-        ],
         "system": "Kamino system",
         "z_extra": {
             "Affiliation": "Kaminoans\nGalactic Republic\nOld Jedi Order\nGalactic Empire\nKaminoan resistance\nZann Consortium\nNew Republic\nGalactic Alliance",
@@ -1050,19 +784,10 @@
         }
     },
     "Kashyyyk": {
-        "characters": [],
-        "description": "Kashyyyk (see pronunciation), also known as Wookiee Planet C, Edean, G5-623, and Wookiee World, was a Mid Rim planet. It was the lush, wroshyr tree-filled home world of the Wookiees. It was a member of the Galactic Republic, endured enslavement under the Galactic Empire, and later joined the New Republic. With no axial tilt and a perfectly circular orbit, Kashyyyk experienced one continuous season. It was composed of a molten metallic core, rocky mantle, and a silicate rock crust. The planet...",
+        "description": "Kashyyyk (see pronunciation), also known as Wookiee Planet C, Edean, G5-623, and Wookiee World, was a Mid Rim planet. It was the lush, wroshyr tree-filled home world of the Wookiees. It was a member of the Galactic Republic, endured enslavement under the Galactic Empire, and later joined the New Republic. With no axial tilt and a perfectly circular orbit, Kashyyyk experienced one continuous season. It was composed of a molten metallic core, rocky mantle, and a silicate rock crust.",
         "image": "http://img3.wikia.nocookie.net/__cb20130202022903/starwars/images/e/e8/Can-cell_kashyyyk.png",
         "name": "Kashyyyk",
-        "numberofcharacters": 0,
-        "numberofspecies": 4,
         "region": "Mid Rim",
-        "species": [
-            "Humans",
-            "Sayormi",
-            "Terentateks",
-            "Wookiees"
-        ],
         "system": "Kashyyyk system",
         "z_extra": {
             "Affiliation": "Wookiees\nInfinite Empire\nCzerka Corporation\nGalactic Republic\nGalactic Empire\nAlliance to Restore the Republic\nAlliance of Free Planets\nNew Republic\nGalactic Federation of Free Alliances\nJedi Coalition",
@@ -1094,16 +819,10 @@
         }
     },
     "Khomm": {
-        "characters": [],
-        "description": "Khomm was a planet in the Khomm system on the edge of the Deep Core with wide blue seas, great land masses, and an abundance of oxygen. It was the home planet to the Khommites and the Khommite striders. The Khommites possessed a culture of conformity, with a society that had remained unchanged for nearly a millennium. They decided they had reached the pinnacle of their civilization in 990 BBY, so life on the planet remained static. Through the Khomm Central Population Planning, all of the...",
+        "description": "Khomm was a planet in the Khomm system on the edge of the Deep Core with wide blue seas, great land masses, and an abundance of oxygen. It was the home planet to the Khommites and the Khommite striders. The Khommites possessed a culture of conformity, with a society that had remained unchanged for nearly a millennium. They decided they had reached the pinnacle of their civilization in 990 BBY, so life on the planet remained static.",
         "image": "http://img4.wikia.nocookie.net/__cb20070628185753/starwars/images/thumb/b/b5/Khomm_FF7.jpg/500px-Khomm_FF7.jpg",
         "name": "Khomm",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Deep Core",
-        "species": [
-            "Khommites"
-        ],
         "system": "Khomm system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nNew Republic",
@@ -1117,20 +836,10 @@
         }
     },
     "Kiffex": {
-        "characters": [],
-        "description": "Kiffex was the smaller sister planet of Kiffu in the Azurbani system of the Inner Rim. It had rich soil, giving Kiffex the potential to become a major agriculture producing planet. It contained prison colonies for Kiffu's sector, overseen by the Kiffu Guardians, having served as a Republic prison world since at least 3000 BBY. Prior to that it was used as a prison colony for the Sith Empire during the annexation of the system. In one of the many holding cells, the Dark Jedi Volfe Karkko was...",
-        "image": "http://img3.wikia.nocookie.net/__cb20090712174423/starwars/images/5/55/Aaylapod.JPG",
+        "description": "Kiffex was the smaller sister planet of Kiffu in the Azurbani system of the Inner Rim. It had rich soil, giving Kiffex the potential to become a major agriculture producing planet. It contained prison colonies for Kiffu's sector, overseen by the Kiffu Guardians, having served as a Republic prison world since at least 3000 BBY. Prior to that it was used as a prison colony for the Sith Empire during the annexation of the system.",
+        "image": "http://img3.wikia.nocookie.net/__cb20080416155216/starwars/images/1/18/Kiffex_SWCCG.png",
         "name": "Kiffex",
-        "numberofcharacters": 0,
-        "numberofspecies": 5,
         "region": "Inner Rim",
-        "species": [
-            "Humans",
-            "Snivvians",
-            "Triffians",
-            "Kiffar",
-            "Bathwas"
-        ],
         "system": "Azurbani system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nConfederacy of Independent Systems\nGalactic Empire",
@@ -1143,16 +852,10 @@
         }
     },
     "Kinyen": {
-        "characters": [],
-        "description": "Kinyen was an agriworld in the Expansion Region, located on the Corellian Trade Spine. It was the Gran home world, with a recorded history dating back to 10,000 BBY. Though it was an outpost of the violent Rakata during the Pre-Republic era, during its recorded history, the planet has had no local wars. At the time of the Clone Wars, Senator Kharrus represented Kinyen in the Galactic Senate. The planet itself boasted many differing climates, large and rolling grasslands, a dense and...",
-        "image": "http://images.wikia.nocookie.net/common/__cb1400530684/skins/common/images/Wikia_black_large_rgb.png",
+        "description": "Kinyen was an agriworld in the Expansion Region, located on the Corellian Trade Spine. It was the Gran home world, with a recorded history dating back to 10,000 BBY. Though it was an outpost of the violent Rakata during the Pre-Republic era, during its recorded history, the planet has had no local wars. At the time of the Clone Wars, Senator Kharrus represented Kinyen in the Galactic Senate.",
+        "image": "http://img1.wikia.nocookie.net/__cb20061114050045/starwars/images/d/d4/KinyenMalastare.jpg",
         "name": "Kinyen",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Expansion Region",
-        "species": [
-            "Gran"
-        ],
         "system": "Kinyen system",
         "z_extra": {
             "Affiliation": "Infinite Empire\nGalactic Republic\nTrade Federation\nConfederacy of Independent Systems\nGalactic Empire\nNew Republic\nGalactic Federation of Free Alliances",
@@ -1168,17 +871,10 @@
         }
     },
     "Klatooine": {
-        "characters": [],
         "description": "Klatooine was the arid homeworld of the Klatooinians. It was located within the Si'Klaata Cluster, under Hutt control. It was covered with deserts and, to a lesser extent, savannas. The planet was taken over by the Hutts under the Treaty of Vontor in 25,100 BBY. Klatooine was ruled by the Council of Elders. The Hutts, however, controlled all Klatooinian activities offworld. The pak'pah fruit was found nowhere else in the galaxy, possibly because of wintrium in the soil.",
         "image": "http://img3.wikia.nocookie.net/__cb20061111201823/starwars/images/thumb/e/e9/Klatooine_NEGAS.jpg/500px-Klatooine_NEGAS.jpg",
         "name": "Klatooine",
-        "numberofcharacters": 0,
-        "numberofspecies": 2,
         "region": "Outer Rim Territories",
-        "species": [
-            "Hutts",
-            "Klatooinians"
-        ],
         "system": "Klatooine system",
         "z_extra": {
             "Affiliation": "Council of Elders\nHutt Empire\nGalactic Republic\nGalactic Empire\nConfederation\nGalactic Federation of Free Alliances",
@@ -1201,18 +897,10 @@
         }
     },
     "Kothlis": {
-        "characters": [],
-        "description": "Kothlis was a Bothan colony world located in the Kothlis system of the Bothan sector in the Mid Rim. It was the fourth of seven planets in the star system, and was orbited by three small moons and an asteroid field. The colony of Kothlis was located in the Kothlis system of Bothan sector at galactic coordinates R-14. The planet orbited Koth'lar in the fourth position. The world was largely oceanic with many scenic islands, covered in palm trees and dotted with beaches. Many of these islands...",
-        "image": "http://images.wikia.nocookie.net/common/__cb1400185536/skins/common/images/Wikia_black_large_rgb.png",
+        "description": "Kothlis was a Bothan colony world located in the Kothlis system of the Bothan sector in the Mid Rim. It was the fourth of seven planets in the star system, and was orbited by three small moons and an asteroid field. The colony of Kothlis was located in the Kothlis system of Bothan sector at galactic coordinates R-14. The planet orbited Koth'lar in the fourth position. The world was largely oceanic with many scenic islands, covered in palm trees and dotted with beaches.",
+        "image": "http://img1.wikia.nocookie.net/__cb20090730022902/starwars/images/1/12/Planet01-SWR.png",
         "name": "Kothlis",
-        "numberofcharacters": 0,
-        "numberofspecies": 3,
         "region": "Mid Rim",
-        "species": [
-            "Bothans",
-            "Humans",
-            "Various aliens"
-        ],
         "system": "Kothlis system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nGalactic Empire\nNew Republic\nGalactic Federation of Free Alliances\nConfederation",
@@ -1240,17 +928,10 @@
         }
     },
     "Kowak": {
-        "characters": [],
         "description": "Kowak was a tropical planet in the Outer Rim and the homeworld of the Kowakian monkey-lizard species. Kowak was a planet that was completely covered in tropical rain forests. There were many animals that inhabited Kowak, but the dominant species on the planet were the Kowakian monkey-lizards.",
         "image": "http://img2.wikia.nocookie.net/__cb20061119153134/starwars/images/thumb/9/9b/KowakNEGAS.jpg/500px-KowakNEGAS.jpg",
         "name": "Kowak",
-        "numberofcharacters": 0,
-        "numberofspecies": 2,
         "region": "Outer Rim Territories",
-        "species": [
-            "None",
-            "Kowakian monkey-lizard"
-        ],
         "system": "Kowak system",
         "z_extra": {
             "Affiliation": "None",
@@ -1262,29 +943,10 @@
         }
     },
     "Kubindi": {
-        "characters": [],
-        "description": "Kubindi was a terrestrial world and home to the Kubaz. A planet that orbited a blue giant star that emitted powerful solar flares, Kubindi was regularly hit with this radiation, causing erratic weather patterns and making the world dry and arid. An arid world, the planet was initially covered in dense forests before being irradiated by powerful solar flares from the blue giant Ku'Bakai. As the native Kubaz delved underground, massive hives were constructed in a series of mountain-based caves...",
+        "description": "Kubindi was a terrestrial world and home to the Kubaz. A planet that orbited a blue giant star that emitted powerful solar flares, Kubindi was regularly hit with this radiation, causing erratic weather patterns and making the world dry and arid. An arid world, the planet was initially covered in dense forests before being irradiated by powerful solar flares from the blue giant Ku'Bakai.",
         "image": "http://img4.wikia.nocookie.net/__cb20061119155442/starwars/images/thumb/9/94/KubindiNEGAS.jpg/500px-KubindiNEGAS.jpg",
         "name": "Kubindi",
-        "numberofcharacters": 0,
-        "numberofspecies": 14,
         "region": "Outer Rim Territories; The Slice",
-        "species": [
-            "Yuuzhan Vong",
-            "Antz",
-            "Silver Antz",
-            "",
-            "Decalegs",
-            "Fieldhoppers",
-            "Ghost spiders",
-            "Greenflies",
-            "Kubaz",
-            "Kurets",
-            "Mantys",
-            "Micromites",
-            "Scarpyen",
-            "Sun beetles"
-        ],
         "system": "Ku'Bakai system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nHutt Empire\nGalactic Empire\nNew Republic\nYuuzhan Vong empire\nHutt dependencies",
@@ -1310,18 +972,10 @@
         }
     },
     "Lwhekk": {
-        "characters": [],
         "description": "Lwhekk was the capital of the Ssi-ruuvi Imperium and was located beyond the main disk of the galaxy, in the remote Ssi-ruuk Star Cluster. Lwhekk was a humid, jungle-covered planet located in the Ssi'kaat system within the remote Ssi-ruuk Star Cluster beyond the known galaxy. The jungles of Lwhekk were broken by spired cities which appeared to be quite fragile against the jungle. The planet also had volcanoes and a large part of it appeared to be covered by oceans.",
         "image": "http://img3.wikia.nocookie.net/__cb20061111201920/starwars/images/9/93/Lwhekk_NEGAS.jpg",
         "name": "Lwhekk",
-        "numberofcharacters": 0,
-        "numberofspecies": 3,
         "region": "Unknown Regions",
-        "species": [
-            "Yuuzhan Vong",
-            "Ssi-ruuk",
-            "P'w'eck"
-        ],
         "system": "Ssi'kaat system",
         "z_extra": {
             "Affiliation": "Ssi-ruuvi Imperium\nP'w'eck Emancipation Movement\nYuuzhan Vong empire",
@@ -1346,20 +1000,10 @@
         }
     },
     "Naboo": {
-        "characters": [],
-        "description": "Naboo (pronounced/n\u0259'bu/) was a planet that was the sector capital of the Chommell sector near the Outer Rim territories. It was a largely unspoiled world with large plains, swamps and seas. It was mostly known as the homeworld of notable historical figures who played major roles in the downfall of the Galactic Republic and the rise of the Galactic Empire, namely Padm\u00e9 Amidala, Emperor Palpatine and Jar Jar Binks. Naboo was a geologically unique world in the galaxy. A plasmic molten outer...",
-        "image": "http://img4.wikia.nocookie.net/__cb20121002233339/starwars/images/0/01/Theed-MoaTM.png",
+        "description": "Naboo (pronounced/n\u0259'bu/) was a planet that was the sector capital of the Chommell sector near the Outer Rim territories. It was a largely unspoiled world with large plains, swamps and seas. It was mostly known as the homeworld of notable historical figures who played major roles in the downfall of the Galactic Republic and the rise of the Galactic Empire, namely Padm\u00e9 Amidala, Emperor Palpatine and Jar Jar Binks. Naboo was a geologically unique world in the galaxy.",
+        "image": "http://img1.wikia.nocookie.net/__cb20080723001712/starwars/images/5/50/Naboo.jpg",
         "name": "Naboo",
-        "numberofcharacters": 0,
-        "numberofspecies": 5,
         "region": "Mid Rim",
-        "species": [
-            "Human",
-            "Elders",
-            "Amarans",
-            "Neimoidian",
-            "Gungans"
-        ],
         "system": "Naboo system",
         "z_extra": {
             "Affiliation": "Gungan society\nElders\nRoyal House of Naboo\nGalactic Republic\nTrade Federation \nGalactic Empire\nAlliance to Restore the Republic \nNal Raka Criminal Empire\nNew Republic\nGalactic Alliance\nFel Empire\nDarth Krayt's Galactic Empire\nGalactic Alliance Remnant \nEmpire-in-exile \nGalactic Federation Triumvirate",
@@ -1391,22 +1035,10 @@
         }
     },
     "Nal_Hutta": {
-        "characters": [],
-        "description": "Nal Hutta (Glorious Jewel in Huttese), also known simply as Hutta, was the capital of Hutt Space and was located in the Y'Toub system. It was formerly known as Evocar and was the original home world of the Evocii, who were ousted by the Hutts in 15,000 BBY, who migrated from their original home world of Varl along with their servants the t'landa Til. The planet was controlled by the ancient ruling Hutt families, who also ruled its moon Nar Shaddaa from Nal Hutta. Nal Hutta, or as it was...",
+        "description": "Nal Hutta (Glorious Jewel in Huttese), also known simply as Hutta, was the capital of Hutt Space and was located in the Y'Toub system. It was formerly known as Evocar and was the original home world of the Evocii, who were ousted by the Hutts in 15,000 BBY, who migrated from their original home world of Varl along with their servants the t'landa Til. The planet was controlled by the ancient ruling Hutt families, who also ruled its moon Nar Shaddaa from Nal Hutta.",
         "image": "http://img2.wikia.nocookie.net/__cb20140723152514/starwars/images/c/c6/The_bog.png",
         "name": "Nal Hutta",
-        "numberofcharacters": 0,
-        "numberofspecies": 7,
         "region": "Mid Rim",
-        "species": [
-            "Hutts",
-            "Humans",
-            "Vippits",
-            "t'landa Til",
-            "Many others",
-            "Yuuzhan Vong",
-            "Evocii"
-        ],
         "system": "Y'Toub system",
         "z_extra": {
             "Affiliation": "Evocii\nHutt Space\nHutt Grand Council\nHutt Cartel\nAlliance to Restore the Republic\nGalactic Empire\nYuuzhan Vong empire\nHutt underground\nConfederation",
@@ -1434,24 +1066,10 @@
         }
     },
     "Nar_Shaddaa": {
-        "characters": [],
-        "description": "Nar Shaddaa was the largest moon of Nal Hutta. More commonly known as the Vertical City, the Smuggler's Moon and Little Coruscant, Nar Shaddaa was similar to Coruscant in that its surface was entirely overgrown with city sprawl for millennia. But unlike Coruscant\u2014which was only relatively rundown and dangerous on the lower and under levels of the world city\u2014Nar Shaddaa was filthy, polluted, and infested with crime everywhere. Ancient refueling spires and loading docks reached out from the...",
+        "description": "Nar Shaddaa was the largest moon of Nal Hutta. More commonly known as the Vertical City, the Smuggler's Moon and Little Coruscant, Nar Shaddaa was similar to Coruscant in that its surface was entirely overgrown with city sprawl for millennia. But unlike Coruscant\u2014which was only relatively rundown and dangerous on the lower and under levels of the world city\u2014Nar Shaddaa was filthy, polluted, and infested with crime everywhere.",
         "image": "http://img3.wikia.nocookie.net/__cb20090818200416/starwars/images/2/26/Narshaddaa_rgb-lg.jpg",
         "name": "Nar Shaddaa",
-        "numberofcharacters": 0,
-        "numberofspecies": 9,
         "region": "Mid Rim",
-        "species": [
-            "Hutts",
-            "t'landa Til",
-            "Humans",
-            "Colicoids",
-            "Vippits",
-            "Evocii",
-            "Many others",
-            "Yuuzhan Vong",
-            "Ganks"
-        ],
         "system": "Y'Toub system",
         "z_extra": {
             "Affiliation": "Ganks\nHutt Space\nGalactic Republic\nKajidic\nExchange\nHutt Cartel\nGalactic Empire\nUnderworld\nEmpire Reborn\nYuuzhan Vong empire\nSmugglers\nConfederation",
@@ -1475,16 +1093,10 @@
         }
     },
     "Omwat": {
-        "characters": [],
-        "description": "Omwat was a planet in the Garis sector of the Outer Rim Territories that had honeycombed cities. It was a world of grasslands and mountains and the homeworld of the native Omwati. A group of the indigenous Omwati established a small but successful colony on Coruscant around 4000 BBY, but their homeworld was long forgotten by the galactic community until rediscovered by Wilhuff Tarkin in 25 BBY. The planet was the site of a battle in 20 BBY. The planet was later subjugated by Grand Moff...",
+        "description": "Omwat was a planet in the Garis sector of the Outer Rim Territories that had honeycombed cities. It was a world of grasslands and mountains and the homeworld of the native Omwati. A group of the indigenous Omwati established a small but successful colony on Coruscant around 4000 BBY, but their homeworld was long forgotten by the galactic community until rediscovered by Wilhuff Tarkin in 25 BBY. The planet was the site of a battle in 20 BBY.",
         "image": "http://img4.wikia.nocookie.net/__cb20070706120806/starwars/images/thumb/e/e6/Omwat_FF56.jpg/500px-Omwat_FF56.jpg",
         "name": "Omwat",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Outer Rim Territories",
-        "species": [
-            "Omwati"
-        ],
         "system": "Omwat system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nConfederacy of Independent Systems\nGalactic Empire\nNew Republic",
@@ -1497,16 +1109,10 @@
         }
     },
     "Rindao": {
-        "characters": [],
-        "description": "Rindao was a drab training station in the days of the Galactic Empire, close to the Outer Rim Territories. When the Empire arrived to take over the planet, the local populace had not resisted outright, and so avoided any significant persecution by the new regime. An exception to this was when an Imperial officer heard an old woman singing songs of the glorious days of the Galactic Republic and the Jedi Knights. The old woman was swiftly executed by blaster rifles for her perceived slur on...",
-        "image": "",
+        "description": "Rindao was a drab training station in the days of the Galactic Empire, close to the Outer Rim Territories. When the Empire arrived to take over the planet, the local populace had not resisted outright, and so avoided any significant persecution by the new regime. An exception to this was when an Imperial officer heard an old woman singing songs of the glorious days of the Galactic Republic and the Jedi Knights.",
+        "image": "http://www.queensu.ca/iigr/apps/database/sale/no_image.gif",
         "name": "Rindao",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Mid Rim",
-        "species": [
-            "Humans"
-        ],
         "system": "Rindao system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nGalactic Empire",
@@ -1515,19 +1121,10 @@
         }
     },
     "Rodia": {
-        "characters": [],
         "description": "Rodia, a rainforested, industrial planet in the Tyrius system in the Outer Rim, was the homeworld of the Rodians. Rodia was a hot, humid world which was covered in dense tropical jungles as well as sprawling cities, swamps and industrial areas. A large area of the planet was also covered in oceans and there appeared to be two polar regions on the extreme latitudes. A known body of water on the planet was the Wesessa Sea where the An'yettu Islands were located.",
         "image": "http://img3.wikia.nocookie.net/__cb20061122222115/starwars/images/thumb/0/07/RodiaNEGAS.jpg/500px-RodiaNEGAS.jpg",
         "name": "Rodia",
-        "numberofcharacters": 0,
-        "numberofspecies": 4,
         "region": "Outer Rim Territories",
-        "species": [
-            "Yuuzhan Vong",
-            "Chazrach",
-            "Humans",
-            "Rodians"
-        ],
         "system": "Tyrius system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nBrotherhood of Darkness\nGalactic Republic\nConfederacy of Independent Systems \nGalactic Empire\nAlliance of Free Planets\nNew Republic\nYuuzhan Vong empire\nGalactic Federation of Free Alliances\nDarth Krayt's Galactic Empire",
@@ -1557,21 +1154,10 @@
         }
     },
     "Ryloth": {
-        "characters": [],
-        "description": "Ryloth, also known as Twi'lek, and Twi'lek Prime, was the harsh, rocky homeworld of the Twi'leks, an Outer Rim Territories world located on the Corellian Run and forming one endpoint of the Death Wind Corridor. One side of the planet perpetually faced its sun and the other remained in darkness, a phenomenon known as tidal locking. The dayside was referred to as the Bright Lands and the night-side was known as the Nightlands. Ryloth, the second planet in the Ryloth system, possessed a thin...",
-        "image": "http://img3.wikia.nocookie.net/__cb20130402140821/starwars/images/8/89/Wiki-wordmark.png",
+        "description": "Ryloth, also known as Twi'lek, and Twi'lek Prime, was the harsh, rocky homeworld of the Twi'leks, an Outer Rim Territories world located on the Corellian Run and forming one endpoint of the Death Wind Corridor. One side of the planet perpetually faced its sun and the other remained in darkness, a phenomenon known as tidal locking. The dayside was referred to as the Bright Lands and the night-side was known as the Nightlands.",
+        "image": "http://img3.wikia.nocookie.net/__cb20080227171032/starwars/images/8/89/Ryloth.jpg",
         "name": "Ryloth",
-        "numberofcharacters": 0,
-        "numberofspecies": 6,
         "region": "Outer Rim Territories",
-        "species": [
-            "Humans",
-            "Devaronians",
-            "Rodians",
-            "Jawas",
-            "Others",
-            "Twi'lek"
-        ],
         "system": "Ryloth system",
         "z_extra": {
             "Affiliation": "Twi'lek Clan Council\nGalactic Republic\nNew Sith Empire\nBrotherhood of Darkness\nConfederacy of Independent Systems\nGalactic Empire\nZann Consortium\nAlliance to Restore the Republic\nAlliance of Free Planets\nNew Republic\nDiversity Alliance\nCooperative Council of Independent Planetary Governments\nGalactic Federation of Free Alliances\nDarth Krayt's Galactic Empire\nGalactic Alliance Remnant",
@@ -1602,16 +1188,10 @@
         }
     },
     "Socorro": {
-        "characters": [],
         "description": "Socorro was a planet in the Outer Rim Territories with a reputation as a smuggler haven. Socorro was a planet in the Socorro system of the Kibilini sector, located in the Outer Rim Territories region of the galaxy. It was situated on the Llanic Spice Run, a hyperlane that linked it to Llanic and the Bahalian system. Socorro was one of only two bodies in orbit around a red giant star and possessed no moons. A day on Socorro lasted twenty standard hours, and a year lasted 316 local days.",
         "image": "http://img4.wikia.nocookie.net/__cb20110730211733/starwars/images/3/39/VetterTalon.jpg",
         "name": "Socorro",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Outer Rim Territories",
-        "species": [
-            "Humans"
-        ],
         "system": "Socorro system",
         "z_extra": {
             "Affiliation": "Jedi Order\nFel Empire",
@@ -1639,19 +1219,10 @@
         }
     },
     "Sriluur": {
-        "characters": [],
-        "description": "Sriluur was a planet in the Tharin sector of the Outer Rim. Homeworld to the sentient Weequay species, Sriluur held a key position along the Sisar Run, one of the many important hyperlanes connecting Hutt Space with the rest of the Outer Rim. The planet was orbited by five moons, most notably Ruul, the only one of the five able to support life. It was an arid world covered in deserts, volcanoes and acidic seas. Despite this, the planet was almost entirely self-sufficient thanks to an...",
+        "description": "Sriluur was a planet in the Tharin sector of the Outer Rim. Homeworld to the sentient Weequay species, Sriluur held a key position along the Sisar Run, one of the many important hyperlanes connecting Hutt Space with the rest of the Outer Rim. The planet was orbited by five moons, most notably Ruul, the only one of the five able to support life. It was an arid world covered in deserts, volcanoes and acidic seas.",
         "image": "http://img2.wikia.nocookie.net/__cb20100708051541/starwars/images/thumb/4/4b/Sriluur_NEGAS.jpg/500px-Sriluur_NEGAS.jpg",
         "name": "Sriluur",
-        "numberofcharacters": 0,
-        "numberofspecies": 4,
         "region": "Si'Klaata Cluster, Outer Rim",
-        "species": [
-            "Houk",
-            "Hutts",
-            "Other",
-            "Weequay"
-        ],
         "system": "Sriluur system",
         "z_extra": {
             "Affiliation": "Hutt Empire\nGalactic Empire\nYuuzhan Vong Empire\nDarth Krayt's Galactic Empire",
@@ -1680,16 +1251,10 @@
         }
     },
     "Stewjon": {
-        "characters": [],
-        "description": "Stewjon was a terrestrial planet located in the Stewjon system. It had an atmosphere that allowed Humans to breathe oxygen comfortably. Stewjon was the homeworld of Jedi Master Obi-Wan Kenobi and his family, though he was taken from the planet at a young age for training to become a Jedi. Located in the Stewjon system, Stewjon was a terrestrial planet with an atmosphere that consisted of a breathable oxygen mix that could support Human life. The world had a climate that supported the growth...",
+        "description": "Stewjon was a terrestrial planet located in the Stewjon system. It had an atmosphere that allowed Humans to breathe oxygen comfortably. Stewjon was the homeworld of Jedi Master Obi-Wan Kenobi and his family, though he was taken from the planet at a young age for training to become a Jedi. Located in the Stewjon system, Stewjon was a terrestrial planet with an atmosphere that consisted of a breathable oxygen mix that could support Human life.",
         "image": "http://img4.wikia.nocookie.net/__cb20101001055115/starwars/images/b/b6/Obi-Wan_Kenobi_Clone_Card.jpg",
         "name": "Stewjon",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
-        "region": "",
-        "species": [
-            "Human"
-        ],
+        "region": "Unknown",
         "system": "Stewjon system",
         "z_extra": {
             "Atmosphere": "Oxygen mix, Type I ",
@@ -1698,19 +1263,10 @@
         }
     },
     "Sullust": {
-        "characters": [],
         "description": "Sullust was the primary planet of the Sullust system, located in the Outer Rim Territories at the conjuncture of the Rimma Trade Route and the Silvestri Trace. It was the homeworld of the Sullustans. All of Sullust was composed of multicolored rock, veined by lava channels; the planet went through atmospheric blackouts caused by gouts of smoke and ash.",
-        "image": "http://img1.wikia.nocookie.net/__cb20061126102408/starwars/images/thumb/2/27/SullustNEGAS.jpg/500px-SullustNEGAS.jpg",
+        "image": "http://img2.wikia.nocookie.net/__cb20150526042939/starwars/images/2/2d/SullustAoR.png",
         "name": "Sullust",
-        "numberofcharacters": 0,
-        "numberofspecies": 4,
         "region": "Outer Rim Territories",
-        "species": [
-            "Humans",
-            "Bith",
-            "Sullustans",
-            "Formerly: Hepmaga MiOrd's species"
-        ],
         "system": "Sullust system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nSith Empire\nBrotherhood of Darkness\nConfederacy of Independent Systems\nGalactic Empire\nAlliance of Free Planets\nNew Republic\nGalactic Federation of Free Alliances\nDarth Krayt's Galactic Empire",
@@ -1739,36 +1295,10 @@
         }
     },
     "Tatooine": {
-        "characters": [],
-        "description": "Tatooine (pronounced/t\u00e6tu'in/; Jawaese: Tah doo Een e) was a desert world and the first planet in the binary Tatoo star system. It was part of the Arkanis sector in the Outer Rim Territories. It was inhabited by poor locals who mostly farmed moisture for a living. Other activities included used equipment retailing and scrap dealing. The planet was on the 5709-DC Shipping Lane, a spur of the Triellus Trade Route, which itself connected to the Sisar Run. The planet was not far from the...",
+        "description": "Tatooine (pronounced/t\u00e6tu'in/; Jawaese: Tah doo Een e) was a desert world and the first planet in the binary Tatoo star system. It was part of the Arkanis sector in the Outer Rim Territories. It was inhabited by poor locals who mostly farmed moisture for a living. Other activities included used equipment retailing and scrap dealing. The planet was on the 5709-DC Shipping Lane, a spur of the Triellus Trade Route, which itself connected to the Sisar Run.",
         "image": "http://img2.wikia.nocookie.net/__cb20130226044533/starwars/images/thumb/1/18/Tatooine3.png/500px-Tatooine3.png",
         "name": "Tatooine",
-        "numberofcharacters": 0,
-        "numberofspecies": 21,
         "region": "Outer Rim Territories",
-        "species": [
-            "Humans",
-            "Rodians",
-            "Pacithhip",
-            "Hutts",
-            "Askajians",
-            "Er'Kits",
-            "Ranats",
-            "Mandalorians",
-            "Toongs",
-            "Twi'leks",
-            "Saurins",
-            "Whiphids",
-            "Kitonaks",
-            "Rancor",
-            "Etc.",
-            "Historic: Rakata",
-            "Tusken Raider",
-            "Kumumgah",
-            "Jawas",
-            "Trooshti",
-            "Zybahhod Yenyoni"
-        ],
         "system": "Tatoo system",
         "z_extra": {
             "Affiliation": "Kumumgah\nInfinite Empire\nGhorfas & Jawas\nGalactic Republic\nCzerka Corporation\nAnarchy\nHutt Cartel\nSith Empire\nGardulla the Elder's criminal empire\nJabba Desilijic Tiure's criminal empire\nConfederacy of Independent Systems\nGalactic Empire\nAlliance to Restore the Republic\nAlliance of Free Planets\nNew Republic\nHutt Space\nHutt Underground\nGalactic Federation of Free Alliances \nDarth Krayt's Galactic Empire",
@@ -1800,16 +1330,10 @@
         }
     },
     "Toola": {
-        "characters": [],
         "description": "Toola was a planet located in the Kaelta system and the cold homeworld of the Whiphids. It was located in the Slice. Toola occupied a slightly elliptic orbit around the star Kaelta in the Kaelta system, which was itself located in the Nilgaard sector of the Outer Rim Territories region of the galaxy. Toola was also within the region known as the Slice and was situated on the Overic Griplink, which connected it to Quermia and Pakuuni.",
         "image": "http://img2.wikia.nocookie.net/__cb20061111105214/starwars/images/thumb/c/c6/Toola_NEGAS.jpg/500px-Toola_NEGAS.jpg",
         "name": "Toola",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Outer Rim Territories",
-        "species": [
-            "Whiphids"
-        ],
         "system": "Kaelta system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nMandalorian Neo-Crusaders\nDarth Revan's Sith Empire\nConfederacy of Independent Systems\nGalactic Empire\nZsinj's Empire\nNew Republic\nDarth Krayt's Galactic Empire",
@@ -1833,16 +1357,10 @@
         }
     },
     "Trandosha": {
-        "characters": [],
-        "description": "Trandosha, also known as Dosha or Hsskhor, was the home world of the warlike, reptilian Trandoshan species. It was located in the same star system as Kashyyyk, the home world of the Wookiees, causing bitter animosity between the two species. The planet joined the Galactic Republic around 7000 BBY, but by the time of the Great Sith War, it had not integrated itself into the Republic as thoroughly as other planets. Around the time of the Jedi Civil War, the planet negotiated with the Czerka...",
+        "description": "Trandosha, also known as Dosha or Hsskhor, was the home world of the warlike, reptilian Trandoshan species. It was located in the same star system as Kashyyyk, the home world of the Wookiees, causing bitter animosity between the two species. The planet joined the Galactic Republic around 7000 BBY, but by the time of the Great Sith War, it had not integrated itself into the Republic as thoroughly as other planets.",
         "image": "http://img2.wikia.nocookie.net/__cb20130530013144/starwars/images/thumb/4/40/Trandosha-PL.png/500px-Trandosha-PL.png",
         "name": "Trandosha",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Mid Rim",
-        "species": [
-            "Trandoshan"
-        ],
         "system": "Kashyyyk system",
         "z_extra": {
             "Affiliation": "Trandoshans\nGalactic Republic\nCzerka Arms\nNew Sith Empire\nConfederacy of Independent Systems\nGalactic Empire\nAlliance of Free Planets \nNew Republic \nDarth Krayt's Galactic Empire",
@@ -1867,17 +1385,10 @@
         }
     },
     "Vinsoth": {
-        "characters": [],
-        "description": "Vinsoth was the home planet of the Chevin and Chev species in the Quelii sector of the Outer Rim Territories. It was a temperate planet with zones of grasslands and prairies, arctic ice, and deserts. The Chevin had a skin that could adapt to all three environments. In 3,000,000 BBY, an asteroid collided with the planet, killing most life on its surface, but the remaining survivors evolved into the Chevin. The Chevin were nomadic pastoralists, following herds of the native grazing backshin...",
+        "description": "Vinsoth was the home planet of the Chevin and Chev species in the Quelii sector of the Outer Rim Territories. It was a temperate planet with zones of grasslands and prairies, arctic ice, and deserts. The Chevin had a skin that could adapt to all three environments. In 3,000,000 BBY, an asteroid collided with the planet, killing most life on its surface, but the remaining survivors evolved into the Chevin.",
         "image": "http://img2.wikia.nocookie.net/__cb20061111162438/starwars/images/thumb/c/c2/Vinsoth_NEGAS.jpg/500px-Vinsoth_NEGAS.jpg",
         "name": "Vinsoth",
-        "numberofcharacters": 0,
-        "numberofspecies": 2,
         "region": "Outer Rim Territories",
-        "species": [
-            "Chevin",
-            "Chevs"
-        ],
         "system": "Vinsoth system",
         "z_extra": {
             "Affiliation": "Chevin Conglomerate\nConfederacy of Independent Systems\nYuuzhan Vong empire\nGalactic Alliance\nEmpire-in-exile\nDarth Krayt's Galactic Empire",
@@ -1891,24 +1402,10 @@
         }
     },
     "Wayland": {
-        "characters": [],
-        "description": "Wayland was a lush, semi-tropical planet in the Outer Rim Territories. Wayland was discovered and colonized during the Galactic Republic's second wave of expansion, and served as a field hospital during the Mandalorian Wars. It was also the site of a factory for Lhosan Industries. A filing error removed all record of the planet from astrogation charts and planetary logs, so that years later, people were unsure if \"Wayland\" was the planet's real name or an Imperial codename. The Human...",
+        "description": "Wayland was a lush, semi-tropical planet in the Outer Rim Territories. Wayland was discovered and colonized during the Galactic Republic's second wave of expansion, and served as a field hospital during the Mandalorian Wars. It was also the site of a factory for Lhosan Industries. A filing error removed all record of the planet from astrogation charts and planetary logs, so that years later, people were unsure if \"Wayland\" was the planet's real name or an Imperial codename.",
         "image": "http://img1.wikia.nocookie.net/__cb20090529000252/starwars/images/thumb/d/db/Wayland-eaw.jpg/500px-Wayland-eaw.jpg",
         "name": "Wayland",
-        "numberofcharacters": 0,
-        "numberofspecies": 9,
         "region": "Outer Rim Territories",
-        "species": [
-            "Humans",
-            "Noghri",
-            "Yuuzhan Vong",
-            "Chazrach",
-            "Myneyrshi",
-            "Psadans",
-            "Clawbird",
-            "Garral",
-            "Vine snake"
-        ],
         "system": "Wayland system",
         "z_extra": {
             "Affiliation": "Galactic Republic\nConfederacy of Independent Systems\nGalactic Empire\nNew Republic\nYuuzhan Vong empire\nGalactic Alliance\nDarth Krayt's Galactic Empire",
@@ -1928,29 +1425,10 @@
         }
     },
     "Yavin_4": {
-        "characters": [],
-        "description": "Yavin 4 was one of three habitable moons orbiting the gas giant Yavin. It was mainly covered in jungle and rainforest, and despite being remote and unheard of, it would play an important role in galactic events, including the seduction of Jedi Knight Exar Kun to the dark side and the destruction of Sith Lord Freedon Nadd during the Great Sith War, a ferocious duel between Jedi and Sith during the Clone Wars, and serving as the base of the Alliance to Restore the Republic during the Battle of...",
-        "image": "http://img1.wikia.nocookie.net/__cb20100510202738/starwars/images/3/3f/Tfotse12.jpg",
+        "description": "Yavin 4 was one of three habitable moons orbiting the gas giant Yavin. It was mainly covered in jungle and rainforest, and despite being remote and unheard of, it would play an important role in galactic events, including the seduction of Jedi Knight Exar Kun to the dark side and the destruction of Sith Lord Freedon Nadd during the Great Sith War, a ferocious duel between Jedi and Sith during the Clone Wars.",
+        "image": "http://img1.wikia.nocookie.net/__cb20060418114439/starwars/images/a/a0/Eaw_Yavin4.jpg",
         "name": "Yavin 4",
-        "numberofcharacters": 0,
-        "numberofspecies": 14,
         "region": "Outer Rim Territories",
-        "species": [
-            "Yuuzhan Vong",
-            "Chazrach",
-            "Piranha beetle",
-            "Stinger lizard",
-            "Belly-bird",
-            "Howler",
-            "Crystal snake",
-            "Previously:",
-            "Sith ",
-            "Terentatek",
-            "Tuk'ata",
-            "Sith wyrm",
-            "Humans",
-            "Massassi"
-        ],
         "system": "Yavin system",
         "z_extra": {
             "Affiliation": "Critokians\nSith Empire\nMassassi\nExar Kun's Sith Empire\nBrotherhood of the Sith\nOrder of Revan\nGalactic Republic\nJedi Order\nRevan's Sith Empire\nConfederacy of Independent Systems\nAlliance to Restore the Republic\nGalactic Empire\nNew Republic\nNew Jedi Order\nYuuzhan Vong empire\nGalactic Federation of Free Alliances",
@@ -1975,16 +1453,10 @@
         }
     },
     "Ylix": {
-        "characters": [],
-        "description": "|- | class=\"infoboxlabel\" style=\"\" | Region | class=\"infoboxcell\" style=\"; \" | Mid Rim |- |- | class=\"infoboxlabel\" style=\"\" | Sector | class=\"infoboxcell\" style=\"; \" | M'shinni sector |- |- | class=\"infoboxlabel\" style=\"\" | System | class=\"infoboxcell\" style=\"; \" | Ylix system |- |- | class=\"infoboxlabel\" style=\"\" | Grid coordinates | class=\"infoboxcell\" style=\"; \" | M-7 |-",
-        "image": "",
+        "description": "",
+        "image": "http://www.queensu.ca/iigr/apps/database/sale/no_image.gif",
         "name": "Ylix",
-        "numberofcharacters": 0,
-        "numberofspecies": 1,
         "region": "Mid Rim",
-        "species": [
-            "Humans"
-        ],
         "system": "Ylix system",
         "z_extra": {
             "Grid coordinates": "M-7",

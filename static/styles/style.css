@@ -219,7 +219,9 @@ p {
         color: #fff;
     }
     .dark-bg .link:hover, .link:hover {
-        color:#e6ae49;
+        /*color:#e6ae49;*/
+        color: aqua;
+        background-color: brown;
     }
 
 .gray-bg {
@@ -282,6 +284,7 @@ h1 {
 @media (max-width: 767px) {
     h1.h1, h2.h2 {
         letter-spacing: 0px;
+        font-size: 200%
     }
 }
 
@@ -549,7 +552,7 @@ button, input, textarea, select {
         font-weight: 400;
         letter-spacing: 1px;
         font-size: 13px;
-        padding: 10px 15px;
+        padding: 1% 1%;
         transition: all 0.2s ease 0s;
         -moz-transition: all 0.2s ease 0s;
         -webkit-transition: all 0.2s ease 0s;
@@ -698,6 +701,7 @@ form label.error {
 
 .pb {
     padding-bottom: 110px;
+    background-color: #323232;
 }
 
 .ptb-15 {
@@ -1628,8 +1632,14 @@ header.sticky .navigation a.current-ele {
 }
 .team-link {
     padding-right: 25px;
+    color:yellow;
 }
-
+.team-stat {
+    color:lightgrey;
+}
+.team-random {
+    color:white;
+}
 /*-------------------------------------------------------------------------------------------*/
 /*  Skills Bar      ||---------------------------- */
 /*-------------------------------------------------------------------------------------------*/
@@ -2234,7 +2244,8 @@ header.sticky .navigation a.current-ele {
     }
 
     .overlay-light:before {
-        background-color: rgba(255,255,255,0.4);
+        /*background-color: rgba(255,255,255,0.4);*/
+        background-color: #323232;
     }
 
     .overlay-light80:before {
