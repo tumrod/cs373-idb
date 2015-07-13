@@ -140,7 +140,7 @@
     },
     "Devaronian": {
         "classification": "Unknown",
-        "description": "Horns , thick fur ",
+        "description": "Horns , thick fur",
         "image": "http://img4.wikia.nocookie.net/__cb20100616044458/starwars/images/thumb/5/55/DevaronianNEGAS.jpg/500px-DevaronianNEGAS.jpg",
         "language": "Devaronese",
         "name": "Devaronian",
@@ -156,7 +156,7 @@
     "Ewok": {
         "classification": "Unknown",
         "description": "Furry, short stature, acute sense of smell",
-        "image": "http://img1.wikia.nocookie.net/__cb20051207122858/starwars/images/e/e5/Ewokscrossthehills.JPG",
+        "image": "http://politedog.com/wp-content/uploads/2015/06/wicketewok.jpg",
         "language": "Ewokese",
         "name": "Ewok",
         "planet": "Endor",
@@ -237,12 +237,12 @@
         }
     },
     "Human": {
-        "classification": "Mammal ",
+        "classification": "Mammal",
         "description": "Unknown",
         "image": "http://img3.wikia.nocookie.net/__cb20100628191857/starwars/images/5/5d/Humans-TESB30.jpg",
         "language": "Galactic Basic Standard\nOthers",
         "name": "Human",
-        "planet": "Unknown, possibly Coruscant ",
+        "planet": "Coruscant",
         "z_extra": {
             "Average height": "1.8 meters",
             "Average lifespan": "typically up to 100 or 120 standard years; ages up to approximately 200 have been reached among Force-sensitive individuals",
@@ -260,7 +260,7 @@
         "image": "http://img2.wikia.nocookie.net/__cb20130115030417/starwars/images/a/a7/HuttNEGAS.png",
         "language": "Huttese",
         "name": "Hutt",
-        "planet": "Varl ",
+        "planet": "Varl",
         "z_extra": {
             "Average height": "3 - 3.9 meters",
             "Average lifespan": "1,000 standard years",
@@ -324,7 +324,7 @@
     "Kiffar": {
         "classification": "Unknown",
         "description": "Qukuuf facial tattoos\nPsychometric abilities",
-        "image": "",
+        "image": "http://img1.wikia.nocookie.net/__cb20111023040930/starwars/images/6/62/QuinlanVos-SWE.png",
         "language": "Unknown",
         "name": "Kiffar",
         "planet": "Kiffu",
@@ -421,7 +421,7 @@
     "Omwati": {
         "classification": "Near-Human",
         "description": "Bird-like anthropoids",
-        "image": "http://img3.wikia.nocookie.net/__cb20130402140821/starwars/images/8/89/Wiki-wordmark.png",
+        "image": "http://img2.wikia.nocookie.net/__cb20070528041553/starwars/images/2/2f/Omwati.JPG",
         "language": "Omwatese",
         "name": "Omwati",
         "planet": "Omwat",
@@ -474,7 +474,7 @@
         "image": "http://img3.wikia.nocookie.net/__cb20060620165114/starwars/images/thumb/1/1b/Rybet_AA.jpg/500px-Rybet_AA.jpg",
         "language": "Rybese",
         "name": "Rybet",
-        "planet": "Varl ",
+        "planet": "Varl",
         "z_extra": {
             "Average height": "1.2 to 1.9 meters",
             "Hair color": "None",
@@ -550,7 +550,7 @@
         "image": "http://img4.wikia.nocookie.net/__cb20130115031110/starwars/images/4/45/Trandoshan_NEGAS.png",
         "language": "Dosh",
         "name": "Trandoshan",
-        "planet": "Trandosha, also referred to as Dosha or Hsskor by Trandoshans",
+        "planet": "Trandosha",
         "z_extra": {
             "Average height": "2 meters",
             "Designation": "Sentient",
@@ -598,7 +598,7 @@
         "image": "http://img2.wikia.nocookie.net/__cb20061128184734/starwars/images/5/57/ThreeWookieeAmigos-ROTSVD.jpg",
         "language": "Shyriiwook\nXaczik\nThykarann",
         "name": "Wookiee",
-        "planet": "Nominally Kashyyyk; may have originated on an unknown planet",
+        "planet": "Kashyyyk",
         "z_extra": {
             "Average height": "Male: 2.1 meters",
             "Average lifespan": "More than 400 standard years",
