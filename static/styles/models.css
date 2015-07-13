@@ -363,7 +363,7 @@ h4 {
   color:#95a5a6;
 }
 .box-table table tbody tr:nth-child(even){
-  background:#bdc3c7;
+  background:#cdd3d7;
   color:#7f8c8d;
 }
 .box-table table tbody tr a{
@@ -516,6 +516,22 @@ select {
 }
 
 .box-table table thead tr th{
-  letter-spacing: 1px;
-  white-space: nowrap;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    cursor: pointer;
+    text-decoration: none;
+    color: #323232;
+    transition: all 0.25s ease 0s;
+    -moz-transition: all 0.25s ease 0s;
+    -webkit-transition: all 0.25s ease 0s;
+    -o-transition: all 0.25s ease 0s;
 }
+
+    .box-table table thead tr th:hover {
+        color: #e6ae49;
+        text-decoration: none;
+        transition: all 0.25s ease 0s;
+        -moz-transition: all 0.25s ease 0s;
+        -webkit-transition: all 0.25s ease 0s;
+        -o-transition: all 0.25s ease 0s;
+    }
