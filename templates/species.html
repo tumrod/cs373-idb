@@ -76,12 +76,12 @@
                         <td><a href="/planets/{{ species.planet }}">{{ species.planet }}</a></td>
                         <td>{{ species.classification }}</td>
                         <td>
-                            <select value="characters" id="sort-order-character-{{ species.name }}">
+                            <select value="characters" id="sort_order_character_{{ species.name }}">
                                 {% for character in species.get_characters() %}
                                     <option value="{{ character.name }}">{{ character.name }}</option>
                                 {% endfor %}
                             </select >
-                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect-to-selected-character-in-{{ species.name }}">Go</button>
+                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect_to_selected_character_in_{{ species.name }}">Go</button>
                         </td>
                     </tr>
                 {% endfor %}
