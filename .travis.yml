@@ -37,7 +37,7 @@ script:
     - touch IDB.log
     - make models.html
     - ls -al
-    - psql -s intergalacticdb
+    - createdb intergalacticdb
     - make test
     - cat tests.out
     - ls -al
