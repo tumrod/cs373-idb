@@ -33,7 +33,7 @@ def create_species():
     with open(relative_path + "/all_species.json") as data_file:
             info_dict = json.load(data_file)
 
-    for k,v in info_dict.items():
+    for k, v in info_dict.items():
         name = v["name"]
         planet = v["planet"]
         description = v["description"]
@@ -51,7 +51,7 @@ def create_planets():
     with open(relative_path + "/all_planets.json") as data_file:
             info_dict = json.load(data_file)
 
-    for k,v in info_dict.items():
+    for k, v in info_dict.items():
         name = v["name"]
         description = v["description"]
         image = v["image"]
