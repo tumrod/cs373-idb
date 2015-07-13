@@ -76,8 +76,6 @@ class Planet(db.Model):
     __tablename__ = 'planets'
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(50))
-    characters = db.Column(db.String(16))
-    species = db.Column(db.String(16))
     description = db.Column(db.String(4000))
     image = db.Column(db.String(250))
     region = db.Column(db.String(50))
@@ -94,8 +92,6 @@ class Planet(db.Model):
         self.image = image
         self.region = region
         self.system = system
-        self.characters = len(Character.query.filter_by(planet=self.name).all())
-        self.species = len(Species.query.filter_by(planet=self.name).all())
 
     def __repr__(self):
         return '<name {}>'.format(self.name)
@@ -108,8 +104,6 @@ class Planet(db.Model):
             'image' : self.image,
             'region' : self.region,
             'system' : self.system,
-            'characters' : self.characters,
-            'species' : self.species
         }
 
     def get_characters(self):
@@ -150,7 +144,6 @@ class Species(db.Model):
     image = db.Column(db.String(250))
     language = db.Column(db.String(50))
     classification = db.Column(db.String(50))
-    characters = db.Column(db.Integer)
 
     def __init__(self, name, planet, description, image, language, classification):
         """
@@ -164,7 +157,6 @@ class Species(db.Model):
         self.image = image
         self.language = language
         self.classification = classification
-        self.characters = len(Character.query.filter_by(species=self.name).all())
 
     def __repr__(self):
         return '<name {}>'.format(self.name)
@@ -178,7 +170,6 @@ class Species(db.Model):
             'image' : self.image,
             'language' : self.language,
             'classification' : self.classification,
-            'characters' : self.characters
         }
 
     def get_characters(self):
