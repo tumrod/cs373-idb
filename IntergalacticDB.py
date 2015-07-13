@@ -29,7 +29,11 @@ def unknown():
 
 @app.route('/api/characters', methods=['GET'])
 def get_characters():
-    return json.dumps([i.serialize for i in Character.query.all()])
+    return json.dumps([i.serialize for i in Character.get_all()])
+
+@app.route('/api/characters/<name>')
+def get_character_detail(name):
+    return json.dumps(Character.get(str(name)).serialize)
 
 @app.route('/characters')
 @app.route('/characters/<character>')
