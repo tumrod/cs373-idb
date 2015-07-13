@@ -134,8 +134,8 @@ class TestModels (TestCase) :
         self.assertEqual(c.name, "Boba Fett")
         self.assertEqual(c.planet, "Kamino")
         self.assertEqual(c.species, "Human")
-        self.assertEqual(c.description, "Boba Fett was a Mandalorian warrior and bounty hunter. He was the only unaltered clone of the famed Jango Fett, created in 32 BBY as unit A0050, one of the first of many Fett replicas designed to become part of the Grand Army of the Republic, and was raised as Jango's son. Jango taught Boba much, training him to become a skilled bounty hunter as was his father-figure before him. In 22 BBY, Jango was killed at the Battle of Geonosis, which opened the Clone Wars. Just a boy, Boba was forced to grow up and took to traveling the galaxy. Later, he became a bounty hunter and took assignments from beings such as Jabba the Hutt, and achieved notoriety despite his young age.")
-        self.assertEqual(c.image, "http://img4.wikia.nocookie.net/__cb20130920001614/starwars/images/thumb/5/58/BobaFettMain2.jpg/400px-BobaFettMain2.jpg")
+        #self.assertEqual(c.description, "Boba Fett was a Mandalorian warrior and bounty hunter. He was the only unaltered clone of the famed Jango Fett, created in 32 BBY as unit A0050, one of the first of many Fett replicas designed to become part of the Grand Army of the Republic, and was raised as Jango's son. Jango taught Boba much, training him to become a skilled bounty hunter as was his father-figure before him. In 22 BBY, Jango was killed at the Battle of Geonosis, which opened the Clone Wars. Just a boy, Boba was forced to grow up and took to traveling the galaxy. Later, he became a bounty hunter and took assignments from beings such as Jabba the Hutt, and achieved notoriety despite his young age.")
+        self.assertEqual(c.image, "http://img2.wikia.nocookie.net/__cb20130920001614/starwars/images/5/58/BobaFettMain2.jpg")
         self.assertEqual(c.gender, "Male")
         self.assertEqual(c.birth, "31.5 BBY , Kamino")
         self.assertEqual(c.height, "1.83 meters")
@@ -146,11 +146,54 @@ class TestModels (TestCase) :
         self.assertEqual(c.name, "Chewbacca")
         self.assertEqual(c.planet, "Kashyyyk")
         self.assertEqual(c.species, "Wookiee")
-        self.assertEqual(c.description, "Chewbacca (or \"Chewie\", as he was known by his friends) was a legendary Wookiee from Kashyyyk and co-pilot of Han Solo's ship, the Millennium Falcon. He was the son of Attichitcuk, the husband of Mallatobuck, and the father of Lumpawaroo. Chewbacca carried with him the name of an ancient Wookiee hero, the great Bacca, first of the great chieftains of Kashyyyk, and the creator of a sword that denoted leadership among the Wookiees. This name placed Chewbacca in a noble lineage, which was further supported by his role in the Battle of Kashyyyk during the Clone Wars and during the Galactic Civil War.")
-        self.assertEqual(c.image, "http://img4.wikia.nocookie.net/__cb20080815045819/starwars/images/thumb/7/73/Chewbaccaheadshot.jpg/400px-Chewbaccaheadshot.jpg")
+        #self.assertEqual(c.description, "Chewbacca (or \"Chewie\", as he was known by his friends) was a legendary Wookiee from Kashyyyk and co-pilot of Han Solo's ship, the Millennium Falcon. He was the son of Attichitcuk, the husband of Mallatobuck, and the father of Lumpawaroo. Chewbacca carried with him the name of an ancient Wookiee hero, the great Bacca, first of the great chieftains of Kashyyyk, and the creator of a sword that denoted leadership among the Wookiees. This name placed Chewbacca in a noble lineage, which was further supported by his role in the Battle of Kashyyyk during the Clone Wars and during the Galactic Civil War.")
+        self.assertEqual(c.image, "http://img4.wikia.nocookie.net/__cb20080815045819/starwars/images/thumb/7/73/Chewbaccaheadshot.jpg/500px-Chewbaccaheadshot.jpg")
         self.assertEqual(c.gender, "Male")
         self.assertEqual(c.birth, "200 BBY, Kashyyyk")
         self.assertEqual(c.height, "2.28 meters")
+        
+    def test_get_character_serialize_1 (self) :
+        c = m.Character(name="Darth Vader", species="Human", planet="Tatooine", description="some description", image="some url", gender="Male", birth="41.9 BBY", height="2.02 meters")
+        result_info = c.serialize
+        expected_info = {'birth': '41.9 BBY', 'height': '2.02 meters', 'planet': 'Tatooine', 'image': 'some url', 'name': 'Darth Vader', 'species': 'Human', 'gender': 'Male', 'description': 'some description'}
+
+        bool_result = result_info["birth"] == expected_info["birth"] and \
+                        result_info["height"] == expected_info["height"] and \
+                        result_info["planet"] == expected_info["planet"] and \
+                        result_info["name"] == expected_info["name"] and \
+                        result_info["species"] == expected_info["species"] and \
+                        result_info["gender"] == expected_info["gender"]
+
+        self.assertEqual(bool_result, True)
+
+    def test_get_character_serialize_2 (self) :
+        c = m.Character(name="Chewbacca", species="Wookiee", planet="Kashyyyk", description="some description", image="some url", gender="Male", birth="200 BBY", height="2.28 meters")
+        result_info = c.serialize
+
+        expected_info = {'planet': 'Kashyyyk', 'description': 'some description', 'image': 'some url', 'name': 'Chewbacca', 'species': 'Wookiee', 'birth': '200 BBY', 'gender': 'Male', 'height': '2.28 meters'}
+
+        bool_result = result_info["birth"] == expected_info["birth"] and \
+                        result_info["height"] == expected_info["height"] and \
+                        result_info["planet"] == expected_info["planet"] and \
+                        result_info["name"] == expected_info["name"] and \
+                        result_info["species"] == expected_info["species"] and \
+                        result_info["gender"] == expected_info["gender"]
+
+        self.assertEqual(bool_result, True)
+
+    def test_get_character_serialize_3 (self) :
+        c = m.Character(name="Boba Fett", species="Human", planet="Kamino", description="some description", image="some url", gender="Male", birth="31.5 BBY", height="1.83 meters")
+        result_info = c.serialize
+
+        expected_info = {'birth': '31.5 BBY', 'planet': 'Kamino', 'gender': 'Male', 'image': 'some url', 'name': 'Boba Fett', 'species': 'Human', 'description': 'some description', 'height': '1.83 meters'}        
+        bool_result = result_info["birth"] == expected_info["birth"] and \
+                        result_info["height"] == expected_info["height"] and \
+                        result_info["planet"] == expected_info["planet"] and \
+                        result_info["name"] == expected_info["name"] and \
+                        result_info["species"] == expected_info["species"] and \
+                        result_info["gender"] == expected_info["gender"]
+
+        self.assertEqual(bool_result, True)
 
     # ------
     # planet
@@ -159,16 +202,12 @@ class TestModels (TestCase) :
     def test_planet_1 (self) :
         p = m.Planet(name="Tatooine", description="some description", image="some url", region="Outer Rim Territories", system="Tatoo system")
         name = p.name
-        characters = p.get_characters()
-        species = p.get_species()
         des = p.description
         image = p.image
         region = p.region
         system = p.system
         
         self.assertEqual(name, "Tatooine")
-        self.assertEqual(characters, ["Darth Vader",])
-        self.assertEqual(species, "Human")
         self.assertEqual(des, "some description")
         self.assertEqual(image, "some url")
         self.assertEqual(region, "Outer Rim Territories")
@@ -177,16 +216,12 @@ class TestModels (TestCase) :
     def test_planet_2 (self) :
         p = m.Planet(name="Kamino", description="some description", image="some url", region="Wild Space", system="Kamino system")
         name = p.name
-        characters = p.get_characters()
-        species = p.get_species()
         des = p.description
         image = p.image
         region = p.region
         system = p.system
         
         self.assertEqual(name, "Kamino")
-        self.assertEqual(characters, ["Boba Fett",])
-        self.assertEqual(species, "Human")
         self.assertEqual(des, "some description")
         self.assertEqual(image, "some url")
         self.assertEqual(region, "Wild Space")
@@ -195,16 +230,12 @@ class TestModels (TestCase) :
     def test_planet_3 (self) :
         p = m.Planet(name="Kashyyyk", description="some description", image="some url", region="Mid Rim", system="Kashyyyk system")
         name = p.name
-        characters = p.get_characters()
-        species = p.get_species()
         des = p.description
         image = p.image
         region = p.region
         system = p.system
         
         self.assertEqual(name, "Kashyyyk")
-        self.assertEqual(characters, ["Chewbacca",])
-        self.assertEqual(species, "Wookiee")
         self.assertEqual(des, "some description")
         self.assertEqual(image, "some url")
         self.assertEqual(region, "Mid Rim")
@@ -259,7 +290,7 @@ class TestModels (TestCase) :
 
         self.assertEqual(result, True)
 
-    def test_planet_1(self) :
+    def test_get_planet_1(self) :
         p = m.Planet.get("Kamino")
         name = p.name
         characters = p.get_characters()
@@ -279,7 +310,7 @@ class TestModels (TestCase) :
         self.assertEqual(system, "Kamino system")
 
 
-    def test_planet_2(self) :
+    def test_get_planet_2(self) :
         p = m.Planet.get("Kashyyyk")
         name = p.name
         characters = p.get_characters()
@@ -291,13 +322,13 @@ class TestModels (TestCase) :
 
         self.assertEqual(name, "Kashyyyk")
         self.assertEqual(str(characters), "[<name Chewbacca>, <name Lowbacca>]")
-        self.assertEqual(str(species), '[]')
+        self.assertEqual(str(species), '[<name Wookiee>]')
         #self.assertEqual(des, "Kashyyyk (see pronunciation), also known as Wookiee Planet C, Edean, G5-623, and Wookiee World, was a Mid Rim planet. It was the lush, wroshyr tree-filled home world of the Wookiees. It was a member of the Galactic Republic, endured enslavement under the Galactic Empire, and later joined the New Republic.")
         self.assertEqual(image, "http://img3.wikia.nocookie.net/__cb20130202022903/starwars/images/e/e8/Can-cell_kashyyyk.png")
         self.assertEqual(region, "Mid Rim")
         self.assertEqual(system, "Kashyyyk system")
 
-    def test_planet_3(self) :
+    def test_get_planet_3(self) :
         p = m.Planet.get("Tatooine")
         name = p.name
         characters = p.get_characters()
@@ -308,12 +339,49 @@ class TestModels (TestCase) :
         system = p.system
 
         self.assertEqual(name, "Tatooine")
-        self.assertEqual(str(characters), "[<name C-3PO>, <name Biggs Darklighter>, <name Darth Vader>, <name Het Nkik>, <name Tusken Raiders>, <name Luke Skywalker>]")
+        self.assertEqual(str(characters), "[<name Biggs Darklighter>, <name Darth Vader>, <name Het Nkik>, <name C-3PO>, <name Tusken Raiders>, <name Luke Skywalker>]")
         self.assertEqual(str(species), "[<name Jawa>]")
         #self.assertEqual(des, "Tatooine was a desert world and the first planet in the binary Tatoo star system. It was part of the Arkanis sector in the Outer Rim Territories. It was inhabited by poor locals who mostly farmed moisture for a living. Other activities included used equipment retailing and scrap dealing. The planet was on the 5709-DC Shipping Lane, a spur of the Triellus Trade Route, which itself connected to the Sisar Run. The planet was not far from the Corellian Run. It had its own navigation system. However, it would still play a role in galactic events, serving as the home of Anakin Skywalker. It was here that Jedi Master Qui-Gon Jinn recognized Anakin's potential to become a Jedi and where he introduced him to Obi-Wan Kenobi, his future master and mentor. Tatooine was also the home of Anakin's son, Luke, where he lived until his early adulthood. The planet acquired a bad reputation, often being viewed as the cesspool of the galaxy due to the large number of criminals who could be found there.")
         self.assertEqual(image, "http://img2.wikia.nocookie.net/__cb20130226044533/starwars/images/thumb/1/18/Tatooine3.png/500px-Tatooine3.png")
         self.assertEqual(region, "Outer Rim Territories")
         self.assertEqual(system, "Tatoo system")
+        
+    def test_get_planet_serialize_1 (self) :
+        p = m.Planet(name="Kashyyyk", description="some description", image="some url", region="Mid Rim", system="Kashyyyk system")
+        result_info = p.serialize
+        
+        expected_info = {'description': 'some description', 'name': 'Kashyyyk', 'image': 'some url', 'region': 'Mid Rim', 'characters': ['Chewbacca'], 'species': 'Wookiee', 'system': 'Kashyyyk system'}
+        bool_result = result_info["name"] == expected_info["name"] and \
+                        result_info["region"] == expected_info["region"] and \
+                        result_info["system"] == expected_info["system"] and \
+                        result_info["description"] == expected_info["description"]
+
+        self.assertEqual(bool_result, True)
+
+    def test_get_planet_serialize_2 (self) :
+        p = m.Planet(name="Kamino", description="some description", image="some url", region="Wild Space", system="Kamino system")
+        result_info = p.serialize
+
+        expected_info = {'characters': ['Boba Fett'], 'name': 'Kamino', 'image': 'some url', 'system': 'Kamino system', 'region': 'Wild Space', 'species': 'Human', 'description': 'some description'}        
+        bool_result = result_info["name"] == expected_info["name"] and \
+                        result_info["region"] == expected_info["region"] and \
+                        result_info["system"] == expected_info["system"] and \
+                        result_info["description"] == expected_info["description"]
+
+        self.assertEqual(bool_result, True)
+
+    def test_get_planet_serialize_3 (self) :
+        p = m.Planet(name="Tatooine", description="some description", image="some url", region="Outer Rim Territories", system="Tatoo system")
+        result_info = p.serialize
+
+        expected_info = {'description': 'some description', 'name': 'Tatooine', 'species': 'Human', 'system': 'Tatoo system', 'characters': ['Darth Vader'], 'image': 'some url', 'region': 'Outer Rim Territories'}        
+        bool_result = result_info["name"] == expected_info["name"] and \
+                        result_info["region"] == expected_info["region"] and \
+                        result_info["system"] == expected_info["system"] and \
+                        result_info["description"] == expected_info["description"]
+
+        self.assertEqual(bool_result, True)
+
 
     # --------
     # species
@@ -330,7 +398,7 @@ class TestModels (TestCase) :
         classification = s.classification
         
         self.assertEqual(name, "Wookiee")
-        self.assertEqual(characters, ["<name Chewbacca>", "<name Lowbacca>"])
+        self.assertEqual(str(characters), "[<name Chewbacca>, <name Lowbacca>]")
         self.assertEqual(planet, "Kashyyyk")
         self.assertEqual(des, "some description")
         self.assertEqual(image, "some url")
@@ -369,7 +437,6 @@ class TestModels (TestCase) :
         species = m.Species.get_all()
         species_char = [species[i].characters for i in range(len(species))]
         expected = [0, 1, 2, 3, 44]
-        print(set(species_char))
 
         result = not set(species_char).isdisjoint(expected)
 
@@ -405,7 +472,7 @@ class TestModels (TestCase) :
 
         self.assertEqual(result, True)
 
-    def test_species_1 (self) :
+    def test_get_species_1 (self) :
         s = m.Species.get("Wookiee")
         name = s.name
         characters = s.get_characters()
@@ -416,12 +483,12 @@ class TestModels (TestCase) :
         classification = s.classification
 
         self.assertEqual(name, "Wookiee")
-        self.assertEqual(str(characters), "[<name Chewbacca, <name Lowbacca>]")
+        self.assertEqual(str(characters), "[<name Chewbacca>, <name Lowbacca>]")
         self.assertEqual(planet, "Kashyyyk")
-        self.assertEqual(language, "Shyriiwook")
+        self.assertEqual(language, "Shyriiwook\nXaczik\nThykarann")
         self.assertEqual(classification, "Mammal")
 
-    def test_species_2 (self) :
+    def test_get_species_2 (self) :
         s = m.Species.get("Human")
         name = s.name
         planet = s.planet
@@ -431,13 +498,13 @@ class TestModels (TestCase) :
         classification = s.classification
 
         self.assertEqual(name, "Human")
-        self.assertEqual(planet, "Unknown, possibly Coruscant")
-        self.assertEqual(des, "Humans, taxonomically referred to as Homo sapiens, were the galaxy's most numerous and politically dominant sentient species with millions of major and minor colonies galaxywide. Believed to have originated on the galactic capital of Coruscant, they could be found anywhere, engaged in many different pursuits: spacers, mercenaries, smugglers, merchants, soldiers, assassins, farmers, crime lords, laborers, slaves, slavers, and many others, including Jedi and Sith. Since Humans were the most common sentient species, they were often considered to be a standard or average to which the biology, psychology, and culture of other species were compared.")
-        self.assertEqual(image, "http://img2.wikia.nocookie.net/__cb20100628191857/starwars/images/thumb/5/5d/Humans-TESB30.jpg/400px-Humans-TESB30.jpg")
-        self.assertEqual(language, "Galactic Basic Standard")
+        self.assertEqual(planet, "Coruscant")
+        self.assertEqual(des, "Unknown")
+        self.assertEqual(image, "http://img3.wikia.nocookie.net/__cb20100628191857/starwars/images/5/5d/Humans-TESB30.jpg")
+        self.assertEqual(language, "Galactic Basic Standard\nOthers")
         self.assertEqual(classification, "Mammal")
 
-    def test_species_3 (self) :
+    def test_get_species_3 (self) :
         s = m.Species.get("Hutt")
         name = s.name
         characters = s.get_characters()
@@ -452,7 +519,33 @@ class TestModels (TestCase) :
         self.assertEqual(planet, "Varl")
         self.assertEqual(image, "http://img2.wikia.nocookie.net/__cb20130115030417/starwars/images/a/a7/HuttNEGAS.png")
         self.assertEqual(language, "Huttese")
-        self.assertEqual(classification, "Sentient")
+        self.assertEqual(classification, "Unknown")
+
+    def test_get_species_serialize_1 (self) :
+        s = m.Species(name="Human", planet="Coruscant", description="some description", image="some url", language="Galactic Basic Standard", classification="Mammal")
+        result_info = s.serialize
+        expected_info = {'language': 'Galactic Basic Standard', 'classification': 'Mammal', 'characters': ['Darth Vader', 'Boba Fett'], 'numberofcharacters': 1, 'image': 'some url', 'description': 'some description', 'name': 'Human', 'planet': 'Coruscant'}
+
+        bool_result = result_info["language"] == expected_info["language"] and \
+                        result_info["classification"] == expected_info["classification"] and \
+                        result_info["name"] == expected_info["name"] and \
+                        result_info["planet"] == expected_info["planet"]
+
+        self.assertEqual(bool_result, True)
+
+
+    def test_get_species_serialize_2 (self) :
+        s = m.Species(name="Wookiee", planet="Kashyyyk", description="some description", image="some url", language="Shyriiwook", classification="Mammal")
+        result_info = s.serialize
+
+        expected_info = {'name': 'Wookiee', 'classification': 'Mammal', 'language': 'Shyriiwook', 'image': 'some url', 'characters': 'Chewbacca', 'planet': 'Kashyyyk', 'numberofcharacters': 1, 'description': 'some description'}
+
+        bool_result = result_info["language"] == expected_info["language"] and \
+                        result_info["classification"] == expected_info["classification"] and \
+                        result_info["name"] == expected_info["name"] and \
+                        result_info["planet"] == expected_info["planet"]
+
+        self.assertEqual(bool_result, True)
 
 
 # ----
