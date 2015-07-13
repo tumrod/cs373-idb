@@ -39,6 +39,19 @@ class Character(db.Model):
     def __repr__(self):
         return '<name {}>'.format(self.name)
 
+    @property
+    def serialize(self):
+        return {
+            'name' : self.name,
+            'planet' : self.planet,
+            'species' : self.species,
+            'description' : self.description,
+            'image' : self.image,
+            'birth' : self.birth,
+            'gender' : self.gender,
+            'height' : self.height
+        }
+
     @staticmethod
     def get_all():
         """

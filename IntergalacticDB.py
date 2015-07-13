@@ -1,5 +1,6 @@
 import os
 import setupDB
+import json
 from flask import render_template
 from models import *
 
@@ -28,9 +29,7 @@ def unknown():
 
 @app.route('/api/characters', methods=['GET'])
 def get_characters():
-    with open(relative_path + "/characters.json") as data_file:
-        info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
-    return jsonify({'characters': info_dict})
+    return json.dumps([i.serialize for i in Character.query.all()])
 
 @app.route('/characters')
 @app.route('/characters/<character>')
