@@ -70,5 +70,3 @@ def create_db():
     create_characters()
     create_species()
     create_planets()
-
-create_db()
