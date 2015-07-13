@@ -89,7 +89,8 @@ class TestModels (TestCase) :
         self.assertEqual(c.birth, "41.9 BBY")
         self.assertEqual(c.height, "1.88 meters, later 2.02 in armor")
 
-
+    def test_character_serialize(self):
+        c = Character.get("Chewbacca")
     # ------
     # planet
     # ------
