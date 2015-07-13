@@ -36,5 +36,6 @@ script:
     - make models.html
     - ls -al
     - make test
+    - cat tests.out
     - ls -al
     - make check
