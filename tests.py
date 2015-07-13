@@ -151,6 +151,49 @@ class TestModels (TestCase) :
         self.assertEqual(c.gender, "Male")
         self.assertEqual(c.birth, "200 BBY, Kashyyyk")
         self.assertEqual(c.height, "2.28 meters")
+        
+    def test_get_character_serialize_1 (self) :
+        c = m.Character(name="Darth Vader", species="Human", planet="Tatooine", description="some description", image="some url", gender="Male", birth="41.9 BBY", height="2.02 meters")
+        result_info = c.serialize
+        expected_info = {'birth': '41.9 BBY', 'height': '2.02 meters', 'planet': 'Tatooine', 'image': 'some url', 'name': 'Darth Vader', 'species': 'Human', 'gender': 'Male', 'description': 'some description'}
+
+        bool_result = result_info["birth"] == expected_info["birth"] and \
+                        result_info["height"] == expected_info["height"] and \
+                        result_info["planet"] == expected_info["planet"] and \
+                        result_info["name"] == expected_info["name"] and \
+                        result_info["species"] == expected_info["species"] and \
+                        result_info["gender"] == expected_info["gender"]
+
+        self.assertEqual(bool_result, True)
+
+    def test_get_character_serialize_2 (self) :
+        c = m.Character(name="Chewbacca", species="Wookiee", planet="Kashyyyk", description="some description", image="some url", gender="Male", birth="200 BBY", height="2.28 meters")
+        result_info = c.serialize
+
+        expected_info = {'planet': 'Kashyyyk', 'description': 'some description', 'image': 'some url', 'name': 'Chewbacca', 'species': 'Wookiee', 'birth': '200 BBY', 'gender': 'Male', 'height': '2.28 meters'}
+
+        bool_result = result_info["birth"] == expected_info["birth"] and \
+                        result_info["height"] == expected_info["height"] and \
+                        result_info["planet"] == expected_info["planet"] and \
+                        result_info["name"] == expected_info["name"] and \
+                        result_info["species"] == expected_info["species"] and \
+                        result_info["gender"] == expected_info["gender"]
+
+        self.assertEqual(bool_result, True)
+
+    def test_get_character_serialize_3 (self) :
+        c = m.Character(name="Boba Fett", species="Human", planet="Kamino", description="some description", image="some url", gender="Male", birth="31.5 BBY", height="1.83 meters")
+        result_info = c.serialize
+
+        expected_info = {'birth': '31.5 BBY', 'planet': 'Kamino', 'gender': 'Male', 'image': 'some url', 'name': 'Boba Fett', 'species': 'Human', 'description': 'some description', 'height': '1.83 meters'}        
+        bool_result = result_info["birth"] == expected_info["birth"] and \
+                        result_info["height"] == expected_info["height"] and \
+                        result_info["planet"] == expected_info["planet"] and \
+                        result_info["name"] == expected_info["name"] and \
+                        result_info["species"] == expected_info["species"] and \
+                        result_info["gender"] == expected_info["gender"]
+
+        self.assertEqual(bool_result, True)
 
     # ------
     # planet
@@ -159,16 +202,12 @@ class TestModels (TestCase) :
     def test_planet_1 (self) :
         p = m.Planet(name="Tatooine", description="some description", image="some url", region="Outer Rim Territories", system="Tatoo system")
         name = p.name
-        characters = p.get_characters()
-        species = p.get_species()
         des = p.description
         image = p.image
         region = p.region
         system = p.system
         
         self.assertEqual(name, "Tatooine")
-        self.assertEqual(characters, ["Darth Vader",])
-        self.assertEqual(species, "Human")
         self.assertEqual(des, "some description")
         self.assertEqual(image, "some url")
         self.assertEqual(region, "Outer Rim Territories")
@@ -177,16 +216,12 @@ class TestModels (TestCase) :
     def test_planet_2 (self) :
         p = m.Planet(name="Kamino", description="some description", image="some url", region="Wild Space", system="Kamino system")
         name = p.name
-        characters = p.get_characters()
-        species = p.get_species()
         des = p.description
         image = p.image
         region = p.region
         system = p.system
         
         self.assertEqual(name, "Kamino")
-        self.assertEqual(characters, ["Boba Fett",])
-        self.assertEqual(species, "Human")
         self.assertEqual(des, "some description")
         self.assertEqual(image, "some url")
         self.assertEqual(region, "Wild Space")
@@ -195,16 +230,12 @@ class TestModels (TestCase) :
     def test_planet_3 (self) :
         p = m.Planet(name="Kashyyyk", description="some description", image="some url", region="Mid Rim", system="Kashyyyk system")
         name = p.name
-        characters = p.get_characters()
-        species = p.get_species()
         des = p.description
         image = p.image
         region = p.region
         system = p.system
         
         self.assertEqual(name, "Kashyyyk")
-        self.assertEqual(characters, ["Chewbacca",])
-        self.assertEqual(species, "Wookiee")
         self.assertEqual(des, "some description")
         self.assertEqual(image, "some url")
         self.assertEqual(region, "Mid Rim")
@@ -259,7 +290,7 @@ class TestModels (TestCase) :
 
         self.assertEqual(result, True)
 
-    def test_planet_1(self) :
+    def test_get_planet_1(self) :
         p = m.Planet.get("Kamino")
         name = p.name
         characters = p.get_characters()
@@ -279,7 +310,7 @@ class TestModels (TestCase) :
         self.assertEqual(system, "Kamino system")
 
 
-    def test_planet_2(self) :
+    def test_get_planet_2(self) :
         p = m.Planet.get("Kashyyyk")
         name = p.name
         characters = p.get_characters()
@@ -297,7 +328,7 @@ class TestModels (TestCase) :
         self.assertEqual(region, "Mid Rim")
         self.assertEqual(system, "Kashyyyk system")
 
-    def test_planet_3(self) :
+    def test_get_planet_3(self) :
         p = m.Planet.get("Tatooine")
         name = p.name
         characters = p.get_characters()
@@ -314,6 +345,43 @@ class TestModels (TestCase) :
         self.assertEqual(image, "http://img2.wikia.nocookie.net/__cb20130226044533/starwars/images/thumb/1/18/Tatooine3.png/500px-Tatooine3.png")
         self.assertEqual(region, "Outer Rim Territories")
         self.assertEqual(system, "Tatoo system")
+        
+    def test_get_planet_serialize_1 (self) :
+        p = m.Planet(name="Kashyyyk", description="some description", image="some url", region="Mid Rim", system="Kashyyyk system")
+        result_info = p.serialize
+        
+        expected_info = {'description': 'some description', 'name': 'Kashyyyk', 'image': 'some url', 'region': 'Mid Rim', 'characters': ['Chewbacca'], 'species': 'Wookiee', 'system': 'Kashyyyk system'}
+        bool_result = result_info["name"] == expected_info["name"] and \
+                        result_info["region"] == expected_info["region"] and \
+                        result_info["system"] == expected_info["system"] and \
+                        result_info["description"] == expected_info["description"]
+
+        self.assertEqual(bool_result, True)
+
+    def test_get_planet_serialize_2 (self) :
+        p = m.Planet(name="Kamino", description="some description", image="some url", region="Wild Space", system="Kamino system")
+        result_info = p.serialize
+
+        expected_info = {'characters': ['Boba Fett'], 'name': 'Kamino', 'image': 'some url', 'system': 'Kamino system', 'region': 'Wild Space', 'species': 'Human', 'description': 'some description'}        
+        bool_result = result_info["name"] == expected_info["name"] and \
+                        result_info["region"] == expected_info["region"] and \
+                        result_info["system"] == expected_info["system"] and \
+                        result_info["description"] == expected_info["description"]
+
+        self.assertEqual(bool_result, True)
+
+    def test_get_planet_serialize_3 (self) :
+        p = m.Planet(name="Tatooine", description="some description", image="some url", region="Outer Rim Territories", system="Tatoo system")
+        result_info = p.serialize
+
+        expected_info = {'description': 'some description', 'name': 'Tatooine', 'species': 'Human', 'system': 'Tatoo system', 'characters': ['Darth Vader'], 'image': 'some url', 'region': 'Outer Rim Territories'}        
+        bool_result = result_info["name"] == expected_info["name"] and \
+                        result_info["region"] == expected_info["region"] and \
+                        result_info["system"] == expected_info["system"] and \
+                        result_info["description"] == expected_info["description"]
+
+        self.assertEqual(bool_result, True)
+
 
     # --------
     # species
@@ -452,6 +520,32 @@ class TestModels (TestCase) :
         self.assertEqual(image, "http://img2.wikia.nocookie.net/__cb20130115030417/starwars/images/a/a7/HuttNEGAS.png")
         self.assertEqual(language, "Huttese")
         self.assertEqual(classification, "Unknown")
+
+    def test_get_species_serialize_1 (self) :
+        s = m.Species(name="Human", planet="Coruscant", description="some description", image="some url", language="Galactic Basic Standard", classification="Mammal")
+        result_info = s.serialize
+        expected_info = {'language': 'Galactic Basic Standard', 'classification': 'Mammal', 'characters': ['Darth Vader', 'Boba Fett'], 'numberofcharacters': 1, 'image': 'some url', 'description': 'some description', 'name': 'Human', 'planet': 'Coruscant'}
+
+        bool_result = result_info["language"] == expected_info["language"] and \
+                        result_info["classification"] == expected_info["classification"] and \
+                        result_info["name"] == expected_info["name"] and \
+                        result_info["planet"] == expected_info["planet"]
+
+        self.assertEqual(bool_result, True)
+
+
+    def test_get_species_serialize_2 (self) :
+        s = m.Species(name="Wookiee", planet="Kashyyyk", description="some description", image="some url", language="Shyriiwook", classification="Mammal")
+        result_info = s.serialize
+
+        expected_info = {'name': 'Wookiee', 'classification': 'Mammal', 'language': 'Shyriiwook', 'image': 'some url', 'characters': 'Chewbacca', 'planet': 'Kashyyyk', 'numberofcharacters': 1, 'description': 'some description'}
+
+        bool_result = result_info["language"] == expected_info["language"] and \
+                        result_info["classification"] == expected_info["classification"] and \
+                        result_info["name"] == expected_info["name"] and \
+                        result_info["planet"] == expected_info["planet"]
+
+        self.assertEqual(bool_result, True)
 
 
 # ----
