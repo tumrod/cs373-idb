@@ -6,199 +6,94 @@
 
 from io       import StringIO
 from unittest import main, TestCase
-
-import models as m
+from models import *
+from setupDB import create_db
 
 # -----------
-# 
+#
 # -----------
 
 class TestModels (TestCase) :
+
     # ---------
     # character
     # ---------
 
     def test_character_1 (self) :
-        c = m.Character(name="Boba Fett", species="Human", planet="Kamino", description="some description", image="some url", gender="Male", birth="31.5 BBY", height="1.83 meters")
-        name = c.name
-        planet = c.planet
-        species = c.species
-        des = c.description
-        image = c.image
-        gender = c.gender
-        birth = c.birth
-        height = c.height
-        
-        self.assertEqual(name, "Boba Fett")
-        self.assertEqual(planet, "Kamino")
-        self.assertEqual(species, "Human")
-        self.assertEqual(des, "some description")
-        self.assertEqual(image, "some url")
-        self.assertEqual(gender, "Male")
-        self.assertEqual(birth, "31.5 BBY")
-        self.assertEqual(height, "1.83 meters")
+        c = Character.query.filter_by(name="Boba Fett")
+
+        self.assertEqual(c[0].name, "Boba Fett")
+        self.assertEqual(c[0].planet, "Kamino")
+        self.assertEqual(c[0].species, "Human")
+        self.assertEqual(c[0].gender, "Male")
+        self.assertEqual(c[0].birth, "31.5 BBY , Kamino")
+        self.assertEqual(c[0].height, "1.83 meters")
+
 
     def test_character_2 (self) :
-        c = m.Character(name="Chewbacca", species="Wookiee", planet="Kashyyyk", description="some description", image="some url", gender="Male", birth="200 BBY", height="2.28 meters")
-        name = c.name
-        planet = c.planet
-        species = c.species
-        des = c.description
-        image = c.image
-        gender = c.gender
-        birth = c.birth
-        height = c.height
-        
-        self.assertEqual(name, "Chewbacca")
-        self.assertEqual(planet, "Kashyyyk")
-        self.assertEqual(species, "Wookiee")
-        self.assertEqual(des, "some description")
-        self.assertEqual(image, "some url")
-        self.assertEqual(gender, "Male")
-        self.assertEqual(birth, "200 BBY")
-        self.assertEqual(height, "2.28 meters")
+        c = Character.query.filter_by(name="Chewbacca")
+
+        self.assertEqual(c[0].name, "Chewbacca")
+        self.assertEqual(c[0].planet, "Kashyyyk")
+        self.assertEqual(c[0].species, "Wookiee")
+        self.assertEqual(c[0].gender, "Male")
+        self.assertEqual(c[0].birth, "200 BBY, Kashyyyk")
+        self.assertEqual(c[0].height, "2.28 meters")
 
     def test_character_3 (self) :
-        c = m.Character(name="Darth Vader", species="Human", planet="Tatooine", description="some description", image="some url", gender="Male", birth="41.9 BBY", height="2.02 meters")
-        name = c.name
-        planet = c.planet
-        species = c.species
-        des = c.description
-        image = c.image
-        gender = c.gender
-        birth = c.birth
-        height = c.height
-        
-        self.assertEqual(name, "Darth Vader")
-        self.assertEqual(planet, "Tatooine")
-        self.assertEqual(species, "Human")
-        self.assertEqual(des, "some description")
-        self.assertEqual(image, "some url")
-        self.assertEqual(gender, "Male")
-        self.assertEqual(birth, "41.9 BBY")
-        self.assertEqual(height, "2.02 meters")
+        c = Character.query.filter_by(name="Darth Vader")
 
-    def test_get_all_characters_name(self) :
-        characters = m.Character.get_all()
+        self.assertEqual(c[0].name, "Darth Vader")
+        self.assertEqual(c[0].planet, "Tatooine")
+        self.assertEqual(c[0].species, "Human")
+        self.assertEqual(c[0].gender, "Male")
+        self.assertEqual(c[0].birth, "41.9 BBY")
+        self.assertEqual(c[0].height, "1.88 meters, later 2.02 in armor")
+
+    def test_get_all_1(self) :
+        characters = Character.get_all()
         char_name = [characters[i].name for i in range(len(characters))]
-        expected = ['Boba Fett', 'Chewbacca', 'Darth Vader', 'Ahsoka Tano']
+        expected = ['Greedo', 'Anakin Solo', 'Garindan', 'C-3PO', 'Dorsk 81', 'Ree-Yees', 'Lowbacca', 'Bossk', 'Hethrir', 'Dengar', 'Chewbacca', 'Tionne', 'Moruth Doole', 'Winter', 'Yoda', 'Lando Calrissian', 'Leia Organa Solo', 'Roganda Ismaren', 'Vima-Da-Boda', 'Wicket Wystri Warrick', 'Davin Felth', 'Owen Lars', 'Weequay', 'Grand Admiral Thrawn', 'Biggs Darklighter', 'Lak Sivrak', 'Emperor Palpatine', 'IG-88', 'Nien Nunb', 'Prince Isolder', 'Kyp Durron', 'Cindel Towani', 'Mako Spince', 'Momaw Nadon', 'Gaeriel Captison', '4-LOM', 'Admiral Daala', 'Mon Mothma', 'Ken', 'Tigris', 'Han Solo', 'Nichos Marr', 'Jabba the Hutt', 'Gallandro', 'Salla Zend', 'Mara Jade', 'Teneniel Djo', 'Nomi Sunrider', 'Luke Skywalker', 'Ponda Baba', 'Gethzerion', 'Obi-Wan Kenobi', 'Jacen Solo', 'General Jan Dodonna', 'Garm Bel Iblis', 'Pter Thanas', "Yarna D'al' Gargan", 'General Crix Madine', 'Callista', 'Qwi Xux', 'Grand Moff Tarkin', 'Bib Fortuna', 'Tenel Ka', 'Lobot', 'Labria', 'Triclops', "Emperor's Royal Guards", 'Tusken Raiders', 'Wedge Antilles', 'Shug Ninx', 'Brea Tonnika', "Elder Sh'tk'ith", "Joruus C'baoth", 'Dannik Jerriko', 'Barada', 'Tessek', 'Khabarakh', 'Rillao', 'Ephant Mon', 'Talon Karrde', 'Lady Valarian', 'Admiral Ackbar', 'Exar Kun', "Figrin D'an", 'Oola', 'Ulic Qel-Droma', "Borsk Fey'lya", 'Het Nkik', 'Kabe', 'Zuckuss', 'Captain Gilad Pellaeon', 'Darth Vader', 'Salacious Crumb', 'Bodo Baas', 'Bollux', 'Dev Sibwarra', 'Gartogg', 'Princess Kneesaa', 'Boba Fett', 'Muftak']
 
         # comparing the two list elements ignoring order
         result = not set(char_name).isdisjoint(expected)
 
         self.assertEqual(result, True)
 
-    def test_get_all_characters_planet(self) :
-        characters = m.Character.get_all()
-        char_planet = [characters[i].planet for i in range(len(characters))]
-        expected = ['Kamino', 'Kashyyyk', 'Tatooine', 'Shili']
+    def test_get_character_1(self):
+        c = Character.get("Chewbacca")
+        self.assertEqual(c.name, "Chewbacca")
+        self.assertEqual(c.planet, "Kashyyyk")
+        self.assertEqual(c.species, "Wookiee")
+        self.assertEqual(c.gender, "Male")
+        self.assertEqual(c.birth, "200 BBY, Kashyyyk")
+        self.assertEqual(c.height, "2.28 meters")
 
-        # comparing the two list elements ignoring order
-        result = not set(char_planet).isdisjoint(expected)
-
-        self.assertEqual(result, True)
-
-    def test_get_all_characters_species(self) :
-        characters = m.Character.get_all()
-        char_species = [characters[i].species for i in range(len(characters))]
-        expected = ['Human', 'Wookiee', 'Human', 'Togruta']
-
-        # comparing the two list elements ignoring order
-        result = not set(char_species).isdisjoint(expected)
-
-        self.assertEqual(result, True)
-
-    def test_get_all_characters_gender(self) :
-        characters = m.Character.get_all()
-        char_genders = [characters[i].gender for i in range(len(characters))]
-        expected = ['Male', 'Male', 'Male', 'Female']
-    
-        # comparing the two list elements ignoring order
-        result = not set(char_genders).isdisjoint(expected)
-
-        self.assertEqual(result, True)
-
-    def test_get_all_characters_height(self) :
-        characters = m.Character.get_all()
-        char_height = [characters[i].height for i in range(len(characters))]
-        expected = ['1.83 meters', '2.28 meters', '2.02 meters', '1.61 meters']
-        
-        # comparing the two list elements ignoring order
-        result = not set(char_height).isdisjoint(expected)
-
-        self.assertEqual(result, True)
-
-    def test_get_character_2(self) :
-        c = m.Character.get("Boba Fett")
+    def test_get_character_2(self):
+        c = Character.get("Boba Fett")
 
         self.assertEqual(c.name, "Boba Fett")
         self.assertEqual(c.planet, "Kamino")
         self.assertEqual(c.species, "Human")
-        #self.assertEqual(c.description, "Boba Fett was a Mandalorian warrior and bounty hunter. He was the only unaltered clone of the famed Jango Fett, created in 32 BBY as unit A0050, one of the first of many Fett replicas designed to become part of the Grand Army of the Republic, and was raised as Jango's son. Jango taught Boba much, training him to become a skilled bounty hunter as was his father-figure before him. In 22 BBY, Jango was killed at the Battle of Geonosis, which opened the Clone Wars. Just a boy, Boba was forced to grow up and took to traveling the galaxy. Later, he became a bounty hunter and took assignments from beings such as Jabba the Hutt, and achieved notoriety despite his young age.")
-        self.assertEqual(c.image, "http://img2.wikia.nocookie.net/__cb20130920001614/starwars/images/5/58/BobaFettMain2.jpg")
         self.assertEqual(c.gender, "Male")
         self.assertEqual(c.birth, "31.5 BBY , Kamino")
         self.assertEqual(c.height, "1.83 meters")
 
-    def test_get_character_3(self) :
-        c = m.Character.get("Chewbacca")
+    def test_get_character_3(self):
+        c = Character.get("Darth Vader")
 
-        self.assertEqual(c.name, "Chewbacca")
-        self.assertEqual(c.planet, "Kashyyyk")
-        self.assertEqual(c.species, "Wookiee")
-        #self.assertEqual(c.description, "Chewbacca (or \"Chewie\", as he was known by his friends) was a legendary Wookiee from Kashyyyk and co-pilot of Han Solo's ship, the Millennium Falcon. He was the son of Attichitcuk, the husband of Mallatobuck, and the father of Lumpawaroo. Chewbacca carried with him the name of an ancient Wookiee hero, the great Bacca, first of the great chieftains of Kashyyyk, and the creator of a sword that denoted leadership among the Wookiees. This name placed Chewbacca in a noble lineage, which was further supported by his role in the Battle of Kashyyyk during the Clone Wars and during the Galactic Civil War.")
-        self.assertEqual(c.image, "http://img4.wikia.nocookie.net/__cb20080815045819/starwars/images/thumb/7/73/Chewbaccaheadshot.jpg/500px-Chewbaccaheadshot.jpg")
+        self.assertEqual(c.name, "Darth Vader")
+        self.assertEqual(c.planet, "Tatooine")
+        self.assertEqual(c.species, "Human")
         self.assertEqual(c.gender, "Male")
-        self.assertEqual(c.birth, "200 BBY, Kashyyyk")
-        self.assertEqual(c.height, "2.28 meters")
-        
-    def test_get_character_serialize_1 (self) :
-        c = m.Character(name="Darth Vader", species="Human", planet="Tatooine", description="some description", image="some url", gender="Male", birth="41.9 BBY", height="2.02 meters")
-        result_info = c.serialize
-        expected_info = {'birth': '41.9 BBY', 'height': '2.02 meters', 'planet': 'Tatooine', 'image': 'some url', 'name': 'Darth Vader', 'species': 'Human', 'gender': 'Male', 'description': 'some description'}
+        self.assertEqual(c.birth, "41.9 BBY")
+        self.assertEqual(c.height, "1.88 meters, later 2.02 in armor")
 
-        bool_result = result_info["birth"] == expected_info["birth"] and \
-                        result_info["height"] == expected_info["height"] and \
-                        result_info["planet"] == expected_info["planet"] and \
-                        result_info["name"] == expected_info["name"] and \
-                        result_info["species"] == expected_info["species"] and \
-                        result_info["gender"] == expected_info["gender"]
-
-        self.assertEqual(bool_result, True)
-
-    def test_get_character_serialize_2 (self) :
-        c = m.Character(name="Chewbacca", species="Wookiee", planet="Kashyyyk", description="some description", image="some url", gender="Male", birth="200 BBY", height="2.28 meters")
-        result_info = c.serialize
-
-        expected_info = {'planet': 'Kashyyyk', 'description': 'some description', 'image': 'some url', 'name': 'Chewbacca', 'species': 'Wookiee', 'birth': '200 BBY', 'gender': 'Male', 'height': '2.28 meters'}
-
-        bool_result = result_info["birth"] == expected_info["birth"] and \
-                        result_info["height"] == expected_info["height"] and \
-                        result_info["planet"] == expected_info["planet"] and \
-                        result_info["name"] == expected_info["name"] and \
-                        result_info["species"] == expected_info["species"] and \
-                        result_info["gender"] == expected_info["gender"]
-
-        self.assertEqual(bool_result, True)
-
-    def test_get_character_serialize_3 (self) :
-        c = m.Character(name="Boba Fett", species="Human", planet="Kamino", description="some description", image="some url", gender="Male", birth="31.5 BBY", height="1.83 meters")
-        result_info = c.serialize
-
-        expected_info = {'birth': '31.5 BBY', 'planet': 'Kamino', 'gender': 'Male', 'image': 'some url', 'name': 'Boba Fett', 'species': 'Human', 'description': 'some description', 'height': '1.83 meters'}        
-        bool_result = result_info["birth"] == expected_info["birth"] and \
-                        result_info["height"] == expected_info["height"] and \
-                        result_info["planet"] == expected_info["planet"] and \
-                        result_info["name"] == expected_info["name"] and \
-                        result_info["species"] == expected_info["species"] and \
-                        result_info["gender"] == expected_info["gender"]
-
-        self.assertEqual(bool_result, True)
 
     # ------
     # planet
     # ------
-
+    '''
     def test_planet_1 (self) :
         p = m.Planet(name="Tatooine", description="some description", image="some url", region="Outer Rim Territories", system="Tatoo system")
         name = p.name
@@ -206,7 +101,7 @@ class TestModels (TestCase) :
         image = p.image
         region = p.region
         system = p.system
-        
+
         self.assertEqual(name, "Tatooine")
         self.assertEqual(des, "some description")
         self.assertEqual(image, "some url")
@@ -220,7 +115,7 @@ class TestModels (TestCase) :
         image = p.image
         region = p.region
         system = p.system
-        
+
         self.assertEqual(name, "Kamino")
         self.assertEqual(des, "some description")
         self.assertEqual(image, "some url")
@@ -234,7 +129,7 @@ class TestModels (TestCase) :
         image = p.image
         region = p.region
         system = p.system
-        
+
         self.assertEqual(name, "Kashyyyk")
         self.assertEqual(des, "some description")
         self.assertEqual(image, "some url")
@@ -345,11 +240,11 @@ class TestModels (TestCase) :
         self.assertEqual(image, "http://img2.wikia.nocookie.net/__cb20130226044533/starwars/images/thumb/1/18/Tatooine3.png/500px-Tatooine3.png")
         self.assertEqual(region, "Outer Rim Territories")
         self.assertEqual(system, "Tatoo system")
-        
+
     def test_get_planet_serialize_1 (self) :
         p = m.Planet(name="Kashyyyk", description="some description", image="some url", region="Mid Rim", system="Kashyyyk system")
         result_info = p.serialize
-        
+
         expected_info = {'description': 'some description', 'name': 'Kashyyyk', 'image': 'some url', 'region': 'Mid Rim', 'characters': ['Chewbacca'], 'species': 'Wookiee', 'system': 'Kashyyyk system'}
         bool_result = result_info["name"] == expected_info["name"] and \
                         result_info["region"] == expected_info["region"] and \
@@ -362,7 +257,7 @@ class TestModels (TestCase) :
         p = m.Planet(name="Kamino", description="some description", image="some url", region="Wild Space", system="Kamino system")
         result_info = p.serialize
 
-        expected_info = {'characters': ['Boba Fett'], 'name': 'Kamino', 'image': 'some url', 'system': 'Kamino system', 'region': 'Wild Space', 'species': 'Human', 'description': 'some description'}        
+        expected_info = {'characters': ['Boba Fett'], 'name': 'Kamino', 'image': 'some url', 'system': 'Kamino system', 'region': 'Wild Space', 'species': 'Human', 'description': 'some description'}
         bool_result = result_info["name"] == expected_info["name"] and \
                         result_info["region"] == expected_info["region"] and \
                         result_info["system"] == expected_info["system"] and \
@@ -374,7 +269,7 @@ class TestModels (TestCase) :
         p = m.Planet(name="Tatooine", description="some description", image="some url", region="Outer Rim Territories", system="Tatoo system")
         result_info = p.serialize
 
-        expected_info = {'description': 'some description', 'name': 'Tatooine', 'species': 'Human', 'system': 'Tatoo system', 'characters': ['Darth Vader'], 'image': 'some url', 'region': 'Outer Rim Territories'}        
+        expected_info = {'description': 'some description', 'name': 'Tatooine', 'species': 'Human', 'system': 'Tatoo system', 'characters': ['Darth Vader'], 'image': 'some url', 'region': 'Outer Rim Territories'}
         bool_result = result_info["name"] == expected_info["name"] and \
                         result_info["region"] == expected_info["region"] and \
                         result_info["system"] == expected_info["system"] and \
@@ -396,7 +291,7 @@ class TestModels (TestCase) :
         image = s.image
         language = s.language
         classification = s.classification
-        
+
         self.assertEqual(name, "Wookiee")
         self.assertEqual(str(characters), "[<name Chewbacca>, <name Lowbacca>]")
         self.assertEqual(planet, "Kashyyyk")
@@ -413,7 +308,7 @@ class TestModels (TestCase) :
         image = s.image
         language = s.language
         classification = s.classification
-        
+
         self.assertEqual(name, "Human")
         self.assertEqual(planet, "Coruscant")
         self.assertEqual(des, "some description")
@@ -547,11 +442,14 @@ class TestModels (TestCase) :
 
         self.assertEqual(bool_result, True)
 
+    '''
+
 
 # ----
 # main
 # ----
 if __name__ == "__main__" :
+    create_db()
     main()
 
 
