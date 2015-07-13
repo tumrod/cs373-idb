@@ -318,7 +318,7 @@ class TestModels (TestCase) :
     # --------
     # species
     # --------
-    '''
+
     def test_species_1 (self) :
         s = m.Species(name="Wookiee", planet="Kashyyyk", description="some description", image="some url", language="Shyriiwook", classification="Mammal")
         name = s.name
@@ -330,7 +330,7 @@ class TestModels (TestCase) :
         classification = s.classification
         
         self.assertEqual(name, "Wookiee")
-        self.assertEqual(characters, ["<name Chewbacca>", "<name Lowbacca>"])
+        self.assertEqual(str(characters), "[<name Chewbacca>, <name Lowbacca>]")
         self.assertEqual(planet, "Kashyyyk")
         self.assertEqual(des, "some description")
         self.assertEqual(image, "some url")
@@ -352,7 +352,7 @@ class TestModels (TestCase) :
         self.assertEqual(image, "some url")
         self.assertEqual(language, "Galactic Basic Standard")
         self.assertEqual(classification, "Mammal")
-    '''
+
 
     def test_get_all_species_name (self) :
         species = m.Species.get_all()
