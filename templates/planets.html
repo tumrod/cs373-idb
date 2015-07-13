@@ -75,20 +75,32 @@
                         <td>{{ planet.region }}</td>
                         <td>{{ planet.system }}</td>
                         <td>
-                            <select value="characters" id="sort-order-character-{{ planet.name }}">
-                                {% for character in planet.get_characters() %}
-                                    <option value="{{ character.name }}">{{ character.name }}</option>
-                                {% endfor %}
+                            <select value="characters" id="sort_order_character_{{ planet.name }}">
+
+                                {% if planet.get_characters()|length == 0 %}
+                                    <option value="Unknown">Unknown</option>
+                                {% else %}
+                                    {% for character in planet.get_characters() %}
+                                        <option value="{{ character.name }}">{{ character.name }}</option>
+                                    {% endfor %}
+                                {% endif %}
+
                             </select>
-                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect-to-selected-character-in-{{ planet.name }}">Go</button>
+                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect_to_selected_character_in_{{ planet.name }}">Go</button>
                         </td>
                         <td>
                             <select id="sort-order-species-{{ planet.name }}">
-                                {% for species in planet.get_species() %}
-                                    <option value="{{ species.name }}">{{ species.name }}</option>
-                                {% endfor %}
+
+                                {% if planet.get_species()|length == 0 %}
+                                    <option value="Unknown">Unknown</option>
+                                {% else %}
+                                    {% for species in planet.get_species() %}
+                                        <option value="{{ species }}">{{ species }}</option>
+                                    {% endfor %}
+                                {% endif %}
+
                             </select>
-                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-species' id="redirect-to-selected-species-in-{{ planet.name }}">Go</button>
+                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-species' id="redirect_to_selected_species_in_{{ planet.name }}">Go</button>
                         </td>
                     </tr>
                 {% endfor %}
