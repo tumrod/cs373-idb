@@ -15,6 +15,12 @@ install:
     - pip install --upgrade pip
     - pip install coverage
     - sudo apt-get install python-numpy
+    - sudo apt-get install postgresql-9.4
+    - pip3 install flask
+    - pip3 install flask.ext.sqlalchemy
+    - sudo apt-get update
+    - sudo apt-get install libpq-dev python-dev
+    - pip3 install psycopg2
 
 before_script:
     - uname -a
@@ -24,6 +30,7 @@ before_script:
     - python3 --version
     - coverage3 --version
     - python3 -c "import numpy; print(numpy.__version__)"
+
 
 script:
     - date
