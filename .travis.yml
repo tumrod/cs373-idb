@@ -18,8 +18,6 @@ install:
     - sudo apt-get install postgresql postgresql-contrib
     - pip3 install flask
     - pip3 install Flask-SQLALchemy
-    - sudo apt-get install libpq-dev python3.4-dev
-    - pip3 install psycopg2
 
 before_script:
     - uname -a
