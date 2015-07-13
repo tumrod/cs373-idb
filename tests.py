@@ -4,9 +4,8 @@
 # imports
 # -------
 
-from io       import StringIO
 from unittest import main, TestCase
-from models import *
+from models import Character, Planet, Species
 from setupDB import create_db
 
 # -----------
@@ -28,7 +27,6 @@ class TestModels (TestCase) :
         self.assertEqual(c[0].gender, "Male")
         self.assertEqual(c[0].birth, "31.5 BBY , Kamino")
         self.assertEqual(c[0].height, "1.83 meters")
-
 
     def test_character_2 (self) :
         c = Character.query.filter_by(name="Chewbacca")
@@ -89,8 +87,6 @@ class TestModels (TestCase) :
         self.assertEqual(c.birth, "41.9 BBY")
         self.assertEqual(c.height, "1.88 meters, later 2.02 in armor")
 
-    def test_character_serialize(self):
-        c = Character.get("Chewbacca")
     # ------
     # planet
     # ------
@@ -276,70 +272,45 @@ class TestModels (TestCase) :
                         result_info["system"] == expected_info["system"] and \
                         result_info["description"] == expected_info["description"]
 
-        self.assertEqual(bool_result, True)
-
+        self.assertEqual(bool_result, True) '''
 
     # --------
     # species
     # --------
 
     def test_species_1 (self) :
-        s = m.Species(name="Wookiee", planet="Kashyyyk", description="some description", image="some url", language="Shyriiwook", classification="Mammal")
-        name = s.name
-        characters = s.get_characters()
-        planet = s.planet
-        des = s.description
-        image = s.image
-        language = s.language
-        classification = s.classification
+        c = Species.query.filter_by(name="Wookiee")
 
-        self.assertEqual(name, "Wookiee")
-        self.assertEqual(str(characters), "[<name Chewbacca>, <name Lowbacca>]")
-        self.assertEqual(planet, "Kashyyyk")
-        self.assertEqual(des, "some description")
-        self.assertEqual(image, "some url")
-        self.assertEqual(language, "Shyriiwook")
-        self.assertEqual(classification, "Mammal")
+        self.assertEqual(c[0].name, "Wookiee")
+        self.assertEqual(c[0].planet, "Kashyyyk")
+        self.assertEqual(c[0].language, "Shyriiwook\nXaczik\nThykarann")
+        self.assertEqual(c[0].classification, "Mammal")
 
     def test_species_2 (self) :
-        s = m.Species(name="Human", planet="Coruscant", description="some description", image="some url", language="Galactic Basic Standard", classification="Mammal")
-        name = s.name
-        planet = s.planet
-        des = s.description
-        image = s.image
-        language = s.language
-        classification = s.classification
+        c = Species.query.filter_by(name="Hutt")
 
-        self.assertEqual(name, "Human")
-        self.assertEqual(planet, "Coruscant")
-        self.assertEqual(des, "some description")
-        self.assertEqual(image, "some url")
-        self.assertEqual(language, "Galactic Basic Standard")
-        self.assertEqual(classification, "Mammal")
+        self.assertEqual(c[0].name, "Hutt")
+        self.assertEqual(c[0].planet, "Varl")
+        self.assertEqual(c[0].language, "Huttese")
+        self.assertEqual(c[0].classification, "Unknown")
 
+    def test_species_3 (self) :
+        c = Species.query.filter_by(name="Human")
 
-    def test_get_all_species_name (self) :
-        species = m.Species.get_all()
+        self.assertEqual(c[0].name, "Human")
+        self.assertEqual(c[0].classification, "Mammal")
 
+    def test_get_all_species_1(self) :
+        species = Species.get_all()
         species_name = [species[i].name for i in range(len(species))]
-        expected = ['Wookiee', 'Human', 'Bith', 'Omwati']
-
+        expected = ['Krevaaki', 'Jawa', 'Ewok', 'Rodian', 'Kiffar', 'Talz', 'Gand', 'Noghri', 'Aqualish', 'Bothan', 'Kubaz', 'Quarren', 'Sullustan', 'Ssi-ruuk', 'Chevin', 'Khommite', 'Hutt', 'Chadra-Fan', 'Bith', 'Kowakian monkey-lizard', 'Gran', 'Chiss', 'Trandoshan', 'Wookiee', "Twi'lek", 'Dathomirian', 'Omwati', 'Shistavanen', 'Klatooinian', 'Whiphid', 'Human', 'Firrerreo', 'Anzati', 'Ithorian', 'Devaronian', "Yoda's species", 'Rybet', 'Gamorrean']
         # comparing the two list elements ignoring order
         result = not set(species_name).isdisjoint(expected)
 
         self.assertEqual(result, True)
 
-    def test_get_all_species_characters (self) :
-        species = m.Species.get_all()
-        species_char = [species[i].characters for i in range(len(species))]
-        expected = [0, 1, 2, 3, 44]
-
-        result = not set(species_char).isdisjoint(expected)
-
-        self.assertEqual(result, True)
-
     def test_get_all_species_planets (self) :
-        species = m.Species.get_all()
+        species = Species.get_all()
         species_planets = [species[i].planet for i in range(len(species))]
         expected = ['Kashyyyk', 'Coruscant', "Clak'dor VII", 'Omwat']
 
@@ -349,9 +320,9 @@ class TestModels (TestCase) :
         self.assertEqual(result, True)
 
     def test_get_all_species_language (self) :
-        species = m.Species.get_all()
+        species = Species.get_all()
         species_language = [species[i].language for i in range(len(species))]
-        expected = ['Shyriiwook', 'Galactic Basic Standard', 'Bith', 'Omwatese']
+        expected = ['Unknown', 'Jawaese', 'Ewokese', 'Rodese, Basic, Huttese', 'Unknown', 'Talzzi', 'Gand', 'Honoghran', 'Aqualish\nGalactic Basic Standard', 'Bothese \nBotha \nGalactic Basic Standard', 'Kubazian', 'Quarrenese', 'Sullustese', 'Ssi-ruuvi', 'Chevin', 'Galactic Basic Standard', 'Huttese', 'Chadra-Fan', 'Bith', 'Unknown', 'Gran', 'Cheunh\nSy Bisti\nMinnisiat\nOther trade languages', 'Dosh', 'Shyriiwook\nXaczik\nThykarann', "Twi'leki, Basic, Lekku", 'Galactic Basic Standard', 'Omwatese', 'Shistavanen \nBasic', 'Huttese\nKlatooinian', 'Whiphid', 'Galactic Basic Standard\nOthers', 'Unknown', 'Anzat language\nGalactic Basic Standard', 'Ithorese', 'Devaronese', 'Unknown', 'Rybese', 'Gamorrese']
 
         # comparing the two list elements ignoring order
         result = not set(species_language).isdisjoint(expected)
@@ -359,66 +330,17 @@ class TestModels (TestCase) :
         self.assertEqual(result, True)
 
     def test_get_all_species_classification (self) :
-        species = m.Species.get_all()
+        species = Species.get_all()
         species_classification = [species[i].classification for i in range(len(species))]
-        expected = ['Mammal', 'Mammal', 'Craniopod', 'Near-Human']
+        expected = ['Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Insectoid', 'Unknown', 'Amphibian', 'Mammal', 'Mammalian', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Craniopod', 'Reptilian', 'Unknown', 'Unknown', 'Unknown', 'Mammal', 'Unknown', 'Unknown', 'Near-Human', 'Unknown', 'Unknown', 'Unknown', 'Mammal', 'Unknown', 'Humanoid', 'Unknown', 'Unknown', 'Unknown', 'Unknown', 'Unknown']
 
         # comparing the two list elements ignoring order
         result = not set(species_classification).isdisjoint(expected)
 
         self.assertEqual(result, True)
 
-    def test_get_species_1 (self) :
-        s = m.Species.get("Wookiee")
-        name = s.name
-        characters = s.get_characters()
-        planet = s.planet
-        des = s.description
-        image = s.image
-        language = s.language
-        classification = s.classification
-
-        self.assertEqual(name, "Wookiee")
-        self.assertEqual(str(characters), "[<name Chewbacca>, <name Lowbacca>]")
-        self.assertEqual(planet, "Kashyyyk")
-        self.assertEqual(language, "Shyriiwook\nXaczik\nThykarann")
-        self.assertEqual(classification, "Mammal")
-
-    def test_get_species_2 (self) :
-        s = m.Species.get("Human")
-        name = s.name
-        planet = s.planet
-        des = s.description
-        image = s.image
-        language = s.language
-        classification = s.classification
-
-        self.assertEqual(name, "Human")
-        self.assertEqual(planet, "Coruscant")
-        self.assertEqual(des, "Unknown")
-        self.assertEqual(image, "http://img3.wikia.nocookie.net/__cb20100628191857/starwars/images/5/5d/Humans-TESB30.jpg")
-        self.assertEqual(language, "Galactic Basic Standard\nOthers")
-        self.assertEqual(classification, "Mammal")
-
-    def test_get_species_3 (self) :
-        s = m.Species.get("Hutt")
-        name = s.name
-        characters = s.get_characters()
-        planet = s.planet
-        des = s.description
-        image = s.image
-        language = s.language
-        classification = s.classification
-
-        self.assertEqual(name, "Hutt")
-        self.assertEqual(str(characters), "[<name Jabba the Hutt>]")
-        self.assertEqual(planet, "Varl")
-        self.assertEqual(image, "http://img2.wikia.nocookie.net/__cb20130115030417/starwars/images/a/a7/HuttNEGAS.png")
-        self.assertEqual(language, "Huttese")
-        self.assertEqual(classification, "Unknown")
-
     def test_get_species_serialize_1 (self) :
-        s = m.Species(name="Human", planet="Coruscant", description="some description", image="some url", language="Galactic Basic Standard", classification="Mammal")
+        s = Species(name="Human", planet="Coruscant", description="some description", image="some url", language="Galactic Basic Standard", classification="Mammal")
         result_info = s.serialize
         expected_info = {'language': 'Galactic Basic Standard', 'classification': 'Mammal', 'characters': ['Darth Vader', 'Boba Fett'], 'numberofcharacters': 1, 'image': 'some url', 'description': 'some description', 'name': 'Human', 'planet': 'Coruscant'}
 
@@ -429,9 +351,8 @@ class TestModels (TestCase) :
 
         self.assertEqual(bool_result, True)
 
-
     def test_get_species_serialize_2 (self) :
-        s = m.Species(name="Wookiee", planet="Kashyyyk", description="some description", image="some url", language="Shyriiwook", classification="Mammal")
+        s = Species(name="Wookiee", planet="Kashyyyk", description="some description", image="some url", language="Shyriiwook", classification="Mammal")
         result_info = s.serialize
 
         expected_info = {'name': 'Wookiee', 'classification': 'Mammal', 'language': 'Shyriiwook', 'image': 'some url', 'characters': 'Chewbacca', 'planet': 'Kashyyyk', 'numberofcharacters': 1, 'description': 'some description'}
@@ -443,13 +364,10 @@ class TestModels (TestCase) :
 
         self.assertEqual(bool_result, True)
 
-    '''
-
-
 # ----
 # main
 # ----
-if __name__ == "__main__" :
+if __name__ == "__main__":
     create_db()
     main()
 
