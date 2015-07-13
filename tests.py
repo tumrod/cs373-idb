@@ -90,189 +90,124 @@ class TestModels (TestCase) :
     # ------
     # planet
     # ------
-    '''
-    def test_planet_1 (self) :
-        p = m.Planet(name="Tatooine", description="some description", image="some url", region="Outer Rim Territories", system="Tatoo system")
-        name = p.name
-        des = p.description
-        image = p.image
-        region = p.region
-        system = p.system
 
-        self.assertEqual(name, "Tatooine")
-        self.assertEqual(des, "some description")
-        self.assertEqual(image, "some url")
-        self.assertEqual(region, "Outer Rim Territories")
-        self.assertEqual(system, "Tatoo system")
+    def test_planet_1(self):
+        p = Planet.query.filter_by(name="Kamino")
 
-    def test_planet_2 (self) :
-        p = m.Planet(name="Kamino", description="some description", image="some url", region="Wild Space", system="Kamino system")
-        name = p.name
-        des = p.description
-        image = p.image
-        region = p.region
-        system = p.system
+        self.assertEqual(p[0].name, "Kamino")
+        self.assertEqual(p[0].region, "Wild Space\nExtra-galactic")
+        self.assertEqual(p[0].system, "Kamino system")
 
-        self.assertEqual(name, "Kamino")
-        self.assertEqual(des, "some description")
-        self.assertEqual(image, "some url")
-        self.assertEqual(region, "Wild Space")
-        self.assertEqual(system, "Kamino system")
+    def test_planet_2(self):
+        p = Planet.query.filter_by(name="Kashyyyk")
 
-    def test_planet_3 (self) :
-        p = m.Planet(name="Kashyyyk", description="some description", image="some url", region="Mid Rim", system="Kashyyyk system")
-        name = p.name
-        des = p.description
-        image = p.image
-        region = p.region
-        system = p.system
+        self.assertEqual(p[0].name, "Kashyyyk")
+        self.assertEqual(p[0].region, "Mid Rim")
+        self.assertEqual(p[0].system, "Kashyyyk system")
 
-        self.assertEqual(name, "Kashyyyk")
-        self.assertEqual(des, "some description")
-        self.assertEqual(image, "some url")
-        self.assertEqual(region, "Mid Rim")
-        self.assertEqual(system, "Kashyyyk system")
+    def test_planet_3(self):
+        p = Planet.query.filter_by(name="Tatooine")
 
-    def test_get_all_planets_name(self) :
-        planets = m.Planet.get_all()
-        planet_name = [planets[i].name for i in range(len(planets))]
-        expected = ['Tatooine', 'Kamino', 'Kashyyyk', 'Coruscant']
+        self.assertEqual(p[0].name, "Tatooine")
+        self.assertEqual(p[0].region, "Outer Rim Territories")
+        self.assertEqual(p[0].system, "Tatoo system")
+
+    def test_get_all_planets(self):
+        planets = Planet.get_all()
+        char_name = [planets[i].name for i in range(len(planets))]
+        expected = ['Kashyyyk', 'Tatooine', 'Ando', 'Rindao', 'Omwat', 'Ithor', 'Gamorr', 'Kubindi', 'Kiffex',
+                    'Coruscant', 'Honoghr', 'Csilla', 'Anzat', 'Deyer', 'Corellia', 'Bakura', 'Chandrila',
+                    'Nar Shaddaa', 'Dac', 'Kinyen', 'Wayland', 'Vinsoth', 'Toola', 'Firrerre', 'Kothlis', 'Ator',
+                    'Yavin 4', 'Commenor', 'Ylix', 'Sullust', 'Chad', 'Alzoc III', 'Klatooine', 'Eriadu', 'Nal Hutta',
+                    'Endor', 'Rodia', 'Stewjon', 'Devaron', 'Ryloth', 'Hapes', 'Dathomir', 'Gand', 'Alderaan',
+                    'Trandosha', 'Khomm', 'Irmenu', "Clak'dor VII", 'Lwhekk', 'Kamino', 'Sriluur', 'Kowak', 'Naboo',
+                    'Bespin', 'Socorro']
 
         # comparing the two list elements ignoring order
-        result = not set(planet_name).isdisjoint(expected)
+        result = not set(char_name).isdisjoint(expected)
 
         self.assertEqual(result, True)
 
-    def test_get_all_planets_characters(self) :
-        planets = m.Planet.get_all()
-        planet_char = [planets[i].characters for i in range(len(planets))]
-        expected = ['0', '1', '2', '3', '4']
+    def test_get_planet_1(self):
+        p = Planet.get("Kamino")
+        self.assertEqual(p.name, "Kamino")
+        self.assertEqual(p.region, "Wild Space\nExtra-galactic")
+        self.assertEqual(p.system, "Kamino system")
 
-        result = not set(planet_char).isdisjoint(expected)
+    def test_get_planet_2(self):
+        p = Planet.get("Kashyyyk")
+        self.assertEqual(p.name, "Kashyyyk")
+        self.assertEqual(p.region, "Mid Rim")
+        self.assertEqual(p.system, "Kashyyyk system")
 
-        self.assertEqual(result, True)
+    def test_get_planet_3(self):
+        p = Planet.get("Tatooine")
+        self.assertEqual(p.name, "Tatooine")
+        self.assertEqual(p.region, "Outer Rim Territories")
+        self.assertEqual(p.system, "Tatoo system")
 
-
-    def test_get_all_planets_species(self) :
-        planets = m.Planet.get_all()
-        planet_species = [planets[i].name for i in range(len(planets))]
-        expected = ['Tatooine', 'Kamino', 'Kashyyyk', 'Coruscant']
-
-        # comparing the two list elements ignoring order
-        result = not set(planet_species).isdisjoint(expected)
-
-        self.assertEqual(result, True)
-
-    def test_get_all_planets_regions(self) :
-        planets = m.Planet.get_all()
-        planet_regions = [planets[i].region for i in range(len(planets))]
-        expected = ['Outer Rim Territories', 'Wild Space', 'Mid Rim', 'Core Worlds']
-        # comparing the two list elements ignoring order
-        result = not set(planet_regions).isdisjoint(expected)
-
-        self.assertEqual(result, True)
-
-    def test_get_all_planets_systems(self) :
-        planets = m.Planet.get_all()
-        planet_systems = [planets[i].system for i in range(len(planets))]
-        expected = ['Tatoo system', 'Kamino system', 'Kashyyyk system', 'Coruscant system']
-
-        # comparing the two list elements ignoring order
-        result = not set(planet_systems).isdisjoint(expected)
-
-        self.assertEqual(result, True)
-
-    def test_get_planet_1(self) :
-        p = m.Planet.get("Kamino")
-        name = p.name
-        characters = p.get_characters()
+    def test_planet_get_species_1(self):
+        p = Planet.get("Kamino")
         species = p.get_species()
-        des = p.description
-        image = p.image
-        region = p.region
-        system = p.system
+        expected = ["Human"]
 
+        # comparing the two list elements ignoring order
+        result = not set(species).isdisjoint(expected)
 
-        self.assertEqual(name, "Kamino")
-        self.assertEqual(str(characters), "[<name Boba Fett>]")
-        self.assertEqual(species, [])
-        #self.assertEqual(des, "Kamino, also known as the Planet of Storms,[10] was the watery world where the Clone Army of the Galactic Republic was created, as well as the Kamino Home Fleet. It was inhabited by a race of tall, elegant beings called the Kaminoans, who kept to themselves and were known for their cloning technology. Kamino was located just south of the Rishi Maze, and was governed by the Ruling Council, headed by the Prime Minister.")
-        self.assertEqual(image, "http://img2.wikia.nocookie.net/__cb20090527045541/starwars/images/thumb/a/a9/Eaw_Kamino.jpg/500px-Eaw_Kamino.jpg")
-        self.assertEqual(region, "Wild Space\nExtra-galactic")
-        self.assertEqual(system, "Kamino system")
+        self.assertEqual(result, True)
 
-
-    def test_get_planet_2(self) :
-        p = m.Planet.get("Kashyyyk")
-        name = p.name
-        characters = p.get_characters()
+    def test_planet_get_species_2(self):
+        p = Planet.get("Kashyyyk")
         species = p.get_species()
-        des = p.description
-        image = p.image
-        region = p.region
-        system = p.system
+        expected = ["Wookiee"]
 
-        self.assertEqual(name, "Kashyyyk")
-        self.assertEqual(str(characters), "[<name Chewbacca>, <name Lowbacca>]")
-        self.assertEqual(str(species), '[<name Wookiee>]')
-        #self.assertEqual(des, "Kashyyyk (see pronunciation), also known as Wookiee Planet C, Edean, G5-623, and Wookiee World, was a Mid Rim planet. It was the lush, wroshyr tree-filled home world of the Wookiees. It was a member of the Galactic Republic, endured enslavement under the Galactic Empire, and later joined the New Republic.")
-        self.assertEqual(image, "http://img3.wikia.nocookie.net/__cb20130202022903/starwars/images/e/e8/Can-cell_kashyyyk.png")
-        self.assertEqual(region, "Mid Rim")
-        self.assertEqual(system, "Kashyyyk system")
+        # comparing the two list elements ignoring order
+        result = not set(species).isdisjoint(expected)
 
-    def test_get_planet_3(self) :
-        p = m.Planet.get("Tatooine")
-        name = p.name
-        characters = p.get_characters()
+        self.assertEqual(result, True)
+
+    def test_planet_get_species_3(self):
+        p = Planet.get("Tatooine")
         species = p.get_species()
-        des = p.description
-        image = p.image
-        region = p.region
-        system = p.system
+        expected = ["Jawa", "Human"]
 
-        self.assertEqual(name, "Tatooine")
-        self.assertEqual(str(characters), "[<name Biggs Darklighter>, <name Darth Vader>, <name Het Nkik>, <name C-3PO>, <name Tusken Raiders>, <name Luke Skywalker>]")
-        self.assertEqual(str(species), "[<name Jawa>]")
-        #self.assertEqual(des, "Tatooine was a desert world and the first planet in the binary Tatoo star system. It was part of the Arkanis sector in the Outer Rim Territories. It was inhabited by poor locals who mostly farmed moisture for a living. Other activities included used equipment retailing and scrap dealing. The planet was on the 5709-DC Shipping Lane, a spur of the Triellus Trade Route, which itself connected to the Sisar Run. The planet was not far from the Corellian Run. It had its own navigation system. However, it would still play a role in galactic events, serving as the home of Anakin Skywalker. It was here that Jedi Master Qui-Gon Jinn recognized Anakin's potential to become a Jedi and where he introduced him to Obi-Wan Kenobi, his future master and mentor. Tatooine was also the home of Anakin's son, Luke, where he lived until his early adulthood. The planet acquired a bad reputation, often being viewed as the cesspool of the galaxy due to the large number of criminals who could be found there.")
-        self.assertEqual(image, "http://img2.wikia.nocookie.net/__cb20130226044533/starwars/images/thumb/1/18/Tatooine3.png/500px-Tatooine3.png")
-        self.assertEqual(region, "Outer Rim Territories")
-        self.assertEqual(system, "Tatoo system")
+        # comparing the two list elements ignoring order
+        result = not set(species).isdisjoint(expected)
 
-    def test_get_planet_serialize_1 (self) :
-        p = m.Planet(name="Kashyyyk", description="some description", image="some url", region="Mid Rim", system="Kashyyyk system")
-        result_info = p.serialize
+        self.assertEqual(result, True)
 
-        expected_info = {'description': 'some description', 'name': 'Kashyyyk', 'image': 'some url', 'region': 'Mid Rim', 'characters': ['Chewbacca'], 'species': 'Wookiee', 'system': 'Kashyyyk system'}
-        bool_result = result_info["name"] == expected_info["name"] and \
-                        result_info["region"] == expected_info["region"] and \
-                        result_info["system"] == expected_info["system"] and \
-                        result_info["description"] == expected_info["description"]
+    def test_planet_get_characters_1(self):
+        p = Planet.get("Kamino")
+        characters = p.get_characters()
+        char_name = [characters[i].name for i in range(len(characters))]
+        expected = ["Boba Fett"]
 
-        self.assertEqual(bool_result, True)
+        # comparing the two list elements ignoring order
+        result = not set(char_name).isdisjoint(expected)
 
-    def test_get_planet_serialize_2 (self) :
-        p = m.Planet(name="Kamino", description="some description", image="some url", region="Wild Space", system="Kamino system")
-        result_info = p.serialize
+        self.assertEqual(result, True)
 
-        expected_info = {'characters': ['Boba Fett'], 'name': 'Kamino', 'image': 'some url', 'system': 'Kamino system', 'region': 'Wild Space', 'species': 'Human', 'description': 'some description'}
-        bool_result = result_info["name"] == expected_info["name"] and \
-                        result_info["region"] == expected_info["region"] and \
-                        result_info["system"] == expected_info["system"] and \
-                        result_info["description"] == expected_info["description"]
+    def test_planet_get_characters_2(self):
+        p = Planet.get("Kashyyyk")
+        characters = p.get_characters()
+        char_name = [characters[i].name for i in range(len(characters))]
+        expected = ["Chewbacca", "Lowbacca"]
 
-        self.assertEqual(bool_result, True)
+        # comparing the two list elements ignoring order
+        result = not set(char_name).isdisjoint(expected)
 
-    def test_get_planet_serialize_3 (self) :
-        p = m.Planet(name="Tatooine", description="some description", image="some url", region="Outer Rim Territories", system="Tatoo system")
-        result_info = p.serialize
+        self.assertEqual(result, True)
 
-        expected_info = {'description': 'some description', 'name': 'Tatooine', 'species': 'Human', 'system': 'Tatoo system', 'characters': ['Darth Vader'], 'image': 'some url', 'region': 'Outer Rim Territories'}
-        bool_result = result_info["name"] == expected_info["name"] and \
-                        result_info["region"] == expected_info["region"] and \
-                        result_info["system"] == expected_info["system"] and \
-                        result_info["description"] == expected_info["description"]
+    def test_planet_get_characters_3(self):
+        p = Planet.get("Tatooine")
+        characters = p.get_characters()
+        char_name = [characters[i].name for i in range(len(characters))]
+        expected = ["C-3PO", "Tusken Raiders", "Het Nkik", "Darth Vader", "Luke Skywalker", "Biggs Darklighter"]
 
-        self.assertEqual(bool_result, True) '''
+        # comparing the two list elements ignoring order
+        result = not set(char_name).isdisjoint(expected)
+
+        self.assertEqual(result, True)
 
     # --------
     # species
