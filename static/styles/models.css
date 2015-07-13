@@ -351,11 +351,6 @@ h4 {
   border-left:0.25em double #95a5a6;
 
 }
-
-.box-table table thead th:hover {
-  color: black;
-}
-
 .box-table table tbody td,
 .box-table table tbody tr{
   font-size:1em;
@@ -367,9 +362,11 @@ h4 {
   background:#ecf0f1;
   color:#95a5a6;
 }
+
 .box-table table tbody tr:nth-child(odd):hover {
   background:black;
 }
+
 .box-table table tbody tr:nth-child(even){
   background:#cdd3d7;
   color:#7f8c8d;
