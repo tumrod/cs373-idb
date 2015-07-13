@@ -1,5 +1,6 @@
 import os
 import setupDB
+import json
 from flask import render_template
 from models import *
 
@@ -28,9 +29,11 @@ def unknown():
 
 @app.route('/api/characters', methods=['GET'])
 def get_characters():
-    with open(relative_path + "/characters.json") as data_file:
-        info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
-    return jsonify({'characters': info_dict})
+    return json.dumps([i.serialize for i in Character.get_all()])
+
+@app.route('/api/characters/<name>')
+def get_character_detail(name):
+    return json.dumps(Character.get(str(name)).serialize)
 
 @app.route('/characters')
 @app.route('/characters/<character>')
@@ -49,9 +52,11 @@ def characters(character=None):
 
 @app.route('/api/planets', methods=['GET'])
 def get_planets():
-    with open(relative_path + "/planets.json") as data_file:
-        info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
-    return jsonify({'planets': info_dict})
+    return json.dumps([i.serialize for i in Planet.get_all()])
+    
+@app.route('/api/planets/<name>')
+def get_planet_detail(name):
+    return json.dumps(Planet.get(str(name)).serialize)
 
 @app.route('/planets')
 @app.route('/planets/<planet>')
@@ -70,9 +75,11 @@ def planets(planet=None):
 
 @app.route('/api/species', methods=['GET'])
 def get_species():
-    with open(relative_path + "/species.json") as data_file:
-        info_dict = json.load(data_file, object_pairs_hook=OrderedDict)
-    return jsonify({'species': info_dict})
+    return json.dumps([i.serialize for i in Species.get_all()])
+
+@app.route('/api/species/<name>')
+def get_species_detail(name):
+    return json.dumps(Species.get(str(name)).serialize)
 
 @app.route('/species')
 @app.route('/species/<species>')

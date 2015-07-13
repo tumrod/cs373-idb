@@ -39,6 +39,19 @@ class Character(db.Model):
     def __repr__(self):
         return '<name {}>'.format(self.name)
 
+    @property
+    def serialize(self):
+        return {
+            'name' : self.name,
+            'planet' : self.planet,
+            'species' : self.species,
+            'description' : self.description,
+            'image' : self.image,
+            'birth' : self.birth,
+            'gender' : self.gender,
+            'height' : self.height
+        }
+
     @staticmethod
     def get_all():
         """
@@ -86,6 +99,18 @@ class Planet(db.Model):
 
     def __repr__(self):
         return '<name {}>'.format(self.name)
+
+    @property
+    def serialize(self):
+        return {
+            'name' : self.name,
+            'description' : self.description,
+            'image' : self.image,
+            'region' : self.region,
+            'system' : self.system,
+            'characters' : self.characters,
+            'species' : self.species
+        }
 
     def get_characters(self):
         return Character.query.filter_by(planet=self.name).all()
@@ -140,6 +165,18 @@ class Species(db.Model):
 
     def __repr__(self):
         return '<name {}>'.format(self.name)
+
+    @property
+    def serialize(self):
+        return {
+            'name' : self.name,
+            'planet' : self.planet,
+            'description' : self.description,
+            'image' : self.image,
+            'language' : self.language,
+            'classification' : self.classification,
+            'characters' : self.characters
+        }
 
     def get_characters(self):
         return Character.query.filter_by(species=self.name).all()
