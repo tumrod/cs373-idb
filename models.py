@@ -116,7 +116,10 @@ class Planet(db.Model):
         return Character.query.filter_by(planet=self.name).all()
 
     def get_species(self):
-        return Species.query.filter_by(planet=self.name).all()
+        character_species = {c.species for c in Character.query.filter_by(planet=self.name).all() if c.species != "Unknown"}
+        species_name = {s.name for s in Species.query.filter_by(planet=self.name).all() if s.name != "Unknown"}
+
+        return character_species | species_name
 
     @staticmethod
     def get_all():

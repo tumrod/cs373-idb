@@ -85,7 +85,7 @@
                         <td>
                             <select id="sort-order-species-{{ planet.name }}">
                                 {% for species in planet.get_species() %}
-                                    <option value="{{ species.name }}">{{ species.name }}</option>
+                                    <option value="{{ species }}">{{ species }}</option>
                                 {% endfor %}
                             </select>
                             <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-species' id="redirect_to_selected_species_in_{{ planet.name }}">Go</button>
