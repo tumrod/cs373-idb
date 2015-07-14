@@ -3,12 +3,11 @@ HOST: http://intergalacticdb.me/
 
 # Starhub API
 
-Starhub API is a database of a collection of characters, planets, species, etc of StarWars Universe.  
-
+Starhub API provides a way to retrieve detailed information about characters, planets, and species of Star Wars Universe.
 
 ## Character Collection [/api/characters]
 
-### List all StarWars Characters [GET]
+### List all Star Wars Characters [GET]
 + Response 200 (application/json)
 
         [
@@ -45,13 +44,16 @@ Starhub API is a database of a collection of characters, planets, species, etc o
         ]
 
 ## Character [/api/characters/{name}]
-A single Character with all its details
+A single Character with all its details. If a character has one or more spaces in its name, to ensure a 200 response, replace the spaces with a '%20'. 
+Example: /api/characters/Jabba%20the%20Hutt
 
 + Parameters
     + name (string) - name of a character
+    
 
 ### Retrieve a Character [GET]
 + Response 200 (application/json)
+    
 
     + Body
     
@@ -65,11 +67,15 @@ A single Character with all its details
                 "planet": "Kashyyyk", 
                 "species": "Wookiee"
             }
+            
++ Response 404
+
+
 
 
 ## Species Collection [/api/species]
 
-### List all StarWars Species [GET]
+### List all Star Wars Species [GET]
 + Response 200 (application/json)
 
         [
@@ -108,11 +114,13 @@ A single Character with all its details
 
     
 ## Species [/api/species/{name}]
-A single Species with all its details in it
+A single Species with all its details in it. If a species' name has one or more spaces, to get a proper 200 respnose
+replace the spaces with '%20'.
 
++ Parameters
     + name (string) - name of a species
 
-### Retrieve a species [GET]
+### Retrieve a Species [GET]
 + Response 200 (application/json)
     + Body
     
@@ -125,11 +133,13 @@ A single Species with all its details in it
                 "name": "Hutt",
                 "planet": "Varl"
             }
+
++ Response 404
     
 
 ## Planet Collection [/api/planets]
 
-### List all planet locations [GET]
+### List all Star Wars Planets [GET]
 + Response 200 (application/json)
 
         [
@@ -166,13 +176,14 @@ A single Species with all its details in it
         
 
 ## Planet [/api/planets/{name}]
-A single planet with all its details in it
+A single planet with all its details in it. If a planet's name has one or more spaces, to ensure
+a proper 200 response, replace spaces with a '%20'.
 
 + Parameters
     + name (string) - name of a planet
 
 
-### Retrieve a planet [GET]
+### Retrieve a Planet [GET]
 + Response 200 (application/json)
 
     + Body
@@ -187,3 +198,4 @@ A single planet with all its details in it
                 "system": "Kashyyyk system"
             }
             
++ Response 404
