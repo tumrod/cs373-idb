@@ -40,6 +40,5 @@ script:
     - ls -al
     - createdb intergalacticdb
     - make test
-    - cat tests.out
     - ls -al
     - make check
