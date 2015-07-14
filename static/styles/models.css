@@ -82,8 +82,6 @@ h4 {
   padding:0;
   background:#7f8c8d;
   animation: responsive 5s infinite ease-in-out;
-  display:inline-block;
-  overflow-x: auto;
 }
 .box-table{
   overflow:hidden;
@@ -150,16 +148,16 @@ h4 {
 }
 
 
-/* = Mobile Changes
-------------------------*/
++/* = Mobile Changes
+ ------------------------*/
 
 @media only screen and (max-width: 800px){
   .box-table table{
-    font-size: 80%;
-  }
-  h1.h1 {
-    font-size: 150%;
-  }
+     font-size: 80%;
+   }
+   h1.h1 {
+     font-size: 150%;
+   }
 }
 /* = Error
 ------------------------*/
