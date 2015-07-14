@@ -2,11 +2,11 @@ FILES :=                              \
     .travis.yml                       \
     .gitignore						  \
     makefile						  \
-    apiary.api                 	      \
+    apiary.apib                 	      \
     IDB.log                           \
     models.html                       \
     models.py                         \
-    test.py   	                      \
+    tests.py   	                      \
     UML.pdf
 
 all:
