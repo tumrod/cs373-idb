@@ -2,7 +2,7 @@ FILES :=                              \
     .travis.yml                       \
     .gitignore						  \
     makefile						  \
-    apiary.apib                 	   \
+    apiary.apib                 	      \
     IDB.log                           \
     models.html                       \
     models.py                         \
@@ -29,7 +29,7 @@ config:
 
 test: tests.py
 	coverage3 run    --branch tests.py >  tests.out 2>&1
-	coverage3 report -m                      >> tests.out
+	coverage3 report --omit=*site-packages* -m  >> tests.out
 	cat tests.out
 
 models.html: models.py
