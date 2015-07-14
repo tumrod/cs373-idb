@@ -83,7 +83,7 @@
                 </p>
                 <p> Species:
                 {% for species in planet.get_species() %}
-                    <a href="/species/{{ species.name }}" class="link">{{ species.name }}</a>
+                    <a href="/species/{{ species }}" class="link">{{ species }}</a>
                 {% endfor %}
                 </p>
                 <p>{{ planet.description }}</p>

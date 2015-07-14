@@ -7,6 +7,7 @@
 from unittest import main, TestCase
 from models import Character, Planet, Species
 from setupDB import create_db
+import requests
 
 # -----------
 #
@@ -299,12 +300,145 @@ class TestModels (TestCase) :
 
         self.assertEqual(bool_result, True)
 
+
+# ---------
+# API Tests
+# ---------
+
+class APItest (TestCase) :
+
+    # ----------
+    # characters
+    # ----------
+
+    def test_get_all_characters_1(self) :
+        req = requests.get('http://104.130.25.186/api/characters')
+        self.assertEqual(req.status_code, 200)
+
+    def test_get_all_characters_2(self) :
+        req = requests.get('http://intergalacticdb.me/api/characters')
+        self.assertEqual(req.status_code, 200)
+
+    def test_get_character_1(self) :
+        expected = {
+            "birth": "31.5 BBY , Kamino",
+            "description": "Boba Fett was a Mandalorian warrior and bounty hunter. He was the only unaltered clone of the famed Jango Fett, created in 32 BBY as unit A0050, one of the first of many Fett replicas designed to become part of the Grand Army of the Republic, and was raised as Jango's son. Jango taught Boba much, training him to become a skilled bounty hunter as was his father-figure before him. In 22 BBY, Jango was killed at the Battle of Geonosis, which opened the Clone Wars.",
+            "gender": "Male",
+            "height": "1.83 meters",
+            "image": "http://img2.wikia.nocookie.net/__cb20130920001614/starwars/images/5/58/BobaFettMain2.jpg",
+            "name": "Boba Fett",
+            "planet": "Kamino",
+            "species": "Human"
+        }
+        actual = requests.get("http://intergalacticdb.me/api/characters/Boba%20Fett").json()
+        self.assertEqual(expected, actual)
+
+    def test_get_character_2(self) :
+        expected = {
+            "birth": "200 BBY, Kashyyyk",
+            "description": "Chewbacca (or \"Chewie\", as he was known by his friends) was a legendary Wookiee from Kashyyyk and co-pilot of Han Solo's ship, the Millennium Falcon. He was the son of Attichitcuk, the husband of Mallatobuck, and the father of Lumpawaroo. Chewbacca carried with him the name of an ancient Wookiee hero, the great Bacca, first of the great chieftains of Kashyyyk, and the creator of a sword that denoted leadership among the Wookiees. This name placed Chewbacca in a noble lineage.",
+            "gender": "Male",
+            "height": "2.28 meters",
+            "image": "http://img4.wikia.nocookie.net/__cb20080815045819/starwars/images/thumb/7/73/Chewbaccaheadshot.jpg/500px-Chewbaccaheadshot.jpg",
+            "name": "Chewbacca",
+            "planet": "Kashyyyk",
+            "species": "Wookiee"
+        }
+
+        actual = requests.get("http://intergalacticdb.me/api/characters/Chewbacca").json()
+        self.assertEqual(expected, actual)
+
+    def test_get_character_3(self) :
+        req = requests.get('http://104.130.25.186/api/characters/foo')
+        self.assertEqual(req.status_code, 404)
+
+    # -------
+    # species
+    # -------
+    def test_get_all_species_1(self) :
+        req = requests.get('http://104.130.25.186/api/species')
+        self.assertEqual(req.status_code, 200)
+
+    def test_get_all_species_2(self) :
+        req = requests.get('http://intergalacticdb.me/api/species')
+        self.assertEqual(req.status_code, 200)
+
+    def test_get_species_1(self) :
+        expected = {
+            "classification": "Mammal",
+            "description": "Tall, hair covered, retractable climbing claws, long life spans",
+            "image": "http://img2.wikia.nocookie.net/__cb20061128184734/starwars/images/5/57/ThreeWookieeAmigos-ROTSVD.jpg",
+            "language": "Shyriiwook\nXaczik\nThykarann",
+            "name": "Wookiee",
+            "planet": "Kashyyyk"
+        }
+        actual = requests.get("http://intergalacticdb.me/api/species/Wookiee").json()
+        self.assertEqual(expected, actual)
+
+    def test_get_species_2(self) :
+        expected = {
+            "classification": "Mammal",
+            "description": "Unknown",
+            "image": "http://img3.wikia.nocookie.net/__cb20100628191857/starwars/images/5/5d/Humans-TESB30.jpg",
+            "language": "Galactic Basic Standard\nOthers",
+            "name": "Human",
+            "planet": "Coruscant"
+        }
+
+        actual = requests.get("http://intergalacticdb.me/api/species/Human").json()
+        self.assertEqual(expected, actual)
+
+    def test_get_species_3(self) :
+        req = requests.get('http://104.130.25.186/api/species/foo')
+        self.assertEqual(req.status_code, 404)
+
+    # -------
+    # planets
+    # -------
+
+    def test_get_all_planets_1(self) :
+        req = requests.get('http://104.130.25.186/api/species')
+        self.assertEqual(req.status_code, 200)
+
+    def test_get_all_planets_2(self) :
+        req = requests.get('http://intergalacticdb.me/api/species')
+        self.assertEqual(req.status_code, 200)
+
+    def test_get_planet_1(self) :
+        expected = {
+            "description": "Tatooine (pronounced/t\u00e6tu'in/; Jawaese: Tah doo Een e) was a desert world and the first planet in the binary Tatoo star system. It was part of the Arkanis sector in the Outer Rim Territories. It was inhabited by poor locals who mostly farmed moisture for a living. Other activities included used equipment retailing and scrap dealing. The planet was on the 5709-DC Shipping Lane, a spur of the Triellus Trade Route, which itself connected to the Sisar Run.",
+            "image": "http://img2.wikia.nocookie.net/__cb20130226044533/starwars/images/thumb/1/18/Tatooine3.png/500px-Tatooine3.png",
+            "name": "Tatooine",
+            "region": "Outer Rim Territories",
+            "system": "Tatoo system"
+
+        }
+        actual = requests.get("http://intergalacticdb.me/api/planets/Tatooine").json()
+        self.assertEqual(expected, actual)
+
+    def test_get_planet_2(self) :
+        expected = {
+            "description": "Kamino (pronounced/k\u0259'mino\u028a/), also known as the Planet of Storms, was the watery world where the Clone Army of the Galactic Republic was created, as well as the Kamino Home Fleet. It was inhabited by a race of tall, elegant beings called the Kaminoans, who kept to themselves and were known for their cloning technology. Kamino was located just south of the Rishi Maze, and was governed by the Ruling Council, headed by the Prime Minister.",
+            "image": "http://img2.wikia.nocookie.net/__cb20090527045541/starwars/images/thumb/a/a9/Eaw_Kamino.jpg/500px-Eaw_Kamino.jpg",
+            "name": "Kamino",
+            "region": "Wild Space\nExtra-galactic",
+            "system": "Kamino system"
+        }
+
+        actual = requests.get("http://intergalacticdb.me/api/planets/Kamino").json()
+        self.assertEqual(expected, actual)
+
+    def test_get_planet_3(self) :
+        req = requests.get('http://104.130.25.186/api/planets/foo')
+        self.assertEqual(req.status_code, 404)
+
 # ----
 # main
 # ----
 if __name__ == "__main__":
     create_db()
     main()
+
 
 
 
