@@ -20,6 +20,7 @@ install:
     - pip3 install Flask-SQLALchemy
     - sudo apt-get install python3-dev
     - pip3 install psycopg2
+    - pip3 install requests
 
 before_script:
     - uname -a
@@ -39,5 +40,6 @@ script:
     - ls -al
     - createdb intergalacticdb
     - make test
+    - cat tests.out
     - ls -al
     - make check
