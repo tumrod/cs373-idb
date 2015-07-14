@@ -1,0 +1,27 @@
+{"Boba Fett":
+	{"name": "Boba Fett", 
+	"species": "Human", 
+	"image": "http:\/\/img4.wikia.nocookie.net\/__cb20130920001614\/starwars\/images\/thumb\/5\/58\/BobaFettMain2.jpg\/400px-BobaFettMain2.jpg", 
+	"description": "Boba Fett was a Mandalorian warrior and bounty hunter. He was the only unaltered clone of the famed Jango Fett, created in 32 BBY as unit A0050, one of the first of many Fett replicas designed to become part of the Grand Army of the Republic, and was raised as Jango's son. Jango taught Boba much, training him to become a skilled bounty hunter as was his father-figure before him. In 22 BBY, Jango was killed at the Battle of Geonosis, which opened the Clone Wars. Just a boy, Boba was forced to grow up and took to traveling the galaxy. Later, he became a bounty hunter and took assignments from beings such as Jabba the Hutt, and achieved notoriety despite his young age.", 
+	"planet": "Kamino",
+	"gender": "Male",
+	"height": "1.83 meters",
+	"birth": "31.5 BBY , Kamino"},
+"Chewbacca": 
+	{"name": "Chewbacca", 
+	"species": "Wookiee", 
+	"image": "http:\/\/img4.wikia.nocookie.net\/__cb20080815045819\/starwars\/images\/thumb\/7\/73\/Chewbaccaheadshot.jpg\/400px-Chewbaccaheadshot.jpg", 
+	"description": "Chewbacca (or \"Chewie\", as he was known by his friends) was a legendary Wookiee from Kashyyyk and co-pilot of Han Solo's ship, the Millennium Falcon. He was the son of Attichitcuk, the husband of Mallatobuck, and the father of Lumpawaroo. Chewbacca carried with him the name of an ancient Wookiee hero, the great Bacca, first of the great chieftains of Kashyyyk, and the creator of a sword that denoted leadership among the Wookiees. This name placed Chewbacca in a noble lineage, which was further supported by his role in the Battle of Kashyyyk during the Clone Wars and during the Galactic Civil War.", 
+	"planet": "Kashyyyk",
+	"gender": "Male",
+	"height": "2.28 meters",
+	"birth": "200 BBY, Kashyyyk"},
+"Jabba":
+	{"name": "Jabba",
+	"species": "Hutt",
+	"image": "http://img1.wikia.nocookie.net/__cb20100915194254/starwars/images/7/7f/Jabba_SWSB.png",
+	"description": "Anakin Skywalker was a Force-sensitive Human male who served the Galactic Republic as a Jedi Knight and later served the Galactic Empire as the Sith Lord Darth Vader. Born to the slave Shmi Skywalker in 41.9 BBY, Anakin was conceived by midi-chlorians, the symbiotic organisms that allowed individuals to touch the Force, and he and his mother were brought to the desert planet of Tatooine to be the slaves of Gardulla the Hutt. They soon ended up as the property of the Toydarian Watto, and Skywalker exhibited exceptional piloting skills and a reputation for being able to build and repair anything even at a young age. In 32 BBY, Skywalker encountered the Jedi Qui-Gon Jinn and Padme Amidala, and he helped them secure the parts they needed for their starship by winning the Boonta Eve Classic podracing event-only to learn that he had also won his freedom in doing so.", 
+	"planet": "Tatooine",
+	"gender": "Male",
+	"height": "3.9 meters",
+	"birth": "150 BBY "}}

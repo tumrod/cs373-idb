@@ -2,11 +2,11 @@ FILES :=                              \
     .travis.yml                       \
     .gitignore						  \
     makefile						  \
-    apiary.api                 	      \
+    apiary.apib                 	      \
     IDB.log                           \
     models.html                       \
     models.py                         \
-    test.py   	                      \
+    tests.py   	                      \
     UML.pdf
 
 all:
@@ -27,12 +27,16 @@ clean:
 config:
 	git config -l
 
-test: test.py
+test: tests.py
+	coverage3 run    --branch tests.py >  tests.out 2>&1
+	coverage3 report --omit=*site-packages* -m  >> tests.out
+	cat tests.out
 
 models.html: models.py
 	pydoc3 -w models
 
 IDB.log:
 	git log > IDB.log
+
 
 

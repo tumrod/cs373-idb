@@ -1,0 +1,19 @@
+body{
+  background: #303030;
+}
+
+.col-md-4 h3 {
+    color: #fff;
+}
+
+.col-md-4 p {
+    color: #fff;
+}
+
+.col-md-4 p a {
+    color: orange;
+}
+
+.navigation ul li a {
+    color: #fff;
+}

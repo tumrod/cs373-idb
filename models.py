@@ -1,69 +1,191 @@
-class character():
-	all_characters ={}
+from flask import Flask
+from flask.ext.sqlalchemy import SQLAlchemy
 
-	def __init__(self, name, planet, species, description, image):
-		self.character = {}
-		self.character["name"] = name
-		self.character["planet"] = planet
-		self.character["species"] = species
-		self.character["description"] = description
-		self.character["image"] = image
-		self.__add_to_dict__(name)
-
-	def __get_info__(self):
-		return self.character
-
-	def __add_to_dict__(self, name):
-		self.all_characters[str(name)] = self.character
-
-	def __get_all_dict__(self):
-		return self.all_characters
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://localhost/intergalacticdb'
+db = SQLAlchemy(app)
 
 
-class planet():
-	all_planets ={}
+class Character(db.Model):
+    """
+    Character encapsulates a character dictionary containing its information
+    """
+    
+    __tablename__ = 'characters'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50))
+    planet = db.Column(db.String(50))
+    species = db.Column(db.String(50))
+    description = db.Column(db.String(4000))
+    image = db.Column(db.String(250))
+    birth = db.Column(db.String(50))
+    gender = db.Column(db.String(50))
+    height = db.Column(db.String(50))
 
-	def __init__(self, name, character_list, species_list, description, image):
-		self.planet = {}
-		self.planet["name"] = name
-		self.planet["characters"] = character_list
-		self.planet["species"] = species_list
-		self.planet["description"] = description
-		self.planet["image"] = image
-		self.__add_to_dict__(name)
+    def __init__(self, name, planet, species, description, image, birth, gender, height):
+        """
+        Initialize the character to have a dictionary of its information
+        Input strings of the character's name, planet, species, description, image, birth, gender, and height
+        """
+        self.name = name
+        self.planet = planet
+        self.species = species
+        self.description = description
+        self.image = image
+        self.birth = birth
+        self.gender = gender
+        self.height = height
 
-	def __get_info__(self):
-		return self.planet
+    def __repr__(self):
+        return '<name {}>'.format(self.name)
 
-	def __add_to_dict__(self, name):
-		self.all_planets[str(name)] = self.planet
+    @property
+    def serialize(self):
+        return {
+            'name' : self.name,
+            'planet' : self.planet,
+            'species' : self.species,
+            'description' : self.description,
+            'image' : self.image,
+            'birth' : self.birth,
+            'gender' : self.gender,
+            'height' : self.height
+        }
 
-	def __get_all_dict__(self):
-		return self.all_planets
+    @staticmethod
+    def get_all():
+        """
+        Return an list of all character models
+        """
+        return Character.query.all()
 
-class species():
-	all_species ={}
-
-	def __init__(self, name, character_list, planet_list, description, image):
-		self.species = {}
-		self.species["name"] = name
-		self.species["characters"] = character_list
-		self.species["planets"] = planet_list
-		self.species["description"] = description
-		self.species["image"] = image
-		self.__add_to_dict__(name)
-
-	def __get_info__(self):
-		return self.species
-
-	def __add_to_dict__(self, name):
-		self.all_species[str(name)] = self.species
-
-	def __get_all_dict__(self):
-		return self.all_species
-
-x = species("Human", ["Darth Vader", "Boba Fett"],["Tatooine", "Kamino"], "something", "url image")
-x = species("Wookiee", ["Chewbacca"], ["Kashyyyk"], "something", "url image")
-print(x.__get_all_dict__())
+    @staticmethod
+    def get(character):
+        """
+        Input the character name to retrieve
+        Return an instance of this character
+        """
+        return Character.query.filter_by(name=character).first()
 
 
+class Planet(db.Model):
+    """
+    Planet encapsulates a planet dictionary containing its information
+    """
+    
+    __tablename__ = 'planets'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50))
+    description = db.Column(db.String(4000))
+    image = db.Column(db.String(250))
+    region = db.Column(db.String(50))
+    system = db.Column(db.String(50))
+
+    def __init__(self, name, description, image, region, system):
+        """
+        Initialize the planet to have a dictionary of its information
+        Input strings of the planet's name, characters list, species list, description, image, region, and system
+        """
+
+        self.name = name
+        self.description = description
+        self.image = image
+        self.region = region
+        self.system = system
+
+    def __repr__(self):
+        return '<name {}>'.format(self.name)
+
+    @property
+    def serialize(self):
+        return {
+            'name' : self.name,
+            'description' : self.description,
+            'image' : self.image,
+            'region' : self.region,
+            'system' : self.system,
+        }
+
+    def get_characters(self):
+        return Character.query.filter_by(planet=self.name).all()
+
+    def get_species(self):
+        character_species = {c.species for c in Character.query.filter_by(planet=self.name).all() if c.species != "Unknown"}
+        species_name = {s.name for s in Species.query.filter_by(planet=self.name).all() if s.name != "Unknown"}
+
+        return character_species | species_name
+
+    @staticmethod
+    def get_all():
+        """
+        Return an list of all planet models
+        """
+        return Planet.query.all()
+
+    @staticmethod
+    def get(planet):
+        """
+        Input the character name to retrieve
+        Return an instance of this planet
+        """
+        return Planet.query.filter_by(name=planet).first()
+
+
+class Species(db.Model):
+    """
+    Species encapsulates a species dictionary containing its information
+    """
+    
+    __tablename__ = 'species'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50), unique=True)
+    planet = db.Column(db.String(4000))
+    description = db.Column(db.String(4000))
+    image = db.Column(db.String(250))
+    language = db.Column(db.String(50))
+    classification = db.Column(db.String(50))
+
+    def __init__(self, name, planet, description, image, language, classification):
+        """
+        Initialize the species to have a dictionary of its information
+        Input strings of the species's name, characters list, planet list, description, image, language, and classification
+        """
+        
+        self.name = name
+        self.planet = planet
+        self.description = description
+        self.image = image
+        self.language = language
+        self.classification = classification
+
+    def __repr__(self):
+        return '<name {}>'.format(self.name)
+
+    @property
+    def serialize(self):
+        return {
+            'name' : self.name,
+            'planet' : self.planet,
+            'description' : self.description,
+            'image' : self.image,
+            'language' : self.language,
+            'classification' : self.classification,
+        }
+
+    def get_characters(self):
+        return Character.query.filter_by(species=self.name).all()
+
+    @staticmethod
+    def get_all():
+        """
+        Return an list of all character species
+        """
+        return Species.query.all()
+
+    @staticmethod
+    def get(species):
+        """
+        Input the character name to retrieve
+        Return an instance of this species
+        """
+        return Species.query.filter_by(name=species).first()
