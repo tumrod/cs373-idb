@@ -6,7 +6,7 @@ HOST: http://intergalacticdb.me/
 Starhub API is a database of a collection of characters, planets, species, etc of StarWars Universe.  
 
 
-## Character Collection [/characters]
+## Character Collection [/api/characters]
 
 ### List all StarWars Characters [GET]
 + Response 200 (application/json)
@@ -44,7 +44,7 @@ Starhub API is a database of a collection of characters, planets, species, etc o
             }
         ]
 
-## Character [/characters/{name}]
+## Character [/api/characters/{name}]
 A single Character with all its details
 
 + Parameters
@@ -67,7 +67,7 @@ A single Character with all its details
             }
 
 
-## Species Collection [/species]
+## Species Collection [/api/species]
 
 ### List all StarWars Species [GET]
 + Response 200 (application/json)
@@ -107,7 +107,7 @@ A single Character with all its details
         ]
 
     
-## Species [/species/{name}]
+## Species [/api/species/{name}]
 A single Species with all its details in it
 
     + name (string) - name of a species
@@ -127,7 +127,7 @@ A single Species with all its details in it
             }
     
 
-## Planet Collection [/planets]
+## Planet Collection [/api/planets]
 
 ### List all planet locations [GET]
 + Response 200 (application/json)
@@ -165,7 +165,7 @@ A single Species with all its details in it
         ]
         
 
-## Planet [/planets/{name}]
+## Planet [/api/planets/{name}]
 A single planet with all its details in it
 
 + Parameters
