@@ -9,17 +9,10 @@
 <font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>models</strong></big></big></font></td
 ><td align=right valign=bottom
 ><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/tumrod/Documents/summer2015/SWE/cs373-idb/models.py">/Users/tumrod/Documents/summer2015/SWE/cs373-idb/models.py</a></font></td></tr></table>
-    <p></p>
+    <p><tt>This&nbsp;documentation&nbsp;was&nbsp;based&nbsp;on&nbsp;pydoc&nbsp;imitation&nbsp;since&nbsp;we&nbsp;cannot&nbsp;run&nbsp;pydoc&nbsp;directly&nbsp;<br>
+for&nbsp;our&nbsp;models.py&nbsp;due&nbsp;to&nbsp;sqlalchemy&nbsp;error.&nbsp;However,&nbsp;the&nbsp;structures&nbsp;of&nbsp;this&nbsp;documentation<br>
+similar&nbsp;to&nbsp;pydoc&nbsp;documentation.</tt></p>
 <p>
-<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
-<tr bgcolor="#aa55cc">
-<td colspan=3 valign=bottom>&nbsp;<br>
-<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
-    
-<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
-<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="json.html">json</a><br>
-</td><td width="25%" valign=top><a href="os.html">os</a><br>
-</td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ee77aa">
 <td colspan=3 valign=bottom>&nbsp;<br>
@@ -27,7 +20,7 @@
     
 <tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
 <td width="100%"><dl>
-<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+<dt><font face="helvetica, arial"><a name ="Model"href="models.html#Model">db.Model</a>
 </font></dt><dd>
 <dl>
 <dt><font face="helvetica, arial"><a href="models.html#Character">Character</a>
@@ -40,42 +33,25 @@
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ffc8d8">
 <td colspan=3 valign=bottom>&nbsp;<br>
-<font color="#000000" face="helvetica, arial"><a name="Character">class <strong>Character</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+<font color="#000000" face="helvetica, arial"><a name="Character">class <strong>Character</strong></a>(<a href="models.html#Model">db.Model</a>)</font></td></tr>
     
 <tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
-<td colspan=2><tt><a href="#Character">Character</a>&nbsp;encapsulates&nbsp;a&nbsp;character&nbsp;dictionary&nbsp;containing&nbsp;its&nbsp;information<br>&nbsp;</tt></td></tr>
+<td colspan=2><tt><a href="#Character">Character</a>&nbsp;encapsulates&nbsp;attributes&nbsp;of&nbsp;a&nbsp;character,&nbsp;initialized&nbsp;by&nbsp;default&nbsp;from&nbsp;database<br>
+or&nbsp;from&nbsp;constructor<br>&nbsp;</tt></td></tr>
 <tr><td>&nbsp;</td>
 <td width="100%">Methods defined here:<br>
-<dl><dt><a name="Character-__init__"><strong>__init__</strong></a>(self, name, planet, species, description, image, birth, gender, height)</dt><dd><tt>Initialize&nbsp;the&nbsp;character&nbsp;to&nbsp;have&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;its&nbsp;information<br>
+<dl><dt><a name="Character-__init__"><strong>__init__</strong></a>(self, name, planet, species, description, image, birth, gender, height)</dt><dd><tt>Initialize&nbsp;the&nbsp;character&nbsp;to&nbsp;the&nbsp;given&nbsp;information<br>
 Input&nbsp;strings&nbsp;of&nbsp;the&nbsp;character's&nbsp;name,&nbsp;planet,&nbsp;species,&nbsp;description,&nbsp;image,&nbsp;birth,&nbsp;gender,&nbsp;and&nbsp;height</tt></dd></dl>
 
-<dl><dt><a name="Character-get_birth"><strong>get_birth</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;birth&nbsp;date&nbsp;of&nbsp;this&nbsp;character</tt></dd></dl>
-
-<dl><dt><a name="Character-get_description"><strong>get_description</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;summary&nbsp;of&nbsp;this&nbsp;character's&nbsp;description</tt></dd></dl>
-
-<dl><dt><a name="Character-get_gender"><strong>get_gender</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;gender&nbsp;of&nbsp;this&nbsp;character</tt></dd></dl>
-
-<dl><dt><a name="Character-get_height"><strong>get_height</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;height&nbsp;of&nbsp;this&nbsp;character</tt></dd></dl>
-
-<dl><dt><a name="Character-get_image"><strong>get_image</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;url&nbsp;for&nbsp;an&nbsp;image&nbsp;of&nbsp;this&nbsp;character</tt></dd></dl>
-
-<dl><dt><a name="Character-get_info"><strong>get_info</strong></a>(self)</dt><dd><tt>Return&nbsp;the&nbsp;dictionary&nbsp;of&nbsp;information&nbsp;on&nbsp;this&nbsp;character</tt></dd></dl>
-
-<dl><dt><a name="Character-get_name"><strong>get_name</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;name&nbsp;of&nbsp;this&nbsp;character</tt></dd></dl>
-
-<dl><dt><a name="Character-get_planet"><strong>get_planet</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;planet&nbsp;homeworld&nbsp;of&nbsp;this&nbsp;character</tt></dd></dl>
-
-<dl><dt><a name="Character-get_species"><strong>get_species</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;species&nbsp;of&nbsp;this&nbsp;character</tt></dd></dl>
+<dl><dt><a name="Character-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;representation&nbsp;of&nbsp;this&nbsp;character&nbsp;in&nbsp;format<br>
+&lt;name&nbsp;{}&gt;&nbsp;where&nbsp;{}&nbsp;is&nbsp;character's&nbsp;name</tt></dd></dl>
 
 <hr>
 Static methods defined here:<br>
-<dl><dt><a name="Character-get_all_characters"><strong>get_all_characters</strong></a>()</dt><dd><tt>Return&nbsp;an&nbsp;OrderedDict&nbsp;of&nbsp;all&nbsp;characters,&nbsp;with&nbsp;their&nbsp;names&nbsp;as&nbsp;keys<br>
-and&nbsp;their&nbsp;dicts&nbsp;of&nbsp;information&nbsp;as&nbsp;values</tt></dd></dl>
+<dl><dt><a name="Character-get"><strong>get</strong></a>(character)</dt><dd><tt>Input&nbsp;the&nbsp;character&nbsp;name&nbsp;to&nbsp;retrieve<br>
+Return&nbsp;an&nbsp;instance&nbsp;of&nbsp;this&nbsp;character</tt></dd></dl>
 
-<dl><dt><a name="Character-get_all_sorted_characters"><strong>get_all_sorted_characters</strong></a>(sort_by)</dt><dd><tt>Input&nbsp;the&nbsp;attribute&nbsp;by&nbsp;which&nbsp;to&nbsp;sort&nbsp;the&nbsp;characters<br>
-Return&nbsp;an&nbsp;OrderedDict&nbsp;of&nbsp;all&nbsp;characters,&nbsp;with&nbsp;their&nbsp;names&nbsp;as&nbsp;keys<br>
-and&nbsp;their&nbsp;dicts&nbsp;of&nbsp;information&nbsp;as&nbsp;values,&nbsp;sorted&nbsp;by&nbsp;the&nbsp;given<br>
-attribute</tt></dd></dl>
+<dl><dt><a name="Character-get_all"><strong>get_all</strong></a>()</dt><dd><tt>Return&nbsp;an&nbsp;list&nbsp;of&nbsp;all&nbsp;character&nbsp;models</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -85,44 +61,58 @@ Data descriptors defined here:<br>
 <dl><dt><strong>__weakref__</strong></dt>
 <dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
 </dl>
+<dl><dt><strong>serialize</strong></dt>
+<dd><tt>Return&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;information&nbsp;on&nbsp;this&nbsp;character</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__tablename__</strong> = 'characters'</dl>
+
+<dl><dt><strong>birth</strong> = db.Column(db.String(50))</dl>
+
+<dl><dt><strong>description</strong> = db.Column(db.String(4000))</dl>
+
+<dl><dt><strong>gender</strong> = db.Column(db.String(50))</dl>
+
+<dl><dt><strong>height</strong> = db.Column(db.String(50))</dl>
+
+<dl><dt><strong>id</strong> = db.Column(db.Integer, primary_key=True)</dl>
+
+<dl><dt><strong>image</strong> = db.Column(db.String(250))</dl>
+
+<dl><dt><strong>name</strong> = db.Column(db.String(50))</dl>
+
+<dl><dt><strong>planet</strong> = db.Column(db.String(50))</dl>
+
+<dl><dt><strong>species</strong> = db.Column(db.String(50))</dl>
+
 </td></tr></table> <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ffc8d8">
 <td colspan=3 valign=bottom>&nbsp;<br>
-<font color="#000000" face="helvetica, arial"><a name="Planet">class <strong>Planet</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+<font color="#000000" face="helvetica, arial"><a name="Planet">class <strong>Planet</strong></a>(<a href="models.html#Model">db.Model</a>)</font></td></tr>
     
 <tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
-<td colspan=2><tt><a href="#Planet">Planet</a>&nbsp;encapsulates&nbsp;a&nbsp;planet&nbsp;dictionary&nbsp;containing&nbsp;its&nbsp;information<br>&nbsp;</tt></td></tr>
+<td colspan=2><tt><a href="#Planet">Planet</a>&nbsp;encapsulates&nbsp;attributes&nbsp;of&nbsp;a&nbsp;planet,&nbsp;initialized&nbsp;by&nbsp;default&nbsp;from&nbsp;database<br>
+or&nbsp;from&nbsp;constructor<br>&nbsp;</tt></td></tr>
 <tr><td>&nbsp;</td>
 <td width="100%">Methods defined here:<br>
-<dl><dt><a name="Planet-__init__"><strong>__init__</strong></a>(self, name, character_list, species_list, description, image, region, system)</dt><dd><tt>Initialize&nbsp;the&nbsp;planet&nbsp;to&nbsp;have&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;its&nbsp;information<br>
-Input&nbsp;strings&nbsp;of&nbsp;the&nbsp;planet's&nbsp;name,&nbsp;characters&nbsp;list,&nbsp;species&nbsp;list,&nbsp;description,&nbsp;image,&nbsp;region,&nbsp;and&nbsp;system</tt></dd></dl>
+<dl><dt><a name="Planet-__init__"><strong>__init__</strong></a>(self, name, description, image, region, system)</dt><dd><tt>Initialize&nbsp;the&nbsp;planet&nbsp;to&nbsp;the&nbsp;given&nbsp;information<br>
+Input&nbsp;strings&nbsp;of&nbsp;the&nbsp;planet's&nbsp;name,&nbsp;description,&nbsp;image,&nbsp;region,&nbsp;and&nbsp;system</tt></dd></dl>
 
-<dl><dt><a name="Planet-get_characters"><strong>get_characters</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;list&nbsp;of&nbsp;characters&nbsp;of&nbsp;this&nbsp;planet</tt></dd></dl>
+<dl><dt><a name="Planet-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;representation&nbsp;of&nbsp;this&nbsp;character&nbsp;in&nbsp;format<br>
+&lt;name&nbsp;{}&gt;&nbsp;where&nbsp;{}&nbsp;is&nbsp;character's&nbsp;name</tt></dd></dl>
 
-<dl><dt><a name="Planet-get_description"><strong>get_description</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;description&nbsp;of&nbsp;this&nbsp;planet</tt></dd></dl>
+<dl><dt><a name="Planet-get_characters"><strong>get_characters</strong></a>(self)</dt><dd><tt>Return&nbsp;an&nbsp;list&nbsp;of&nbsp;the&nbsp;names&nbsp;of&nbsp;all&nbsp;characters&nbsp;of&nbsp;this&nbsp;planet</tt></dd></dl>
 
-<dl><dt><a name="Planet-get_image"><strong>get_image</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;url&nbsp;of&nbsp;an&nbsp;image&nbsp;of&nbsp;this&nbsp;planet</tt></dd></dl>
-
-<dl><dt><a name="Planet-get_info"><strong>get_info</strong></a>(self)</dt><dd><tt>Return&nbsp;the&nbsp;dictionary&nbsp;of&nbsp;information&nbsp;on&nbsp;this&nbsp;planet</tt></dd></dl>
-
-<dl><dt><a name="Planet-get_name"><strong>get_name</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;name&nbsp;of&nbsp;this&nbsp;planet</tt></dd></dl>
-
-<dl><dt><a name="Planet-get_region"><strong>get_region</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;region&nbsp;of&nbsp;this&nbsp;planet</tt></dd></dl>
-
-<dl><dt><a name="Planet-get_species"><strong>get_species</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;list&nbsp;of&nbsp;species&nbsp;of&nbsp;this&nbsp;planet</tt></dd></dl>
-
-<dl><dt><a name="Planet-get_system"><strong>get_system</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;system&nbsp;of&nbsp;this&nbsp;planet</tt></dd></dl>
+<dl><dt><a name="Planet-get_species"><strong>get_species</strong></a>(self)</dt><dd><tt>Return&nbsp;an&nbsp;list&nbsp;of&nbsp;the&nbsp;names&nbsp;of&nbsp;all&nbsp;species&nbsp;of&nbsp;this&nbsp;planet</tt></dd></dl>
 
 <hr>
 Static methods defined here:<br>
-<dl><dt><a name="Planet-get_all_planets"><strong>get_all_planets</strong></a>()</dt><dd><tt>Return&nbsp;an&nbsp;OrderedDict&nbsp;of&nbsp;all&nbsp;planets,&nbsp;with&nbsp;their&nbsp;names&nbsp;as&nbsp;keys<br>
-and&nbsp;their&nbsp;dicts&nbsp;of&nbsp;information&nbsp;as&nbsp;values</tt></dd></dl>
+<dl><dt><a name="Planet-get"><strong>get</strong></a>(planet)</dt><dd><tt>Input&nbsp;the&nbsp;character&nbsp;name&nbsp;to&nbsp;retrieve<br>
+Return&nbsp;an&nbsp;instance&nbsp;of&nbsp;this&nbsp;planet</tt></dd></dl>
 
-<dl><dt><a name="Planet-get_all_sorted_planets"><strong>get_all_sorted_planets</strong></a>(sort_by)</dt><dd><tt>Input&nbsp;the&nbsp;attribute&nbsp;by&nbsp;which&nbsp;to&nbsp;sort&nbsp;the&nbsp;planets<br>
-Return&nbsp;an&nbsp;OrderedDict&nbsp;of&nbsp;all&nbsp;planets,&nbsp;with&nbsp;their&nbsp;names&nbsp;as&nbsp;keys<br>
-and&nbsp;their&nbsp;dicts&nbsp;of&nbsp;information&nbsp;as&nbsp;values,&nbsp;sorted&nbsp;by&nbsp;the&nbsp;given<br>
-attribute</tt></dd></dl>
+<dl><dt><a name="Planet-get_all"><strong>get_all</strong></a>()</dt><dd><tt>Return&nbsp;an&nbsp;list&nbsp;of&nbsp;all&nbsp;planet&nbsp;models</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -132,44 +122,50 @@ Data descriptors defined here:<br>
 <dl><dt><strong>__weakref__</strong></dt>
 <dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
 </dl>
+<dl><dt><strong>serialize</strong></dt>
+<dd><tt>Return&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;information&nbsp;on&nbsp;this&nbsp;planet</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__tablename__</strong> = 'planets'</dl>
+
+<dl><dt><strong>description</strong> = db.Column(db.String(4000))</dl>
+
+<dl><dt><strong>id</strong> = db.Column(db.Integer, primary_key=True)</dl>
+
+<dl><dt><strong>image</strong> = db.Column(db.String(250))</dl>
+
+<dl><dt><strong>name</strong> = db.Column(db.String(50))</dl>
+
+<dl><dt><strong>region</strong> = db.Column(db.String(50))</dl>
+
+<dl><dt><strong>system</strong> = db.Column(db.String(50))</dl>
+
 </td></tr></table> <p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#ffc8d8">
 <td colspan=3 valign=bottom>&nbsp;<br>
-<font color="#000000" face="helvetica, arial"><a name="Species">class <strong>Species</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+<font color="#000000" face="helvetica, arial"><a name="Species">class <strong>Species</strong></a>(<a href="models.html#Model">db.Model</a>)</font></td></tr>
     
 <tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
-<td colspan=2><tt><a href="#Species">Species</a>&nbsp;encapsulates&nbsp;a&nbsp;species&nbsp;dictionary&nbsp;containing&nbsp;its&nbsp;information<br>&nbsp;</tt></td></tr>
+<td colspan=2><tt><a href="#Species">Species</a>&nbsp;encapsulates&nbsp;attributes&nbsp;of&nbsp;a&nbsp;species,&nbsp;initialized&nbsp;by&nbsp;default&nbsp;from&nbsp;database<br>
+or&nbsp;from&nbsp;constructor<br>&nbsp;</tt></td></tr>
 <tr><td>&nbsp;</td>
 <td width="100%">Methods defined here:<br>
-<dl><dt><a name="Species-__init__"><strong>__init__</strong></a>(self, name, character_list, planet_list, description, image, language, classification)</dt><dd><tt>Initialize&nbsp;the&nbsp;species&nbsp;to&nbsp;have&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;its&nbsp;information<br>
-Input&nbsp;strings&nbsp;of&nbsp;the&nbsp;species's&nbsp;name,&nbsp;characters&nbsp;list,&nbsp;planet&nbsp;list,&nbsp;description,&nbsp;image,&nbsp;language,&nbsp;and&nbsp;classification</tt></dd></dl>
+<dl><dt><a name="Species-__init__"><strong>__init__</strong></a>(self, name, planet, description, image, language, classification)</dt><dd><tt>Initialize&nbsp;the&nbsp;species&nbsp;to&nbsp;the&nbsp;given&nbsp;information<br>
+Input&nbsp;strings&nbsp;of&nbsp;the&nbsp;species's&nbsp;name,&nbsp;planet,&nbsp;description,&nbsp;image,&nbsp;language,&nbsp;and&nbsp;classification</tt></dd></dl>
 
-<dl><dt><a name="Species-get_characters"><strong>get_characters</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;list&nbsp;of&nbsp;characters&nbsp;of&nbsp;this&nbsp;species</tt></dd></dl>
+<dl><dt><a name="Species-__repr__"><strong>__repr__</strong></a>(self)</dt><dd><tt>Return&nbsp;representation&nbsp;of&nbsp;this&nbsp;character&nbsp;in&nbsp;format<br>
+&lt;name&nbsp;{}&gt;&nbsp;where&nbsp;{}&nbsp;is&nbsp;character's&nbsp;name</tt></dd></dl>
 
-<dl><dt><a name="Species-get_classification"><strong>get_classification</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;classification&nbsp;of&nbsp;this&nbsp;species</tt></dd></dl>
-
-<dl><dt><a name="Species-get_description"><strong>get_description</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;description&nbsp;of&nbsp;this&nbsp;species</tt></dd></dl>
-
-<dl><dt><a name="Species-get_image"><strong>get_image</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;url&nbsp;of&nbsp;an&nbsp;image&nbsp;of&nbsp;this&nbsp;species</tt></dd></dl>
-
-<dl><dt><a name="Species-get_info"><strong>get_info</strong></a>(self)</dt><dd><tt>Return&nbsp;the&nbsp;dictionary&nbsp;of&nbsp;information&nbsp;on&nbsp;this&nbsp;species</tt></dd></dl>
-
-<dl><dt><a name="Species-get_language"><strong>get_language</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;language&nbsp;of&nbsp;this&nbsp;species</tt></dd></dl>
-
-<dl><dt><a name="Species-get_name"><strong>get_name</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;name&nbsp;of&nbsp;this&nbsp;species</tt></dd></dl>
-
-<dl><dt><a name="Species-get_planets"><strong>get_planets</strong></a>(self)</dt><dd><tt>Return&nbsp;a&nbsp;string,&nbsp;the&nbsp;list&nbsp;of&nbsp;planets&nbsp;of&nbsp;this&nbsp;species</tt></dd></dl>
+<dl><dt><a name="Species-get_characters"><strong>get_characters</strong></a>(self)</dt><dd><tt>Return&nbsp;an&nbsp;list&nbsp;of&nbsp;the&nbsp;names&nbsp;of&nbsp;all&nbsp;characters&nbsp;of&nbsp;this&nbsp;species</tt></dd></dl>
 
 <hr>
 Static methods defined here:<br>
-<dl><dt><a name="Species-get_all_sorted_species"><strong>get_all_sorted_species</strong></a>(sort_by)</dt><dd><tt>Input&nbsp;the&nbsp;attribute&nbsp;by&nbsp;which&nbsp;to&nbsp;sort&nbsp;the&nbsp;species<br>
-Return&nbsp;an&nbsp;OrderedDict&nbsp;of&nbsp;all&nbsp;species,&nbsp;with&nbsp;their&nbsp;names&nbsp;as&nbsp;keys<br>
-and&nbsp;their&nbsp;dicts&nbsp;of&nbsp;information&nbsp;as&nbsp;values,&nbsp;sorted&nbsp;by&nbsp;the&nbsp;given<br>
-attribute</tt></dd></dl>
+<dl><dt><a name="Species-get"><strong>get</strong></a>(species)</dt><dd><tt>Input&nbsp;the&nbsp;character&nbsp;name&nbsp;to&nbsp;retrieve<br>
+Return&nbsp;an&nbsp;instance&nbsp;of&nbsp;this&nbsp;species</tt></dd></dl>
 
-<dl><dt><a name="Species-get_all_species"><strong>get_all_species</strong></a>()</dt><dd><tt>Return&nbsp;an&nbsp;OrderedDict&nbsp;of&nbsp;all&nbsp;species,&nbsp;with&nbsp;their&nbsp;names&nbsp;as&nbsp;keys<br>
-and&nbsp;their&nbsp;dicts&nbsp;of&nbsp;information&nbsp;as&nbsp;values</tt></dd></dl>
+<dl><dt><a name="Species-get_all"><strong>get_all</strong></a>()</dt><dd><tt>Return&nbsp;an&nbsp;list&nbsp;of&nbsp;all&nbsp;character&nbsp;species</tt></dd></dl>
 
 <hr>
 Data descriptors defined here:<br>
@@ -179,6 +175,27 @@ Data descriptors defined here:<br>
 <dl><dt><strong>__weakref__</strong></dt>
 <dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
 </dl>
+<dl><dt><strong>serialize</strong></dt>
+<dd><tt>Return&nbsp;a&nbsp;dictionary&nbsp;of&nbsp;information&nbsp;on&nbsp;this&nbsp;species</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__tablename__</strong> = 'species'</dl>
+
+<dl><dt><strong>classification</strong> = db.Column(db.String(50))</dl>
+
+<dl><dt><strong>description</strong> = db.Column(db.String(4000))</dl>
+
+<dl><dt><strong>id</strong> = db.Column(db.Integer, primary_key=True)</dl>
+
+<dl><dt><strong>image</strong> = db.Column(db.String(250))</dl>
+
+<dl><dt><strong>language</strong> = db.Column(db.String(50))</dl>
+
+<dl><dt><strong>name</strong> = db.Column(db.String(50), unique=True)</dl>
+
+<dl><dt><strong>planet</strong> = db.Column(db.String(4000))</dl>
+
 </td></tr></table></td></tr></table><p>
 <table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
 <tr bgcolor="#55aa55">
@@ -186,5 +203,6 @@ Data descriptors defined here:<br>
 <font color="#ffffff" face="helvetica, arial"><big><strong>Data</strong></big></font></td></tr>
     
 <tr><td bgcolor="#55aa55"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
-<td width="100%"><strong>relative_path</strong> = '/Users/tumrod/Documents/summer2015/SWE/cs373-idb/db/'</td></tr></table>
+<td width="100%"><strong>app</strong> = &lt;Flask 'models'&gt;<br>
+<strong>db</strong> = &lt;SQLAlchemy engine='postgresql://localhost/intergalacticdb'&gt;</td></tr></table>
 </body></html>
