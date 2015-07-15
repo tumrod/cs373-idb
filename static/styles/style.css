@@ -3884,3 +3884,32 @@ ul.project-detail-block, .project-detail-block ul {
         visibility: hidden;
     }
 }
+
+#search {
+  position: relative;
+  top: 60%;
+  left: 12%;
+  width: 890px;
+}
+
+.gsc-control-cse.gsc-control-cse-en {
+  padding: 0;
+  margin: 0;
+  width: 880px;
+  height: 27px;
+}
+
+.gsc-search-button {
+    display: none;
+}
+
+.gsc-input {
+    padding: 0 !important;
+    background-color: #323232 !important;
+    background: none !important;
+}
+
+#gsc-iw-id1, #gsc-i-id1  {
+    color: white;
+    background-color: #323232;
+}
