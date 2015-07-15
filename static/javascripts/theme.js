@@ -28,7 +28,6 @@
 
     function openSite() {
         fullScreenSlider();
-        header();
         scroll();
         winResize();
         pushmenu();
