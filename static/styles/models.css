@@ -82,6 +82,8 @@ h4 {
   padding:0;
   background:#7f8c8d;
   animation: responsive 5s infinite ease-in-out;
+  display:inline-block;
+  overflow-x: auto;
 }
 .box-table{
   overflow:hidden;
