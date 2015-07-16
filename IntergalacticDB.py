@@ -97,6 +97,15 @@ def species(species=None):
 
     return render_template('species.html', all_species=all_species)
 
+@app.route('/sitemap.xml')
+def site_map():
+
+    sitemap_xml = render_template('sitemap.xml')
+    response = make_response(sitemap_xml)
+    response.headers["Content-Type"] = "application/xml"
+
+    return response
+
 if __name__ == '__main__':
     create_db()
     app.run()
