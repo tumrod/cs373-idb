@@ -150,10 +150,6 @@ def site_map():
 # UnitTests
 # ---------
 
-@app.route('/tests')
-def tests():
-    return render_template('tests.html')
-
 @app.route('/api/tests', methods=['GET'])
 def run_tests():
     print("Running tests")
