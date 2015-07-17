@@ -128,7 +128,6 @@ def league(species=None):
             i_name = items_info['name']
             i_img = items_info['image']
             i_name_img = [i_name, i_img]
-            print(i_name_img[0])
             items_img_list.append(i_name_img)
 
         champ_dict['total_cost'] = total_cost
