@@ -72,7 +72,13 @@
                     <tr>
                         <td class="user-photo"><span><img class="user-tumb" src={{ champion_info['champ_img'] }}></span></td>
                         <td>{{ champion }}</td>
-
+                        <td>
+                            <ul>
+                                {% for item_img in champion_info['items_img_list'] %}
+                                    <li style="white-space: nowrap;"><span><img class="user-tumb" src={{ item_img }}></span></li>
+                                {% endfor %}
+                            </ul>
+                        </td>
                     </tr>
                 {% endfor %}
             </tbody>
