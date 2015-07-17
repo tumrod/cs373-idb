@@ -1,4 +1,5 @@
 import os
+import subprocess
 from setupDB import create_db
 from flask import *
 from models import *
@@ -105,6 +106,22 @@ def site_map():
     response.headers["Content-Type"] = "application/xml"
 
     return response
+
+# ---------
+# UnitTests
+# ---------
+
+@app.route('/api/tests')
+def run_tests():
+    print("Running tests")
+    script = subprocess.Popen("make test", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    try:
+        outs, errs = script.communicate()
+    except:
+        script.kill()
+    print(outs.decode())
+    errs = errs.decode()
+    return json.dumps({"results": errs})
 
 if __name__ == '__main__':
     create_db()
