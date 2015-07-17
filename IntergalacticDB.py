@@ -1,10 +1,10 @@
 import os
-import subprocess
+
 from setupDB import create_db
 from flask import *
 from models import *
-import urllib
-import json
+from controllers import *
+
 
 relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
 
@@ -100,51 +100,14 @@ def species(species=None):
 
     return render_template('species.html', all_species=all_species)
 
-
+# -------
+# League API
+# -------
 
 @app.route('/league')
-def league(species=None):
-    champions_url = urllib.request.urlopen("http://leagueofdowning.link/api/champions/")
-    champions = json.loads(champions_url.read().decode('utf-8'))
-
-    items_url = urllib.request.urlopen("http://leagueofdowning.link/api/items/")
-    items = json.loads(items_url.read().decode('utf-8'))
-
-    all_champions = {}
-    
-    for champ_id, champ_info in champions.items():
-        champ_name = champ_info['name']
-        champ_dict = {}
-        
-        champ_dict['champ_img'] = champ_info['image']
-
-        champ_items = champ_info['recommended_items']
-        total_cost = 0
-        items_img_list = []
-
-        for i in champ_items:
-            items_info = items[str(i)]
-            total_cost += items_info['total_gold']
-            i_name = items_info['name']
-            i_img = items_info['image']
-            i_name_img = [i_name, i_img]
-            items_img_list.append(i_name_img)
-
-        champ_dict['total_cost'] = total_cost
-        champ_dict['items_img_list'] = items_img_list
-        all_champions[champ_name] = champ_dict
-
-    
+def league():
+    all_champions = league_controller()
     return render_template('league.html', all_champions=all_champions)
-
-@app.route('/sitemap.xml')
-def site_map():
-
-    sitemap_xml = render_template('sitemap.xml')
-    response = make_response(sitemap_xml)
-    response.headers["Content-Type"] = "application/xml"
-
-    return response
 
 # ---------
 # UnitTests
@@ -156,15 +119,18 @@ def tests():
 
 @app.route('/api/tests', methods=['GET'])
 def run_tests():
-    print("Running tests")
-    script = subprocess.Popen("make test", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-    try:
-        outs, errs = script.communicate()
-    except:
-        script.kill()
-    print(outs.decode())
-    errs = errs.decode()
+    errs = test_controller()
     return json.dumps({"result": errs})
+
+# -------
+# Search
+# -------
+
+@app.route('/search/query=<query>')
+def search(query=None):
+    search_results = search_controller(query)
+    return render_template('unknown.html')
+
 
 if __name__ == '__main__':
     create_db()
