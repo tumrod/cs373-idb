@@ -2,6 +2,8 @@ import os
 from setupDB import create_db
 from flask import *
 from models import *
+import urllib
+import json
 
 relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
 
@@ -96,6 +98,43 @@ def species(species=None):
         all_species = Species.get_all()
 
     return render_template('species.html', all_species=all_species)
+
+
+
+@app.route('/league')
+def league(species=None):
+    champions_url = urllib.request.urlopen("http://leagueofdowning.link/api/champions/")
+    champions = json.loads(champions_url.read().decode('utf-8'))
+
+    items_url = urllib.request.urlopen("http://leagueofdowning.link/api/items/")
+    items = json.loads(items_url.read().decode('utf-8'))
+
+    all_champions = {}
+    
+    for champ_id, champ_info in champions.items():
+        champ_name = champ_info['name']
+        champ_dict = {}
+        
+        champ_dict['champ_img'] = champ_info['image']
+
+        champ_items = champ_info['recommended_items']
+        total_cost = 0
+        items_img_list = []
+
+        for i in champ_items:
+            items_info = items[str(i)]
+            total_cost += items_info['total_gold']
+            i_name = items_info['name']
+            i_img = items_info['image']
+
+            items_img_list.append(i_img)
+
+        champ_dict['total_cost'] = total_cost
+        champ_dict['items_img_list'] = items_img_list
+        all_champions[champ_name] = champ_dict
+
+    
+    return render_template('league.html', all_champions=all_champions)
 
 @app.route('/sitemap.xml')
 def site_map():
