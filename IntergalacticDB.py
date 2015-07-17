@@ -115,8 +115,7 @@ def league():
 
 @app.route('/api/tests', methods=['GET'])
 def run_tests():
-    errs = test_controller()
-    return json.dumps({"result": errs})
+    return render_template('tests.html', result=test_controller())
 
 # -------
 # Search

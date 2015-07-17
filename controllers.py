@@ -12,7 +12,7 @@ def test_controller():
     except:
         script.kill()
     print(outs.decode())
-    return errs.decode()
+    return outs.decode()
 
 def league_controller():
     champions_url = urllib.request.urlopen("http://leagueofdowning.link/api/champions/")
@@ -44,7 +44,7 @@ def league_controller():
         champ_dict['total_cost'] = total_cost
         champ_dict['items_img_list'] = items_img_list
         all_champions[champ_name] = champ_dict
-        return all_champions
+    return all_champions
 
 def search_controller(query):
 

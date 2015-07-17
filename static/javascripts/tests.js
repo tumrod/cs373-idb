@@ -12,3 +12,9 @@ $(document).ready(function (){
         }
     });
 });
+
+$(".unit-test").click(function() {
+
+    window.location.href = '/api/tests'
+
+});
