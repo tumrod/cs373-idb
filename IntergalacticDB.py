@@ -1,7 +1,10 @@
 import os
+
 from setupDB import create_db
 from flask import *
 from models import *
+from controllers import *
+
 
 relative_path = os.path.dirname(os.path.realpath(__file__)) + '/db/'
 
@@ -97,15 +100,33 @@ def species(species=None):
 
     return render_template('species.html', all_species=all_species)
 
-@app.route('/sitemap.xml')
-def site_map():
+# -------
+# League API
+# -------
 
-    sitemap_xml = render_template('sitemap.xml')
-    response = make_response(sitemap_xml)
-    response.headers["Content-Type"] = "application/xml"
+@app.route('/league')
+def league():
+    all_champions = league_controller()
+    return render_template('league.html', all_champions=all_champions)
 
-    return response
+# ---------
+# UnitTests
+# ---------
+
+@app.route('/api/tests', methods=['GET'])
+def run_tests():
+    return render_template('tests.html', result=test_controller())
+
+# -------
+# Search
+# -------
+
+@app.route('/search/query=<query>')
+def search(query=None):
+    search_results = search_controller(query)
+    return render_template('unknown.html')
+
 
 if __name__ == '__main__':
     create_db()
-    app.run()
+    app.run(debug=True)
