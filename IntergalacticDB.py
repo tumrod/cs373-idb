@@ -164,4 +164,4 @@ def run_tests():
 
 if __name__ == '__main__':
     create_db()
-    app.run()
+    app.run(debug=True)
