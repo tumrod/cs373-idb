@@ -40,6 +40,8 @@ li {
     font-family: 'Audiowide', sans-serif;
     margin-top: 0px;
     margin-bottom: 10px;
+    display: inline;
+    float: left;
 }
 
 h1 {

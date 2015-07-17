@@ -75,10 +75,11 @@
                         <td>
                             <ul>
                                 {% for item_img in champion_info['items_img_list'] %}
-                                    <li style="white-space: nowrap;"><span><img class="user-tumb" src={{ item_img }}></span></li>
+                                    <li style="display: inline;"><span><img class="user-tumb" src={{ item_img }}></span></li>
                                 {% endfor %}
                             </ul>
                         </td>
+                        <td>{{ champion_info['total_cost'] }}</td>
                     </tr>
                 {% endfor %}
             </tbody>
