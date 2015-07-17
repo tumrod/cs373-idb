@@ -127,14 +127,15 @@ def league(species=None):
             total_cost += items_info['total_gold']
             i_name = items_info['name']
             i_img = items_info['image']
-
-            items_img_list.append(i_img)
+            i_name_img = [i_name, i_img]
+            print(i_name_img[0])
+            items_img_list.append(i_name_img)
 
         champ_dict['total_cost'] = total_cost
         champ_dict['items_img_list'] = items_img_list
         all_champions[champ_name] = champ_dict
 
-    #all_champions = json.dumps(all_champions, indent=4)
+    
     return render_template('league.html', all_champions=all_champions)
 
 @app.route('/sitemap.xml')

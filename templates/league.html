@@ -75,7 +75,8 @@
                         <td>
                             <ul>
                                 {% for item_img in champion_info['items_img_list'] %}
-                                    <li style="display: inline;"><span><img class="user-tumb" src={{ item_img }}></span></li>
+                                    <li style="display: inline;"><img class="user-tumb" src={{ item_img[1] }} title= "{{item_img[0]}}"
+                                        > </img></li>
                                 {% endfor %}
                             </ul>
                         </td>
