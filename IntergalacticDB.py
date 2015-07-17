@@ -150,7 +150,11 @@ def site_map():
 # UnitTests
 # ---------
 
-@app.route('/api/tests')
+@app.route('/tests')
+def tests():
+    return render_template('tests.html')
+
+@app.route('/api/tests', methods=['GET'])
 def run_tests():
     print("Running tests")
     script = subprocess.Popen("make test", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
@@ -160,7 +164,7 @@ def run_tests():
         script.kill()
     print(outs.decode())
     errs = errs.decode()
-    return json.dumps({"results": errs})
+    return json.dumps({"result": errs})
 
 if __name__ == '__main__':
     create_db()
