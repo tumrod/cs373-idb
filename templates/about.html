@@ -102,9 +102,6 @@
                             <a href="/league">League</a>
                         </li>                        
                         <li>
-                            <a href="/tests">Tests</a>
-                        </li>
-                        <li>
                             <a href="/about">About</a>
                         </li>
                     </ul>
@@ -128,6 +125,8 @@
                         <p class="team-stat">total # of issues: 64</p>
                         <P class="team-stat">total # of unit tests: 44</p>
                     </p>
+                    <p style="color: yellow;text-align:center;font-size: 27px;letter-spacing: 2px;line-height: 37px;margin-bottom: 20px;padding-top: 10px;">Unit Tests</p>
+                        <p id="result"></p>
                     <p style="padding-top:25px">
                         <a class="team-link" href="http://docs.starhub.apiary.io/">Apiary API</a>
                         <a class="team-link" href="https://github.com/tumrod/cs373-idb/issues">GitHub Issue Tracker</a>
@@ -311,5 +310,7 @@
     <script src="{{ url_for('static', filename='javascripts/plugin/mediaelement-and-player.min.js')}}" type="text/javascript"></script>
     <script src="{{ url_for('static', filename='javascripts/plugin/jquery.mb.YTPlayer.min.js')}}" type="text/javascript"></script>
     <script src="{{ url_for('static', filename='javascripts/theme.js')}}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='javascripts/tests.js')}}" type="text/javascript"></script>
+
 </body>
 </html>
