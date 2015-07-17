@@ -7,7 +7,8 @@ $(document).ready(function (){
         url: '/api/tests',
         success: function(result) {
            console.log(result)
-           $result.append("<p>" + result + "</p>")
+           var jsonObj = JSON.parse(result)
+           $result.append("<p>" + jsonObj.result + "</p>")
         }
     });
 });
