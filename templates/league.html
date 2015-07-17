@@ -52,7 +52,6 @@
 
         </div>
     </header>
-    <!-- END HEADER -->
   <h1 class="h1"><a href="http://leagueofdowning.link/">League of Downing</a></h1>
 
   <div class="box-table">
@@ -68,17 +67,9 @@
             <tbody>
                 {% for champion, champion_info in all_champions.items() %}
                     <tr>
-                        <td class="user-photo"><img class="user-tumb" src={{ champion_info['champ_img'] }}></td>
+                        <td class="user-photo"><span><img class="user-tumb" src={{ champion_info['champ_img'] }}></span></td>
                         <td>{{ champion }}</td>
-<!--                        <td>
-                            <ul>
-                                {% for item_img in champion_info. %}
-                                    <li value="{{ character.name }}">{{ character.name }}</li>
-                                {% endfor %}
-                            </ul>
-                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect_to_selected_character_in_{{ species.name }}">Go</button>
-                        </td>
-                        <td><a href="/planets/{{ species.planet }}">{{ species.planet }}</a></td>-->
+
                     </tr>
                 {% endfor %}
             </tbody>

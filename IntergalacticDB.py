@@ -134,7 +134,7 @@ def league(species=None):
         champ_dict['items_img_list'] = items_img_list
         all_champions[champ_name] = champ_dict
 
-    
+    #all_champions = json.dumps(all_champions, indent=4)
     return render_template('league.html', all_champions=all_champions)
 
 @app.route('/sitemap.xml')
