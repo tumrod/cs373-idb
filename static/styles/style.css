@@ -3884,3 +3884,7 @@ ul.project-detail-block, .project-detail-block ul {
         visibility: hidden;
     }
 }
+
+td a em {
+    background-color: yellow;
+}

@@ -52,7 +52,7 @@ def search_controller(query):
     search_terms = query.split('+')
 
     if len(search_terms) == 1:
-        request = Request('http://api.swiftype.com/api/v1/public/engines/search.json?q=' + query +
+        request = Request('http://api.swiftype.com/api/v1/public/engines/search.json?q=' + query.lower() +
                           '&engine_key=kyg84sUxAL9zE2ACjK4c')
         try:
             response = urlopen(request)
@@ -68,10 +68,10 @@ def search_controller(query):
         or_query = '+OR+'.join(search_terms)
 
         and_request = Request('http://api.swiftype.com/api/v1/public/engines/search.json?q=' + and_query +
-                          '&engine_key=kyg84sUxAL9zE2ACjK4c')
+                          '&engine_key=kyg84sUxAL9zE2ACjK4c&per_page=100')
 
         or_request = Request('http://api.swiftype.com/api/v1/public/engines/search.json?q=' + or_query +
-                          '&engine_key=kyg84sUxAL9zE2ACjK4c')
+                          '&engine_key=kyg84sUxAL9zE2ACjK4c&per_page=100')
 
         try:
             and_response = urlopen(and_request)

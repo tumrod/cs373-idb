@@ -124,7 +124,11 @@ def run_tests():
 @app.route('/search/query=<query>')
 def search(query=None):
     search_results = search_controller(query)
-    return render_template('unknown.html')
+
+    if 'single' in search_results:
+        return render_template('one_search_term.html', results=search_results)
+    else:
+        return render_template('multiple_search_terms.html', results=search_results)
 
 
 if __name__ == '__main__':
