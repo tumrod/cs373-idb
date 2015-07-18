@@ -1,7 +1,13 @@
 $( document ).ready(function() {
     $(".input-sm").keyup(function (e) {
         if (e.keyCode == 13) {
-            window.location.href = '/search/query=' + $(this).val().split(' ').join('+');
+            var search_terms = $(this).val().split(' ');
+
+            if(search_terms.length == 1) {
+                window.location.href = '/search/query=' + search_terms[0];
+            } else {
+                window.location.href = '/search/query=' + search_terms.join('+');
+            }
         }
     });
 });
