@@ -40,6 +40,10 @@ li {
     font-family: 'Audiowide', sans-serif;
     margin-top: 0px;
     margin-bottom: 10px;
+    display: inline;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h1 {
@@ -82,8 +86,6 @@ h4 {
   padding:0;
   background:#7f8c8d;
   animation: responsive 5s infinite ease-in-out;
-  display:inline-block;
-  overflow-x: auto;
 }
 .box-table{
   overflow:hidden;
@@ -151,14 +153,19 @@ h4 {
 
 
 /* = Mobile Changes
-------------------------*/
+ ------------------------*/
 
 @media only screen and (max-width: 800px){
   .box-table table{
     font-size: 80%;
+    display:inline-block;
+    overflow-x: auto;
   }
   h1.h1 {
-    font-size: 150%;
+    font-size: 125%;
+  }
+  .box-table{
+      top: 20%;
   }
 }
 /* = Error
