@@ -49,6 +49,63 @@ class TestModels (TestCase) :
         self.assertEqual(c[0].birth, "41.9 BBY")
         self.assertEqual(c[0].height, "1.88 meters, later 2.02 in armor")
 
+    def test_character_repr_1(self):
+        actual = str(Character.get("Boba Fett"))
+        self.assertEqual(actual, "<name Boba Fett>")
+
+    def test_character_repr_2(self):
+        actual = str(Character.get("Chewbacca"))
+        self.assertEqual(actual, "<name Chewbacca>")
+
+    def test_get_character_serialize_1(self):
+        expected = {
+            "birth": "31.5 BBY , Kamino",
+            "description": "Boba Fett was a Mandalorian warrior and bounty hunter. He was the only unaltered clone of the famed Jango Fett, created in 32 BBY as unit A0050, one of the first of many Fett replicas designed to become part of the Grand Army of the Republic, and was raised as Jango's son. Jango taught Boba much, training him to become a skilled bounty hunter as was his father-figure before him. In 22 BBY, Jango was killed at the Battle of Geonosis, which opened the Clone Wars.",
+            "gender": "Male",
+            "height": "1.83 meters",
+            "image": "http://img2.wikia.nocookie.net/__cb20130920001614/starwars/images/5/58/BobaFettMain2.jpg",
+            "name": "Boba Fett",
+            "planet": "Kamino",
+            "species": "Human"
+        }
+
+        actual = Character.get("Boba Fett").serialize
+        bool_result = actual["birth"] == expected["birth"] and \
+                        actual["description"] == expected["description"] and \
+                        actual["name"] == expected["name"] and \
+                        actual["image"] == expected["image"] and \
+                        actual["gender"] == expected["gender"] and \
+                        actual["height"] == expected["height"] and \
+                        actual["planet"] == expected["planet"] and \
+                        actual["species"] == expected["species"]
+
+        self.assertEqual(True, bool_result)        
+
+    def test_get_character_serialize_2(self):
+        expected = {
+            "birth": "200 BBY, Kashyyyk",
+            "description": "Chewbacca (or \"Chewie\", as he was known by his friends) was a legendary Wookiee from Kashyyyk and co-pilot of Han Solo's ship, the Millennium Falcon. He was the son of Attichitcuk, the husband of Mallatobuck, and the father of Lumpawaroo. Chewbacca carried with him the name of an ancient Wookiee hero, the great Bacca, first of the great chieftains of Kashyyyk, and the creator of a sword that denoted leadership among the Wookiees. This name placed Chewbacca in a noble lineage.",
+            "gender": "Male",
+            "height": "2.28 meters",
+            "image": "http://img4.wikia.nocookie.net/__cb20080815045819/starwars/images/thumb/7/73/Chewbaccaheadshot.jpg/500px-Chewbaccaheadshot.jpg",
+            "name": "Chewbacca",
+            "planet": "Kashyyyk",
+            "species": "Wookiee"
+        }
+
+        actual = Character.get("Chewbacca").serialize
+        bool_result = actual["birth"] == expected["birth"] and \
+                        actual["description"] == expected["description"] and \
+                        actual["name"] == expected["name"] and \
+                        actual["image"] == expected["image"] and \
+                        actual["gender"] == expected["gender"] and \
+                        actual["height"] == expected["height"] and \
+                        actual["planet"] == expected["planet"] and \
+                        actual["species"] == expected["species"]
+
+        self.assertEqual(True, bool_result)    
+
+
     def test_get_all_1(self) :
         characters = Character.get_all()
         char_name = [characters[i].name for i in range(len(characters))]
@@ -113,6 +170,14 @@ class TestModels (TestCase) :
         self.assertEqual(p[0].region, "Outer Rim Territories")
         self.assertEqual(p[0].system, "Tatoo system")
 
+    def test_planet_repr_1(self):
+        actual = str(Planet.get("Kashyyyk"))
+        self.assertEqual(actual, "<name Kashyyyk>")
+
+    def test_planet_repr_2(self):
+        actual = str(Planet.get("Tatooine"))
+        self.assertEqual(actual, "<name Tatooine>")
+
     def test_get_all_planets(self):
         planets = Planet.get_all()
         char_name = [planets[i].name for i in range(len(planets))]
@@ -128,6 +193,41 @@ class TestModels (TestCase) :
         result = not set(char_name).isdisjoint(expected)
 
         self.assertEqual(result, True)
+
+    def test_get_planet_serialize_1(self):
+        expected = {
+            "description": "Tatooine (pronounced/t\u00e6tu'in/; Jawaese: Tah doo Een e) was a desert world and the first planet in the binary Tatoo star system. It was part of the Arkanis sector in the Outer Rim Territories. It was inhabited by poor locals who mostly farmed moisture for a living. Other activities included used equipment retailing and scrap dealing. The planet was on the 5709-DC Shipping Lane, a spur of the Triellus Trade Route, which itself connected to the Sisar Run.",
+            "image": "http://img2.wikia.nocookie.net/__cb20130226044533/starwars/images/thumb/1/18/Tatooine3.png/500px-Tatooine3.png",
+            "name": "Tatooine",
+            "region": "Outer Rim Territories",
+            "system": "Tatoo system"
+        }
+        actual = Planet.get("Tatooine").serialize
+        bool_result = actual["description"] == expected["description"] and \
+                        actual["image"] == expected["image"] and \
+                        actual["name"] == expected["name"] and \
+                        actual["region"] == expected["region"] and \
+                        actual["system"] == expected["system"]
+
+        self.assertEqual(True, bool_result)
+
+    def test_get_planet_serialize_2(self):        
+        expected = {
+            "description": "Kamino (pronounced/k\u0259'mino\u028a/), also known as the Planet of Storms, was the watery world where the Clone Army of the Galactic Republic was created, as well as the Kamino Home Fleet. It was inhabited by a race of tall, elegant beings called the Kaminoans, who kept to themselves and were known for their cloning technology. Kamino was located just south of the Rishi Maze, and was governed by the Ruling Council, headed by the Prime Minister.",
+            "image": "http://img2.wikia.nocookie.net/__cb20090527045541/starwars/images/thumb/a/a9/Eaw_Kamino.jpg/500px-Eaw_Kamino.jpg",
+            "name": "Kamino",
+            "region": "Wild Space\nExtra-galactic",
+            "system": "Kamino system"
+        }
+        actual = Planet.get("Kamino").serialize
+        bool_result = actual["description"] == expected["description"] and \
+                        actual["image"] == expected["image"] and \
+                        actual["name"] == expected["name"] and \
+                        actual["region"] == expected["region"] and \
+                        actual["system"] == expected["system"]
+
+        self.assertEqual(True, bool_result)
+
 
     def test_get_planet_1(self):
         p = Planet.get("Kamino")
@@ -235,6 +335,14 @@ class TestModels (TestCase) :
 
         self.assertEqual(c[0].name, "Human")
         self.assertEqual(c[0].classification, "Mammal")
+
+    def test_species_repr_1(self):
+        actual = str(Species.get("Wookiee"))
+        self.assertEqual(actual, "<name Wookiee>")
+
+    def test_species_repr_2(self):
+        actual = str(Species.get("Hutt"))
+        self.assertEqual(actual, "<name Hutt>")
 
     def test_get_all_species_1(self) :
         species = Species.get_all()
