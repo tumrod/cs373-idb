@@ -8,7 +8,8 @@ db = SQLAlchemy(app)
 
 class Character(db.Model):
     """
-    Character encapsulates a character dictionary containing its information
+    Character encapsulates attributes of a character, initialized by default from database
+    or from constructor
     """
     
     __tablename__ = 'characters'
@@ -24,7 +25,7 @@ class Character(db.Model):
 
     def __init__(self, name, planet, species, description, image, birth, gender, height):
         """
-        Initialize the character to have a dictionary of its information
+        Initialize the character to the given information
         Input strings of the character's name, planet, species, description, image, birth, gender, and height
         """
         self.name = name
@@ -37,10 +38,17 @@ class Character(db.Model):
         self.height = height
 
     def __repr__(self):
+        """
+        Return representation of this character in format
+        <name {}> where {} is character's name
+        """
         return '<name {}>'.format(self.name)
 
     @property
     def serialize(self):
+        """
+        Return a dictionary of information on this character
+        """
         return {
             'name' : self.name,
             'planet' : self.planet,
@@ -70,7 +78,8 @@ class Character(db.Model):
 
 class Planet(db.Model):
     """
-    Planet encapsulates a planet dictionary containing its information
+    Planet encapsulates attributes of a planet, initialized by default from database
+    or from constructor
     """
     
     __tablename__ = 'planets'
@@ -83,8 +92,8 @@ class Planet(db.Model):
 
     def __init__(self, name, description, image, region, system):
         """
-        Initialize the planet to have a dictionary of its information
-        Input strings of the planet's name, characters list, species list, description, image, region, and system
+        Initialize the planet to the given information
+        Input strings of the planet's name, description, image, region, and system
         """
 
         self.name = name
@@ -94,10 +103,17 @@ class Planet(db.Model):
         self.system = system
 
     def __repr__(self):
+        """
+        Return representation of this character in format
+        <name {}> where {} is character's name
+        """
         return '<name {}>'.format(self.name)
 
     @property
     def serialize(self):
+        """
+        Return a dictionary of information on this planet
+        """
         return {
             'name' : self.name,
             'description' : self.description,
@@ -107,9 +123,15 @@ class Planet(db.Model):
         }
 
     def get_characters(self):
+        """
+        Return an list of the names of all characters of this planet
+        """
         return Character.query.filter_by(planet=self.name).all()
 
     def get_species(self):
+        """
+        Return an list of the names of all species of this planet
+        """
         character_species = {c.species for c in Character.query.filter_by(planet=self.name).all() if c.species != "Unknown"}
         species_name = {s.name for s in Species.query.filter_by(planet=self.name).all() if s.name != "Unknown"}
 
@@ -133,7 +155,8 @@ class Planet(db.Model):
 
 class Species(db.Model):
     """
-    Species encapsulates a species dictionary containing its information
+    Species encapsulates attributes of a species, initialized by default from database
+    or from constructor
     """
     
     __tablename__ = 'species'
@@ -147,8 +170,8 @@ class Species(db.Model):
 
     def __init__(self, name, planet, description, image, language, classification):
         """
-        Initialize the species to have a dictionary of its information
-        Input strings of the species's name, characters list, planet list, description, image, language, and classification
+        Initialize the species to the given information
+        Input strings of the species's name, planet, description, image, language, and classification
         """
         
         self.name = name
@@ -159,10 +182,17 @@ class Species(db.Model):
         self.classification = classification
 
     def __repr__(self):
+        """
+        Return representation of this character in format
+        <name {}> where {} is character's name
+        """
         return '<name {}>'.format(self.name)
 
     @property
     def serialize(self):
+        """
+        Return a dictionary of information on this species
+        """
         return {
             'name' : self.name,
             'planet' : self.planet,
@@ -173,6 +203,9 @@ class Species(db.Model):
         }
 
     def get_characters(self):
+        """
+        Return an list of the names of all characters of this species
+        """
         return Character.query.filter_by(species=self.name).all()
 
     @staticmethod
