@@ -2,7 +2,8 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>All Planets</title>
+    <title>League of Downing</title>
+
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta name="author" content="nileforest">
@@ -44,7 +45,7 @@
                     </li>
                     <li>
                         <a href="/league">League</a>
-                    </li> 
+                    </li>
                     <li>
                         <a href="/about">About</a>
                     </li>
@@ -54,9 +55,7 @@
 
         </div>
     </header>
-    <!-- END HEADER -->
-
-  <h1 class="h1">Star Wars Planets</h1>
+  <h1 class="h1"><a href="http://leagueofdowning.link/" style="color:white; top:20px; bottom:20px;">League of Downing</a></h1>
 
   <div class="box-table">
         <table class="sortable">
@@ -64,47 +63,24 @@
                 <tr>
                     <th>Photo</th>
                     <th>Name</th>
-                    <th>Region</th>
-                    <th>System</th>
-                    <th>Characters</th>
-                    <th>Species</th>
+                    <th>Items</th>
+                    <th>Full Build Cost</th>
                 </tr>
             </thead>
             <tbody>
-                {% for planet in all_planets %}
+                {% for champion, champion_info in all_champions.items() %}
                     <tr>
-                        <td class="user-photo"><img class="user-tumb" src={{ planet.image }}></td>
-                        <td><a href="/planets/{{ planet.name }}">{{ planet.name }}</a></td>
-                        <td>{{ planet.region }}</td>
-                        <td>{{ planet.system }}</td>
+                        <td class="user-photo"><span><img class="user-tumb" src={{ champion_info['champ_img'] }}></span></td>
+                        <td>{{ champion }}</td>
                         <td>
-                            <select value="characters" id="sort_order_character_{{ planet.name }}">
-
-                                {% if planet.get_characters()|length == 0 %}
-                                    <option value="Unknown">Unknown</option>
-                                {% else %}
-                                    {% for character in planet.get_characters() %}
-                                        <option value="{{ character.name }}">{{ character.name }}</option>
-                                    {% endfor %}
-                                {% endif %}
-
-                            </select>
-                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-characters' id="redirect_to_selected_character_in_{{ planet.name }}">Go</button>
+                            <ul>
+                                {% for item_img in champion_info['items_img_list'] %}
+                                    <li style="display: inline;"><img class="user-tumb" src={{ item_img[1] }} title= "{{item_img[0]}}"
+                                        > </img></li>
+                                {% endfor %}
+                            </ul>
                         </td>
-                        <td>
-                            <select id="sort-order-species-{{ planet.name }}">
-
-                                {% if planet.get_species()|length == 0 %}
-                                    <option value="Unknown">Unknown</option>
-                                {% else %}
-                                    {% for species in planet.get_species() %}
-                                        <option value="{{ species }}">{{ species }}</option>
-                                    {% endfor %}
-                                {% endif %}
-
-                            </select>
-                            <button type="button" style="position: relative;left: 1%;top: 5px;" class ='generic-select-species' id="redirect_to_selected_species_in_{{ planet.name }}">Go</button>
-                        </td>
+                        <td>{{ champion_info['total_cost'] }}</td>
                     </tr>
                 {% endfor %}
             </tbody>

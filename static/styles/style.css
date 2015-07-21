@@ -1631,7 +1631,7 @@ header.sticky .navigation a.current-ele {
 }
 .team-link {
     padding-right: 25px;
-    color:yellow;
+    color:turquoise;
 }
 .team-stat {
     color:lightgrey;
@@ -3883,4 +3883,8 @@ ul.project-detail-block, .project-detail-block ul {
         opacity: 0;
         visibility: hidden;
     }
+}
+
+td a em {
+    background-color: yellow;
 }
