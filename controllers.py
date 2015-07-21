@@ -15,10 +15,10 @@ def test_controller():
     return outs.decode()
 
 def league_controller():
-    champions_url = urllib.request.urlopen("http://leagueofdowning.link/api/champions/")
+    champions_url = urllib.request.urlopen("http://leagueofdowning.me/api/champions/")
     champions = json.loads(champions_url.read().decode('utf-8'))
 
-    items_url = urllib.request.urlopen("http://leagueofdowning.link/api/items/")
+    items_url = urllib.request.urlopen("http://leagueofdowning.me/api/items/")
     items = json.loads(items_url.read().decode('utf-8'))
 
     all_champions = {}
