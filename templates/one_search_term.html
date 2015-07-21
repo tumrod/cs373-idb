@@ -69,8 +69,9 @@
             <tbody>
                 {% for result in results['single']['records']['page'] %}
                     <tr>
-                        <td><a href={{ result['url'] }} style="color:blue;">{{ result['url'] }} </a></td>
-                        <td><a href={{ result['url'] }}>{{ result['highlight']['body']|safe }}</a></td>
+                        <td style="text-align:left;"> <p><a href={{ result['url'] }}>{{ result['highlight']['body']|safe }}</a></p>
+                            <p><a href={{ result['url'] }} style="color:blue;">{{ result['url'] }} </a></p>
+                        </td>
                     </tr>
                 {% endfor %}
             </tbody>

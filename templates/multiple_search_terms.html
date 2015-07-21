@@ -69,8 +69,10 @@
             <tbody>
                 {% for result in results['AND']['records']['page'] %}
                     <tr>
-                        <td><a href={{ result['url'] }} style="color:blue;">{{ result['url'] }} </a></td>
-                        <td><a href={{ result['url'] }}>{{ result['highlight']['body']|safe }}</a></td>
+                        
+                        <td style="text-align:left;"><p><a href={{ result['url'] }}>{{ result['highlight']['body']|safe }}</a></p>
+                            <p><a href={{ result['url'] }} style="color:blue;">{{ result['url'] }} </a></p>
+                        </td>
                     </tr>
                 {% endfor %}
             </tbody>
@@ -88,8 +90,10 @@
             <tbody>
                 {% for result in results['OR']['records']['page'] %}
                     <tr>
-                        <td><a href={{ result['url'] }} style="color:blue;">{{ result['url'] }} </a></td>
-                        <td><a href={{ result['url'] }}>{{ result['highlight']['body']|safe }}</a></td>
+
+                        <td style="text-align:left;">  <p><a href={{ result['url'] }}>{{ result['highlight']['body']|safe }}</p> </a>
+                            <p><a href={{ result['url'] }} style="color:blue;">{{ result['url'] }} </p></a>
+                        </td>
                     </tr>
                 {% endfor %}
             </tbody>
