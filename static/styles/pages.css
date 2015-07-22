@@ -17,3 +17,10 @@ body{
 .navigation ul li a {
     color: #fff;
 }
+
+img {
+    max-height:75vh;
+    min-width: 40vw;
+    margin:auto;
+    display:block;
+}
