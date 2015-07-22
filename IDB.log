@@ -1,3 +1,312 @@
+commit d339a97f5b78f5e1c1f623a677ce10cf0c7c55cc
+Merge: f349cf6 55defc6
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Jul 21 20:32:25 2015 -0500
+
+    Merge branch 'dev'
+
+commit 55defc60fab4261cd352da049cc982f6c4a8bb23
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Jul 21 20:28:54 2015 -0500
+
+    changed the img size to be consistant
+
+commit 4909e49b1083207461edb9d4f235f3bed805e3d8
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Tue Jul 21 20:22:54 2015 -0500
+
+    Standardized image sizes across characters/planets/species
+
+commit 6935665aacab26a9d5cc124a0ff4acfdeae8254a
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Jul 21 20:16:04 2015 -0500
+
+    updated about page stat
+
+commit 599a3560f4d090afe77c13fd8e520c45c951680d
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Tue Jul 21 15:53:46 2015 -0500
+
+    fixing image sizes on instance pages
+
+commit f349cf677190bb708e492a4f2a9666118fa16da1
+Merge: 8253934 42ba390
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 20 23:43:32 2015 -0500
+
+    Merge branch 'dev'
+
+commit 8253934e840e29645e84462cd4247106bfdc1179
+Merge: 7e87091 086b575
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 20 23:42:53 2015 -0500
+
+    Merge branch 'master' of https://github.com/tumrod/cs373-idb
+
+commit 42ba390c9903fd8ba14f3a014665ec7b14c07e12
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 20 23:39:03 2015 -0500
+
+    changed League of Downing's API url to their .me domain
+
+commit 4bdae329e459c2a62ed16c10a7399b1da3e1e108
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 20 23:22:38 2015 -0500
+
+    resize img
+
+commit fe4a6e1c9b2ff365c20d76844821837a9769ec4d
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 20 22:42:07 2015 -0500
+
+    fixed image size on about page and fixd nav bar for tests.html
+
+commit c6d763b42a08129f98f3d9bfb9ce44ca9ae80e1e
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 20 22:41:16 2015 -0500
+
+    added link to the search result page
+
+commit 1c555be3655e3c3e0edf67927bb45abf15c58f6a
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 20 12:36:51 2015 -0500
+
+    added some more unit tests to have a better coverage
+
+commit ab644863c430440b342bede39e10e90e6c77af2c
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Mon Jul 20 12:28:41 2015 -0500
+
+    added the address to each search result
+
+commit 89e9503d47fae7cd51ff767d871048353d3e8e01
+Merge: 91144f3 0742669
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Sun Jul 19 15:09:21 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 07426698d3804317cd619b4dfd7eb5fd4596a769
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 17 19:52:24 2015 -0500
+
+    Fix minor bugs and add titles to search pages
+
+commit 51f99bb8589719e2439ffd72c3abd9c221194b8b
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 17 19:44:01 2015 -0500
+
+    Added search functionality
+
+commit 7017ee5e6da7ac4aaaa577f0187d81ee34135133
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Fri Jul 17 16:07:34 2015 -0500
+
+    added search bar
+
+commit 84126c0a28bc9848901227caad1e835da568904c
+Merge: 9f6b3f9 d79f4f4
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Fri Jul 17 13:01:34 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit d79f4f48873e6388ccb5c0ad6f98150ce9124727
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Fri Jul 17 11:59:40 2015 -0500
+
+    formatting for tests page fixes #82
+
+commit 8858a6de0be11195c185af141896105d32ca2fba
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Fri Jul 17 11:53:49 2015 -0500
+
+    added run tests to the about page
+
+commit 0dcea98ece4eb4edb7f98c4fc2ae90a7f2f06b25
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 17 10:54:44 2015 -0500
+
+    Bye bye crappy search bar
+
+commit ab7a2353942ab13eb57f6632767d330ca5bafd2b
+Merge: bdd46c6 e3aeb5f
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 17 10:52:02 2015 -0500
+
+    Merge branch 'search_functionality' into dev
+
+commit bdd46c6b10ef4350fc11556f0f6a482ea4f4791a
+Merge: ea88ae2 fdface0
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 17 10:51:52 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit e3aeb5fa30c9faf5885b812d08c3e208ed2f95f2
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 17 10:51:19 2015 -0500
+
+    Controller file and initial search work
+
+commit ea88ae21cd87c32ea131f635b48002aa8b7b2668
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Fri Jul 17 10:47:42 2015 -0500
+
+    Added controller file to reduce clutter in route file
+    
+    Also added initial search work
+
+commit fdface00bd04d2989e73fb3f1ee93bad17fa7b1f
+Merge: 06d9f96 8c44a02
+Author: Rachel Wong <rw@rw-6510b.(none)>
+Date:   Fri Jul 17 10:00:31 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 06d9f96ecb8ea318c7dfa31fb2d4282ddba066c2
+Author: Rachel Wong <rw@rw-6510b.(none)>
+Date:   Fri Jul 17 09:59:41 2015 -0500
+
+    another commit
+
+commit 8c44a02369d962fa9cf5f60df8371c18f7d46f27
+Author: Rachel Wong <rachelcwong168@gmail.com>
+Date:   Fri Jul 17 09:54:24 2015 -0500
+
+    Delete .about.html.swp
+
+commit d0d833b289b8db707e5f2afa9ae775766bf5acf2
+Author: Rachel Wong <rw@rw-6510b.(none)>
+Date:   Fri Jul 17 09:53:31 2015 -0500
+
+    removed test page, added it to about page. closes #83
+
+commit 6c317478c05303811a1244483708cb8dc2cecd32
+Author: Rachel Wong <rw@rw-6510b.(none)>
+Date:   Fri Jul 17 09:27:40 2015 -0500
+
+    parsed /api/tests
+
+commit 0cee1d42a770403887389fa8b12f16ed0c37a61c
+Author: Rachel Wong <rw@rw-6510b.(none)>
+Date:   Fri Jul 17 09:15:27 2015 -0500
+
+    added tests page
+
+commit c0ac69dfebc236b362a77a48420c14a8f99d3890
+Author: Rachel Wong <rw@rw-6510b.(none)>
+Date:   Fri Jul 17 09:09:14 2015 -0500
+
+    added tests tab
+
+commit 61aeecce778373efd41f4115e64873529d3d01ba
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Thu Jul 16 23:09:40 2015 -0500
+
+    modified league's page by adding padding to items
+
+commit 71800766314efbacea5e10b5410727343c334085
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Thu Jul 16 22:49:21 2015 -0500
+
+    added item's title when cursor was overed the img
+
+commit a1ce496f7a3bd3e7a195a2e86da537ce3a01fe01
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Thu Jul 16 21:27:27 2015 -0500
+
+    finishing league page fixes #70
+
+commit 765b35cc2ee795abea66b2510c979e8b41eaebfa
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Thu Jul 16 21:06:57 2015 -0500
+
+    fixed desktop tables again
+
+commit 869126e3a49b92b37a2cb63f2f6cb12c6a6b9837
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Thu Jul 16 21:03:35 2015 -0500
+
+    added league to nav page
+
+commit a20dae59768d491303159fd8d52674a1f864f43d
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Thu Jul 16 20:55:33 2015 -0500
+
+    made the league page
+
+commit a13548fb513fb81c627ec47593189825c15f6f2d
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Thu Jul 16 20:33:09 2015 -0500
+
+    league.html is broken, set debug to true in app run
+
+commit 48e5fc40ea0e6a16d65678e750511b06ca93ecd2
+Merge: dbce09c 3b7c991
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Thu Jul 16 20:28:43 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit dbce09cd70e5adf9c15a5a49351e29fb98ddef61
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Thu Jul 16 20:28:27 2015 -0500
+
+    added league of legend route
+
+commit 3b7c99185befd84b271881ef7446b705c871bd17
+Author: Rachel Wong <rw@rw-6510b.(none)>
+Date:   Thu Jul 16 19:41:37 2015 -0500
+
+    added /api/tests
+
+commit 4a69800d36424724e750c4cccb51c5afbc6f6a88
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Thu Jul 16 18:37:01 2015 -0500
+
+    fixes #81 titles on models pages shouldn't be beneath tables
+
+commit 61783525f44e25afd8c091a76356571d4e13fc64
+Author: Erin Pennington <epennington@utexas.edu>
+Date:   Thu Jul 16 18:29:53 2015 -0500
+
+    fixed mobile tables again
+
+commit 9f6b3f9ec3b95b0b885a23065bcec76b2ec25ac7
+Merge: 6858679 575a3b6
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Thu Jul 16 18:16:10 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 575a3b68b99b24dd2739db72d08f9aacec143828
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Wed Jul 15 23:15:28 2015 -0500
+
+    Add sitemap to app for search engine purposes
+
+commit 6858679c4220979e813d6cd06969c7434a5692c2
+Merge: ec6b85f 4b5bcbf
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Wed Jul 15 12:55:48 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
+commit 4b5bcbf009f9549f4edce554494cd251df4c9ad9
+Author: Guillermo Terrazas <gterra023@gmail.com>
+Date:   Wed Jul 15 10:02:20 2015 -0500
+
+    Fixes #60
+    
+    Added search functionality to website
+
+commit 086b57580195b71a6291e29aa1b208dbe2edccb9
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Jul 14 19:37:32 2015 -0500
+
+    add log of commit closed #37
+
 commit 42375532cbc18079d8bde5c3f7b2dbad0cd2742b
 Author: tumrod <tipparat.umrod@utexas.edu>
 Date:   Tue Jul 14 19:36:03 2015 -0500
@@ -36,6 +345,13 @@ Date:   Tue Jul 14 15:39:17 2015 -0500
 
     Merge branch 'master' of https://github.com/tumrod/cs373-idb
 
+commit ec6b85fd578b34d91498de51a993b54c6cbeb58a
+Merge: 77200c2 52a354a
+Author: Noelle Hall <noelleryanhall@utexas.edu>
+Date:   Tue Jul 14 15:39:09 2015 -0500
+
+    Merge branch 'dev' of https://github.com/tumrod/cs373-idb into dev
+
 commit 04da42a301f2cc8fea0f52183eab9888cc681c8d
 Author: Rachel Wong <rachelcwong168@gmail.com>
 Date:   Tue Jul 14 13:18:00 2015 -0500
@@ -71,6 +387,20 @@ Author: Erin Pennington <epennington@utexas.edu>
 Date:   Tue Jul 14 10:15:26 2015 -0500
 
     fixed tables which were broken while fixing mobile view
+
+commit 91144f316c302c2d8513528acc44ef5c95eaddca
+Merge: d4faa77 ab1b786
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Jul 14 03:55:45 2015 -0500
+
+    Merge remote-tracking branch 'remotes/origin/master' into dev
+
+commit 7e87091bd3d4955617706600ba1647eaaf9b47d6
+Merge: ab1b786 d4faa77
+Author: tumrod <tipparat.umrod@utexas.edu>
+Date:   Tue Jul 14 03:54:13 2015 -0500
+
+    Merge remote-tracking branch 'remotes/origin/dev'
 
 commit ab1b78681886c2ea34fe54c473b6d91b77fcf61c
 Author: tumrod <tipparat.umrod@utexas.edu>
